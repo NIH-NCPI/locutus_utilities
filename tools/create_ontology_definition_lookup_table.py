@@ -7,7 +7,7 @@ Jira ticket FD-1381
 import requests
 import pandas as pd
 from datetime import date
-from ftd.fhir.locutus_utilities.resources import (ONTOLOGY_API_LOOKUP_TABLE_PATH, OLS_ONTOLOGIES_URL)
+from locutus_utilities.resources import (ONTOLOGY_API_LOOKUP_TABLE_PATH, OLS_ONTOLOGIES_URL)
 
 
 JIRA_ISSUES = ['fd1381']

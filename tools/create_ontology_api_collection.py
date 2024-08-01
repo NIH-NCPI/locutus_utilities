@@ -8,7 +8,7 @@ Jira ticket FD-1382s
 import csv
 from google.cloud import firestore
 
-from ftd.fhir.locutus_utilities.resources import (ONTOLOGY_API_LOOKUP_TABLE_PATH)
+from locutus_utilities.resources import (ONTOLOGY_API_LOOKUP_TABLE_PATH)
 
 # Initialize Firestore client
 db = firestore.Client()
