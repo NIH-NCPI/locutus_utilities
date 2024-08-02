@@ -7,14 +7,21 @@ Jira ticket FD-1381
 import requests
 import pandas as pd
 from datetime import date
-from locutus_utilities.resources import (ONTOLOGY_API_LOOKUP_TABLE_PATH, OLS_ONTOLOGIES_URL)
+import sys
+import os
 
+# Specify the path to resources
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from resources import ONTOLOGY_API_LOOKUP_TABLE_PATH, OLS_API_URL, MONARCH_API_URL, LOINC_API_URL
 
 JIRA_ISSUES = ['fd1381']
 export_date = date.today()
 
-# Define the base API endpoint
-ols_base_url = OLS_ONTOLOGIES_URL
+# Define the base API endpoints
+ols_base_url = OLS_API_URL
+monarch_base_url = MONARCH_API_URL
+loinc_base_url = LOINC_API_URL
 
 # Initialize an empty list to store the extracted data
 extracted_data = []
@@ -64,8 +71,8 @@ df = pd.DataFrame(extracted_data, columns=column_names)
 # Add one-off ontologies FD-1381
 # TODO: If possible eventually remove the hard code.
 manual_addition_ontologies = [
-    ["monarch", "monarch", "Environmental Conditions, Treatments and Exposures Ontology", 'ecto', 'ECTO', 'http://purl.obolibrary.org/obo/ecto.owl', ""],
-    ["loinc", "loinc", "Logical Observation Identifiers, Names and Codes (LOINC)", 'loinc', 'LOINC', 'http://loinc.org', ""]
+    [monarch_base_url, "monarch", "Environmental Conditions, Treatments and Exposures Ontology", 'ecto', 'ECTO', 'http://purl.obolibrary.org/obo/ecto.owl', ""],
+    [loinc_base_url, "loinc", "Logical Observation Identifiers, Names and Codes (LOINC)", 'loinc', 'LOINC', 'http://loinc.org', ""]
 ]
 
 # Convert new data to DataFrame
