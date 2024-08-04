@@ -7,8 +7,13 @@ Jira ticket FD-1382s
 
 import csv
 from google.cloud import firestore
+import sys
+import os
 
-from locutus_utilities.resources import (ONTOLOGY_API_LOOKUP_TABLE_PATH)
+# Specify the path to resources
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from locutus_util.resources import ONTOLOGY_API_LOOKUP_TABLE_PATH
 
 # Initialize Firestore client
 db = firestore.Client()

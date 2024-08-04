@@ -6,26 +6,21 @@ Jira ticket FD-1381
 
 import requests
 import pandas as pd
-from datetime import date
 import sys
 import os
 
 # Specify the path to resources
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from resources import ONTOLOGY_API_LOOKUP_TABLE_PATH, OLS_API_URL, MONARCH_API_URL, LOINC_API_URL
+from locutus_util.resources import ONTOLOGY_API_LOOKUP_TABLE_PATH, OLS_API_BASE_URL, MONARCH_API_BASE_URL, LOINC_API_BASE_URL
 
 JIRA_ISSUES = ['fd1381']
-export_date = date.today()
 
-# Define the base API endpoints
-ols_base_url = OLS_API_URL
-monarch_base_url = MONARCH_API_URL
-loinc_base_url = LOINC_API_URL
+# Define the api endpoints used to request ontologies
+ols_ontologies_url = f"{OLS_API_BASE_URL}ontologies"
 
 # Initialize an empty list to store the extracted data
 extracted_data = []
-
 
 # Function to fetch data from a given URL
 def fetch_data(url):
@@ -39,14 +34,14 @@ def fetch_data(url):
 
 # Fetch the first page of data
 print("Fetching data")
-data = fetch_data(ols_base_url)
+data = fetch_data(ols_ontologies_url)
 # Loop through the pages until there are no more pages left
 print("Transforming data")
 while data:
     ontologies = data['_embedded']['ontologies']
     for ontology in ontologies:
         extracted_data.append({
-            'api_url': ols_base_url,
+            'api_url': OLS_API_BASE_URL,
             'api_source': 'ols',
             'ontology_code': ontology['ontologyId'],
             'curie': ontology['config'].get('preferredPrefix', 'N/A'),
@@ -61,7 +56,6 @@ while data:
     else:
         break
 
-
 # Define columns to export
 column_names = ['api_url', 'api_source', 'ontology_title', 'ontology_code', 'curie', 'system', 'version']
 
@@ -71,8 +65,8 @@ df = pd.DataFrame(extracted_data, columns=column_names)
 # Add one-off ontologies FD-1381
 # TODO: If possible eventually remove the hard code.
 manual_addition_ontologies = [
-    [monarch_base_url, "monarch", "Environmental Conditions, Treatments and Exposures Ontology", 'ecto', 'ECTO', 'http://purl.obolibrary.org/obo/ecto.owl', ""],
-    [loinc_base_url, "loinc", "Logical Observation Identifiers, Names and Codes (LOINC)", 'loinc', 'LOINC', 'http://loinc.org', ""]
+    [MONARCH_API_BASE_URL, "monarch", "Environmental Conditions, Treatments and Exposures Ontology", 'ecto', 'ECTO', 'http://purl.obolibrary.org/obo/ecto.owl', ""],
+    [LOINC_API_BASE_URL, "loinc", "Logical Observation Identifiers, Names and Codes (LOINC)", 'loinc', 'LOINC', 'http://loinc.org', ""]
 ]
 
 # Convert new data to DataFrame
