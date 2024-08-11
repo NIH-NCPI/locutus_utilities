@@ -24,14 +24,17 @@ def add_ontology_api(api_source, api_url, ontologies):
     collection_title = 'OntologyAPI'
     ontology_api_ref = db.collection(collection_title)
 
+    # Set the document_id/api_id
+    document_id = api_source
+    
     # Data to store
     data = {
+        'api_id': document_id,
         'api_source': api_source,
         'api_url': api_url,
         'ontologies': ontologies
     }
 
-    document_id = f"{api_source}_api"
 
     # Add a new document to the collection
     # Adding a doc will create a collection if it does not already exist
