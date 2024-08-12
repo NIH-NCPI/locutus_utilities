@@ -50,7 +50,7 @@ while data:
             
         extracted_data.append({
             'api_url': OLS_API_BASE_URL,
-            'api_source': 'ols',
+            'api_id': 'ols',
             'ontology_code': ontology['ontologyId'],
             'curie': config.get('preferredPrefix', ''),
             'ontology_title': config.get('title', ''),
@@ -65,7 +65,7 @@ while data:
         break
 
 # Define columns to export
-column_names = ["api_url", "api_source", "ontology_title", "ontology_code", "curie", "system", "version"]
+column_names = ["api_url", "api_id", "ontology_title", "ontology_code", "curie", "system", "version"]
 
 # Create a DataFrame with the requested ontologies
 df = pd.DataFrame(extracted_data, columns=column_names)

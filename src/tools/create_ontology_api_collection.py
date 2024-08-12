@@ -19,18 +19,17 @@ from locutus_util.resources import ONTOLOGY_API_LOOKUP_TABLE_PATH
 db = firestore.Client()
 
 # Inserts data as a document into the specified collection
-def add_ontology_api(api_source, api_url, ontologies):
+def add_ontology_api(api_id, api_url, ontologies):
     # References a collection
     collection_title = 'OntologyAPI'
     ontology_api_ref = db.collection(collection_title)
 
-    # Set the document_id/api_id
-    document_id = api_source
+    # Set the document_id
+    document_id = api_id
     
     # Data to store
     data = {
-        'api_id': document_id,
-        'api_source': api_source,
+        'api_id': api_id,
         'api_url': api_url,
         'ontologies': ontologies
     }
@@ -50,16 +49,16 @@ def populate_ontology_api_from_csv(csv_file_path):
         for row in reader:
             
             # identify individual apis
-            api_source = row['api_source']
-            if api_source not in api_data:
-                api_data[api_source] = {
+            api_id = row['api_id']
+            if api_id not in api_data:
+                api_data[api_id] = {
                     'api_url': row['api_url'],
                     'ontologies': {}
                 }
 
             # Insert ontology details into the correct api dictionary
             ontology_id = row['ontology_code']
-            api_data[api_source]['ontologies'][ontology_id] = {
+            api_data[api_id]['ontologies'][ontology_id] = {
                 'ontology_title': row['ontology_title'],
                 'ontology_code': row['ontology_code'],
                 'curie': row['curie'],
@@ -67,8 +66,8 @@ def populate_ontology_api_from_csv(csv_file_path):
                 'version': row['version'],
             }
 
-    for api_source, data in api_data.items():
-        add_ontology_api(api_source, data['api_url'], data['ontologies'])
+    for api_id, data in api_data.items():
+        add_ontology_api(api_id, data['api_url'], data['ontologies'])
 
 
 # Create a document for each api in the OntologyAPI collection
