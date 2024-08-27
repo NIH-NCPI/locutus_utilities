@@ -5,7 +5,7 @@ https://www.ebi.ac.uk/ols4/api/,ols,Agronomy Ontology,agro,AGRO,http://purl.obol
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology for the Anatomy of the Insect SkeletoMuscular system,aism,AISM,http://purl.obolibrary.org/obo/aism.owl,http://purl.obolibrary.org/obo/aism/releases/2024-06-20/aism.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Amphioxus Development and Anatomy Ontology (AMPHX),amphx,AMPHX,http://purl.obolibrary.org/obo/amphx.owl,http://purl.obolibrary.org/obo/amphx/releases/2020-12-18/amphx.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Ascomycete Phenotype Ontology (APO),apo,APO,http://purl.obolibrary.org/obo/apo.owl,http://purl.obolibrary.org/obo/apo/releases/2024-08-03/apo.owl
-https://www.ebi.ac.uk/ols4/api/,ols,Apollo Structured Vocabulary (Apollo-SV),apollo_sv,APOLLO_SV,http://purl.obolibrary.org/obo/apollo_sv.owl,http://purl.obolibrary.org/obo/apollo_sv/releases/2024-04-19/apollo_sv.owl
+https://www.ebi.ac.uk/ols4/api/,ols,Apollo Structured Vocabulary (Apollo-SV),apollo_sv,APOLLO_SV,http://purl.obolibrary.org/obo/apollo_sv.owl,http://purl.obolibrary.org/obo/apollo_sv/releases/2024-08-15/apollo_sv.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Antibiotic Resistance Ontology,aro,ARO,http://purl.obolibrary.org/obo/aro.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Biological Collections Ontology,bco,BCO,http://purl.obolibrary.org/obo/bco.owl,http://purl.obolibrary.org/obo/bco/releases/2021-11-14/bco.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Basic Formal Ontology,bfo,BFO,http://purl.obolibrary.org/obo/bfo.owl,http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl
@@ -13,7 +13,7 @@ https://www.ebi.ac.uk/ols4/api/,ols,Biological Spatial Ontology,bspo,BSPO,http:/
 https://www.ebi.ac.uk/ols4/api/,ols,The BRENDA Tissue Ontology (BTO),bto,BTO,http://purl.obolibrary.org/obo/bto.owl,http://purl.obolibrary.org/obo/bto/releases/2021-10-26/bto.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Common Anatomy Reference Ontology,caro,CARO,http://purl.obolibrary.org/obo/caro.owl,http://purl.obolibrary.org/obo/caro/releases/2023-03-15/caro.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Comparative Data Analysis Ontology,cdao,CDAO,http://purl.obolibrary.org/obo/cdao.owl,http://purl.obolibrary.org/obo/cdao/2024-01-25/cdao.owl
-https://www.ebi.ac.uk/ols4/api/,ols,Compositional Dietary Nutrition Ontology,cdno,CDNO,http://purl.obolibrary.org/obo/cdno.owl,http://purl.obolibrary.org/obo/cdno/releases/2024-06-21/cdno.owl
+https://www.ebi.ac.uk/ols4/api/,ols,Compositional Dietary Nutrition Ontology,cdno,CDNO,http://purl.obolibrary.org/obo/cdno.owl,http://purl.obolibrary.org/obo/cdno/releases/2024-08-13/cdno.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Chemical Entities of Biological Interest,chebi,CHEBI,http://purl.obolibrary.org/obo/chebi.owl,http://purl.obolibrary.org/obo/chebi/236/chebi.owl
 https://www.ebi.ac.uk/ols4/api/,ols,chemical information ontology (cheminf) - information entities about chemical entities,cheminf,CHEMINF,http://purl.obolibrary.org/obo/cheminf.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,CHEBI Integrated Role Ontology,chiro,CHIRO,http://purl.obolibrary.org/obo/chiro.owl,http://purl.obolibrary.org/obo/chiro/releases/2015-11-23/chiro.owl
@@ -24,7 +24,7 @@ https://www.ebi.ac.uk/ols4/api/,ols,Cell Ontology,cl,CL,http://purl.obolibrary.o
 https://www.ebi.ac.uk/ols4/api/,ols,Collembola Anatomy Ontology,clao,CLAO,http://purl.obolibrary.org/obo/clao.owl,http://purl.obolibrary.org/obo/clao/releases/2021-09-27/clao.owl
 https://www.ebi.ac.uk/ols4/api/,ols,CLO: Cell Line Ontology,clo,CLO,http://purl.obolibrary.org/obo/clo.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Clytia hemisphaerica Development and Anatomy Ontology (CLYH),clyh,CLYH,http://purl.obolibrary.org/obo/clyh.owl,http://purl.obolibrary.org/obo/clyh/releases/2020-05-29/clyh.owl
-https://www.ebi.ac.uk/ols4/api/,ols,Clinical measurement ontology,cmo,CMO,http://purl.obolibrary.org/obo/cmo.owl,http://purl.obolibrary.org/obo/cmo/2.221/cmo.owl
+https://www.ebi.ac.uk/ols4/api/,ols,Clinical measurement ontology,cmo,CMO,http://purl.obolibrary.org/obo/cmo.owl,http://purl.obolibrary.org/obo/cmo/2.222/cmo.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Core Ontology for Biology and Biomedicine,cob,COB,http://purl.obolibrary.org/obo/cob.owl,http://purl.obolibrary.org/obo/cob/releases/2023-11-16/cob.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Coleoptera Anatomy Ontology,colao,COLAO,http://purl.obolibrary.org/obo/colao.owl,http://purl.obolibrary.org/obo/colao/releases/2024-06-21/colao.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Contributor Role Ontology,cro,CRO,http://purl.obolibrary.org/obo/cro.owl,http://purl.obolibrary.org/obo/cro/releases/2019-12-11/cro.owl
@@ -36,7 +36,7 @@ https://www.ebi.ac.uk/ols4/api/,ols,Drug-drug Interaction and Drug-drug Interact
 https://www.ebi.ac.uk/ols4/api/,ols,Disease Drivers,disdriv,DISDRIV,http://purl.obolibrary.org/obo/disdriv.owl,http://purl.obolibrary.org/obo/disdriv/releases/2023-12-15/disdriv.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Human Disease Ontology,doid,DOID,http://purl.obolibrary.org/obo/doid.owl,http://purl.obolibrary.org/obo/doid/releases/2024-07-31/doid.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Drosophila Phenotype Ontology (DPO),dpo,FBcv,http://purl.obolibrary.org/obo/dpo.owl,http://purl.obolibrary.org/obo/dpo/releases/2024-08-08/dpo.owl
-https://www.ebi.ac.uk/ols4/api/,ols,The Drug Ontology,dron,DRON,http://purl.obolibrary.org/obo/dron.owl,http://purl.obolibrary.org/obo/dron/releases/2024-08-05/dron.owl
+https://www.ebi.ac.uk/ols4/api/,ols,The Drug Ontology,dron,DRON,http://purl.obolibrary.org/obo/dron.owl,http://purl.obolibrary.org/obo/dron/releases/2024-08-07/dron.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Data Use Ontology,duo,DUO,http://purl.obolibrary.org/obo/duo.owl,http://purl.obolibrary.org/obo/duo/releases/2021-02-23/duo.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Echinoderm Anatomy and Development Ontology,ecao,ECAO,http://purl.obolibrary.org/obo/ecao.owl,http://purl.obolibrary.org/obo/ecao/releases/2024-07-28/ecao-simple.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Evidence & Conclusion Ontology (ECO),eco,ECO,http://purl.obolibrary.org/obo/eco.owl,http://purl.obolibrary.org/obo/eco/releases/2024-07-19/eco.owl
@@ -116,7 +116,7 @@ https://www.ebi.ac.uk/ols4/api/,ols,OHPI: Ontology of Host-Pathogen Interactions
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology for MIRNA Target,omit,OMIT,http://purl.obolibrary.org/obo/omit.owl,http://purl.obolibrary.org/obo/omit/dev/omit.owl
 https://www.ebi.ac.uk/ols4/api/,ols,OBO Metadata Ontology,omo,OMO,http://purl.obolibrary.org/obo/omo.owl,http://purl.obolibrary.org/obo/omo/releases/2023-11-02/omo.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology of Microbial Phenotypes,omp,OMP,http://purl.obolibrary.org/obo/omp.owl,http://purl.obolibrary.org/obo/omp/releases/2024-03-25/omp.owl
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology for Modeling and Representation of Social Entities,omrse,OMRSE,http://purl.obolibrary.org/obo/omrse.owl,http://purl.obolibrary.org/obo/omrse/releases/2024-03-22/omrse.owl
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology for Modeling and Representation of Social Entities,omrse,OMRSE,http://purl.obolibrary.org/obo/omrse.owl,http://purl.obolibrary.org/obo/omrse/releases/2024-08-14/omrse.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology for Nutritional Epidemiology,one,ONE,http://purl.obolibrary.org/obo/one.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology for Nutritional Studies,ons,ONS,http://purl.obolibrary.org/obo/ons.owl,https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/releases/download/v2024-07-03/ons.owl
 https://www.ebi.ac.uk/ols4/api/,ols,OntoAvida: ontology for Avida digital evolution platform.,ontoavida,ONTOAVIDA,http://purl.obolibrary.org/obo/ontoavida.owl,http://purl.obolibrary.org/obo/ontoavida/releases/2022-03-15/ontoavida.owl
@@ -161,15 +161,15 @@ https://www.ebi.ac.uk/ols4/api/,ols,Teleost taxonomy ontology,tto,TTO,http://pur
 https://www.ebi.ac.uk/ols4/api/,ols,TOXic Process Ontology (TXPO),txpo,TXPO,http://purl.obolibrary.org/obo/txpo.owl,http://purl.obolibrary.org/obo/txpo/releases/2022-12-07/txpo.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Uber-anatomy ontology,uberon,UBERON,http://purl.obolibrary.org/obo/uberon.owl,http://purl.obolibrary.org/obo/uberon/releases/2024-08-07/uberon.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Units of measurement ontology,uo,UO,http://purl.obolibrary.org/obo/uo.owl,http://purl.obolibrary.org/obo/uo/releases/2023-05-25/uo.owl
-https://www.ebi.ac.uk/ols4/api/,ols,Vertebrate Breed Ontology,vbo,VBO,http://purl.obolibrary.org/obo/vbo.owl,http://purl.obolibrary.org/obo/vbo/releases/2024-05-22/vbo.owl
-https://www.ebi.ac.uk/ols4/api/,ols,Vaccine Ontology,vo,VO,http://purl.obolibrary.org/obo/vo.owl,http://purl.obolibrary.org/obo/vo/releases/2024-07-13/vo.owl
-https://www.ebi.ac.uk/ols4/api/,ols,The Vertebrate Trait Ontology,vt,VT,http://purl.obolibrary.org/obo/vt.owl,http://purl.obolibrary.org/obo/vt/releases/2024-07-22/vt.owl
+https://www.ebi.ac.uk/ols4/api/,ols,Vertebrate Breed Ontology,vbo,VBO,http://purl.obolibrary.org/obo/vbo.owl,http://purl.obolibrary.org/obo/vbo/releases/2024-08-14/vbo.owl
+https://www.ebi.ac.uk/ols4/api/,ols,Vaccine Ontology,vo,VO,http://purl.obolibrary.org/obo/vo.owl,http://purl.obolibrary.org/obo/vo/releases/2024-08-11/vo.owl
+https://www.ebi.ac.uk/ols4/api/,ols,The Vertebrate Trait Ontology,vt,VT,http://purl.obolibrary.org/obo/vt.owl,http://purl.obolibrary.org/obo/vt/releases/2024-08-13/vt.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Vertebrate Taxonomy Ontology,vto,VTO,http://purl.obolibrary.org/obo/vto.owl,http://purl.obolibrary.org/obo/vto/2020-11-13/vto.owl
 https://www.ebi.ac.uk/ols4/api/,ols,C. elegans Gross Anatomy Ontology,wbbt,WBbt,http://purl.obolibrary.org/obo/wbbt.owl,http://purl.obolibrary.org/obo/wbbt/releases/2024-07-01/wbbt.owl
 https://www.ebi.ac.uk/ols4/api/,ols,C. elegans Development Ontology,wbls,WBls,http://purl.obolibrary.org/obo/wbls.owl,http://purl.obolibrary.org/obo/wbls/releases/2024-04-09/wbls.owl
 https://www.ebi.ac.uk/ols4/api/,ols,C elegans Phenotype Ontology,wbphenotype,WBPhenotype,http://purl.obolibrary.org/obo/wbphenotype.owl,http://purl.obolibrary.org/obo/wbphenotype/releases/2024-06-05/wbphenotype.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Xenopus Anatomy Ontology,xao,XAO,http://purl.obolibrary.org/obo/xao.owl,http://purl.obolibrary.org/obo/xao/releases/2022-08-29/xao.owl
-https://www.ebi.ac.uk/ols4/api/,ols,Experimental condition ontology,xco,XCO,http://purl.obolibrary.org/obo/xco.owl,http://purl.obolibrary.org/obo/xco/4.177/xco.owl
+https://www.ebi.ac.uk/ols4/api/,ols,Experimental condition ontology,xco,XCO,http://purl.obolibrary.org/obo/xco.owl,http://purl.obolibrary.org/obo/xco/4.178/xco.owl
 https://www.ebi.ac.uk/ols4/api/,ols,HUPO-PSI cross-linking and derivatization reagents controlled vocabulary,xlmod,XLMOD,http://purl.obolibrary.org/obo/xlmod.owl,http://purl.obolibrary.org/obo/xlmod/release/2019-10-28/xlmod.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Xenopus Phenotype Ontology,xpo,XPO,http://purl.obolibrary.org/obo/xpo.owl,http://purl.obolibrary.org/obo/xpo/releases/2024-04-18/xpo.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Zebrafish Experimental Conditions Ontology,zeco,ZECO,http://purl.obolibrary.org/obo/zeco.owl,http://purl.obolibrary.org/obo/zeco/releases/2022-02-14/zeco.owl
@@ -177,7 +177,7 @@ https://www.ebi.ac.uk/ols4/api/,ols,Zebrafish Anatomy Ontology (ZFA),zfa,ZFA,htt
 https://www.ebi.ac.uk/ols4/api/,ols,Zebrafish developmental stages ontology,zfs,ZFS,http://purl.obolibrary.org/obo/zfs.owl,http://purl.obolibrary.org/obo/zfs/releases/2020-03-10/zfs.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Zebrafish Phenotype Ontology (ZP),zp,ZP,http://purl.obolibrary.org/obo/zp.owl,http://purl.obolibrary.org/obo/zp/releases/2024-04-18/zp.owl
 https://www.ebi.ac.uk/ols4/api/,ols,"GSSO - the Gender, Sex, and Sexual Orientation ontology",gsso,GSSO,http://purl.obolibrary.org/obo/gsso.owl,http://purl.obolibrary.org/obo/gsso/releases/2.0.5/gsso.owl
-https://www.ebi.ac.uk/ols4/api/,ols,Human Phenotype Ontology,hp,HP,http://purl.obolibrary.org/obo/hp/hp-international.owl,http://purl.obolibrary.org/obo/hp/releases/2024-07-01/hp-international.owl
+https://www.ebi.ac.uk/ols4/api/,ols,Human Phenotype Ontology,hp,HP,http://purl.obolibrary.org/obo/hp/hp-international.owl,http://purl.obolibrary.org/obo/hp/releases/2024-08-13/hp-international.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Kinetic Simulation Algorithm Ontology,kisao,KISAO,http://purl.obolibrary.org/obo/kisao.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Systems Biology Ontology,sbo,SBO,http://purl.obolibrary.org/obo/sbo.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Sickle Cell Disease Ontology,scdo,SCDO,http://purl.obolibrary.org/obo/scdo.owl,http://purl.obolibrary.org/obo/scdo/releases/2021-04-15/scdo.owl
@@ -228,7 +228,7 @@ https://www.ebi.ac.uk/ols4/api/,ols,PHI-base Ontology,phi,PHI,file:///nfs/produc
 https://www.ebi.ac.uk/ols4/api/,ols,Metabolomics Standards Initiative Ontology (MSIO),msio,MSIO,https://raw.githubusercontent.com/MSI-Metabolomics-Standards-Initiative/MSIO/master/releases/latest_release/MSIO-merged-reasoned.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,DICOM Controlled Terminology,dicom,DICOM,ftp://medical.nema.org/MEDICAL/Dicom/Resources/Ontology/DCM/dcm.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ensembl Glossary,ensemblglossary,ENSGLOSS,https://raw.githubusercontent.com/Ensembl/ensembl-glossary/master/ensembl-glossary.owl,http://ensembl.org/glossary/ensembl-glossary/releases/2023-01-04/ensembl-glossary.owl
-https://www.ebi.ac.uk/ols4/api/,ols,Experimental Factor Ontology,efo,EFO,http://www.ebi.ac.uk/efo/efo.owl,http://www.ebi.ac.uk/efo/releases/v3.68.0/efo.owl
+https://www.ebi.ac.uk/ols4/api/,ols,Experimental Factor Ontology,efo,EFO,http://www.ebi.ac.uk/efo/efo.owl,http://www.ebi.ac.uk/efo/releases/v3.69.0/efo.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Orphanet Rare Disease Ontology,ordo,ORDO,http://www.orphadata.org/data/ORDO/ordo_orphanet.owl,https://www.orphadata.com/data/ontologies/ordo/last_version/ORDO_en_4.5.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Terminology for Description of Dynamics,teddy,TEDDY,file:///nfs/production/parkinso/spot/ols4/prod/local_ontologies/teddy-inferred-fixed.owl,http://identifiers.org/combine.specifications/teddy.rel-2014-04-24
 https://www.ebi.ac.uk/ols4/api/,ols,"Bioinformatics operations, data types, formats, identifiers and topics",edam,EDAM,https://raw.githubusercontent.com/edamontology/edamontology/master/releases/EDAM.owl,
@@ -243,12 +243,12 @@ https://www.ebi.ac.uk/ols4/api/,ols,PRIDE Controlled Vocabulary,pride,PRIDE,http
 https://www.ebi.ac.uk/ols4/api/,ols,BioAssay Ontology,bao,BAO,http://www.bioassayontology.org/bao/,http://www.bioassayontology.org/bao/bao_complete.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Semanticscience Integrated Ontology,sio,SIO,https://raw.githubusercontent.com/micheldumontier/semanticscience/master/ontology/sio/release/sio-release.owl,http://semanticscience.org/ontology/sio/v1.59/sio-release.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Unimod protein modification database for mass spectrometry,unimod,UNIMOD,https://raw.githubusercontent.com/PRIDE-Utilities/pride-ontology/master/unimod.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,nuclear magnetic resonance CV,nmrcv,NMR,http://nmrml.org/cv/stable/nmrCV.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,nuclear magnetic resonance CV,nmrcv,NMR,http://nmrml.org/cv/stable/nmrCV.owl,http://nmrml.org/cv/v1.1.0/nmrCV.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Allotrope Merged Ontology Suite,afo,AFO,http://purl.allotrope.org/voc/afo/latest.xml,http://purl.allotrope.org/voc/afo/merged/REC/2024/06/merged-without-qudt-and-inferred
 https://www.ebi.ac.uk/ols4/api/,ols,FAIRsharing Subject Ontology (SRAO),srao,SRAO,https://github.com/FAIRsharing/subject-ontology/raw/master/SRAO.owl,http://www.fairsharing.org/ontology/subject/SRAO/releases/2023-10-10/SRAO.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Human Cell Atlas Ontology,hcao,HCAO,https://raw.githubusercontent.com/ebi-ait/ontology/master/hcao.owl,http://ontology.data.humancellatlas.org/ontologies/hcao/releases/2023-05-16/hcao.owl
 https://www.ebi.ac.uk/ols4/api/,ols,The COVID-19 Infectious Disease Ontology,idocovid19,IDO-COVID-19,https://raw.githubusercontent.com/infectious-disease-ontology-extensions/ido-covid-19/master/ontology/ido%20covid-19,http://purl.obolibrary.org/obo/2020-21-07/ido-covid-19.owl
-https://www.ebi.ac.uk/ols4/api/,ols,The Behaviour Change Intervention Ontology,bcio,BCIO,http://humanbehaviourchange.org/ontology/bcio.owl,http://humanbehaviourchange.org/ontology/bcio.owl/2024-07-03
+https://www.ebi.ac.uk/ols4/api/,ols,The Behaviour Change Intervention Ontology,bcio,BCIO,http://humanbehaviourchange.org/ontology/bcio.owl,http://humanbehaviourchange.org/ontology/bcio.owl/2024-08-06
 https://www.ebi.ac.uk/ols4/api/,ols,CoVoc Coronavirus Vocabulary,covoc,COVOC,https://github.com/EBISPOT/covoc/releases/download/current/covoc.owl,http://purl.obolibrary.org/obo/covoc/releases/2022-10-26/covoc.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology of units of Measure (OM),om,OM,https://raw.githubusercontent.com/HajoRijgersberg/OM/master/om-2.0.rdf,
 https://www.ebi.ac.uk/ols4/api/,ols,REPRODUCE-ME Ontology,reproduceme,REPR,https://sheeba-samuel.github.io/REPRODUCE-ME/doc/reproduce-me.xml,
