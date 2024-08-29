@@ -6,16 +6,17 @@ Jira ticket FD-1381
 
 import requests
 import pandas as pd
-import sys
-import os
+import pkg_resources
 
-# Specify the path to resources
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-
-from locutus_util.resources import ONTOLOGY_API_LOOKUP_TABLE_PATH, OLS_API_BASE_URL, MONARCH_API_BASE_URL, LOINC_API_BASE_URL
+OLS_API_BASE_URL = "https://www.ebi.ac.uk/ols4/api/"
+MONARCH_API_BASE_URL = "https://api-v3.monarchinitiative.org/v3/api/search?q="
+LOINC_API_BASE_URL = "https://loinc.regenstrief.org/searchapi/"
 
 ols_ontologies_url = f"{OLS_API_BASE_URL}ontologies"
 extracted_data = []
+
+def get_package_data(filename):
+    return pkg_resources.resource_filename('ontology_api_lookup', f'storage/lookup_tables/{filename}')
 
 def fetch_data(url):
     response = requests.get(url)
@@ -77,7 +78,8 @@ def ontologies_to_csv():
     print(f"Adding hard-coded ontologies count: {len(additional_df)}")
     df = pd.concat([df, additional_df], ignore_index=True)
 
-    df.to_csv(ONTOLOGY_API_LOOKUP_TABLE_PATH, index=False)
+    ontology_ref = get_package_data('ontology_definition.csv')
+    df.to_csv(ontology_ref, index=False)
     print(f"{len(df)} ontologies saved to ontology_definition.csv")
 
 def main():
