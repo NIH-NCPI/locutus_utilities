@@ -22,7 +22,7 @@ dynamic = ["version"]
 where = ["src"]  # list of folders that contain the packages (["."] by default)
 
 [tool.setuptools.package-data]
-"ontology_api_lookup" = ["storage/lookup_tables/ontology_definition.csv"]
+"ontology_api_lookup" = ["storage.lookup_tables.ontology_definition.csv"]
 
 [project.scripts]
 collect_ontologies = "locutus_util.create_ontology_definition_lookup_table:main"
