@@ -2,7 +2,7 @@
 Uses the ontology_definition.csv to create a document for each API 
 in the 'OntologyAPI' firestore collection.
 
-Jira ticket FD-1382s
+Jira ticket FD-1382
 """
 
 import csv
@@ -69,7 +69,6 @@ def populate_ontology_api_from_csv(csv_file_path):
     for api_id, data in api_data.items():
         add_ontology_api(api_id, data['api_url'], data['ontologies'])
 
-
-# Create a document for each api in the OntologyAPI collection
-populate_ontology_api_from_csv(ONTOLOGY_API_LOOKUP_TABLE_PATH)
-
+if __name__ == "__main__":
+    # Create a document for each api in the OntologyAPI collection
+    populate_ontology_api_from_csv(ONTOLOGY_API_LOOKUP_TABLE_PATH)
