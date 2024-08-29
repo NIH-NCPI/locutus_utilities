@@ -7,12 +7,9 @@ Jira ticket FD-1382
 
 import csv
 from google.cloud import firestore
-import pkg_resources
+
 
 db = firestore.Client()
-
-def get_package_data(filename):
-    return pkg_resources.resource_filename('ontology_api_lookup', f'storage/lookup_tables/{filename}')
 
 # Inserts data as a document into the specified collection
 def add_ontology_api(api_id, api_url, ontologies):
@@ -67,8 +64,7 @@ def populate_ontology_api_from_csv(csv_file_path):
 
 def main():
     # Create a document for each api in the OntologyAPI collection
-    ontology_ref = get_package_data('ontology_definition.csv')
-    populate_ontology_api_from_csv(ontology_ref)
+    populate_ontology_api_from_csv(ontology_api_lookup)
 
 if __name__ == "__main__":
     main()

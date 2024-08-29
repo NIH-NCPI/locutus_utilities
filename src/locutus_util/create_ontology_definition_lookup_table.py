@@ -15,9 +15,6 @@ LOINC_API_BASE_URL = "https://loinc.regenstrief.org/searchapi/"
 ols_ontologies_url = f"{OLS_API_BASE_URL}ontologies"
 extracted_data = []
 
-def get_package_data(filename):
-    return pkg_resources.resource_filename('ontology_api_lookup', f'storage/lookup_tables/{filename}')
-
 def fetch_data(url):
     response = requests.get(url)
     if response.status_code == 200:
@@ -78,8 +75,7 @@ def ontologies_to_csv():
     print(f"Adding hard-coded ontologies count: {len(additional_df)}")
     df = pd.concat([df, additional_df], ignore_index=True)
 
-    ontology_ref = get_package_data('ontology_definition.csv')
-    df.to_csv(ontology_ref, index=False)
+    df.to_csv(ontology_api_lookup, index=False)
     print(f"{len(df)} ontologies saved to ontology_definition.csv")
 
 def main():
