@@ -80,5 +80,8 @@ def ontologies_to_csv():
     df.to_csv(ONTOLOGY_API_LOOKUP_TABLE_PATH, index=False)
     print(f"{len(df)} ontologies saved to ontology_definition.csv")
 
-if __name__ == "__main__":
+def main():
     ontologies_to_csv()
+
+if __name__ == "__main__":
+    main()

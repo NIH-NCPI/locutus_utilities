@@ -69,6 +69,9 @@ def populate_ontology_api_from_csv(csv_file_path):
     for api_id, data in api_data.items():
         add_ontology_api(api_id, data['api_url'], data['ontologies'])
 
-if __name__ == "__main__":
-    # Create a document for each api in the OntologyAPI collection
+def main():
+        # Create a document for each api in the OntologyAPI collection
     populate_ontology_api_from_csv(ONTOLOGY_API_LOOKUP_TABLE_PATH)
+
+if __name__ == "__main__":
+    main()
