@@ -129,4 +129,4 @@ def ontology_api_etl():
         add_ontology_api(api_id, data['api_url'], data['api_name'], data['ontologies'])
 
 if __name__ == "__main__":
-    main()
+    ontology_api_etl()
