@@ -9,6 +9,7 @@ The `locutus_utilities` repository includes scripts and tools that facilitate th
 
 1. **Google Cloud SDK**: Installed and authenticated to use Google Cloud services.
 2. **Firestore** enabled in your Google Cloud project.
+3. Install **setuptools**
 
 ## Installation
 
@@ -31,3 +32,22 @@ The `locutus_utilities` repository includes scripts and tools that facilitate th
 
    gcloud config list
    ```
+
+   ## Run 
+
+   ### Import as a package and call the function.<br>
+   Example:
+   ```bash
+    from locutus_util.ontology_api_etl import ontology_api_etl
+
+    def main():
+        ontology_api_etl()
+
+    if __name__ == "__main__":
+        main()  
+    ```
+    ### Run in CLI
+    Check the `.toml` file for available commands.
+   ```bash
+    ontology_api_etl
+    ```
