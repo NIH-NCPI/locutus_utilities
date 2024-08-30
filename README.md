@@ -21,7 +21,7 @@ The `locutus_utilities` repository includes scripts and tools that facilitate th
 
 2. **Install the package and dependencies**:
     ```bash
-    pip install pip install git+https://github.com/NIH-NCPI/locutus_utilities.git
+    pip install git+https://github.com/NIH-NCPI/locutus_utilities.git
     ```
 
 3. **Set up Google Cloud credentials**:

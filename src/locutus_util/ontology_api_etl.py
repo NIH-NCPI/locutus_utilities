@@ -94,7 +94,7 @@ def add_ontology_api(api_id, api_url, api_name, ontologies):
     ontology_api_ref.document(document_id).set(data)
     print(f"Created {document_id} document in the {collection_title} collection")
 
-def main():
+def ontology_api_etl():
     # Collect OLS data
     ols_data = collect_ols_data()
     
