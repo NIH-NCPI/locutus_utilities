@@ -22,5 +22,4 @@ dynamic = ["version"]
 where = ["src"]  # list of folders that contain the packages (["."] by default)
 
 [project.scripts]
-collect_ontologies = "locutus_util.create_ontology_definition_lookup_table:main"
-ontologies_to_firestore = "locutus_util.create_ontology_api_collection:main"
+run_ontology_api_etl = "locutus_util.ontology_api_etl:main"

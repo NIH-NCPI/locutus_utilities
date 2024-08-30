@@ -1,3 +1,8 @@
+"""This script fetches data from the APIs, combines it with manually 
+added ontologies, and then uploads the structured data into Firestore under 
+the `OntologyAPI` collection.
+"""
+
 import requests
 from google.cloud import firestore
 
@@ -32,6 +37,7 @@ def collect_ols_data():
             extracted_data.append({
                 'api_url': OLS_API_BASE_URL,
                 'api_id': 'ols',
+                'api_name': 'Ontology Lookup Service',
                 'ontology_code': ontology['ontologyId'],
                 'curie': config.get('preferredPrefix', ''),
                 'ontology_title': config.get('title', ''),
@@ -53,6 +59,7 @@ def add_manual_ontologies():
         {
             'api_url': MONARCH_API_BASE_URL,
             'api_id': "monarch",
+            'api_name': "Monarch API",
             'ontology_title': "Environmental Conditions, Treatments and Exposures Ontology",
             'ontology_code': "ecto",
             'curie': "ECTO",
@@ -62,6 +69,7 @@ def add_manual_ontologies():
         {
             'api_url': LOINC_API_BASE_URL,
             'api_id': "loinc",
+            'api_name': "LOINC API",
             'ontology_title': "Logical Observation Identifiers, Names and Codes (LOINC)",
             'ontology_code': "loinc",
             'curie': "",
@@ -70,7 +78,7 @@ def add_manual_ontologies():
         }
     ]
 
-def add_ontology_api(api_id, api_url, ontologies):
+def add_ontology_api(api_id, api_url, api_name, ontologies):
     collection_title = 'OntologyAPI'
     ontology_api_ref = db.collection(collection_title)
 
@@ -79,6 +87,7 @@ def add_ontology_api(api_id, api_url, ontologies):
     data = {
         'api_id': api_id,
         'api_url': api_url,
+        'api_name': api_name,
         'ontologies': ontologies
     }
 
@@ -95,13 +104,14 @@ def main():
     # Combine OLS and manual data
     combined_data = ols_data + manual_ontologies
 
-    # Group by API ID and prepare for Firestore insertion
+    # Reformat. Group ontologies by api.
     api_data = {}
     for entry in combined_data:
         api_id = entry['api_id']
         if api_id not in api_data:
             api_data[api_id] = {
                 'api_url': entry['api_url'],
+                'api_name': entry['api_name'],
                 'ontologies': {}
             }
         
@@ -116,7 +126,7 @@ def main():
 
     # Insert data into Firestore
     for api_id, data in api_data.items():
-        add_ontology_api(api_id, data['api_url'], data['ontologies'])
+        add_ontology_api(api_id, data['api_url'], data['api_name'], data['ontologies'])
 
 if __name__ == "__main__":
     main()
