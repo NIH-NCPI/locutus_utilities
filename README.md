@@ -49,5 +49,5 @@ The `locutus_utilities` repository includes scripts and tools that facilitate th
     ### Run in CLI
     Check the `.toml` file for available commands.
    ```bash
-    ontology_api_etl
+    run_ontology_api_etl
     ```
