@@ -4,6 +4,7 @@ the `OntologyAPI` collection.
 """
 
 import requests
+import pandas as pd
 from google.cloud import firestore
 
 # Firestore client
@@ -60,10 +61,20 @@ def add_manual_ontologies():
             'api_url': MONARCH_API_BASE_URL,
             'api_id': "monarch",
             'api_name': "Monarch API",
-            'ontology_title': "Environmental Conditions, Treatments and Exposures Ontology",
-            'ontology_code': "ecto",
-            'curie': "ECTO",
-            'system': "http://purl.obolibrary.org/obo/ecto.owl",
+            'ontology_title': "Mammalian Phenotype Ontology",
+            'ontology_code': "mp",
+            'curie': "MP",
+            'system': "http://purl.obolibrary.org/obo/mp.owl",
+            'version': ""
+        },
+        {
+            'api_url': MONARCH_API_BASE_URL,
+            'api_id': "monarch",
+            'api_name': "Monarch API",
+            'ontology_title': "Neurobehavior Ontology",
+            'ontology_code': "nbo",
+            'curie': "NBO",
+            'system': "http://purl.obolibrary.org/obo/nbo.owl",
             'version': ""
         },
         {
@@ -77,6 +88,30 @@ def add_manual_ontologies():
             'version': ""
         }
     ]
+
+def add_monarch_ontologies():
+    """Monarch API does not keep data on the ontologies themselves. Using a
+    list of ontologies found in Monarch, backfill the information using the
+    data collected from the ols API.
+    
+    If some ontologies are not present in OLS add those with add_manual_ontologies.
+    """
+    monarch_ontologies = ['CHEBI','ECTO','GO','HP','MAXO','MONDO','MP' \
+        'NBO','PATO','RO','SNOMED','UBERON']
+    
+    # Filter out the entries whose 'curie' field is in monarch_ontologies
+    monarch_ols = [
+        entry for entry in extracted_data if entry['curie'] in monarch_ontologies
+    ]
+
+    # Update the required fields for the filtered data
+    for entry in monarch_ols:
+        entry['api_url'] = MONARCH_API_BASE_URL
+        entry['api_id'] = "monarch"
+        entry['api_name'] = "Monarch API"
+        entry['version'] = ""
+
+    return monarch_ols
 
 def add_ontology_api(api_id, api_url, api_name, ontologies):
     collection_title = 'OntologyAPI'
@@ -97,12 +132,19 @@ def add_ontology_api(api_id, api_url, api_name, ontologies):
 def ontology_api_etl():
     # Collect OLS data
     ols_data = collect_ols_data()
+
+    # Generate Monarch data
+    monarch_data = add_monarch_ontologies()
     
     # Add manual ontologies
     manual_ontologies = add_manual_ontologies()
 
     # Combine OLS and manual data
-    combined_data = ols_data + manual_ontologies
+    combined_data = ols_data + monarch_data + manual_ontologies
+
+    # For data lineage
+    combined_df = pd.DataFrame(combined_data)
+    combined_df.to_csv('../../data/ontology_api.csv', index=False)
 
     # Reformat. Group ontologies by api.
     api_data = {}
