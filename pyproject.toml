@@ -23,3 +23,5 @@ where = ["src"]  # list of folders that contain the packages (["."] by default)
 
 [project.scripts]
 run_ontology_api_etl = "locutus_util.ontology_api_etl:ontology_api_etl"
+drop_seed_data = "locutus_util.drop_seed_data:drop_seed_data"
+update_all_seed_data = "locutus_util.run_makefile:main"

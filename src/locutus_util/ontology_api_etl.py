@@ -3,9 +3,11 @@ added ontologies, and then uploads the structured data into Firestore under
 the `OntologyAPI` collection.
 """
 
+import argparse
 import requests
 import pandas as pd
 from google.cloud import firestore
+from locutus_util.helpers import update_gcloud_project
 
 # Firestore client
 db = firestore.Client()
@@ -129,7 +131,15 @@ def add_ontology_api(api_id, api_url, api_name, ontologies):
     ontology_api_ref.document(document_id).set(data)
     print(f"Created {document_id} document in the {collection_title} collection")
 
-def ontology_api_etl():
+def ontology_api_etl(args=None):
+    parser = argparse.ArgumentParser(description="")
+    parser.add_argument('-p', '--project', required=True, help="GCP Project to edit")
+
+    args = parser.parse_args(args)
+
+    # Update the gcloud project
+    update_gcloud_project(args.project)
+
     # Collect OLS data
     ols_data = collect_ols_data()
 
@@ -142,9 +152,11 @@ def ontology_api_etl():
     # Combine OLS and manual data
     combined_data = ols_data + monarch_data + manual_ontologies
 
-    # For data lineage
     combined_df = pd.DataFrame(combined_data)
-    combined_df.to_csv('../../data/ontology_api.csv', index=False)
+
+    # For data lineage
+    combined_df_sorted = combined_df.sort_values(by=['api_id', 'curie'])
+    combined_df_sorted.to_csv('data/ontology_api.csv', index=False)
 
     # Reformat. Group ontologies by api.
     api_data = {}
