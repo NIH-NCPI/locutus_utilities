@@ -13,41 +13,65 @@ The `locutus_utilities` repository includes scripts and tools that facilitate th
 
 ## Installation
 
-1. **Create and activate a virtual environment** (recommended):
+## Installation
+
+1. **Create and activate a virtual environment** (recommended):<br>
+[Here]("https://realpython.com/python-virtual-environments-a-primer/") for more on virtual environments.
+
     ```bash
-    python3 -m venv venv
-    source venv/bin/activate 
-    # On Windows: venv\Scripts\activate
+    # Step 1: cd into the directory to store the venv
+
+    # Step 2: run this code. It will create the virtual env named abacus_venv in the current directory.
+    python3 -m venv abacus_venv
+
+    # Step 3: run this code. It will activate the abacus_venv environment
+    source abacus_venv/bin/activate # On Windows: venv\Scripts\activate
+
+    # You are ready for installations! 
+    # If you want to deactivate the venv run:
+    deactivate
     ```
 
 2. **Install the package and dependencies**:
     ```bash
     pip install git+https://github.com/NIH-NCPI/locutus_utilities.git
     ```
+3. **Run a command/action**
 
-3. **Set up Google Cloud credentials**:
-   Ensure that your Google Cloud credentials are correctly set up. You can authenticate and check your configuration using the following commands:
-   ```bash
-   gcloud auth application-default login
+   ## Available actions:
+   * [run_ontology_api_etl](#run_ontology_api_etl) <br>
+   * [drop_seed_data](#drop_seed_data) <br> 
+   * [update_all_seed_data](#update_all_seed_data) <br>
 
-   gcloud config list
-   ```
+## Commands
+### run_ontology_api_etl 
+This command will trigger the script that gathers ontology data from various
+API sources and then stores the collected data in the firestore project defined
+in the command arguments.
+```bash
+run_ontology_api_etl -p {Project_id}
+```
+### drop_seed_data
+This command will trigger the script that deletes all data it defines as 
+'seed data' from the firestore project defined in the command arguments.
+```bash
+drop_seed_data -p {Project_id}
+```
+### update_all_seed_data
+This command will trigger all seed data scripts to run, therefore storing the
+seed data into the firestore project defined in the command arguments. <br>
+**Seed data scripts** : run_ontology_api_etl
+```bash
+update_all_seed_data -p {Project_id}
+```
 
-   ## Run 
+## Working on a branch?
+    If working on a new feature it is possible to install a package version within
+    the remote or local branch
+      ```
+    # remote
+    pip install git+https://github.com/NIH-NCPI/locutus_utilities.git@{branch_name}
 
-   ### Import as a package and call the function.<br>
-   Example:
-   ```bash
-    from locutus_util.ontology_api_etl import ontology_api_etl
-
-    def main():
-        ontology_api_etl()
-
-    if __name__ == "__main__":
-        main()  
-    ```
-    ### Run in CLI
-    Check the `.toml` file for available commands.
-   ```bash
-    run_ontology_api_etl
+    # local
+    pip install -e .
     ```
