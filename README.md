@@ -21,11 +21,11 @@ The `locutus_utilities` repository includes scripts and tools that facilitate th
     ```bash
     # Step 1: cd into the directory to store the venv
 
-    # Step 2: run this code. It will create the virtual env named abacus_venv in the current directory.
-    python3 -m venv abacus_venv
+    # Step 2: run this code. It will create the virtual env named utils_venv in the current directory.
+    python3 -m venv utils_venv
 
-    # Step 3: run this code. It will activate the abacus_venv environment
-    source abacus_venv/bin/activate # On Windows: venv\Scripts\activate
+    # Step 3: run this code. It will activate the utils_venv environment
+    source utils_venv/bin/activate # On Windows: venv\Scripts\activate
 
     # You are ready for installations! 
     # If you want to deactivate the venv run:
