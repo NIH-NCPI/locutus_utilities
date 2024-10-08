@@ -39,31 +39,33 @@ The `locutus_utilities` repository includes scripts and tools that facilitate th
 3. **Run a command/action**
 
    ## Available actions:
-   * [run_ontology_api_etl](#run_ontology_api_etl) <br>
-   * [drop_seed_data](#drop_seed_data) <br> 
-   * [update_all_seed_data](#update_all_seed_data) <br>
+   * [utils_run](#utils_run) <br>
 
 ## Commands
-### run_ontology_api_etl 
-This command will trigger the script that gathers ontology data from various
-API sources and then stores the collected data in the firestore project defined
-in the command arguments.
+### utils_run 
+## usage 
 ```bash
-run_ontology_api_etl -p {Project_id}
+python utils_run.py -p <project_id> -o <option> -a <action>
 ```
-### drop_seed_data
-This command will trigger the script that deletes all data it defines as 
-'seed data' from the firestore project defined in the command arguments.
-```bash
-drop_seed_data -p {Project_id}
-```
-### update_all_seed_data
-This command will trigger all seed data scripts to run, therefore storing the
-seed data into the firestore project defined in the command arguments. <br>
-**Seed data scripts** : run_ontology_api_etl
-```bash
-update_all_seed_data -p {Project_id}
-```
+* -p, --project
+    * Description: GCP Project to edit.
+    * Required: Yes
+
+* -o, --option
+    * Description: Choose the operation to perform.
+    * Choices:
+        * `update_ontology_api`: Updates the ontology API in Firestore.
+        * `update_seed_data`: Updates seed data in Firestore.
+    * Required: Yes
+
+* -a, --action
+    * Description: Specify the action to take.
+    * Choices:
+        * `fetch_and_upload`: Fetch data from APIs and upload it to Firestore.
+        * `upload_from_csv`: Upload data from an existing CSV file to Firestore.
+        * `update_csv`: Fetch data from APIs and update the CSV file only.
+    * Required: Only required when `update_ontology_api` is chosen
+
 
 ## Working on a branch?
     If working on a new feature it is possible to install a package version within

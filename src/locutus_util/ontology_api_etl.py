@@ -8,15 +8,15 @@ import requests
 import pandas as pd
 from google.cloud import firestore
 from locutus_util.helpers import update_gcloud_project
+from locutus_util.common import (FETCH_AND_UPLOAD, UPLOAD_FROM_CSV, UPDATE_CSV,
+                                 OLS_API_BASE_URL,MONARCH_API_BASE_URL,LOINC_API_BASE_URL,
+                                 ONTOLOGY_API_PATH)
+
+csv_path = ONTOLOGY_API_PATH
+ols_ontologies_url = f"{OLS_API_BASE_URL}ontologies"
 
 # Firestore client
 db = firestore.Client()
-
-OLS_API_BASE_URL = "https://www.ebi.ac.uk/ols4/api/"
-MONARCH_API_BASE_URL = "https://api-v3.monarchinitiative.org/v3/api/search?q="
-LOINC_API_BASE_URL = "https://loinc.regenstrief.org/searchapi/"
-
-ols_ontologies_url = f"{OLS_API_BASE_URL}ontologies"
 extracted_data = []
 
 def fetch_data(url):
@@ -94,25 +94,29 @@ def add_manual_ontologies():
 def add_monarch_ontologies():
     """Monarch API does not keep data on the ontologies themselves. Using a
     list of ontologies found in Monarch, backfill the information using the
-    data collected from the ols API.
+    data collected from the OLS API.
     
-    If some ontologies are not present in OLS add those with add_manual_ontologies.
+    If some ontologies are not present in OLS, add those with add_manual_ontologies.
     """
-    monarch_ontologies = ['CHEBI','ECTO','GO','HP','MAXO','MONDO','MP' \
-        'NBO','PATO','RO','SNOMED','UBERON']
+    monarch_ontologies = ['CHEBI', 'ECTO', 'GO', 'HP', 'MAXO', 'MONDO', 'MP', 
+                          'NBO', 'PATO', 'RO', 'SNOMED', 'UBERON']
+
+    # Create new entries based on existing OLS data
+    monarch_ols = []
+    for ontology in extracted_data:
+        if ontology['curie'] in monarch_ontologies:
+            new_entry = {
+                'api_url': MONARCH_API_BASE_URL,
+                'api_id': "monarch",
+                'api_name': "Monarch API",
+                'ontology_title': ontology['ontology_title'],
+                'ontology_code': ontology['ontology_code'],
+                'curie': ontology['curie'],
+                'system': ontology['system'],
+                'version': ontology['version'],
+            }
+            monarch_ols.append(new_entry)
     
-    # Filter out the entries whose 'curie' field is in monarch_ontologies
-    monarch_ols = [
-        entry for entry in extracted_data if entry['curie'] in monarch_ontologies
-    ]
-
-    # Update the required fields for the filtered data
-    for entry in monarch_ols:
-        entry['api_url'] = MONARCH_API_BASE_URL
-        entry['api_id'] = "monarch"
-        entry['api_name'] = "Monarch API"
-        entry['version'] = ""
-
     return monarch_ols
 
 def add_ontology_api(api_id, api_url, api_name, ontologies):
@@ -131,37 +135,22 @@ def add_ontology_api(api_id, api_url, api_name, ontologies):
     ontology_api_ref.document(document_id).set(data)
     print(f"Created {document_id} document in the {collection_title} collection")
 
-def ontology_api_etl(args=None):
-    parser = argparse.ArgumentParser(description="")
-    parser.add_argument('-p', '--project', required=True, help="GCP Project to edit")
-
-    args = parser.parse_args(args)
-
-    # Update the gcloud project
-    update_gcloud_project(args.project)
-
-    # Collect OLS data
-    ols_data = collect_ols_data()
-
-    # Generate Monarch data
-    monarch_data = add_monarch_ontologies()
+def reorg_for_firestore(csv_data):
+    """
+    Reads a CSV file and organizes the data by terminology_id.
     
-    # Add manual ontologies
-    manual_ontologies = add_manual_ontologies()
-
-    # Combine OLS and manual data
-    combined_data = ols_data + monarch_data + manual_ontologies
-
-    combined_df = pd.DataFrame(combined_data)
-
-    # For data lineage
-    combined_df_sorted = combined_df.sort_values(by=['api_id', 'curie'])
-    combined_df_sorted.to_csv('data/ontology_api.csv', index=False)
-
-    # Reformat. Group ontologies by api.
+    Args:
+        file_path (str): The path to the CSV file.
+    
+    Returns:
+        dict: A dictionary of terminology data grouped by terminology_id.
+    """
     api_data = {}
-    for entry in combined_data:
+    for entry in csv_data:
         api_id = entry['api_id']
+        ontology_id = entry['ontology_code']
+        
+        # Initialize the API entry if it doesn't exist
         if api_id not in api_data:
             api_data[api_id] = {
                 'api_url': entry['api_url'],
@@ -169,18 +158,69 @@ def ontology_api_etl(args=None):
                 'ontologies': {}
             }
         
-        ontology_id = entry['ontology_code']
-        api_data[api_id]['ontologies'][ontology_id] = {
-            'ontology_title': entry['ontology_title'],
-            'ontology_code': entry['ontology_code'],
-            'curie': entry['curie'],
-            'system': entry['system'],
-            'version': entry['version'],
-        }
+        # Only add the ontology if it doesn't already exist
+        if ontology_id not in api_data[api_id]['ontologies']:
+            api_data[api_id]['ontologies'][ontology_id] = {
+                'ontology_title': entry['ontology_title'],
+                'ontology_code': entry['ontology_code'],
+                'curie': entry['curie'],
+                'system': entry['system'],
+                'version': entry['version'],
+            }
+    return api_data
 
-    # Insert data into Firestore
-    for api_id, data in api_data.items():
-        add_ontology_api(api_id, data['api_url'], data['api_name'], data['ontologies'])
+def update_seed_data_csv(data):
+    # For data lineage
+    data = pd.DataFrame(data)
+    combined_df_sorted = data.sort_values(by=['api_id', 'curie'])
+    combined_df_sorted.to_csv(csv_path, index=False)
+    print(f"The ontology_api csv is updated.")
+
+def ontology_api_etl(project_id, action):
+    # Update the gcloud project
+    update_gcloud_project(project_id)
+
+    # Collect data from sources
+    if action in {FETCH_AND_UPLOAD, UPDATE_CSV}:
+        # Collect OLS data
+        ols_data = collect_ols_data()
+    
+        # # Generate Monarch data
+        monarch_data = add_monarch_ontologies()
+        
+        # Add manual ontologies
+        manual_ontologies = add_manual_ontologies()
+
+        # Combine OLS and manual data
+        combined_data = ols_data + monarch_data + manual_ontologies
+        print(combined_data)
+        update_seed_data_csv(combined_data)
+        # update_seed_data_csv(monarch_data)
+
+    if action in {FETCH_AND_UPLOAD, UPLOAD_FROM_CSV}:
+        csv_data = pd.read_csv(csv_path)
+        data_list = csv_data.to_dict(orient='records')
+        # Reformat. Group ontologies by api.
+        fs_data = reorg_for_firestore(data_list)
+
+        # Insert data into Firestore
+        for api_id, data in fs_data.items():
+            add_ontology_api(api_id, data['api_url'], data['api_name'], data['ontologies'])
 
 if __name__ == "__main__":
-    ontology_api_etl()
+    parser = argparse.ArgumentParser(description="OntologyAPI data into Firestore.")
+    parser.add_argument('-p', '--project', required=True, help="GCP Project to edit")
+    parser.add_argument(
+        '-a', '--action', 
+        choices=[FETCH_AND_UPLOAD, UPLOAD_FROM_CSV, UPDATE_CSV],
+        required=True, 
+        help=(
+            f"{FETCH_AND_UPLOAD}: Fetch data from APIs and upload to Firestore.\n"
+            f"{UPLOAD_FROM_CSV}: Upload data from existing CSV to Firestore.\n"
+            f"{UPDATE_CSV}: Fetch data from APIs and update the CSV file only."
+        )
+    )
+    args = parser.parse_args()
+
+    ontology_api_etl(project_id=args.project, action=args.action)
+    
