@@ -1,5 +1,6 @@
 import subprocess
 from google.cloud import firestore
+import time
 
 def update_gcloud_project(project_id):
     """Update the active Google Cloud project."""
@@ -14,32 +15,41 @@ def update_gcloud_project(project_id):
 
 
 def delete_document(collection_name, document_id):
-    """Delete a document and all its subcollections recursively."""
+    """Delete a document and any docuements in their subcollections(removes the 
+    subcollection), recursively."""
     db = firestore.Client()
     doc_ref = db.collection(collection_name).document(document_id)
 
-    # Check if the document exists
-    if not doc_ref.get().exists:
-        print(f"Document '{document_id}' does not exist in collection '{collection_name}'.")
-        return
-
     # Iterate through all subcollections of the document
     for subcollection in doc_ref.collections():
-        # Recursively delete each document in the subcollection
-        for subdoc in subcollection.stream():
-            delete_document(subcollection.id, subdoc.id)  # Recursively delete subdocuments
+        subcollection_name = subcollection.id
+        print(f"Deleting subcollection '{subcollection_name}' for document '{document_id}'.")
 
+        # Delete the subcollection documents
+        for subdoc in subcollection.stream():
+            print(f"Deleting subdocument '{subdoc.id}' from subcollection '{subcollection_name}'.")
+            delete_document(f"{collection_name}/{document_id}/{subcollection_name}", subdoc.id)
+            
     # Delete the document itself
     doc_ref.delete()
     print(f"Deleted document {document_id} from collection {collection_name}.")
 
 def delete_collection(collection_name):
-    """Delete all documents in a collection, including their subcollections."""
+    """Delete all documents in a collection(removes the collection), including 
+    their sub-files(subcollections and their documents)."""
     db = firestore.Client()
     collection_ref = db.collection(collection_name)
 
+    start_time = time.time()
+    time_limit = 60
+
     # Loop until no documents are left
     while True:
+        # Break loop if process takes longer than a minute
+        if time.time() - start_time > time_limit:
+            print("Exiting loop due to time limit.")
+            break
+
         docs = collection_ref.stream()
         doc_count = 0
 

@@ -3,40 +3,26 @@ import argparse
 import os
 import sys
 
-def run_make(target, project_id=None):
+def run_make(target, project_id):
     """Run a make command with the specified target.
 
     Args:
         target (str): The make target to execute.
-        project_id (str, optional): The project ID to set as an environment variable.
-    
-    Raises:
-        subprocess.CalledProcessError: If the make command fails.
+        project_id (str): The project ID to set as an environment variable.
     """
 
-    command = ["make", target]
+    command = ["make", target, "-p", project_id]
 
-    # Set the project ID as an environment variable if provided
-    if project_id:
-        env = os.environ.copy()  # Copy the current environment
-        env["PROJECT_ID"] = project_id  # Set the new project ID
-        try:
-            print(f"Running command: {' '.join(command)}")
-            subprocess.run(command, check=True, env=env)  # Pass the modified environment
-            print(f"Successfully executed target '{target}' in Makefile.")
-        except subprocess.CalledProcessError as e:
-            print(f"Error executing make target '{target}': {e}")
-    else:
-        try:
-            print(f"Running command: {' '.join(command)}")
-            subprocess.run(command, check=True)
-            print(f"Successfully executed target '{target}' in Makefile.")
-        except subprocess.CalledProcessError as e:
-            print(f"Error executing make target '{target}': {e}")
+    try:
+        print(f"Running command: {' '.join(command)}")
+        subprocess.run(command, check=True)
+        print(f"Successfully executed target '{target}' in Makefile.")
+    except subprocess.CalledProcessError as e:
+        print(f"Error executing make target '{target}': {e}")
 
 def main():
-    """Main function to handle command-line arguments and execute make commands."""
-    # Determine the command name
+    """Main function to handle command-line arguments and execute make commands.
+    """
     command_name = os.path.basename(sys.argv[0])
 
     # Set the target based on the command name
@@ -48,7 +34,7 @@ def main():
 
     # Parse the project argument
     parser = argparse.ArgumentParser(description="Wrapper to run Makefile actions.")
-    parser.add_argument('-p', '--project', help="GCP Project ID to set.")
+    parser.add_argument('-p', '--project', required=True, help="GCP Project ID to set.")
 
     args = parser.parse_args()
 
