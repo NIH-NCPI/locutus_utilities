@@ -195,7 +195,6 @@ def ontology_api_etl(project_id, action):
         combined_data = ols_data + monarch_data + manual_ontologies
         print(combined_data)
         update_seed_data_csv(combined_data)
-        # update_seed_data_csv(monarch_data)
 
     if action in {FETCH_AND_UPLOAD, UPLOAD_FROM_CSV}:
         csv_data = pd.read_csv(csv_path)
