@@ -197,8 +197,10 @@ def ontology_api_etl(project_id, action):
         update_seed_data_csv(combined_data)
 
     if action in {FETCH_AND_UPLOAD, UPLOAD_FROM_CSV}:
-        csv_data = pd.read_csv(csv_path)
-        data_list = csv_data.to_dict(orient='records')
+        # Read in data and handle nulls
+        csv_data = pd.read_csv(csv_path, keep_default_na=False, na_values=[''])
+        data_list = csv_data.where(pd.notnull(csv_data), None).to_dict(orient='records')
+
         # Reformat. Group ontologies by api.
         fs_data = reorg_for_firestore(data_list)
 
