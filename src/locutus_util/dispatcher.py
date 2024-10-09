@@ -27,11 +27,11 @@ def main():
     parser.add_argument(
         '-a', '--action',
         choices=[FETCH_AND_UPLOAD, UPLOAD_FROM_CSV, UPDATE_CSV],
-        default=UPDATE_CSV,
+        default=UPLOAD_FROM_CSV,
         help=(
-            f"{FETCH_AND_UPLOAD}: Fetch data from APIs and upload to Firestore.\n"
             f"{UPLOAD_FROM_CSV}: Upload data from existing CSV to Firestore.\n"
-            f"{UPDATE_CSV}: Fetch data from APIs and update the CSV file only."
+            f"{UPDATE_CSV}: Fetch data from APIs and update the CSV file only.\n"
+            f"{FETCH_AND_UPLOAD}: Fetch data from APIs and upload to Firestore.\n"
         )
     )
     args = parser.parse_args()
