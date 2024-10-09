@@ -58,14 +58,13 @@ python utils_run.py -p <project_id> -o <option> -a <action>
         * `update_seed_data`: Updates seed data in Firestore.
     * Required: Yes
 
-* -a, --action
+* -a, --action (Notice! Default:`update_csv`)
     * Description: Specify the action to take.
     * Choices:
         * `fetch_and_upload`: Fetch data from APIs and upload it to Firestore.
         * `upload_from_csv`: Upload data from an existing CSV file to Firestore.
         * `update_csv`: Fetch data from APIs and update the CSV file only.
-    * Required: Only required when `update_ontology_api` is chosen
-
+    * Default: `update_csv`
 
 ## Working on a branch?
     If working on a new feature it is possible to install a package version within

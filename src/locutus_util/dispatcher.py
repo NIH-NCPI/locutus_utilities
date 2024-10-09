@@ -27,6 +27,7 @@ def main():
     parser.add_argument(
         '-a', '--action',
         choices=[FETCH_AND_UPLOAD, UPLOAD_FROM_CSV, UPDATE_CSV],
+        default=UPDATE_CSV,
         help=(
             f"{FETCH_AND_UPLOAD}: Fetch data from APIs and upload to Firestore.\n"
             f"{UPLOAD_FROM_CSV}: Upload data from existing CSV to Firestore.\n"
@@ -37,8 +38,6 @@ def main():
 
     # Call the appropriate function with the provided arguments
     if args.option == UPDATE_ONTOLOGY_API:
-        if not args.action:
-            parser.error(f"The --action argument is required when using {UPDATE_ONTOLOGY_API}.")
         ontology_api_etl(project_id=args.project, action=args.action)
 
     elif args.option == UPDATE_SEED_DATA:

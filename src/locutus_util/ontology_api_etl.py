@@ -214,7 +214,7 @@ if __name__ == "__main__":
     parser.add_argument(
         '-a', '--action', 
         choices=[FETCH_AND_UPLOAD, UPLOAD_FROM_CSV, UPDATE_CSV],
-        required=True, 
+        default=UPDATE_CSV, 
         help=(
             f"{FETCH_AND_UPLOAD}: Fetch data from APIs and upload to Firestore.\n"
             f"{UPLOAD_FROM_CSV}: Upload data from existing CSV to Firestore.\n"
