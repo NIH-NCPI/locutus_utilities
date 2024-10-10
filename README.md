@@ -13,41 +13,66 @@ The `locutus_utilities` repository includes scripts and tools that facilitate th
 
 ## Installation
 
-1. **Create and activate a virtual environment** (recommended):
+## Installation
+
+1. **Create and activate a virtual environment** (recommended):<br>
+[Here]("https://realpython.com/python-virtual-environments-a-primer/") for more on virtual environments.
+
     ```bash
-    python3 -m venv venv
-    source venv/bin/activate 
-    # On Windows: venv\Scripts\activate
+    # Step 1: cd into the directory to store the venv
+
+    # Step 2: run this code. It will create the virtual env named utils_venv in the current directory.
+    python3 -m venv utils_venv
+
+    # Step 3: run this code. It will activate the utils_venv environment
+    source utils_venv/bin/activate # On Windows: venv\Scripts\activate
+
+    # You are ready for installations! 
+    # If you want to deactivate the venv run:
+    deactivate
     ```
 
 2. **Install the package and dependencies**:
     ```bash
     pip install git+https://github.com/NIH-NCPI/locutus_utilities.git
     ```
+3. **Run a command/action**
 
-3. **Set up Google Cloud credentials**:
-   Ensure that your Google Cloud credentials are correctly set up. You can authenticate and check your configuration using the following commands:
-   ```bash
-   gcloud auth application-default login
+   ## Available actions:
+   * [utils_run](#utils_run) <br>
 
-   gcloud config list
-   ```
+## Commands
+### utils_run 
+## usage 
+```bash
+python utils_run.py -p <project_id> -o <option> -a <action>
+```
+* -p, --project
+    * Description: GCP Project to edit.
+    * Required: Yes
 
-   ## Run 
+* -o, --option
+    * Description: Choose the operation to perform.
+    * Choices:
+        * `update_ontology_api`: Updates the ontology API in Firestore.
+        * `update_seed_data`: Updates seed data in Firestore.
+    * Required: Yes
 
-   ### Import as a package and call the function.<br>
-   Example:
-   ```bash
-    from locutus_util.ontology_api_etl import ontology_api_etl
+* -a, --action
+    * Description: Specify the action to take.
+    * Choices:
+        * `upload_from_csv`: Upload data from an existing CSV file to Firestore.
+        * `update_csv`: Fetch data from APIs and update the CSV file only.
+        * `fetch_and_upload`: Fetch data from APIs and upload it to Firestore.
+    * Default: `upload_from_csv`
 
-    def main():
-        ontology_api_etl()
+## Working on a branch?
+    If working on a new feature it is possible to install a package version within
+    the remote or local branch
+      ```
+    # remote
+    pip install git+https://github.com/NIH-NCPI/locutus_utilities.git@{branch_name}
 
-    if __name__ == "__main__":
-        main()  
-    ```
-    ### Run in CLI
-    Check the `.toml` file for available commands.
-   ```bash
-    run_ontology_api_etl
+    # local
+    pip install -e .
     ```

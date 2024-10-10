@@ -1,0 +1,4 @@
+code,system,display,description,terminology_id,terminology_description,terminology_name,terminology_resource_type
+equivalent,http://hl7.org/fhir/concept-map-relationship,Equivalent,The definitions of the concepts mean the same thing.,ftd-concept-map-relationship,,concept-map-relationship,Terminology
+source-is-narrower-than-target,http://hl7.org/fhir/concept-map-relationship,Source Is Narrower Than Target,The source concept is narrower in meaning than the target concept.,ftd-concept-map-relationship,,concept-map-relationship,Terminology
+source-is-broader-than-target,http://hl7.org/fhir/concept-map-relationship,Source Is Broader Than Target,The source concept is broader in meaning than the target concept.,ftd-concept-map-relationship,,concept-map-relationship,Terminology
