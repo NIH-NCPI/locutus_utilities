@@ -5,6 +5,7 @@ MONARCH_API_BASE_URL = "https://api-v3.monarchinitiative.org/v3/api/search?q="
 LOINC_API_BASE_URL = "https://loinc.regenstrief.org/searchapi/"
 
 # Filepaths 
+LOGS_PATH = 'data/logs/'
 ONTOLOGY_API_PATH = 'data/ontology_api.csv'
 SEED_DATA_PATH = 'data/seed_data.csv'
 
@@ -23,6 +24,3 @@ RESET_DATABASE = 'reset_database'
 FETCH_AND_UPLOAD = 'fetch_and_upload'
 UPLOAD_FROM_CSV = 'upload_from_csv'
 UPDATE_CSV = 'update_csv'
-
-# Logging config
-LOGGING_FORMAT='%(asctime)s - %(levelname)s - %(message)s'

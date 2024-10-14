@@ -6,31 +6,28 @@ Jira Issue: FD-1618
 import argparse
 import logging
 import sys
+from datetime import datetime
 from google.cloud import firestore
-from locutus_util.common import LOGGING_FORMAT
-from locutus_util.helpers import update_gcloud_project, delete_collection
+from locutus_util.common import LOGS_PATH
+from locutus_util.helpers import (update_gcloud_project, delete_collection,
+                                  set_logging_config)
 
-
-logging.basicConfig(
-    level=logging.INFO,
-    format=LOGGING_FORMAT
-)
+_log_file = f"{LOGS_PATH}{datetime.now().strftime('%Y%m%d_%H%M%S')}_delete_project_data.log"
 
 db = firestore.Client()
 
-def delete_project_data():
+def drop_collection_data():
     """Loop through all collections in Firestore and delete them."""
     # Get all top-level collections
-    # collections = db.collections()
-    collections = ['test_collection','test_collection2']
+    collections = db.collections()
+    # collections = ['test_collection','test_collection2']
 
     for collection in collections:
         logging.info(f"Deleting collection '{collection}'...")
-        coll_ref = db.collection(collection)
-        delete_collection(coll_ref)
+        delete_collection(collection)
 
     # After attempting to delete, verify if the collection is empty
-    if is_collection_empty(coll_ref):
+    if is_collection_empty(collection):
         logging.info(f"Collection '{collection}' successfully deleted.")
     else:
         logging.warning(f"Collection '{collection}' and all subcollections are not deleted.")
@@ -52,23 +49,25 @@ def is_collection_empty(coll_ref):
 
     return True
 
-def drop_data(project_id):
+def delete_project_data(project_id):
     """Delete specified collections and documents(seed data) from the specified
     Firestore project.
     Collections and docuements specified will have all sub-files dropped.
     """
-    
+    # Set logging configs -log file created in data/logs
+    set_logging_config(log_file = _log_file)
+
     # Set the correct project
     update_gcloud_project(project_id)
 
     # Loops through Collections. Deletes Collections/Documents/SubCollections/Documents
-    delete_project_data()
+    drop_collection_data()
 
 if __name__ == '__main__':
     
     parser = argparse.ArgumentParser(description="Delete Firestore collections and their contents.")
-    parser.add_argument('-p', '--project', required=True, help="GCP Project to edit")
+    parser.add_argument('-p', '--project_id', required=True, help="GCP Project to edit")
 
     args = parser.parse_args()
 
-    drop_data(project_id=args.project)
+    delete_project_data(project_id=args.project_id)

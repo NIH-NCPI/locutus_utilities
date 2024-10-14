@@ -45,7 +45,7 @@ The `locutus_utilities` repository includes scripts and tools that facilitate th
 ### utils_run 
 ## usage 
 ```bash
-python utils_run.py -p <project_id> -o <option> -a <action>
+utils_run -p <project_id> -o <option> -a <action>
 ```
 * -p, --project
     * Description: GCP Project to edit.
