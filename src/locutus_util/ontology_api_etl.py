@@ -158,8 +158,8 @@ def reorg_for_firestore(csv_data):
                 'ontologies': {}
             }
         
-        # Only add the ontology if it doesn't already exist
-        if ontology_id not in api_data[api_id]['ontologies']:
+        # Only add the ontology if it doesn't already exist and has a curie
+        if ontology_id not in api_data[api_id]['ontologies'] and entry['curie']:
             api_data[api_id]['ontologies'][ontology_id] = {
                 'ontology_title': entry['ontology_title'],
                 'ontology_code': entry['ontology_code'],
@@ -206,7 +206,8 @@ def ontology_api_etl(project_id, action):
 
         # Insert data into Firestore
         for api_id, data in fs_data.items():
-            add_ontology_api(api_id, data['api_url'], data['api_name'], data['ontologies'])
+            if api_id.lower() not in ['monarch','loinc']:
+                add_ontology_api(api_id, data['api_url'], data['api_name'], data['ontologies'])
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="OntologyAPI data into Firestore.")

@@ -22,6 +22,7 @@ def read_csv_and_organize(file_path):
             # Create an entry for the terminology if it doesn't exist
             if terminology_id not in terminology_data:
                 terminology_data[terminology_id] = {
+                    "id": row['terminology_id'],
                     "description": row['terminology_description'],
                     "name": row['terminology_name'],
                     "resource_type": row['terminology_resource_type'],

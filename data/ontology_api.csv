@@ -32,7 +32,6 @@ https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,bspo,BSPO,Biological
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,bto,BTO,The BRENDA Tissue Ontology (BTO),http://purl.obolibrary.org/obo/bto.owl,http://purl.obolibrary.org/obo/bto/releases/2021-10-26/bto.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,cao,CAO,Chemical Analysis Metadata Platform (ChAMP) Ontology version 0.2,https://champ.stuchalk.domains.unf.edu/images/ontology/cao.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,caro,CARO,Common Anatomy Reference Ontology,http://purl.obolibrary.org/obo/caro.owl,http://purl.obolibrary.org/obo/caro/releases/2023-03-15/caro.owl
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ccf,CCF,Human Reference Atlas Common Coordinate Framework Ontology,https://purl.org/ccf/2.0/ccf.owl,http://purl.org/ccf/releases/2.3.0/ccf.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,cco,CCO,Cell Cycle Ontology,http://www.bio.ntnu.no/ontology/CCO/cco.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,cdao,CDAO,Comparative Data Analysis Ontology,http://purl.obolibrary.org/obo/cdao.owl,http://purl.obolibrary.org/obo/cdao/2024-01-25/cdao.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,cdno,CDNO,Compositional Dietary Nutrition Ontology,http://purl.obolibrary.org/obo/cdno.owl,http://purl.obolibrary.org/obo/cdno/releases/2024-08-13/cdno.owl
@@ -90,7 +89,7 @@ https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,fma,FMA,Foundational
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,fobi,FOBI,Food-Biomarker Ontology,http://purl.obolibrary.org/obo/fobi.owl,http://purl.obolibrary.org/obo/fobi/fobi.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,foodon,FOODON,Food Ontology,http://purl.obolibrary.org/obo/foodon.owl,https://github.com/FoodOntology/foodon/releases/download/v2024-07-12/foodon.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,fovt,FOVT,FuTRES Ontology of Vertebrate Traits,http://purl.obolibrary.org/obo/fovt.owl,http://purl.obolibrary.org/obo/fovt/releases/2023-05-31/fovt.owl
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,fypo,FYPO,Fission Yeast Phenotype Ontology (FYPO),http://purl.obolibrary.org/obo/fypo.owl,http://purl.obolibrary.org/obo/fypo/releases/2024-09-30/fypo.owl
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,fypo,FYPO,Fission Yeast Phenotype Ontology (FYPO),http://purl.obolibrary.org/obo/fypo.owl,http://purl.obolibrary.org/obo/fypo/releases/2024-10-07/fypo.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,gallont,GALLONT,Plant Gall Ontology,http://purl.obolibrary.org/obo/gallont.owl,http://purl.obolibrary.org/obo/gallont/releases/2024-04-19/gallont.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,gecko,GECKO,Genomics Cohorts Knowledge Ontology,http://purl.obolibrary.org/obo/gecko.owl,http://purl.obolibrary.org/obo/gecko/releases/2021-01-18/gecko.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,genepio,GENEPIO,Genomic Epidemiology Ontology,http://purl.obolibrary.org/obo/genepio.owl,http://purl.obolibrary.org/obo/genepio/releases/2023-08-19/genepio.owl
@@ -131,7 +130,7 @@ https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mfomd,MFOMD,Mental D
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mi,MI,Molecular Interactions Controlled Vocabulary,http://purl.obolibrary.org/obo/mi.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,miapa,MIAPA,Minimum Information for A Phylogenetic Analysis (MIAPA) Ontology,http://purl.obolibrary.org/obo/miapa.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,micro,MICRO,Ontology of Prokaryotic Phenotypic and Metabolic Characters,http://purl.obolibrary.org/obo/micro.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mmo,MMO,Measurement method ontology,http://purl.obolibrary.org/obo/mmo.owl,http://purl.obolibrary.org/obo/mmo/2.140/mmo.owl
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mmo,MMO,Measurement method ontology,http://purl.obolibrary.org/obo/mmo.owl,http://purl.obolibrary.org/obo/mmo/2.141/mmo.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mod,MOD,Protein modification,http://purl.obolibrary.org/obo/mod.owl,http://purl.obolibrary.org/obo/mod/1.031.6/mod.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mondo,MONDO,Mondo Disease Ontology,http://purl.obolibrary.org/obo/mondo.owl,http://purl.obolibrary.org/obo/mondo/releases/2024-10-01/mondo.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mop,MOP,MOP,http://purl.obolibrary.org/obo/mop.owl,http://purl.obolibrary.org/obo/mop/releases/2022-05-11/mop.owl
@@ -139,7 +138,7 @@ https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mp,MP,The Mammalian 
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mpath,MPATH,Mouse pathology ontology,http://purl.obolibrary.org/obo/mpath.owl,http://purl.obolibrary.org/obo/mpath/2020-05-19/mpath.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mpio,MPIO,Minimum PDDI Information Ontology,http://purl.obolibrary.org/obo/mpio.owl,http://purl.obolibrary.org/obo/mpio/release/2023-10-17/mpio.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mro,MRO,MHC Restriction Ontology,http://purl.obolibrary.org/obo/mro.owl,http://purl.obolibrary.org/obo/mro/2024-08-02/mro.owl
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ms,MS,Mass spectrometry ontology,http://purl.obolibrary.org/obo/ms.owl,http://purl.obolibrary.org/obo/ms/4.1.179/ms.owl
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ms,MS,Mass spectrometry ontology,http://purl.obolibrary.org/obo/ms.owl,http://purl.obolibrary.org/obo/ms/4.1.180/ms.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,msio,MSIO,Metabolomics Standards Initiative Ontology (MSIO),https://raw.githubusercontent.com/MSI-Metabolomics-Standards-Initiative/MSIO/master/releases/latest_release/MSIO-merged-reasoned.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mmusdv,MmusDv,Mouse Developmental Stages,http://purl.obolibrary.org/obo/mmusdv.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,nbo,NBO,Neuro Behavior Ontology,http://purl.obolibrary.org/obo/nbo.owl,http://purl.obolibrary.org/obo/nbo/releases/2023-07-04/nbo.owl
@@ -176,7 +175,6 @@ https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,opl,OPL,Ontology for
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,opmi,OPMI,OPMI: Ontology of Precision Medicine and Investigation,http://purl.obolibrary.org/obo/opmi.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ordo,ORDO,Orphanet Rare Disease Ontology,http://www.orphadata.org/data/ORDO/ordo_orphanet.owl,https://www.orphadata.com/data/ontologies/ordo/last_version/ORDO_en_4.5.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ornaseq,ORNASEQ,Ontology for RNA sequencing (ORNASEQ),http://purl.obolibrary.org/obo/ornaseq.owl,http://purl.obolibrary.org/obo/ornaseq/2019-07-08/ornaseq.owl
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,orth,ORTH,Orthology Ontology,http://purl.org/net/orth,http://purl.org/net/orth/2.0
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ovae,OVAE,OVAE: Ontology of Vaccine Adverse Events,http://purl.obolibrary.org/obo/ovae.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,olatdv,OlatDv,Medaka Developmental Stages,http://purl.obolibrary.org/obo/olatdv.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,pato,PATO,PATO - the Phenotype And Trait Ontology,http://purl.obolibrary.org/obo/pato.owl,http://purl.obolibrary.org/obo/pato/releases/2024-09-04/pato.owl
@@ -192,7 +190,7 @@ https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,po,PO,Plant Ontology
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,poro,PORO,Porifera (sponge) ontology,http://purl.obolibrary.org/obo/poro.owl,http://purl.obolibrary.org/obo/poro/releases/2016-10-06/poro.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ppo,PPO,Plant Phenology Ontology,http://purl.obolibrary.org/obo/ppo.owl,https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/releases/2018-10-26/ppo.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,pr,PR,PRotein Ontology (PRO),http://purl.obolibrary.org/obo/pr.owl,http://purl.obolibrary.org/obo/pr/70.0/pr.owl
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,pride,PRIDE,PRIDE Controlled Vocabulary,https://raw.githubusercontent.com/PRIDE-Utilities/pride-ontology/master/pride_cv.owl,http://purl.obolibrary.org/obo/pride/2.1.2/pride.owl
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,pride,PRIDE,PRIDE Controlled Vocabulary,https://raw.githubusercontent.com/PRIDE-Utilities/pride-ontology/master/pride_cv.owl,http://purl.obolibrary.org/obo/pride/2.1.4/pride.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,probonto,PROBONTO,Probability Distribution Ontology,file:///nfs/production/parkinso/spot/ols4/prod/local_ontologies/probonto.ttl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,proco,PROCO,PROCO: PROcess Chemistry Ontology,http://purl.obolibrary.org/obo/proco.owl,http://purl.obolibrary.org/obo/proco/releases/2022-04-11/proco.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,prov,PROV,Provenance Ontology (PROV-O),https://www.w3.org/ns/prov-o,
@@ -201,9 +199,8 @@ https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,pso,PSO,Plant Stress
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,pw,PW,Pathway ontology,http://purl.obolibrary.org/obo/pw.owl,http://purl.obolibrary.org/obo/pw/7.85/pw.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,pdumdv,PdumDv,Platynereis Developmental Stages,http://purl.obolibrary.org/obo/pdumdv.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,rbo,RBO,Radiation Biology Ontology,http://purl.obolibrary.org/obo/rbo.owl,http://purl.obolibrary.org/obo/rbo/releases/2024-05-31/rbo.owl
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,reproduceme,REPR,REPRODUCE-ME Ontology,https://sheeba-samuel.github.io/REPRODUCE-ME/doc/reproduce-me.xml,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ro,RO,Relation Ontology,http://purl.obolibrary.org/obo/ro.owl,http://purl.obolibrary.org/obo/ro/releases/2024-04-24/ro.owl
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,rs,RS,Rat Strain Ontology,http://purl.obolibrary.org/obo/rs.owl,http://purl.obolibrary.org/obo/rs/6.234/rs.owl
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,rs,RS,Rat Strain Ontology,http://purl.obolibrary.org/obo/rs.owl,http://purl.obolibrary.org/obo/rs/6.235/rs.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,rxno,RXNO,RXNO,http://purl.obolibrary.org/obo/rxno.owl,http://purl.obolibrary.org/obo/rxno/releases/2021-12-16/rxno.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,reto,ReTO,Regulation of Transcription Ontology,http://www.bio.ntnu.no/ontology/ReTO/reto.rdf,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,rexo,ReXO,Regulation of Gene Expression Ontology,http://www.bio.ntnu.no/ontology/ReXO/rexo.rdf,
@@ -241,7 +238,7 @@ https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,wbphenotype,WBPhenot
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,wbbt,WBbt,C. elegans Gross Anatomy Ontology,http://purl.obolibrary.org/obo/wbbt.owl,http://purl.obolibrary.org/obo/wbbt/releases/2024-09-24/wbbt.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,wbls,WBls,C. elegans Development Ontology,http://purl.obolibrary.org/obo/wbls.owl,http://purl.obolibrary.org/obo/wbls/releases/2024-09-26/wbls.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,xao,XAO,Xenopus Anatomy Ontology,http://purl.obolibrary.org/obo/xao.owl,http://purl.obolibrary.org/obo/xao/releases/2024-09-03/xao.owl
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,xco,XCO,Experimental condition ontology,http://purl.obolibrary.org/obo/xco.owl,http://purl.obolibrary.org/obo/xco/4.183/xco.owl
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,xco,XCO,Experimental condition ontology,http://purl.obolibrary.org/obo/xco.owl,http://purl.obolibrary.org/obo/xco/4.184/xco.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,xlmod,XLMOD,HUPO-PSI cross-linking and derivatization reagents controlled vocabulary,http://purl.obolibrary.org/obo/xlmod.owl,http://purl.obolibrary.org/obo/xlmod/release/2019-10-28/xlmod.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,xpo,XPO,Xenopus Phenotype Ontology,http://purl.obolibrary.org/obo/xpo.owl,http://purl.obolibrary.org/obo/xpo/releases/2024-04-18/xpo.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,zeco,ZECO,Zebrafish Experimental Conditions Ontology,http://purl.obolibrary.org/obo/zeco.owl,http://purl.obolibrary.org/obo/zeco/releases/2022-02-14/zeco.owl
@@ -254,18 +251,6 @@ https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,rex,,Physico-chemica
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ceph,,Cephalopod Ontology,http://purl.obolibrary.org/obo/ceph.owl,http://purl.obolibrary.org/obo/ceph/releases/2016-01-12/ceph.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ehdaa2,,"Human developmental anatomy, abstract",http://purl.obolibrary.org/obo/ehdaa2.owl,http://purl.obolibrary.org/obo/ehdaa2/releases/2013-07-04/ehdaa2.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,gaz,,Gazetteer,http://purl.obolibrary.org/obo/gaz.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,uniprotrdfs,,,https://ftp.uniprot.org/pub/databases/uniprot/current_release/rdf/core.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,hra,,,https://cdn.humanatlas.io/digital-objects/collection/hra-ols/latest/graph.ttl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,dcat,,,https://www.w3.org/ns/dcat.ttl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,biolink,,,https://github.com/biolink/biolink-model/raw/master/project/owl/biolink_model.owl.ttl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,oio,,,https://raw.githubusercontent.com/geneontology/go-ontology/master/contrib/oboInOwl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,rdfs,,The RDF Schema vocabulary (RDFS),https://www.w3.org/2000/01/rdf-schema,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,owl,,The OWL 2 Schema vocabulary (OWL 2),https://www.w3.org/2002/07/owl,http://www.w3.org/2002/07/owl
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,skos,,,http://www.w3.org/TR/skos-reference/skos.rdf,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,dcterms,,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.rdf,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,dc,,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_elements.rdf,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,schemaorg_http,,,https://schema.org/version/latest/schemaorg-all-http.rdf,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,schemaorg_https,,,https://schema.org/version/latest/schemaorg-all-https.rdf,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,idomal,,Malaria Ontology,http://purl.obolibrary.org/obo/idomal.owl,http://purl.obolibrary.org/obo/idomal/2015-03-16/idomal.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,miro,,Mosquito insecticide resistance,http://purl.obolibrary.org/obo/miro.owl,http://purl.obolibrary.org/obo/miro/releases/2014-05-14/miro.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,tads,,Tick Anatomy Ontology,http://purl.obolibrary.org/obo/tads.owl,http://purl.obolibrary.org/obo/tads/2015-08-20/tads.owl
@@ -279,3 +264,14 @@ https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,fbsp,,Fly taxonomy,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,omiabis,,Ontologized MIABIS,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,tao,,Teleost Anatomy Ontology,,http://purl.obolibrary.org/obo/tao/2012-08-10/tao.owl
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,vsao,,Vertebrate Skeletal Anatomy Ontology-,,http://purl.obolibrary.org/obo/vsao/2012-11-06/vsao.owl
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,uniprotrdfs,,,https://ftp.uniprot.org/pub/databases/uniprot/current_release/rdf/core.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,hra,,,https://cdn.humanatlas.io/digital-objects/collection/hra-ols/latest/graph.ttl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,biolink,,,https://github.com/biolink/biolink-model/raw/master/project/owl/biolink_model.owl.ttl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,oio,,,https://raw.githubusercontent.com/geneontology/go-ontology/master/contrib/oboInOwl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,rdfs,,The RDF Schema vocabulary (RDFS),https://www.w3.org/2000/01/rdf-schema,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,owl,,The OWL 2 Schema vocabulary (OWL 2),https://www.w3.org/2002/07/owl,http://www.w3.org/2002/07/owl
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,skos,,,http://www.w3.org/TR/skos-reference/skos.rdf,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,dcterms,,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.rdf,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,dc,,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_elements.rdf,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,schemaorg_http,,,https://schema.org/version/latest/schemaorg-all-http.rdf,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,schemaorg_https,,,https://schema.org/version/latest/schemaorg-all-https.rdf,
