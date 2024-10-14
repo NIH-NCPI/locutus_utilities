@@ -20,18 +20,22 @@ def drop_collection_data():
     """Loop through all collections in Firestore and delete them."""
     # Get all top-level collections
     collections = db.collections()
-    # collections = ['test_collection','test_collection2']
+    has_collections = False
 
     for collection in collections:
-        logging.info(f"Deleting collection '{collection}'...")
+        has_collections = True
+        logging.info(f"Deleting collection '{collection.id}'...")
         delete_collection(collection)
+        
+        # After attempting to delete, verify if the collection is empty
+        if is_collection_empty(collection):
+            logging.info(f"Collection '{collection.id}' successfully deleted.")
+        else:
+            logging.warning(f"Collection '{collection.id}' and its subcollections are not completely deleted.")
+            sys.exit(1)
 
-    # After attempting to delete, verify if the collection is empty
-    if is_collection_empty(collection):
-        logging.info(f"Collection '{collection}' successfully deleted.")
-    else:
-        logging.warning(f"Collection '{collection}' and all subcollections are not deleted.")
-        sys.exit(1)
+    if not has_collections:
+        logging.info("No collections found. Firestore database is already empty.")
 
 def is_collection_empty(coll_ref):
     """Check if a collection and its subcollections are empty."""
