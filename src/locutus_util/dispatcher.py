@@ -1,9 +1,10 @@
 import argparse
 from locutus_util.ontology_api_etl import ontology_api_etl
 from locutus_util.seed_data_etl import seed_data_etl
+from locutus_util.drop_data import drop_data
 from locutus_util.common import (
     FETCH_AND_UPLOAD, UPLOAD_FROM_CSV, UPDATE_CSV,
-    UPDATE_ONTOLOGY_API, UPDATE_SEED_DATA
+    UPDATE_ONTOLOGY_API, UPDATE_SEED_DATA, DELETE_PROJECT_DATA,RESET_DATABASE
 )
 
 def main():
@@ -17,11 +18,13 @@ def main():
     )
     parser.add_argument(
         '-o', '--option', 
-        choices=[UPDATE_ONTOLOGY_API, UPDATE_SEED_DATA],
+        choices=[UPDATE_ONTOLOGY_API, UPDATE_SEED_DATA, DELETE_PROJECT_DATA, RESET_DATABASE],
         required=True,
         help=(
             f"{UPDATE_ONTOLOGY_API}: Update Ontology API data.\n"
             f"{UPDATE_SEED_DATA}: Update Seed Data."
+            f"{DELETE_PROJECT_DATA}: Delete all data from the database."
+            f"{RESET_DATABASE}: Delete data from the database, then reseed."
         )
     )
     parser.add_argument(
@@ -42,6 +45,14 @@ def main():
 
     elif args.option == UPDATE_SEED_DATA:
         seed_data_etl(project_id=args.project)
+
+    elif args.option == DELETE_PROJECT_DATA:
+        drop_data(project_id=args.project)
+
+    elif args.option == RESET_DATABASE:
+        drop_data(project_id=args.project)
+        seed_data_etl(project_id=args.project)
+        ontology_api_etl(project_id=args.project, action=args.action)
         
     else:
         print("No actions were taken.")

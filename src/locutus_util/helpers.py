@@ -1,64 +1,86 @@
 import subprocess
-from google.cloud import firestore
+import logging
 import time
+from google.cloud import firestore
+from locutus_util.common import (COL_TIME_LIMIT,SUB_TIME_LIMIT,BATCH_SIZE,
+                                 LOGGING_FORMAT)
+
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format=LOGGING_FORMAT,
+)
+
+# Initialize Firestore client
+db = firestore.Client()
 
 def update_gcloud_project(project_id):
     """Update the active Google Cloud project."""
     command = ["gcloud", "config", "set", "project", project_id]
     
     try:
-        print(f"Updating Google Cloud project to: {project_id}")
+        logging.info(f"Updating Google Cloud project to: {project_id}")
         subprocess.run(command, check=True)
-        print(f"Project updated successfully. {project_id}")
+        logging.info(f"Project updated successfully: {project_id}")
     except subprocess.CalledProcessError as e:
-        print(f"Error updating project: {e}")
+        logging.error(f"Error updating project: {e}")
 
+def delete_collection(coll_ref, batch_size=BATCH_SIZE, time_limit=COL_TIME_LIMIT):
+    """
+    Delete all documents in a collection, handling batches and subcollections.
+    Includes a time limit to prevent infinite running.
 
-def delete_document(collection_name, document_id):
-    """Delete a document and any docuements in their subcollections(removes the 
-    subcollection), recursively."""
-    db = firestore.Client()
-    doc_ref = db.collection(collection_name).document(document_id)
-
-    # Iterate through all subcollections of the document
-    for subcollection in doc_ref.collections():
-        subcollection_name = subcollection.id
-        print(f"Deleting subcollection '{subcollection_name}' for document '{document_id}'.")
-
-        # Delete the subcollection documents
-        for subdoc in subcollection.stream():
-            print(f"Deleting subdocument '{subdoc.id}' from subcollection '{subcollection_name}'.")
-            delete_document(f"{collection_name}/{document_id}/{subcollection_name}", subdoc.id)
-            
-    # Delete the document itself
-    doc_ref.delete()
-    print(f"Deleted document {document_id} from collection {collection_name}.")
-
-def delete_collection(collection_name):
-    """Delete all documents in a collection(removes the collection), including 
-    their sub-files(subcollections and their documents)."""
-    db = firestore.Client()
-    collection_ref = db.collection(collection_name)
-
+    Args:
+        coll_ref (CollectionReference): The Firestore collection reference.
+        batch_size (int): The number of documents to delete per batch.
+        time_limit (int): Maximum time in seconds to spend on deletion before stopping.
+    """
     start_time = time.time()
-    time_limit = 60
-
-    # Loop until no documents are left
     while True:
-        # Break loop if process takes longer than a minute
+        # Checks the time limit has not expired
         if time.time() - start_time > time_limit:
-            print("Exiting loop due to time limit.")
+            logging.warning(f"Timeout reached while deleting collection '{coll_ref.id}'. Stopping.")
             break
+        
+        # Gets document_ids from the collection reference
+        docs = coll_ref.list_documents(page_size=batch_size)
 
-        docs = collection_ref.stream()
-        doc_count = 0
+        deleted = 0
 
+        # Recursively delete any subcollections of the document
         for doc in docs:
-            delete_document(collection_name, doc.id)
-            doc_count += 1
+            try:
+                delete_subcollections(doc)  
+                logging.info(f"Deleting document {doc.id} from collection '{coll_ref.id}'.")
+                doc.delete()
+                deleted += 1
+            except Exception as e:
+                logging.error(f"Failed to delete document {doc.id}: {e}")
 
-        if doc_count == 0:
-            print(f"Collection '{collection_name}' is now empty.")
+        if deleted == 0:
+            logging.info(f"No more documents to delete in collection '{coll_ref.id}'.")
             break
-        else:
-            print(f"Deleted {doc_count} documents from collection '{collection_name}'.")
+
+        logging.info(f"Deleted {deleted} documents from collection '{coll_ref.id}'.")
+
+        # Continue if the number of deleted documents reached the batch size, otherwise stop
+        if deleted < batch_size:
+            break
+
+def delete_subcollections(doc_ref, batch_size=BATCH_SIZE, time_limit=SUB_TIME_LIMIT):
+    """
+    Delete all subcollections of a given document, with a time limit to prevent infinite run
+    
+    Args:
+        doc_ref (DocumentReference): The Firestore document reference.
+        batch_size (int): The number of documents to delete per batch.
+        time_limit (int): Maximum time in seconds to spend on deleting subcollections.
+    """
+    start_time = time.time()
+    for subcollection in doc_ref.collections():
+        if time.time() - start_time > time_limit:
+            logging.warning(f"Timeout reached while deleting subcollections for document '{doc_ref.id}'. Stopping.")
+            break
+
+        logging.info(f"Deleting subcollection '{subcollection.id}' for document '{doc_ref.id}'.")
+        delete_collection(subcollection, batch_size=batch_size, time_limit=time_limit)
