@@ -38,8 +38,7 @@ def read_csv_and_organize(file_path):
     return terminology_data
 
 
-def insert_into_firestore(data, project_id):
-    db = firestore.Client(project=project_id)
+def insert_into_firestore(db, data):
     for terminology_id, document_data in data.items():
         # Define the document reference with terminology_id
         terminology_ref = db.collection("Terminology").document(terminology_id)
@@ -53,11 +52,14 @@ def seed_data_etl(project_id):
         # Set the environment
         update_gcloud_project(project_id)
 
+        # Firestore client after setting the project_id
+        db = firestore.Client()
+
         # Read and organize the CSV data
         terminology_data = read_csv_and_organize(SEED_DATA_PATH)
 
         # Insert the organized data into Firestore
-        insert_into_firestore(terminology_data, project_id)
+        insert_into_firestore(db, terminology_data)
         
         print("CSV data has been successfully inserted into Firestore.")
     except Exception as e:

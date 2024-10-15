@@ -15,8 +15,7 @@ from locutus_util.common import (FETCH_AND_UPLOAD, UPLOAD_FROM_CSV, UPDATE_CSV,
 csv_path = ONTOLOGY_API_PATH
 ols_ontologies_url = f"{OLS_API_BASE_URL}ontologies"
 
-# Firestore client
-db = firestore.Client()
+
 extracted_data = []
 
 def fetch_data(url):
@@ -119,7 +118,7 @@ def add_monarch_ontologies():
     
     return monarch_ols
 
-def add_ontology_api(api_id, api_url, api_name, ontologies):
+def add_ontology_api(db, api_id, api_url, api_name, ontologies):
     collection_title = 'OntologyAPI'
     ontology_api_ref = db.collection(collection_title)
 
@@ -177,8 +176,6 @@ def update_seed_data_csv(data):
     print(f"The ontology_api csv is updated.")
 
 def ontology_api_etl(project_id, action):
-    # Update the gcloud project
-    update_gcloud_project(project_id)
 
     # Collect data from sources
     if action in {FETCH_AND_UPLOAD, UPDATE_CSV}:
@@ -204,10 +201,16 @@ def ontology_api_etl(project_id, action):
         # Reformat. Group ontologies by api.
         fs_data = reorg_for_firestore(data_list)
 
+        # Update the gcloud project
+        update_gcloud_project(project_id)
+
+        # Firestore client after setting the project_id
+        db = firestore.Client()
+
         # Insert data into Firestore
         for api_id, data in fs_data.items():
             if api_id.lower() not in ['monarch','loinc']:
-                add_ontology_api(api_id, data['api_url'], data['api_name'], data['ontologies'])
+                add_ontology_api(db, api_id, data['api_url'], data['api_name'], data['ontologies'])
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="OntologyAPI data into Firestore.")
