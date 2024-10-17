@@ -16,7 +16,7 @@ The `locutus_utilities` repository includes scripts and tools that facilitate th
 ## Installation
 
 1. **Create and activate a virtual environment** (recommended):<br>
-[Here]("https://realpython.com/python-virtual-environments-a-primer/") for more on virtual environments.
+[[Click here]]("https://realpython.com/python-virtual-environments-a-primer/") for more on virtual environments.
 
     ```bash
     # Step 1: cd into the directory to store the venv
@@ -45,7 +45,7 @@ The `locutus_utilities` repository includes scripts and tools that facilitate th
 ### utils_run 
 ## usage 
 ```bash
-python utils_run.py -p <project_id> -o <option> -a <action>
+utils_run -p <project_id> -o <option> -a <action>
 ```
 * -p, --project
     * Description: GCP Project to edit.
@@ -56,6 +56,8 @@ python utils_run.py -p <project_id> -o <option> -a <action>
     * Choices:
         * `update_ontology_api`: Updates the ontology API in Firestore.
         * `update_seed_data`: Updates seed data in Firestore.
+        * `delete_project_data`: Deletes all data from the Firestore database.
+        * `reset_database`: Deletes all data, then reseeds the Firestore database.
     * Required: Yes
 
 * -a, --action
