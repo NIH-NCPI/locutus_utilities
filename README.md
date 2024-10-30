@@ -68,6 +68,13 @@ utils_run -p <project_id> -o <option> -a <action>
         * `fetch_and_upload`: Fetch data from APIs and upload it to Firestore.
     * Default: `upload_from_csv`
 
+* -u, --use_inclusion_list
+    * Description: Choose to include all ontologies or only a selection.
+    * Choices:
+        * `True`: Use the selected default ontologies.
+        * `False`: Use all ontologies.
+    * Default: `False`
+
 ## Working on a branch?
     If working on a new feature it is possible to install a package version within
     the remote or local branch

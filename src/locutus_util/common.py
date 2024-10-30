@@ -8,6 +8,7 @@ LOINC_API_BASE_URL = "https://loinc.regenstrief.org/searchapi/"
 LOGS_PATH = 'data/logs/'
 ONTOLOGY_API_PATH = 'data/ontology_api.csv'
 SEED_DATA_PATH = 'data/seed_data.csv'
+INCLUDED_ONTOLOGIES_PATH = 'data/included_ontologies.csv'
 
 # Values
 BATCH_SIZE = 10
