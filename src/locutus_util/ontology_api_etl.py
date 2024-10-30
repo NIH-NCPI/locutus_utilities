@@ -1,6 +1,14 @@
 """This script fetches data from the APIs, combines it with manually 
-added ontologies, and then uploads the structured data into Firestore under 
-the `OntologyAPI` collection.
+added ontologies(required when data is missing), and then uploads the structured
+data into Firestore under the `OntologyAPI` collection.
+
+Notes:
+Option: Filter using an inclusion list(data/included_ontologies). These ontologies
+were flagged specifically for inclusion with the idea that others can be excluded. 
+The option can be selected at runtime in the arguments(see README for more). If 
+not specified the script will default to add all ontologies. FD-1773
+
+Currently filtering out 'loinc' and 'monarch' API ontologies. FD-1703
 """
 
 import argparse
@@ -10,7 +18,7 @@ from google.cloud import firestore
 from locutus_util.helpers import update_gcloud_project
 from locutus_util.common import (FETCH_AND_UPLOAD, UPLOAD_FROM_CSV, UPDATE_CSV,
                                  OLS_API_BASE_URL,MONARCH_API_BASE_URL,LOINC_API_BASE_URL,
-                                 ONTOLOGY_API_PATH)
+                                 ONTOLOGY_API_PATH, INCLUDED_ONTOLOGIES_PATH)
 
 csv_path = ONTOLOGY_API_PATH
 ols_ontologies_url = f"{OLS_API_BASE_URL}ontologies"
@@ -134,7 +142,7 @@ def add_ontology_api(db, api_id, api_url, api_name, ontologies):
     ontology_api_ref.document(document_id).set(data)
     print(f"Created {document_id} document in the {collection_title} collection")
 
-def reorg_for_firestore(csv_data):
+def reorg_for_firestore(filtered_ontologies):
     """
     Reads a CSV file and organizes the data by terminology_id.
     
@@ -145,6 +153,10 @@ def reorg_for_firestore(csv_data):
         dict: A dictionary of terminology data grouped by terminology_id.
     """
     api_data = {}
+
+    # Easier format
+    csv_data = filtered_ontologies.to_dict(orient='records')
+
     for entry in csv_data:
         api_id = entry['api_id']
         ontology_id = entry['ontology_code']
@@ -175,7 +187,25 @@ def update_seed_data_csv(data):
     combined_df_sorted.to_csv(csv_path, index=False)
     print(f"The ontology_api csv is updated.")
 
-def ontology_api_etl(project_id, action):
+def filter_firestore_ontologies(data, use_inclusion_list=None):
+    '''
+    Filter out 'monarch' and 'loinc'
+    Filter for the included ontologies(Optional - use_inclusion_list)
+    '''
+    # Exclude monarch and loinc
+    filtered_data = data[~data['api_id'].str.lower().isin(['monarch','loinc'])]
+
+    if use_inclusion_list=='True':
+        included_ontologies = pd.read_csv(INCLUDED_ONTOLOGIES_PATH)
+        keepers = included_ontologies[included_ontologies['Default to Include'] == 't']['Id'].to_list()
+        # Include only ols rows that were flagged to be included by the file.
+        filtered_data = filtered_data[(filtered_data['api_id'] != 'ols') | (filtered_data['curie'].isin(keepers))]
+
+    filtered_ontologies = filtered_data.copy()
+
+    return filtered_ontologies
+
+def ontology_api_etl(project_id, action, use_inclusion_list):
 
     # Collect data from sources
     if action in {FETCH_AND_UPLOAD, UPDATE_CSV}:
@@ -196,10 +226,13 @@ def ontology_api_etl(project_id, action):
     if action in {FETCH_AND_UPLOAD, UPLOAD_FROM_CSV}:
         # Read in data and handle nulls
         csv_data = pd.read_csv(csv_path, keep_default_na=False, na_values=[''])
-        data_list = csv_data.where(pd.notnull(csv_data), None).to_dict(orient='records')
+        csv_data = csv_data.where(pd.notnull(csv_data), None)
+
+        # Only include the cho-simba ones
+        filtered_ontologies = filter_firestore_ontologies(csv_data, use_inclusion_list)
 
         # Reformat. Group ontologies by api.
-        fs_data = reorg_for_firestore(data_list)
+        fs_data = reorg_for_firestore(filtered_ontologies)
 
         # Update the gcloud project
         update_gcloud_project(project_id)
@@ -209,8 +242,7 @@ def ontology_api_etl(project_id, action):
 
         # Insert data into Firestore
         for api_id, data in fs_data.items():
-            if api_id.lower() not in ['monarch','loinc']:
-                add_ontology_api(db, api_id, data['api_url'], data['api_name'], data['ontologies'])
+            add_ontology_api(db, api_id, data['api_url'], data['api_name'], data['ontologies'])
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="OntologyAPI data into Firestore.")
@@ -220,12 +252,23 @@ if __name__ == "__main__":
         choices=[FETCH_AND_UPLOAD, UPLOAD_FROM_CSV, UPDATE_CSV],
         default=UPLOAD_FROM_CSV, 
         help=(
-            f"{UPLOAD_FROM_CSV}: Upload data from existing CSV to Firestore.\n"
+            f"{UPLOAD_FROM_CSV}: (Default option) Upload data from existing CSV to Firestore.\n"
             f"{UPDATE_CSV}: Fetch data from APIs and update the CSV file only.\n"
             f"{FETCH_AND_UPLOAD}: Fetch data from APIs and upload to Firestore.\n"
         )
     )
+    parser.add_argument(
+        '-u', '--use_inclusion_list',
+        choices=['True', 'False'],
+        required=False,
+        default='False',
+        help=(
+            f"True: Use the selected default ontologies.\n"
+            f"False: Use all ontologies.\n")
+        )
+
     args = parser.parse_args()
 
-    ontology_api_etl(project_id=args.project, action=args.action)
-    
+    ontology_api_etl(project_id=args.project_id,
+                        action=args.action,
+                        use_inclusion_list=args.use_inclusion_list)

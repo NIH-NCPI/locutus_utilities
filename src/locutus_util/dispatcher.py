@@ -27,7 +27,7 @@ def main():
             f"{RESET_DATABASE}: Delete data from the database, then reseed."
         )
     )
-    parser.add_argument(
+    parser.add_argument( # Used when updating the ontology (UPDATE_ONTOLOGY_API, RESET_DATABASE)
         '-a', '--action',
         choices=[FETCH_AND_UPLOAD, UPLOAD_FROM_CSV, UPDATE_CSV],
         default=UPLOAD_FROM_CSV,
@@ -37,11 +37,22 @@ def main():
             f"{FETCH_AND_UPLOAD}: Fetch data from APIs and upload to Firestore.\n"
         )
     )
+    parser.add_argument(
+        '-u', '--use_inclusion_list',
+        choices=['True', 'False'],
+        required=False,
+        default='False',
+        help=(
+            f"True: Use the selected default ontologies.\n"
+            f"False: Use all ontologies.\n")
+        )
     args = parser.parse_args()
 
     # Call the appropriate function with the provided arguments
     if args.option == UPDATE_ONTOLOGY_API:
-        ontology_api_etl(project_id=args.project_id, action=args.action)
+        ontology_api_etl(project_id=args.project_id,
+                         action=args.action,
+                         use_inclusion_list=args.use_inclusion_list)
 
     elif args.option == UPDATE_SEED_DATA:
         seed_data_etl(project_id=args.project_id)
@@ -52,7 +63,9 @@ def main():
     elif args.option == RESET_DATABASE:
         delete_project_data(project_id=args.project_id)
         seed_data_etl(project_id=args.project_id)
-        ontology_api_etl(project_id=args.project_id, action=args.action)
+        ontology_api_etl(project_id=args.project_id,
+                         action=args.action,
+                         use_inclusion_list=args.use_inclusion_list)
         
     else:
         print("No actions were taken.")
