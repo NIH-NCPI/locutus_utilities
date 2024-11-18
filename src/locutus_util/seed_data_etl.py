@@ -4,37 +4,40 @@ from google.cloud import firestore
 from locutus_util.helpers import update_gcloud_project
 from locutus_util.common import SEED_DATA_PATH
 
+
 def read_csv_and_organize(file_path):
     """
     Reads a CSV file and organizes the data by terminology_id.
-    
+
     Args:
         file_path (str): The path to the CSV file.
-    
+
     Returns:
         dict: A dictionary of terminology data grouped by terminology_id.
     """
     terminology_data = {}
-    with open(file_path, mode='r', newline='') as csvfile:
+    with open(file_path, mode="r", newline="") as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
-            terminology_id = row['terminology_id']
+            terminology_id = row["terminology_id"]
             # Create an entry for the terminology if it doesn't exist
             if terminology_id not in terminology_data:
                 terminology_data[terminology_id] = {
-                    "id": row['terminology_id'],
-                    "description": row['terminology_description'],
-                    "name": row['terminology_name'],
-                    "resource_type": row['terminology_resource_type'],
-                    "codes": []
+                    "id": row["terminology_id"],
+                    "description": row["terminology_description"],
+                    "name": row["terminology_name"],
+                    "resource_type": row["terminology_resource_type"],
+                    "codes": [],
                 }
             # Add code details to the terminology
-            terminology_data[terminology_id]['codes'].append({
-                "code": row['code'],
-                "system": row['system'],
-                "display": row['display'],
-                "description": row['description']
-            })
+            terminology_data[terminology_id]["codes"].append(
+                {
+                    "code": row["code"],
+                    "system": row["system"],
+                    "display": row["display"],
+                    "description": row["description"],
+                }
+            )
     return terminology_data
 
 
@@ -60,16 +63,34 @@ def seed_data_etl(project_id):
 
         # Insert the organized data into Firestore
         insert_into_firestore(db, terminology_data)
-        
+
         print("CSV data has been successfully inserted into Firestore.")
     except Exception as e:
         print(f"Error: {e}")
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Seed terminology data into Firestore.")
-    parser.add_argument('-p', '--project', required=True, help="GCP Project to edit")
+
+    locutus_project = {
+        "DEV": "locutus-dev",
+        "UAT": "locutus-uat",
+        "PROD": "locutus-407820",
+        "ALPHA": "locutus-alpha",
+    }
+
+    parser = argparse.ArgumentParser(
+        description="Seed terminology data into Firestore."
+    )
+    parser.add_argument(
+        "-e", "--env", choices=locutus_project.keys(), help="Locutus environment to use"
+    )
+    parser.add_argument("-p", "--project", type=str, help="GCP Project to edit")
 
     args = parser.parse_args()
 
-    seed_data_etl(project_id=args.project)
+    if args.env is not None:
+        project_id = locutus_project[args.env]
+    else:
+        project_id = args.project
+
+    seed_data_etl(project_id=project_id)
