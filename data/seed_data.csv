@@ -2,3 +2,852 @@ code,system,display,description,terminology_id,terminology_description,terminolo
 equivalent,http://hl7.org/fhir/concept-map-relationship,Equivalent,The definitions of the concepts mean the same thing.,ftd-concept-map-relationship,,concept-map-relationship,Terminology
 source-is-narrower-than-target,http://hl7.org/fhir/concept-map-relationship,Source Is Narrower Than Target,The source concept is narrower in meaning than the target concept.,ftd-concept-map-relationship,,concept-map-relationship,Terminology
 source-is-broader-than-target,http://hl7.org/fhir/concept-map-relationship,Source Is Broader Than Target,The source concept is broader in meaning than the target concept.,ftd-concept-map-relationship,,concept-map-relationship,Terminology
+10.L/min,http://unitsofmeasure.org,10 liter per minute,,ucum-common,UCUM Common units,ucum-common,Terminology
+10.L/(min.m2),http://unitsofmeasure.org,10 liter per minute per square meter,,ucum-common,UCUM Common units,ucum-common,Terminology
+10.uN.s/(cm5.m2),http://unitsofmeasure.org,10 micronewton second per centimeter to the fifth power per square meter,,ucum-common,UCUM Common units,ucum-common,Terminology
+10*4/uL,http://unitsofmeasure.org,10 thousand per microliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+10*8,http://unitsofmeasure.org,100 million ,,ucum-common,UCUM Common units,ucum-common,Terminology
+24.h,http://unitsofmeasure.org,24 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+{absorbance},http://unitsofmeasure.org,absorbance,,ucum-common,UCUM Common units,ucum-common,Terminology
+{activity},http://unitsofmeasure.org,activity,,ucum-common,UCUM Common units,ucum-common,Terminology
+[AU],http://unitsofmeasure.org,allergy unit,,ucum-common,UCUM Common units,ucum-common,Terminology
+{AHF'U},http://unitsofmeasure.org,American Hospital Formulary unit,,ucum-common,UCUM Common units,ucum-common,Terminology
+A,http://unitsofmeasure.org,ampere,,ucum-common,UCUM Common units,ucum-common,Terminology
+A/m,http://unitsofmeasure.org,ampere per meter,,ucum-common,UCUM Common units,ucum-common,Terminology
+[arb'U],http://unitsofmeasure.org,arbitrary unit,,ucum-common,UCUM Common units,ucum-common,Terminology
+[arb'U]/mL,http://unitsofmeasure.org,arbitrary unit per milliliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+{ARU},http://unitsofmeasure.org,aspirin response unit,,ucum-common,UCUM Common units,ucum-common,Terminology
+atm,http://unitsofmeasure.org,atmosphere,,ucum-common,UCUM Common units,ucum-common,Terminology
+ag/{cell},http://unitsofmeasure.org,attogram per cell,,ucum-common,UCUM Common units,ucum-common,Terminology
+bar,http://unitsofmeasure.org,bar,,ucum-common,UCUM Common units,ucum-common,Terminology
+Bq,http://unitsofmeasure.org,Becquerel,,ucum-common,UCUM Common units,ucum-common,Terminology
+[beth'U],http://unitsofmeasure.org,Bethesda unit,,ucum-common,UCUM Common units,ucum-common,Terminology
+10*9/L,http://unitsofmeasure.org,billion per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+10*9/uL,http://unitsofmeasure.org,billion per microliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+10*9/mL,http://unitsofmeasure.org,billion per milliliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+{binding_index},http://unitsofmeasure.org,binding index,,ucum-common,UCUM Common units,ucum-common,Terminology
+[bdsk'U],http://unitsofmeasure.org,Bodansky unit,,ucum-common,UCUM Common units,ucum-common,Terminology
+{breaths}/min,http://unitsofmeasure.org,breaths per minute,,ucum-common,UCUM Common units,ucum-common,Terminology
+{CAG_repeats},http://unitsofmeasure.org,CAG trinucleotide repeats,,ucum-common,UCUM Common units,ucum-common,Terminology
+cal,http://unitsofmeasure.org,calorie,,ucum-common,UCUM Common units,ucum-common,Terminology
+{cells},http://unitsofmeasure.org,cells,,ucum-common,UCUM Common units,ucum-common,Terminology
+{cells}/[HPF],http://unitsofmeasure.org,cells per high power field,,ucum-common,UCUM Common units,ucum-common,Terminology
+{cells}/uL,http://unitsofmeasure.org,cells per microliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+cg,http://unitsofmeasure.org,centigram,,ucum-common,UCUM Common units,ucum-common,Terminology
+cL,http://unitsofmeasure.org,centiliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+cm,http://unitsofmeasure.org,centimeter,,ucum-common,UCUM Common units,ucum-common,Terminology
+cm[Hg],http://unitsofmeasure.org,centimeter of mercury,,ucum-common,UCUM Common units,ucum-common,Terminology
+cm[H2O],http://unitsofmeasure.org,centimeter of water,,ucum-common,UCUM Common units,ucum-common,Terminology
+cm[H2O]/L/s,http://unitsofmeasure.org,centimeter of water per liter per second,,ucum-common,UCUM Common units,ucum-common,Terminology
+cm[H2O]/s/m,http://unitsofmeasure.org,centimeter of water per second per meter,,ucum-common,UCUM Common units,ucum-common,Terminology
+cm/s,http://unitsofmeasure.org,centimeter per second,,ucum-common,UCUM Common units,ucum-common,Terminology
+cP,http://unitsofmeasure.org,centipoise,,ucum-common,UCUM Common units,ucum-common,Terminology
+cSt,http://unitsofmeasure.org,centistoke,,ucum-common,UCUM Common units,ucum-common,Terminology
+{delta_OD},http://unitsofmeasure.org,change in (delta) optical density,,ucum-common,UCUM Common units,ucum-common,Terminology
+{clock_time},http://unitsofmeasure.org,clock time e.g 12:30PM,,ucum-common,UCUM Common units,ucum-common,Terminology
+[CFU],http://unitsofmeasure.org,colony forming unit,,ucum-common,UCUM Common units,ucum-common,Terminology
+[CFU]/L,http://unitsofmeasure.org,colony forming unit per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+[CFU]/mL,http://unitsofmeasure.org,colony forming unit per milliliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+{CAE'U},http://unitsofmeasure.org,complement activity enzyme unit,,ucum-common,UCUM Common units,ucum-common,Terminology
+{CH100'U},http://unitsofmeasure.org,complement CH100 unit,,ucum-common,UCUM Common units,ucum-common,Terminology
+{copies},http://unitsofmeasure.org,copies,,ucum-common,UCUM Common units,ucum-common,Terminology
+{copies}/ug,http://unitsofmeasure.org,copies per microgram,,ucum-common,UCUM Common units,ucum-common,Terminology
+{copies}/mL,http://unitsofmeasure.org,copies per milliliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+{count},http://unitsofmeasure.org,count,,ucum-common,UCUM Common units,ucum-common,Terminology
+{CPM},http://unitsofmeasure.org,counts per minute,,ucum-common,UCUM Common units,ucum-common,Terminology
+{CPM}/10*3{cell},http://unitsofmeasure.org,counts per minute per thousand cells,,ucum-common,UCUM Common units,ucum-common,Terminology
+cm3,http://unitsofmeasure.org,cubic centimeter,,ucum-common,UCUM Common units,ucum-common,Terminology
+[cin_i],http://unitsofmeasure.org,cubic inch (international),,ucum-common,UCUM Common units,ucum-common,Terminology
+m3/s,http://unitsofmeasure.org,cubic meter per second,,ucum-common,UCUM Common units,ucum-common,Terminology
+{Ct_value},http://unitsofmeasure.org,Cycle threshold value,,ucum-common,UCUM Common units,ucum-common,Terminology
+d,http://unitsofmeasure.org,day,,ucum-common,UCUM Common units,ucum-common,Terminology
+d/(7.d),http://unitsofmeasure.org,day per 7 day,,ucum-common,UCUM Common units,ucum-common,Terminology
+d/wk,http://unitsofmeasure.org,days per week,,ucum-common,UCUM Common units,ucum-common,Terminology
+dB,http://unitsofmeasure.org,decibel,,ucum-common,UCUM Common units,ucum-common,Terminology
+dg,http://unitsofmeasure.org,decigram,,ucum-common,UCUM Common units,ucum-common,Terminology
+dL,http://unitsofmeasure.org,deciliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+dm,http://unitsofmeasure.org,decimeter,,ucum-common,UCUM Common units,ucum-common,Terminology
+deg,http://unitsofmeasure.org,degree (plane angle),,ucum-common,UCUM Common units,ucum-common,Terminology
+Cel,http://unitsofmeasure.org,degree Celsius,,ucum-common,UCUM Common units,ucum-common,Terminology
+[degF],http://unitsofmeasure.org,degree Fahrenheit,,ucum-common,UCUM Common units,ucum-common,Terminology
+K,http://unitsofmeasure.org,degree Kelvin,,ucum-common,UCUM Common units,ucum-common,Terminology
+K/W,http://unitsofmeasure.org,degree Kelvin per Watt,,ucum-common,UCUM Common units,ucum-common,Terminology
+deg/s,http://unitsofmeasure.org,degree per second,,ucum-common,UCUM Common units,ucum-common,Terminology
+daL/min,http://unitsofmeasure.org,dekaliter per minute,,ucum-common,UCUM Common units,ucum-common,Terminology
+daL/min/m2,http://unitsofmeasure.org,dekaliter per minute per square meter,,ucum-common,UCUM Common units,ucum-common,Terminology
+{dilution},http://unitsofmeasure.org,dilution,,ucum-common,UCUM Common units,ucum-common,Terminology
+[diop],http://unitsofmeasure.org,diopter,,ucum-common,UCUM Common units,ucum-common,Terminology
+[dr_av],http://unitsofmeasure.org,dram  (US and British),,ucum-common,UCUM Common units,ucum-common,Terminology
+[drp],http://unitsofmeasure.org,drop (1/12 milliliter),,ucum-common,UCUM Common units,ucum-common,Terminology
+dyn.s/cm,http://unitsofmeasure.org,dyne second per centimeter,,ucum-common,UCUM Common units,ucum-common,Terminology
+dyn.s/(cm.m2),http://unitsofmeasure.org,dyne second per centimeter per square meter,,ucum-common,UCUM Common units,ucum-common,Terminology
+{Ehrlich'U},http://unitsofmeasure.org,Ehrlich unit,,ucum-common,UCUM Common units,ucum-common,Terminology
+{Ehrlich'U}/100.g,http://unitsofmeasure.org,Ehrlich unit per 100 gram,,ucum-common,UCUM Common units,ucum-common,Terminology
+{Ehrlich'U}/(2.h),http://unitsofmeasure.org,Ehrlich unit per 2 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+{Ehrlich'U}/d,http://unitsofmeasure.org,Ehrlich unit per day,,ucum-common,UCUM Common units,ucum-common,Terminology
+{Ehrlich'U}/dL,http://unitsofmeasure.org,Ehrlich unit per deciliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+{EIA_index},http://unitsofmeasure.org,EIA index,,ucum-common,UCUM Common units,ucum-common,Terminology
+{EIA_titer},http://unitsofmeasure.org,EIA titer,,ucum-common,UCUM Common units,ucum-common,Terminology
+{EIA'U},http://unitsofmeasure.org,EIA unit,,ucum-common,UCUM Common units,ucum-common,Terminology
+{EIA'U}/U,http://unitsofmeasure.org,EIA unit per enzyme unit,,ucum-common,UCUM Common units,ucum-common,Terminology
+{EV},http://unitsofmeasure.org,EIA value,,ucum-common,UCUM Common units,ucum-common,Terminology
+eV,http://unitsofmeasure.org,electron Volt,,ucum-common,UCUM Common units,ucum-common,Terminology
+{ELISA'U},http://unitsofmeasure.org,ELISA unit,,ucum-common,UCUM Common units,ucum-common,Terminology
+U,http://unitsofmeasure.org,enzyme unit,,ucum-common,UCUM Common units,ucum-common,Terminology
+U/10,http://unitsofmeasure.org,enzyme unit per 10,,ucum-common,UCUM Common units,ucum-common,Terminology
+U/10*10,http://unitsofmeasure.org,enzyme unit per 10 billion,,ucum-common,UCUM Common units,ucum-common,Terminology
+U/10*10{cells},http://unitsofmeasure.org,enzyme unit per 10 billion cells,,ucum-common,UCUM Common units,ucum-common,Terminology
+U/(10.g){feces},http://unitsofmeasure.org,enzyme unit per 10 gram of feces,,ucum-common,UCUM Common units,ucum-common,Terminology
+U/(12.h),http://unitsofmeasure.org,enzyme unit per 12 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+U/(2.h),http://unitsofmeasure.org,enzyme unit per 2 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+U/(24.h),http://unitsofmeasure.org,enzyme unit per 24 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+U/10*9,http://unitsofmeasure.org,enzyme unit per billion,,ucum-common,UCUM Common units,ucum-common,Terminology
+U/d,http://unitsofmeasure.org,enzyme unit per day,,ucum-common,UCUM Common units,ucum-common,Terminology
+U/dL,http://unitsofmeasure.org,enzyme unit per deciliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+U/g,http://unitsofmeasure.org,enzyme unit per gram,,ucum-common,UCUM Common units,ucum-common,Terminology
+U/g{creat},http://unitsofmeasure.org,enzyme unit per gram of creatinine,,ucum-common,UCUM Common units,ucum-common,Terminology
+U/g{Hb},http://unitsofmeasure.org,enzyme unit per gram of hemoglobin,,ucum-common,UCUM Common units,ucum-common,Terminology
+U/g{protein},http://unitsofmeasure.org,enzyme unit per gram of protein,,ucum-common,UCUM Common units,ucum-common,Terminology
+U/h,http://unitsofmeasure.org,enzyme unit per hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+U/kg{Hb},http://unitsofmeasure.org,enzyme unit per kilogram of hemoglobin,,ucum-common,UCUM Common units,ucum-common,Terminology
+U/L,http://unitsofmeasure.org,enzyme unit per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+U{25Cel}/L,http://unitsofmeasure.org,enzyme unit per liter at 25 deg Celsius ,,ucum-common,UCUM Common units,ucum-common,Terminology
+U{37Cel}/L,http://unitsofmeasure.org,enzyme unit per liter at 37 deg Celsius,,ucum-common,UCUM Common units,ucum-common,Terminology
+U/mL,http://unitsofmeasure.org,enzyme unit per milliliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+U/mL{RBCs},http://unitsofmeasure.org,enzyme unit per milliliter of red blood cells,,ucum-common,UCUM Common units,ucum-common,Terminology
+U/mmol{creat},http://unitsofmeasure.org,enzyme unit per millimole of creatinine,,ucum-common,UCUM Common units,ucum-common,Terminology
+U/10*6,http://unitsofmeasure.org,enzyme unit per million,,ucum-common,UCUM Common units,ucum-common,Terminology
+U/min,http://unitsofmeasure.org,enzyme unit per minute,,ucum-common,UCUM Common units,ucum-common,Terminology
+U/s,http://unitsofmeasure.org,enzyme unit per second,,ucum-common,UCUM Common units,ucum-common,Terminology
+U/10*12,http://unitsofmeasure.org,enzyme unit per trillion,,ucum-common,UCUM Common units,ucum-common,Terminology
+U/10*12{RBCs},http://unitsofmeasure.org,enzyme unit per trillion red blood cells,,ucum-common,UCUM Common units,ucum-common,Terminology
+eq,http://unitsofmeasure.org,equivalent,,ucum-common,UCUM Common units,ucum-common,Terminology
+eq/L,http://unitsofmeasure.org,equivalent per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+eq/umol,http://unitsofmeasure.org,equivalent per micromole,,ucum-common,UCUM Common units,ucum-common,Terminology
+eq/mL,http://unitsofmeasure.org,equivalent per milliliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+eq/mmol,http://unitsofmeasure.org,equivalent per millimole,,ucum-common,UCUM Common units,ucum-common,Terminology
+erg,http://unitsofmeasure.org,erg,,ucum-common,UCUM Common units,ucum-common,Terminology
+F,http://unitsofmeasure.org,Farad,,ucum-common,UCUM Common units,ucum-common,Terminology
+[ft_us]/[ft_us],http://unitsofmeasure.org,feet (US) per feet (US),,ucum-common,UCUM Common units,ucum-common,Terminology
+fg,http://unitsofmeasure.org,femtogram,,ucum-common,UCUM Common units,ucum-common,Terminology
+fL,http://unitsofmeasure.org,femtoliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+fm,http://unitsofmeasure.org,femtometer,,ucum-common,UCUM Common units,ucum-common,Terminology
+fmol,http://unitsofmeasure.org,femtomole,,ucum-common,UCUM Common units,ucum-common,Terminology
+fmol/g,http://unitsofmeasure.org,femtomole per gram,,ucum-common,UCUM Common units,ucum-common,Terminology
+fmol/L,http://unitsofmeasure.org,femtomole per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+fmol/mg,http://unitsofmeasure.org,femtomole per milligram,,ucum-common,UCUM Common units,ucum-common,Terminology
+fmol/mg{cyt_prot},http://unitsofmeasure.org,femtomole per milligram of cytosol protein,,ucum-common,UCUM Common units,ucum-common,Terminology
+fmol/mg{prot},http://unitsofmeasure.org,femtomole per milligram of protein,,ucum-common,UCUM Common units,ucum-common,Terminology
+fmol/mL,http://unitsofmeasure.org,femtomole per milliliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+[foz_us],http://unitsofmeasure.org,fluid ounce (US),,ucum-common,UCUM Common units,ucum-common,Terminology
+{FIU},http://unitsofmeasure.org,fluorescent intensity unit,,ucum-common,UCUM Common units,ucum-common,Terminology
+[ft_i],http://unitsofmeasure.org,foot (international),,ucum-common,UCUM Common units,ucum-common,Terminology
+{fraction},http://unitsofmeasure.org,fraction,,ucum-common,UCUM Common units,ucum-common,Terminology
+[Ch],http://unitsofmeasure.org,French (catheter gauge) ,,ucum-common,UCUM Common units,ucum-common,Terminology
+{GAA_repeats},http://unitsofmeasure.org,GAA trinucleotide repeats,,ucum-common,UCUM Common units,ucum-common,Terminology
+[gal_us],http://unitsofmeasure.org,gallon (US),,ucum-common,UCUM Common units,ucum-common,Terminology
+{genomes}/mL,http://unitsofmeasure.org,genomes per milliliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+{Globules}/[HPF],http://unitsofmeasure.org,globules (drops)  per high power field,,ucum-common,UCUM Common units,ucum-common,Terminology
+g,http://unitsofmeasure.org,gram,,ucum-common,UCUM Common units,ucum-common,Terminology
+g.m,http://unitsofmeasure.org,gram meter,,ucum-common,UCUM Common units,ucum-common,Terminology
+g.m/{beat},http://unitsofmeasure.org,gram meter per heart beat ,,ucum-common,UCUM Common units,ucum-common,Terminology
+g{creat},http://unitsofmeasure.org,gram of creatinine,,ucum-common,UCUM Common units,ucum-common,Terminology
+g{Hb},http://unitsofmeasure.org,gram of hemoglobin,,ucum-common,UCUM Common units,ucum-common,Terminology
+g{total_nit},http://unitsofmeasure.org,gram of total nitrogen,,ucum-common,UCUM Common units,ucum-common,Terminology
+g{total_prot},http://unitsofmeasure.org,gram of total protein,,ucum-common,UCUM Common units,ucum-common,Terminology
+g{wet_tissue},http://unitsofmeasure.org,gram of wet tissue,,ucum-common,UCUM Common units,ucum-common,Terminology
+g/kg/(8.h),http://unitsofmeasure.org,gram per  kilogram per 8 hour ,,ucum-common,UCUM Common units,ucum-common,Terminology
+g/(100.g),http://unitsofmeasure.org,gram per 100 gram,,ucum-common,UCUM Common units,ucum-common,Terminology
+g/(12.h),http://unitsofmeasure.org,gram per 12 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+g/(24.h),http://unitsofmeasure.org,gram per 24 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+g/(3.d),http://unitsofmeasure.org,gram per 3 days,,ucum-common,UCUM Common units,ucum-common,Terminology
+g/(4.h),http://unitsofmeasure.org,gram per 4 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+g/(48.h),http://unitsofmeasure.org,gram per 48 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+g/(5.h),http://unitsofmeasure.org,gram per 5 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+g/(6.h),http://unitsofmeasure.org,gram per 6 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+g/(72.h),http://unitsofmeasure.org,gram per 72 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+g/(8.h){shift},http://unitsofmeasure.org,gram per 8 hour shift,,ucum-common,UCUM Common units,ucum-common,Terminology
+g/cm3,http://unitsofmeasure.org,gram per cubic centimeter,,ucum-common,UCUM Common units,ucum-common,Terminology
+g/d,http://unitsofmeasure.org,gram per day,,ucum-common,UCUM Common units,ucum-common,Terminology
+g/dL,http://unitsofmeasure.org,gram per deciliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+g/g,http://unitsofmeasure.org,gram per gram,,ucum-common,UCUM Common units,ucum-common,Terminology
+g/g{creat},http://unitsofmeasure.org,gram per gram of creatinine,,ucum-common,UCUM Common units,ucum-common,Terminology
+g/g{globulin},http://unitsofmeasure.org,gram per gram of globulin,,ucum-common,UCUM Common units,ucum-common,Terminology
+g/g{tissue},http://unitsofmeasure.org,gram per gram of tissue,,ucum-common,UCUM Common units,ucum-common,Terminology
+g/h,http://unitsofmeasure.org,gram per hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+g/h/m2,http://unitsofmeasure.org,gram per hour per square meter,,ucum-common,UCUM Common units,ucum-common,Terminology
+g/kg,http://unitsofmeasure.org,gram per kilogram,,ucum-common,UCUM Common units,ucum-common,Terminology
+g/kg/(8.h){shift},http://unitsofmeasure.org,gram per kilogram per 8 hour shift,,ucum-common,UCUM Common units,ucum-common,Terminology
+g/kg/d,http://unitsofmeasure.org,gram per kilogram per day,,ucum-common,UCUM Common units,ucum-common,Terminology
+g/kg/h,http://unitsofmeasure.org,gram per kilogram per hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+g/kg/min,http://unitsofmeasure.org,gram per kilogram per minute,,ucum-common,UCUM Common units,ucum-common,Terminology
+g/L,http://unitsofmeasure.org,gram per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+g/mg,http://unitsofmeasure.org,gram per milligram,,ucum-common,UCUM Common units,ucum-common,Terminology
+g/mL,http://unitsofmeasure.org,gram per milliliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+g/mmol,http://unitsofmeasure.org,gram per millimole,,ucum-common,UCUM Common units,ucum-common,Terminology
+g/min,http://unitsofmeasure.org,gram per minute,,ucum-common,UCUM Common units,ucum-common,Terminology
+g/mol{creat},http://unitsofmeasure.org,gram per mole of creatinine,,ucum-common,UCUM Common units,ucum-common,Terminology
+g/{specimen},http://unitsofmeasure.org,gram per specimen,,ucum-common,UCUM Common units,ucum-common,Terminology
+g/cm2,http://unitsofmeasure.org,gram per square centimeter,,ucum-common,UCUM Common units,ucum-common,Terminology
+g/m2,http://unitsofmeasure.org,gram per square meter,,ucum-common,UCUM Common units,ucum-common,Terminology
+g/{total_output},http://unitsofmeasure.org,gram per total output,,ucum-common,UCUM Common units,ucum-common,Terminology
+g/{total_weight},http://unitsofmeasure.org,gram per total weight,,ucum-common,UCUM Common units,ucum-common,Terminology
+Gy,http://unitsofmeasure.org,Gray,,ucum-common,UCUM Common units,ucum-common,Terminology
+{beats}/min,http://unitsofmeasure.org,heart beats per minute,,ucum-common,UCUM Common units,ucum-common,Terminology
+H,http://unitsofmeasure.org,Henry,,ucum-common,UCUM Common units,ucum-common,Terminology
+Hz,http://unitsofmeasure.org,Hertz,,ucum-common,UCUM Common units,ucum-common,Terminology
+[HPF],http://unitsofmeasure.org,high power field,,ucum-common,UCUM Common units,ucum-common,Terminology
+h,http://unitsofmeasure.org,hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+h/d,http://unitsofmeasure.org,hour per day,,ucum-common,UCUM Common units,ucum-common,Terminology
+h/wk,http://unitsofmeasure.org,hour per week,,ucum-common,UCUM Common units,ucum-common,Terminology
+[APL'U]/mL,http://unitsofmeasure.org,IgA anticardiolipin unit per milliliter**,,ucum-common,UCUM Common units,ucum-common,Terminology
+[APL'U],http://unitsofmeasure.org,IgA anticardiolipin unit**,,ucum-common,UCUM Common units,ucum-common,Terminology
+{APS'U},http://unitsofmeasure.org,IgA antiphosphatidylserine unit ,,ucum-common,UCUM Common units,ucum-common,Terminology
+[GPL'U]/mL,http://unitsofmeasure.org,IgG anticardiolipin unit per milliliter**,,ucum-common,UCUM Common units,ucum-common,Terminology
+[GPL'U],http://unitsofmeasure.org,IgG anticardiolipin unit**,,ucum-common,UCUM Common units,ucum-common,Terminology
+{GPS'U},http://unitsofmeasure.org,IgG antiphosphatidylserine unit,,ucum-common,UCUM Common units,ucum-common,Terminology
+[MPL'U]/mL,http://unitsofmeasure.org,IgM anticardiolipin unit per milliliter**,,ucum-common,UCUM Common units,ucum-common,Terminology
+[MPL'U],http://unitsofmeasure.org,IgM anticardiolipin unit**,,ucum-common,UCUM Common units,ucum-common,Terminology
+{MPS'U},http://unitsofmeasure.org,IgM antiphosphatidylserine unit,,ucum-common,UCUM Common units,ucum-common,Terminology
+{MPS'U}/mL,http://unitsofmeasure.org,IgM antiphosphatidylserine unit per milliliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+{ImmuneComplex'U},http://unitsofmeasure.org,immune complex unit,,ucum-common,UCUM Common units,ucum-common,Terminology
+{ISR},http://unitsofmeasure.org,immune status ratio,,ucum-common,UCUM Common units,ucum-common,Terminology
+{IFA_index},http://unitsofmeasure.org,immunofluorescence assay index,,ucum-common,UCUM Common units,ucum-common,Terminology
+{IFA_titer},http://unitsofmeasure.org,Immunofluorescence assay titer,,ucum-common,UCUM Common units,ucum-common,Terminology
+[in_i],http://unitsofmeasure.org,inch (international),,ucum-common,UCUM Common units,ucum-common,Terminology
+[in_i'H2O],http://unitsofmeasure.org,inch (international) of water,,ucum-common,UCUM Common units,ucum-common,Terminology
+[in_us],http://unitsofmeasure.org,inches (US),,ucum-common,UCUM Common units,ucum-common,Terminology
+{index_val},http://unitsofmeasure.org,index value,,ucum-common,UCUM Common units,ucum-common,Terminology
+{index},http://unitsofmeasure.org,index value,,ucum-common,UCUM Common units,ucum-common,Terminology
+{HA_titer},http://unitsofmeasure.org,influenza hemagglutination titer,,ucum-common,UCUM Common units,ucum-common,Terminology
+{INR},http://unitsofmeasure.org,international normalized ratio,,ucum-common,UCUM Common units,ucum-common,Terminology
+[IU],http://unitsofmeasure.org,international unit,,ucum-common,UCUM Common units,ucum-common,Terminology
+[IU]/(2.h),http://unitsofmeasure.org,international unit per 2 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+[IU]/(24.h),http://unitsofmeasure.org,international unit per 24 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+[IU]/10*9{RBCs},http://unitsofmeasure.org,international unit per billion red blood cells,,ucum-common,UCUM Common units,ucum-common,Terminology
+[IU]/d,http://unitsofmeasure.org,international unit per day,,ucum-common,UCUM Common units,ucum-common,Terminology
+[IU]/dL,http://unitsofmeasure.org,international unit per deciliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+[IU]/g,http://unitsofmeasure.org,international unit per gram,,ucum-common,UCUM Common units,ucum-common,Terminology
+[IU]/g{Hb},http://unitsofmeasure.org,international unit per gram of hemoglobin,,ucum-common,UCUM Common units,ucum-common,Terminology
+[IU]/h,http://unitsofmeasure.org,international unit per hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+[IU]/kg,http://unitsofmeasure.org,international unit per kilogram,,ucum-common,UCUM Common units,ucum-common,Terminology
+[IU]/kg/d,http://unitsofmeasure.org,international unit per kilogram per day,,ucum-common,UCUM Common units,ucum-common,Terminology
+[IU]/L,http://unitsofmeasure.org,international unit per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+[IU]/L{37Cel},http://unitsofmeasure.org,international unit per liter at 37 degrees Celsius,,ucum-common,UCUM Common units,ucum-common,Terminology
+[IU]/mg{creat},http://unitsofmeasure.org,international unit per milligram of creatinine,,ucum-common,UCUM Common units,ucum-common,Terminology
+[IU]/mL,http://unitsofmeasure.org,international unit per milliliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+[IU]/min,http://unitsofmeasure.org,international unit per minute,,ucum-common,UCUM Common units,ucum-common,Terminology
+J,http://unitsofmeasure.org,joule,,ucum-common,UCUM Common units,ucum-common,Terminology
+J/L,http://unitsofmeasure.org,joule per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+{JDF'U},http://unitsofmeasure.org,Juvenile Diabetes Foundation unit,,ucum-common,UCUM Common units,ucum-common,Terminology
+{JDF'U}/L,http://unitsofmeasure.org,Juvenile Diabetes Foundation unit per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+{KCT'U},http://unitsofmeasure.org,kaolin clotting time,,ucum-common,UCUM Common units,ucum-common,Terminology
+kat,http://unitsofmeasure.org,katal,,ucum-common,UCUM Common units,ucum-common,Terminology
+kat/kg,http://unitsofmeasure.org,katal per kilogram,,ucum-common,UCUM Common units,ucum-common,Terminology
+kat/L,http://unitsofmeasure.org,katal per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+kU,http://unitsofmeasure.org,kilo enzyme unit,,ucum-common,UCUM Common units,ucum-common,Terminology
+kU/g,http://unitsofmeasure.org,kilo enzyme unit per gram,,ucum-common,UCUM Common units,ucum-common,Terminology
+kU/L,http://unitsofmeasure.org,kilo enzyme unit per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+kU/L{class},http://unitsofmeasure.org,kilo enzyme unit per liter class,,ucum-common,UCUM Common units,ucum-common,Terminology
+kU/mL,http://unitsofmeasure.org,kilo enzyme unit per milliliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+k[IU]/L,http://unitsofmeasure.org,kilo international unit per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+k[IU]/mL,http://unitsofmeasure.org,kilo international unit per milliliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+kcal,http://unitsofmeasure.org,kilocalorie,,ucum-common,UCUM Common units,ucum-common,Terminology
+kcal/(24.h),http://unitsofmeasure.org,kilocalorie per 24 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+kcal/d,http://unitsofmeasure.org,kilocalorie per day,,ucum-common,UCUM Common units,ucum-common,Terminology
+kcal/h,http://unitsofmeasure.org,kilocalorie per hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+kcal/kg/(24.h),http://unitsofmeasure.org,kilocalorie per kilogram per 24 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+kcal/[oz_av],http://unitsofmeasure.org,kilocalorie per ounce (US & British),,ucum-common,UCUM Common units,ucum-common,Terminology
+kg,http://unitsofmeasure.org,kilogram,,ucum-common,UCUM Common units,ucum-common,Terminology
+kg.m/s,http://unitsofmeasure.org,kilogram meter per second,,ucum-common,UCUM Common units,ucum-common,Terminology
+kg/m3,http://unitsofmeasure.org,kilogram per cubic meter,,ucum-common,UCUM Common units,ucum-common,Terminology
+kg/h,http://unitsofmeasure.org,kilogram per hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+kg/L,http://unitsofmeasure.org,kilogram per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+kg/min,http://unitsofmeasure.org,kilogram per minute,,ucum-common,UCUM Common units,ucum-common,Terminology
+kg/mol,http://unitsofmeasure.org,kilogram per mole,,ucum-common,UCUM Common units,ucum-common,Terminology
+kg/s,http://unitsofmeasure.org,kilogram per second,,ucum-common,UCUM Common units,ucum-common,Terminology
+kg/(s.m2),http://unitsofmeasure.org,kilogram per second per square meter,,ucum-common,UCUM Common units,ucum-common,Terminology
+kg/m2,http://unitsofmeasure.org,kilogram per square meter,,ucum-common,UCUM Common units,ucum-common,Terminology
+kL,http://unitsofmeasure.org,kiloliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+km,http://unitsofmeasure.org,kilometer,,ucum-common,UCUM Common units,ucum-common,Terminology
+kPa,http://unitsofmeasure.org,kilopascal,,ucum-common,UCUM Common units,ucum-common,Terminology
+ks,http://unitsofmeasure.org,kilosecond,,ucum-common,UCUM Common units,ucum-common,Terminology
+[ka'U],http://unitsofmeasure.org,King Armstrong unit,,ucum-common,UCUM Common units,ucum-common,Terminology
+{KRONU'U}/mL,http://unitsofmeasure.org,Kronus unit per milliliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+[knk'U],http://unitsofmeasure.org,Kunkel unit,,ucum-common,UCUM Common units,ucum-common,Terminology
+L,http://unitsofmeasure.org,liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+L/(24.h),http://unitsofmeasure.org,liter per 24 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+L/(8.h),http://unitsofmeasure.org,liter per 8 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+L/d,http://unitsofmeasure.org,liter per day,,ucum-common,UCUM Common units,ucum-common,Terminology
+L/h,http://unitsofmeasure.org,liter per hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+L/kg,http://unitsofmeasure.org,liter per kilogram,,ucum-common,UCUM Common units,ucum-common,Terminology
+L/L,http://unitsofmeasure.org,liter per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+L/min,http://unitsofmeasure.org,liter per minute,,ucum-common,UCUM Common units,ucum-common,Terminology
+L/min/m2,http://unitsofmeasure.org,liter per minute per square meter,,ucum-common,UCUM Common units,ucum-common,Terminology
+L/(min.m2),http://unitsofmeasure.org,liter per minute per square meter,,ucum-common,UCUM Common units,ucum-common,Terminology
+L/s,http://unitsofmeasure.org,liter per second,,ucum-common,UCUM Common units,ucum-common,Terminology
+L/s/s2,http://unitsofmeasure.org,liter per second per square second,,ucum-common,UCUM Common units,ucum-common,Terminology
+{Log_copies}/mL,http://unitsofmeasure.org,log (base 10) copies per milliliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+{Log_IU},http://unitsofmeasure.org,log (base 10) international unit,,ucum-common,UCUM Common units,ucum-common,Terminology
+{Log_IU}/mL,http://unitsofmeasure.org,log (base 10) international unit per milliliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+{Log},http://unitsofmeasure.org,log base 10,,ucum-common,UCUM Common units,ucum-common,Terminology
+[LPF],http://unitsofmeasure.org,low power field,,ucum-common,UCUM Common units,ucum-common,Terminology
+lm,http://unitsofmeasure.org,lumen,,ucum-common,UCUM Common units,ucum-common,Terminology
+lm.m2,http://unitsofmeasure.org,lumen square meter,,ucum-common,UCUM Common units,ucum-common,Terminology
+{Lyme_index_value},http://unitsofmeasure.org,Lyme index value,,ucum-common,UCUM Common units,ucum-common,Terminology
+[mclg'U],http://unitsofmeasure.org,Maclagan unit,,ucum-common,UCUM Common units,ucum-common,Terminology
+Ms,http://unitsofmeasure.org,megasecond,,ucum-common,UCUM Common units,ucum-common,Terminology
+[MET].min/wk,http://unitsofmeasure.org,metabolic equivalent minute per week,,ucum-common,UCUM Common units,ucum-common,Terminology
+m,http://unitsofmeasure.org,meter,,ucum-common,UCUM Common units,ucum-common,Terminology
+m/s,http://unitsofmeasure.org,meter per second,,ucum-common,UCUM Common units,ucum-common,Terminology
+m/s2,http://unitsofmeasure.org,meter per square second,,ucum-common,UCUM Common units,ucum-common,Terminology
+t,http://unitsofmeasure.org,metric ton,,ucum-common,UCUM Common units,ucum-common,Terminology
+uU/g,http://unitsofmeasure.org,micro enzyme unit per gram,,ucum-common,UCUM Common units,ucum-common,Terminology
+uU/L,http://unitsofmeasure.org,micro enzyme unit per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+uU/mL,http://unitsofmeasure.org,micro enzyme unit per milliliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+u[IU],http://unitsofmeasure.org,micro international unit,,ucum-common,UCUM Common units,ucum-common,Terminology
+u[IU]/mL,http://unitsofmeasure.org,micro international unit per milliliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+ueq,http://unitsofmeasure.org,microequivalent,,ucum-common,UCUM Common units,ucum-common,Terminology
+ueq/L,http://unitsofmeasure.org,microequivalent per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+ueq/mL,http://unitsofmeasure.org,microequivalent per milliliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+ug,http://unitsofmeasure.org,microgram,,ucum-common,UCUM Common units,ucum-common,Terminology
+ug/g{feces},http://unitsofmeasure.org,microgram  per gram of feces,,ucum-common,UCUM Common units,ucum-common,Terminology
+ug{FEU}/mL,http://unitsofmeasure.org,microgram fibrinogen equivalent unit per milliliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+ug/(100.g),http://unitsofmeasure.org,microgram per 100 gram,,ucum-common,UCUM Common units,ucum-common,Terminology
+ug/(24.h),http://unitsofmeasure.org,microgram per 24 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+ug/(8.h),http://unitsofmeasure.org,microgram per 8 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+ug/m3,http://unitsofmeasure.org,microgram per cubic meter,,ucum-common,UCUM Common units,ucum-common,Terminology
+ug/d,http://unitsofmeasure.org,microgram per day,,ucum-common,UCUM Common units,ucum-common,Terminology
+ug/dL,http://unitsofmeasure.org,microgram per deciliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+ug/dL{RBCs},http://unitsofmeasure.org,microgram per deciliter of red blood cells,,ucum-common,UCUM Common units,ucum-common,Terminology
+ug/g,http://unitsofmeasure.org,microgram per gram,,ucum-common,UCUM Common units,ucum-common,Terminology
+ug/g{creat},http://unitsofmeasure.org,microgram per gram of creatinine,,ucum-common,UCUM Common units,ucum-common,Terminology
+ug/g{dry_tissue},http://unitsofmeasure.org,microgram per gram of dry tissue,,ucum-common,UCUM Common units,ucum-common,Terminology
+ug/g{dry_wt},http://unitsofmeasure.org,microgram per gram of dry weight,,ucum-common,UCUM Common units,ucum-common,Terminology
+ug/g{hair},http://unitsofmeasure.org,microgram per gram of hair,,ucum-common,UCUM Common units,ucum-common,Terminology
+ug/g{Hb},http://unitsofmeasure.org,microgram per gram of hemoglobin,,ucum-common,UCUM Common units,ucum-common,Terminology
+ug/g{tissue},http://unitsofmeasure.org,microgram per gram of tissue,,ucum-common,UCUM Common units,ucum-common,Terminology
+ug/h,http://unitsofmeasure.org,microgram per hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+ug/kg,http://unitsofmeasure.org,microgram per kilogram,,ucum-common,UCUM Common units,ucum-common,Terminology
+ug/kg/(8.h),http://unitsofmeasure.org,microgram per kilogram per 8 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+ug/kg/d,http://unitsofmeasure.org,microgram per kilogram per day,,ucum-common,UCUM Common units,ucum-common,Terminology
+ug/kg/h,http://unitsofmeasure.org,microgram per kilogram per hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+ug/kg/min,http://unitsofmeasure.org,microgram per kilogram per minute,,ucum-common,UCUM Common units,ucum-common,Terminology
+ug/L,http://unitsofmeasure.org,microgram per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+ug/L{RBCs},http://unitsofmeasure.org,microgram per liter of red blood cells,,ucum-common,UCUM Common units,ucum-common,Terminology
+ug/L/(24.h),http://unitsofmeasure.org,microgram per liter per 24 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+ug/mg,http://unitsofmeasure.org,microgram per milligram,,ucum-common,UCUM Common units,ucum-common,Terminology
+ug/mg{creat},http://unitsofmeasure.org,microgram per milligram of creatinine,,ucum-common,UCUM Common units,ucum-common,Terminology
+ug/mL,http://unitsofmeasure.org,microgram per milliliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+ug/mL{class},http://unitsofmeasure.org,microgram per milliliter class,,ucum-common,UCUM Common units,ucum-common,Terminology
+ug/mL{eqv},http://unitsofmeasure.org,microgram per milliliter equivalent,,ucum-common,UCUM Common units,ucum-common,Terminology
+ug/mmol,http://unitsofmeasure.org,microgram per millimole,,ucum-common,UCUM Common units,ucum-common,Terminology
+ug/mmol{creat},http://unitsofmeasure.org,microgram per millimole of creatinine,,ucum-common,UCUM Common units,ucum-common,Terminology
+ug/min,http://unitsofmeasure.org,microgram per minute,,ucum-common,UCUM Common units,ucum-common,Terminology
+ug/ng,http://unitsofmeasure.org,microgram per nanogram,,ucum-common,UCUM Common units,ucum-common,Terminology
+ug/{specimen},http://unitsofmeasure.org,microgram per specimen,,ucum-common,UCUM Common units,ucum-common,Terminology
+ug/[sft_i],http://unitsofmeasure.org,microgram per square foot (international),,ucum-common,UCUM Common units,ucum-common,Terminology
+ug/m2,http://unitsofmeasure.org,microgram per square meter,,ucum-common,UCUM Common units,ucum-common,Terminology
+u[IU]/L,http://unitsofmeasure.org,microinternational unit per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+ukat,http://unitsofmeasure.org,microkatal,,ucum-common,UCUM Common units,ucum-common,Terminology
+uL,http://unitsofmeasure.org,microliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+uL/(2.h),http://unitsofmeasure.org,microliter per 2 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+uL/h,http://unitsofmeasure.org,microliter per hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+um,http://unitsofmeasure.org,micrometer,,ucum-common,UCUM Common units,ucum-common,Terminology
+umol,http://unitsofmeasure.org,micromole,,ucum-common,UCUM Common units,ucum-common,Terminology
+umol{BCE}/mol,http://unitsofmeasure.org,micromole bone collagen equivalent per mole,,ucum-common,UCUM Common units,ucum-common,Terminology
+umol/(2.h),http://unitsofmeasure.org,micromole per 2 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+umol/(24.h),http://unitsofmeasure.org,micromole per 24 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+umol/(8.h),http://unitsofmeasure.org,micromole per 8 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+umol/d,http://unitsofmeasure.org,micromole per day,,ucum-common,UCUM Common units,ucum-common,Terminology
+umol/dL,http://unitsofmeasure.org,micromole per deciliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+umol/dL{GF},http://unitsofmeasure.org,micromole per deciliter of glomerular filtrate,,ucum-common,UCUM Common units,ucum-common,Terminology
+umol/g,http://unitsofmeasure.org,micromole per gram,,ucum-common,UCUM Common units,ucum-common,Terminology
+umol/g{creat},http://unitsofmeasure.org,micromole per gram of creatinine,,ucum-common,UCUM Common units,ucum-common,Terminology
+umol/g{Hb},http://unitsofmeasure.org,micromole per gram of hemoglobin,,ucum-common,UCUM Common units,ucum-common,Terminology
+umol/h,http://unitsofmeasure.org,micromole per hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+umol/kg,http://unitsofmeasure.org,micromole per kilogram,,ucum-common,UCUM Common units,ucum-common,Terminology
+umol/kg{feces},http://unitsofmeasure.org,micromole per kilogram of feces,,ucum-common,UCUM Common units,ucum-common,Terminology
+umol/L,http://unitsofmeasure.org,micromole per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+umol/L{RBCs},http://unitsofmeasure.org,micromole per liter of red blood cells,,ucum-common,UCUM Common units,ucum-common,Terminology
+umol/L/h,http://unitsofmeasure.org,micromole per liter per hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+umol/umol,http://unitsofmeasure.org,micromole per micromole,,ucum-common,UCUM Common units,ucum-common,Terminology
+umol/umol{creat},http://unitsofmeasure.org,micromole per micromole of creatinine,,ucum-common,UCUM Common units,ucum-common,Terminology
+umol/mg,http://unitsofmeasure.org,micromole per milligram,,ucum-common,UCUM Common units,ucum-common,Terminology
+umol/mg{creat},http://unitsofmeasure.org,micromole per milligram of creatinine,,ucum-common,UCUM Common units,ucum-common,Terminology
+umol/mL,http://unitsofmeasure.org,micromole per milliliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+umol/mL/min,http://unitsofmeasure.org,micromole per milliliter per minute,,ucum-common,UCUM Common units,ucum-common,Terminology
+umol/mmol,http://unitsofmeasure.org,micromole per millimole,,ucum-common,UCUM Common units,ucum-common,Terminology
+umol/mmol{creat},http://unitsofmeasure.org,micromole per millimole of creatinine,,ucum-common,UCUM Common units,ucum-common,Terminology
+umol/10*6{RBC},http://unitsofmeasure.org,micromole per million red blood cell,,ucum-common,UCUM Common units,ucum-common,Terminology
+umol/min,http://unitsofmeasure.org,micromole per minute,,ucum-common,UCUM Common units,ucum-common,Terminology
+umol/min/g,http://unitsofmeasure.org,micromole per minute per gram,,ucum-common,UCUM Common units,ucum-common,Terminology
+umol/min/g{mucosa},http://unitsofmeasure.org,micromole per minute per gram of mucosa,,ucum-common,UCUM Common units,ucum-common,Terminology
+umol/min/g{prot},http://unitsofmeasure.org,micromole per minute per gram of protein,,ucum-common,UCUM Common units,ucum-common,Terminology
+umol/min/L,http://unitsofmeasure.org,micromole per minute per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+umol/mol,http://unitsofmeasure.org,micromole per mole,,ucum-common,UCUM Common units,ucum-common,Terminology
+umol/mol{creat},http://unitsofmeasure.org,micromole per mole of creatinine,,ucum-common,UCUM Common units,ucum-common,Terminology
+umol/mol{Hb},http://unitsofmeasure.org,micromole per mole of hemoglobin,,ucum-common,UCUM Common units,ucum-common,Terminology
+um/s,http://unitsofmeasure.org,microns per second,,ucum-common,UCUM Common units,ucum-common,Terminology
+uOhm,http://unitsofmeasure.org,microOhm,,ucum-common,UCUM Common units,ucum-common,Terminology
+us,http://unitsofmeasure.org,microsecond,,ucum-common,UCUM Common units,ucum-common,Terminology
+uV,http://unitsofmeasure.org,microvolt,,ucum-common,UCUM Common units,ucum-common,Terminology
+[mi_i],http://unitsofmeasure.org,mile (international),,ucum-common,UCUM Common units,ucum-common,Terminology
+mU/g,http://unitsofmeasure.org,milli  enzyme unit per gram,,ucum-common,UCUM Common units,ucum-common,Terminology
+mU/mL,http://unitsofmeasure.org,milli  enzyme unit per milliliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+mU/mL/min,http://unitsofmeasure.org,milli  enzyme unit per milliliter per minute,,ucum-common,UCUM Common units,ucum-common,Terminology
+mU/mmol{creat},http://unitsofmeasure.org,milli  enzyme unit per millimole of creatinine,,ucum-common,UCUM Common units,ucum-common,Terminology
+mU/mmol{RBCs},http://unitsofmeasure.org,milli  enzyme unit per millimole of red blood cells,,ucum-common,UCUM Common units,ucum-common,Terminology
+m[IU]/mL,http://unitsofmeasure.org,milli  international unit per milliliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+mU/g{Hb},http://unitsofmeasure.org,milli enzyme unit per gram of hemoglobin,,ucum-common,UCUM Common units,ucum-common,Terminology
+mU/g{prot},http://unitsofmeasure.org,milli enzyme unit per gram of protein,,ucum-common,UCUM Common units,ucum-common,Terminology
+mU/L,http://unitsofmeasure.org,milli enzyme unit per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+mU/mg,http://unitsofmeasure.org,milli enzyme unit per milligram,,ucum-common,UCUM Common units,ucum-common,Terminology
+mU/mg{creat},http://unitsofmeasure.org,milli enzyme unit per milligram of creatinine,,ucum-common,UCUM Common units,ucum-common,Terminology
+m[IU]/L,http://unitsofmeasure.org,milli international unit per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+mA,http://unitsofmeasure.org,milliampere,,ucum-common,UCUM Common units,ucum-common,Terminology
+mbar,http://unitsofmeasure.org,millibar,,ucum-common,UCUM Common units,ucum-common,Terminology
+mbar/L/s,http://unitsofmeasure.org,millibar per liter per second,,ucum-common,UCUM Common units,ucum-common,Terminology
+mbar.s/L,http://unitsofmeasure.org,millibar second per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+meq,http://unitsofmeasure.org,milliequivalent,,ucum-common,UCUM Common units,ucum-common,Terminology
+meq/(2.h),http://unitsofmeasure.org,milliequivalent per 2 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+meq/(24.h),http://unitsofmeasure.org,milliequivalent per 24 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+meq/(8.h),http://unitsofmeasure.org,milliequivalent per 8 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+meq/d,http://unitsofmeasure.org,milliequivalent per day,,ucum-common,UCUM Common units,ucum-common,Terminology
+meq/dL,http://unitsofmeasure.org,milliequivalent per deciliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+meq/g,http://unitsofmeasure.org,milliequivalent per gram,,ucum-common,UCUM Common units,ucum-common,Terminology
+meq/g{creat},http://unitsofmeasure.org,milliequivalent per gram of creatinine,,ucum-common,UCUM Common units,ucum-common,Terminology
+meq/h,http://unitsofmeasure.org,milliequivalent per hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+meq/kg,http://unitsofmeasure.org,milliequivalent per kilogram,,ucum-common,UCUM Common units,ucum-common,Terminology
+meq/kg/h,http://unitsofmeasure.org,milliequivalent per kilogram per hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+meq/L,http://unitsofmeasure.org,milliequivalent per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+meq/mL,http://unitsofmeasure.org,milliequivalent per milliliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+meq/min,http://unitsofmeasure.org,milliequivalent per minute,,ucum-common,UCUM Common units,ucum-common,Terminology
+meq/{specimen},http://unitsofmeasure.org,milliequivalent per specimen,,ucum-common,UCUM Common units,ucum-common,Terminology
+meq/m2,http://unitsofmeasure.org,milliequivalent per square meter,,ucum-common,UCUM Common units,ucum-common,Terminology
+meq/{total_volume},http://unitsofmeasure.org,milliequivalent per total volume,,ucum-common,UCUM Common units,ucum-common,Terminology
+mg,http://unitsofmeasure.org,milligram,,ucum-common,UCUM Common units,ucum-common,Terminology
+mg{FEU}/L,http://unitsofmeasure.org,milligram fibrinogen equivalent unit per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+mg/(10.h),http://unitsofmeasure.org,milligram per 10 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+mg/(12.h),http://unitsofmeasure.org,milligram per 12 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+mg/(2.h),http://unitsofmeasure.org,milligram per 2 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+mg/(24.h),http://unitsofmeasure.org,milligram per 24 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+mg/(6.h),http://unitsofmeasure.org,milligram per 6 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+mg/(72.h),http://unitsofmeasure.org,milligram per 72 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+mg/(8.h),http://unitsofmeasure.org,milligram per 8 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+mg/{collection},http://unitsofmeasure.org,milligram per collection,,ucum-common,UCUM Common units,ucum-common,Terminology
+mg/m3,http://unitsofmeasure.org,milligram per cubic meter,,ucum-common,UCUM Common units,ucum-common,Terminology
+mg/d,http://unitsofmeasure.org,milligram per day,,ucum-common,UCUM Common units,ucum-common,Terminology
+mg/d/{1.73_m2},http://unitsofmeasure.org,milligram per day per 1.73 square meter,,ucum-common,UCUM Common units,ucum-common,Terminology
+mg/dL,http://unitsofmeasure.org,milligram per deciliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+mg/dL{RBCs},http://unitsofmeasure.org,milligram per deciliter of red blood cells,,ucum-common,UCUM Common units,ucum-common,Terminology
+mg/g,http://unitsofmeasure.org,milligram per gram,,ucum-common,UCUM Common units,ucum-common,Terminology
+mg/g{creat},http://unitsofmeasure.org,milligram per gram of creatinine,,ucum-common,UCUM Common units,ucum-common,Terminology
+mg/g{dry_tissue},http://unitsofmeasure.org,milligram per gram of dry tissue,,ucum-common,UCUM Common units,ucum-common,Terminology
+mg/g{feces},http://unitsofmeasure.org,milligram per gram of feces,,ucum-common,UCUM Common units,ucum-common,Terminology
+mg/g{tissue},http://unitsofmeasure.org,milligram per gram of tissue,,ucum-common,UCUM Common units,ucum-common,Terminology
+mg/g{wet_tissue},http://unitsofmeasure.org,milligram per gram of wet tissue,,ucum-common,UCUM Common units,ucum-common,Terminology
+mg/h,http://unitsofmeasure.org,milligram per hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+mg/kg,http://unitsofmeasure.org,milligram per kilogram,,ucum-common,UCUM Common units,ucum-common,Terminology
+mg/kg/(8.h),http://unitsofmeasure.org,milligram per kilogram per 8 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+mg/kg/d,http://unitsofmeasure.org,milligram per kilogram per day,,ucum-common,UCUM Common units,ucum-common,Terminology
+mg/kg/h,http://unitsofmeasure.org,milligram per kilogram per hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+mg/kg/min,http://unitsofmeasure.org,milligram per kilogram per minute,,ucum-common,UCUM Common units,ucum-common,Terminology
+mg/L,http://unitsofmeasure.org,milligram per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+mg/L{RBCs},http://unitsofmeasure.org,milligram per liter of red blood cells,,ucum-common,UCUM Common units,ucum-common,Terminology
+mg/mg,http://unitsofmeasure.org,milligram per milligram,,ucum-common,UCUM Common units,ucum-common,Terminology
+mg/mg{creat},http://unitsofmeasure.org,milligram per milligram of creatinine,,ucum-common,UCUM Common units,ucum-common,Terminology
+mg/mL,http://unitsofmeasure.org,milligram per milliliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+mg/mmol,http://unitsofmeasure.org,milligram per millimole,,ucum-common,UCUM Common units,ucum-common,Terminology
+mg/mmol{creat},http://unitsofmeasure.org,milligram per millimole of creatinine,,ucum-common,UCUM Common units,ucum-common,Terminology
+mg/min,http://unitsofmeasure.org,milligram per minute,,ucum-common,UCUM Common units,ucum-common,Terminology
+mg/{specimen},http://unitsofmeasure.org,milligram per specimen,,ucum-common,UCUM Common units,ucum-common,Terminology
+mg/m2,http://unitsofmeasure.org,milligram per square meter,,ucum-common,UCUM Common units,ucum-common,Terminology
+mg/{total_output},http://unitsofmeasure.org,milligram per total output,,ucum-common,UCUM Common units,ucum-common,Terminology
+mg/{total_volume},http://unitsofmeasure.org,milligram per total volume,,ucum-common,UCUM Common units,ucum-common,Terminology
+mg/wk,http://unitsofmeasure.org,milligram per week,,ucum-common,UCUM Common units,ucum-common,Terminology
+mL,http://unitsofmeasure.org,milliliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+mL{fetal_RBCs},http://unitsofmeasure.org,milliliter of fetal red blood cells,,ucum-common,UCUM Common units,ucum-common,Terminology
+mL/(10.h),http://unitsofmeasure.org,milliliter per 10 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+mL/(12.h),http://unitsofmeasure.org,milliliter per 12 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+mL/(2.h),http://unitsofmeasure.org,milliliter per 2 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+mL/(24.h),http://unitsofmeasure.org,milliliter per 24 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+mL/(4.h),http://unitsofmeasure.org,milliliter per 4 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+mL/(5.h),http://unitsofmeasure.org,milliliter per 5 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+mL/(6.h),http://unitsofmeasure.org,milliliter per 6 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+mL/(72.h),http://unitsofmeasure.org,milliliter per 72 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+mL/(8.h),http://unitsofmeasure.org,milliliter per 8 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+mL/(8.h)/kg,http://unitsofmeasure.org,milliliter per 8 hour per kilogram,,ucum-common,UCUM Common units,ucum-common,Terminology
+mL/cm[H2O],http://unitsofmeasure.org,milliliter per centimeter of water,,ucum-common,UCUM Common units,ucum-common,Terminology
+mL/d,http://unitsofmeasure.org,milliliter per day,,ucum-common,UCUM Common units,ucum-common,Terminology
+mL/dL,http://unitsofmeasure.org,milliliter per deciliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+mL/{beat},http://unitsofmeasure.org,milliliter per heart beat,,ucum-common,UCUM Common units,ucum-common,Terminology
+mL/{beat}/m2,http://unitsofmeasure.org,milliliter per heart beat per  square meter,,ucum-common,UCUM Common units,ucum-common,Terminology
+mL/h,http://unitsofmeasure.org,milliliter per hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+mL/kg,http://unitsofmeasure.org,milliliter per kilogram,,ucum-common,UCUM Common units,ucum-common,Terminology
+mL/kg/(8.h),http://unitsofmeasure.org,milliliter per kilogram per 8 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+mL/kg/d,http://unitsofmeasure.org,milliliter per kilogram per day,,ucum-common,UCUM Common units,ucum-common,Terminology
+mL/kg/h,http://unitsofmeasure.org,milliliter per kilogram per hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+mL/kg/min,http://unitsofmeasure.org,milliliter per kilogram per minute,,ucum-common,UCUM Common units,ucum-common,Terminology
+mL/mbar,http://unitsofmeasure.org,milliliter per millibar,,ucum-common,UCUM Common units,ucum-common,Terminology
+mL/mm,http://unitsofmeasure.org,milliliter per millimeter,,ucum-common,UCUM Common units,ucum-common,Terminology
+mL/min,http://unitsofmeasure.org,milliliter per minute,,ucum-common,UCUM Common units,ucum-common,Terminology
+mL/min/{1.73_m2},http://unitsofmeasure.org,milliliter per minute per 1.73 square meter,,ucum-common,UCUM Common units,ucum-common,Terminology
+mL/min/m2,http://unitsofmeasure.org,milliliter per minute per square meter,,ucum-common,UCUM Common units,ucum-common,Terminology
+mL/s,http://unitsofmeasure.org,milliliter per second,,ucum-common,UCUM Common units,ucum-common,Terminology
+mL/[sin_i],http://unitsofmeasure.org,milliliter per square inch (international),,ucum-common,UCUM Common units,ucum-common,Terminology
+mL/m2,http://unitsofmeasure.org,milliliter per square meter,,ucum-common,UCUM Common units,ucum-common,Terminology
+mm,http://unitsofmeasure.org,millimeter,,ucum-common,UCUM Common units,ucum-common,Terminology
+mm[Hg],http://unitsofmeasure.org,millimeter of mercury,,ucum-common,UCUM Common units,ucum-common,Terminology
+mm[H2O],http://unitsofmeasure.org,millimeter of water,,ucum-common,UCUM Common units,ucum-common,Terminology
+mm/h,http://unitsofmeasure.org,millimeter per hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+mm/min,http://unitsofmeasure.org,millimeter per minute,,ucum-common,UCUM Common units,ucum-common,Terminology
+mmol,http://unitsofmeasure.org,millimole,,ucum-common,UCUM Common units,ucum-common,Terminology
+mmol/(12.h),http://unitsofmeasure.org,millimole per 12 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+mmol/(2.h),http://unitsofmeasure.org,millimole per 2 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+mmol/(24.h),http://unitsofmeasure.org,millimole per 24 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+mmol/(5.h),http://unitsofmeasure.org,millimole per 5 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+mmol/(6.h),http://unitsofmeasure.org,millimole per 6 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+mmol/(8.h),http://unitsofmeasure.org,millimole per 8 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+mmol/d,http://unitsofmeasure.org,millimole per day,,ucum-common,UCUM Common units,ucum-common,Terminology
+mmol/dL,http://unitsofmeasure.org,millimole per deciliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+mmol/{ejaculate},http://unitsofmeasure.org,millimole per ejaculate,,ucum-common,UCUM Common units,ucum-common,Terminology
+mmol/g,http://unitsofmeasure.org,millimole per gram,,ucum-common,UCUM Common units,ucum-common,Terminology
+mmol/g{creat},http://unitsofmeasure.org,millimole per gram of creatinine,,ucum-common,UCUM Common units,ucum-common,Terminology
+mmol/h,http://unitsofmeasure.org,millimole per hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+mmol/h/mg{Hb},http://unitsofmeasure.org,millimole per hour per milligram of hemoglobin,,ucum-common,UCUM Common units,ucum-common,Terminology
+mmol/h/mg{prot},http://unitsofmeasure.org,millimole per hour per milligram of protein,,ucum-common,UCUM Common units,ucum-common,Terminology
+mmol/kg,http://unitsofmeasure.org,millimole per kilogram,,ucum-common,UCUM Common units,ucum-common,Terminology
+mmol/kg/(8.h),http://unitsofmeasure.org,millimole per kilogram per 8 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+mmol/kg/d,http://unitsofmeasure.org,millimole per kilogram per day,,ucum-common,UCUM Common units,ucum-common,Terminology
+mmol/kg/h,http://unitsofmeasure.org,millimole per kilogram per hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+mmol/kg/min,http://unitsofmeasure.org,millimole per kilogram per minute,,ucum-common,UCUM Common units,ucum-common,Terminology
+mmol/L,http://unitsofmeasure.org,millimole per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+mmol/L{RBCs},http://unitsofmeasure.org,millimole per liter of red blood cells,,ucum-common,UCUM Common units,ucum-common,Terminology
+mmol/mmol,http://unitsofmeasure.org,millimole per millimole,,ucum-common,UCUM Common units,ucum-common,Terminology
+mmol/mmol{urea},http://unitsofmeasure.org,millimole per millimole of urea,,ucum-common,UCUM Common units,ucum-common,Terminology
+mmol/mmol{creat},http://unitsofmeasure.org,millimole per millmole of creatinine,,ucum-common,UCUM Common units,ucum-common,Terminology
+mmol/min,http://unitsofmeasure.org,millimole per minute,,ucum-common,UCUM Common units,ucum-common,Terminology
+mmol/mol,http://unitsofmeasure.org,millimole per mole,,ucum-common,UCUM Common units,ucum-common,Terminology
+mmol/mol{creat},http://unitsofmeasure.org,millimole per mole of creatinine,,ucum-common,UCUM Common units,ucum-common,Terminology
+mmol/s/L,http://unitsofmeasure.org,millimole per second per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+mmol/{specimen},http://unitsofmeasure.org,millimole per specimen,,ucum-common,UCUM Common units,ucum-common,Terminology
+mmol/m2,http://unitsofmeasure.org,millimole per square meter,,ucum-common,UCUM Common units,ucum-common,Terminology
+mmol/{total_vol},http://unitsofmeasure.org,millimole per total volume,,ucum-common,UCUM Common units,ucum-common,Terminology
+10*6,http://unitsofmeasure.org,million,,ucum-common,UCUM Common units,ucum-common,Terminology
+10*6.[CFU]/L,http://unitsofmeasure.org,million colony forming unit per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+10*6.[IU],http://unitsofmeasure.org,million international unit,,ucum-common,UCUM Common units,ucum-common,Terminology
+10*6/(24.h),http://unitsofmeasure.org,million per 24 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+10*6/kg,http://unitsofmeasure.org,million per kilogram,,ucum-common,UCUM Common units,ucum-common,Terminology
+10*6/L,http://unitsofmeasure.org,million per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+10*6/uL,http://unitsofmeasure.org,million per microliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+10*6/mL,http://unitsofmeasure.org,million per milliliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+mosm,http://unitsofmeasure.org,milliosmole,,ucum-common,UCUM Common units,ucum-common,Terminology
+mosm/kg,http://unitsofmeasure.org,milliosmole per kilogram,,ucum-common,UCUM Common units,ucum-common,Terminology
+mosm/L,http://unitsofmeasure.org,milliosmole per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+mPa,http://unitsofmeasure.org,millipascal,,ucum-common,UCUM Common units,ucum-common,Terminology
+mPa.s,http://unitsofmeasure.org,millipascal second,,ucum-common,UCUM Common units,ucum-common,Terminology
+ms,http://unitsofmeasure.org,millisecond,,ucum-common,UCUM Common units,ucum-common,Terminology
+mV,http://unitsofmeasure.org,millivolt,,ucum-common,UCUM Common units,ucum-common,Terminology
+mV/s,http://unitsofmeasure.org,millivolt per second,,ucum-common,UCUM Common units,ucum-common,Terminology
+{minidrop}/min,http://unitsofmeasure.org,minidrop per minute,,ucum-common,UCUM Common units,ucum-common,Terminology
+{minidrop}/s,http://unitsofmeasure.org,minidrop per second,,ucum-common,UCUM Common units,ucum-common,Terminology
+min,http://unitsofmeasure.org,minute,,ucum-common,UCUM Common units,ucum-common,Terminology
+min/d,http://unitsofmeasure.org,minute per day,,ucum-common,UCUM Common units,ucum-common,Terminology
+min/wk,http://unitsofmeasure.org,minute per week,,ucum-common,UCUM Common units,ucum-common,Terminology
+mol,http://unitsofmeasure.org,mole,,ucum-common,UCUM Common units,ucum-common,Terminology
+mol/m3,http://unitsofmeasure.org,mole per cubic meter,,ucum-common,UCUM Common units,ucum-common,Terminology
+mol/kg,http://unitsofmeasure.org,mole per kilogram,,ucum-common,UCUM Common units,ucum-common,Terminology
+mol/kg/s,http://unitsofmeasure.org,mole per kilogram per second,,ucum-common,UCUM Common units,ucum-common,Terminology
+mol/L,http://unitsofmeasure.org,mole per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+mol/mL,http://unitsofmeasure.org,mole per milliliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+mol/mol,http://unitsofmeasure.org,mole per mole,,ucum-common,UCUM Common units,ucum-common,Terminology
+mol/s,http://unitsofmeasure.org,mole per second,,ucum-common,UCUM Common units,ucum-common,Terminology
+{#}/{platelet},http://unitsofmeasure.org,molecule per platelet,,ucum-common,UCUM Common units,ucum-common,Terminology
+mo,http://unitsofmeasure.org,month,,ucum-common,UCUM Common units,ucum-common,Terminology
+{mm/dd/yyyy},http://unitsofmeasure.org,month-day-year,,ucum-common,UCUM Common units,ucum-common,Terminology
+{M.o.M},http://unitsofmeasure.org,multiple of the median,,ucum-common,UCUM Common units,ucum-common,Terminology
+{mutation},http://unitsofmeasure.org,mutation,,ucum-common,UCUM Common units,ucum-common,Terminology
+nU/mL,http://unitsofmeasure.org,nanoenzyme unit per milliliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+nU/{RBC},http://unitsofmeasure.org,nanoenzyme unit per red blood cell,,ucum-common,UCUM Common units,ucum-common,Terminology
+ng,http://unitsofmeasure.org,nanogram,,ucum-common,UCUM Common units,ucum-common,Terminology
+ng{FEU}/mL,http://unitsofmeasure.org,nanogram fibrinogen equivalent unit per milliliter ,,ucum-common,UCUM Common units,ucum-common,Terminology
+ng/(24.h),http://unitsofmeasure.org,nanogram per 24 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+ng/(8.h),http://unitsofmeasure.org,nanogram per 8 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+ng/d,http://unitsofmeasure.org,nanogram per day,,ucum-common,UCUM Common units,ucum-common,Terminology
+ng/dL,http://unitsofmeasure.org,nanogram per deciliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+ng/U,http://unitsofmeasure.org,nanogram per enzyme unit,,ucum-common,UCUM Common units,ucum-common,Terminology
+ng/g,http://unitsofmeasure.org,nanogram per gram,,ucum-common,UCUM Common units,ucum-common,Terminology
+ng/g{creat},http://unitsofmeasure.org,nanogram per gram of creatinine,,ucum-common,UCUM Common units,ucum-common,Terminology
+ng/h,http://unitsofmeasure.org,nanogram per hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+ng/kg,http://unitsofmeasure.org,nanogram per kilogram,,ucum-common,UCUM Common units,ucum-common,Terminology
+ng/kg/(8.h),http://unitsofmeasure.org,nanogram per kilogram per 8 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+ng/kg/h,http://unitsofmeasure.org,nanogram per kilogram per hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+ng/kg/min,http://unitsofmeasure.org,nanogram per kilogram per minute,,ucum-common,UCUM Common units,ucum-common,Terminology
+ng/L,http://unitsofmeasure.org,nanogram per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+ng/mg,http://unitsofmeasure.org,nanogram per milligram,,ucum-common,UCUM Common units,ucum-common,Terminology
+ng/mg{creat},http://unitsofmeasure.org,nanogram per milligram of creatinine,,ucum-common,UCUM Common units,ucum-common,Terminology
+ng/mg{prot},http://unitsofmeasure.org,nanogram per milligram of protein,,ucum-common,UCUM Common units,ucum-common,Terminology
+ng/mg/h,http://unitsofmeasure.org,nanogram per milligram per hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+ng/mL{RBCs},http://unitsofmeasure.org,nanogram per milliliter of red blood cells,,ucum-common,UCUM Common units,ucum-common,Terminology
+ng/mL/h,http://unitsofmeasure.org,nanogram per milliliter per hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+ng/10*6,http://unitsofmeasure.org,nanogram per million,,ucum-common,UCUM Common units,ucum-common,Terminology
+ng/10*6{RBCs},http://unitsofmeasure.org,nanogram per million red blood cells,,ucum-common,UCUM Common units,ucum-common,Terminology
+ng/mL,http://unitsofmeasure.org,nanogram per millliiter,,ucum-common,UCUM Common units,ucum-common,Terminology
+ng/min,http://unitsofmeasure.org,nanogram per minute,,ucum-common,UCUM Common units,ucum-common,Terminology
+ng/s,http://unitsofmeasure.org,nanogram per second,,ucum-common,UCUM Common units,ucum-common,Terminology
+ng/m2,http://unitsofmeasure.org,nanogram per square meter,,ucum-common,UCUM Common units,ucum-common,Terminology
+nkat,http://unitsofmeasure.org,nanokatal,,ucum-common,UCUM Common units,ucum-common,Terminology
+nL,http://unitsofmeasure.org,nanoliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+nm,http://unitsofmeasure.org,nanometer,,ucum-common,UCUM Common units,ucum-common,Terminology
+nm/s/L,http://unitsofmeasure.org,nanometer per second per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol,http://unitsofmeasure.org,nanomole,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol{BCE},http://unitsofmeasure.org,nanomole bone collagen equivalent,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol{BCE}/L,http://unitsofmeasure.org,nanomole bone collagen equivalent per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol/mmol{creat},http://unitsofmeasure.org,nanomole bone collagen equivalent per millimole of creatinine,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol/mg{prot},http://unitsofmeasure.org,nanomole of 1/2 cystine per milligram of protein,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol{ATP},http://unitsofmeasure.org,nanomole of ATP ,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol/(24.h),http://unitsofmeasure.org,nanomole per 24 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol/d,http://unitsofmeasure.org,nanomole per day,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol/dL,http://unitsofmeasure.org,nanomole per deciliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol/dL{GF},http://unitsofmeasure.org,nanomole per deciliter of glomerular filtrate,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol/g,http://unitsofmeasure.org,nanomole per gram,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol/g{creat},http://unitsofmeasure.org,nanomole per gram of creatinine,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol/g{dry_wt},http://unitsofmeasure.org,nanomole per gram of dry weight,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol/h/L,http://unitsofmeasure.org,nanomole per hour per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol/h/mg{prot},http://unitsofmeasure.org,nanomole per hour per milligram of protein,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol/h/mL,http://unitsofmeasure.org,nanomole per hour per milliliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol/L,http://unitsofmeasure.org,nanomole per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol/L{RBCs},http://unitsofmeasure.org,nanomole per liter of red blood cells,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol/L/mmol{creat},http://unitsofmeasure.org,nanomole per liter per millimole of creatinine,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol/m/mg{prot},http://unitsofmeasure.org,nanomole per meter per milligram of protein,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol/umol{creat},http://unitsofmeasure.org,nanomole per micromole  of creatinine,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol/mg,http://unitsofmeasure.org,nanomole per milligram,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol/mg{creat},http://unitsofmeasure.org,nanomole per milligram of creatinine,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol/mg{prot},http://unitsofmeasure.org,nanomole per milligram of protein,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol/mg{prot}/h,http://unitsofmeasure.org,nanomole per milligram of protein per hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol/mg/h,http://unitsofmeasure.org,nanomole per milligram per hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol/mL,http://unitsofmeasure.org,nanomole per milliliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol/mL/h,http://unitsofmeasure.org,nanomole per milliliter per hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol/mL/min,http://unitsofmeasure.org,nanomole per milliliter per minute,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol/mmol,http://unitsofmeasure.org,nanomole per millimole,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol/mmol{creat},http://unitsofmeasure.org,nanomole per millimole of creatinine,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol/min,http://unitsofmeasure.org,nanomole per minute,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol/min/mg{Hb},http://unitsofmeasure.org,nanomole per minute per milligram of hemoglobin,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol/min/mg{prot},http://unitsofmeasure.org,nanomole per minute per milligram of protein,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol/min/mg{protein},http://unitsofmeasure.org,nanomole per minute per milligram protein,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol/min/mL,http://unitsofmeasure.org,nanomole per minute per milliliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol/min/10*6{cells},http://unitsofmeasure.org,nanomole per minute per million cells,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol/mol,http://unitsofmeasure.org,nanomole per mole,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol/mol{creat},http://unitsofmeasure.org,nanomole per mole creatinine,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol/nmol,http://unitsofmeasure.org,nanomole per nanomole,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol/s,http://unitsofmeasure.org,nanomole per second,,ucum-common,UCUM Common units,ucum-common,Terminology
+nmol/s/L,http://unitsofmeasure.org,nanomole per second per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+ns,http://unitsofmeasure.org,nanosecond,,ucum-common,UCUM Common units,ucum-common,Terminology
+N,http://unitsofmeasure.org,Newton,,ucum-common,UCUM Common units,ucum-common,Terminology
+N.cm,http://unitsofmeasure.org,Newton centimeter,,ucum-common,UCUM Common units,ucum-common,Terminology
+N.s,http://unitsofmeasure.org,Newton second,,ucum-common,UCUM Common units,ucum-common,Terminology
+{#},http://unitsofmeasure.org,number,,ucum-common,UCUM Common units,ucum-common,Terminology
+{#}/a,http://unitsofmeasure.org,number per annum (year),,ucum-common,UCUM Common units,ucum-common,Terminology
+{#}/d,http://unitsofmeasure.org,number per day,,ucum-common,UCUM Common units,ucum-common,Terminology
+{#}/g,http://unitsofmeasure.org,number per gram,,ucum-common,UCUM Common units,ucum-common,Terminology
+{#}/[HPF],http://unitsofmeasure.org,number per high power field,,ucum-common,UCUM Common units,ucum-common,Terminology
+{#}/L,http://unitsofmeasure.org,number per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+{#}/[LPF],http://unitsofmeasure.org,number per low power field,,ucum-common,UCUM Common units,ucum-common,Terminology
+{#}/uL,http://unitsofmeasure.org,number per microliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+{#}/mL,http://unitsofmeasure.org,number per milliliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+{#}/min,http://unitsofmeasure.org,number per minute,,ucum-common,UCUM Common units,ucum-common,Terminology
+{#}/wk,http://unitsofmeasure.org,number per week,,ucum-common,UCUM Common units,ucum-common,Terminology
+Ohm,http://unitsofmeasure.org,Ohm,,ucum-common,UCUM Common units,ucum-common,Terminology
+Ohm.m,http://unitsofmeasure.org,Ohm meter,,ucum-common,UCUM Common units,ucum-common,Terminology
+10*5,http://unitsofmeasure.org,one hundred thousand,,ucum-common,UCUM Common units,ucum-common,Terminology
+{OD_unit},http://unitsofmeasure.org,optical density unit,,ucum-common,UCUM Common units,ucum-common,Terminology
+osm,http://unitsofmeasure.org,osmole,,ucum-common,UCUM Common units,ucum-common,Terminology
+osm/kg,http://unitsofmeasure.org,osmole per kilogram,,ucum-common,UCUM Common units,ucum-common,Terminology
+osm/L,http://unitsofmeasure.org,osmole per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+[oz_av],http://unitsofmeasure.org,ounce (US and British),,ucum-common,UCUM Common units,ucum-common,Terminology
+{Pan_Bio'U},http://unitsofmeasure.org,panbio unit,,ucum-common,UCUM Common units,ucum-common,Terminology
+[ppb],http://unitsofmeasure.org,part per billion,,ucum-common,UCUM Common units,ucum-common,Terminology
+[ppm],http://unitsofmeasure.org,part per million,,ucum-common,UCUM Common units,ucum-common,Terminology
+[ppm]{v/v},http://unitsofmeasure.org,part per million in volume per volume,,ucum-common,UCUM Common units,ucum-common,Terminology
+[ppth],http://unitsofmeasure.org,part per thousand,,ucum-common,UCUM Common units,ucum-common,Terminology
+[pptr],http://unitsofmeasure.org,part per trillion,,ucum-common,UCUM Common units,ucum-common,Terminology
+Pa,http://unitsofmeasure.org,Pascal,,ucum-common,UCUM Common units,ucum-common,Terminology
+/10*10,http://unitsofmeasure.org,per 10 billion  ,,ucum-common,UCUM Common units,ucum-common,Terminology
+/10*4{RBCs},http://unitsofmeasure.org,per 10 thousand red blood cells,,ucum-common,UCUM Common units,ucum-common,Terminology
+/100,http://unitsofmeasure.org,per 100,,ucum-common,UCUM Common units,ucum-common,Terminology
+/100{cells},http://unitsofmeasure.org,per 100 cells,,ucum-common,UCUM Common units,ucum-common,Terminology
+/100{neutrophils},http://unitsofmeasure.org,per 100 neutrophils,,ucum-common,UCUM Common units,ucum-common,Terminology
+/100{spermatozoa},http://unitsofmeasure.org,per 100 spermatozoa,,ucum-common,UCUM Common units,ucum-common,Terminology
+/100{WBCs},http://unitsofmeasure.org,per 100 white blood cells,,ucum-common,UCUM Common units,ucum-common,Terminology
+/[arb'U],http://unitsofmeasure.org,per arbitrary unit,,ucum-common,UCUM Common units,ucum-common,Terminology
+/10*9,http://unitsofmeasure.org,per billion,,ucum-common,UCUM Common units,ucum-common,Terminology
+/cm[H2O],http://unitsofmeasure.org,per centimeter of water,,ucum-common,UCUM Common units,ucum-common,Terminology
+/m3,http://unitsofmeasure.org,per cubic meter,,ucum-common,UCUM Common units,ucum-common,Terminology
+/d,http://unitsofmeasure.org,per day,,ucum-common,UCUM Common units,ucum-common,Terminology
+/dL,http://unitsofmeasure.org,per deciliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+/{entity},http://unitsofmeasure.org,per entity,,ucum-common,UCUM Common units,ucum-common,Terminology
+/U,http://unitsofmeasure.org,per enzyme unit,,ucum-common,UCUM Common units,ucum-common,Terminology
+/g,http://unitsofmeasure.org,per gram,,ucum-common,UCUM Common units,ucum-common,Terminology
+/g{creat},http://unitsofmeasure.org,per gram of creatinine,,ucum-common,UCUM Common units,ucum-common,Terminology
+/g{Hb},http://unitsofmeasure.org,per gram of hemoglobin,,ucum-common,UCUM Common units,ucum-common,Terminology
+/g{tot_nit},http://unitsofmeasure.org,per gram of total nitrogen,,ucum-common,UCUM Common units,ucum-common,Terminology
+/g{tot_prot},http://unitsofmeasure.org,per gram of total protein,,ucum-common,UCUM Common units,ucum-common,Terminology
+/g{wet_tis},http://unitsofmeasure.org,per gram of wet tissue,,ucum-common,UCUM Common units,ucum-common,Terminology
+/[HPF],http://unitsofmeasure.org,per high power field,,ucum-common,UCUM Common units,ucum-common,Terminology
+/h,http://unitsofmeasure.org,per hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+/[IU],http://unitsofmeasure.org,per international unit,,ucum-common,UCUM Common units,ucum-common,Terminology
+/kg,http://unitsofmeasure.org,per kilogram,,ucum-common,UCUM Common units,ucum-common,Terminology
+/kg{body_wt},http://unitsofmeasure.org,per kilogram of body weight,,ucum-common,UCUM Common units,ucum-common,Terminology
+/L,http://unitsofmeasure.org,per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+/[LPF],http://unitsofmeasure.org,per low power field,,ucum-common,UCUM Common units,ucum-common,Terminology
+/uL,http://unitsofmeasure.org,per microliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+/mg,http://unitsofmeasure.org,per milligram,,ucum-common,UCUM Common units,ucum-common,Terminology
+/mL,http://unitsofmeasure.org,per milliliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+/mm,http://unitsofmeasure.org,per millimeter,,ucum-common,UCUM Common units,ucum-common,Terminology
+/mmol{creat},http://unitsofmeasure.org,per millimole of creatinine,,ucum-common,UCUM Common units,ucum-common,Terminology
+/10*6,http://unitsofmeasure.org,per million,,ucum-common,UCUM Common units,ucum-common,Terminology
+/min,http://unitsofmeasure.org,per minute,,ucum-common,UCUM Common units,ucum-common,Terminology
+/mo,http://unitsofmeasure.org,per month,,ucum-common,UCUM Common units,ucum-common,Terminology
+/{OIF},http://unitsofmeasure.org,per oil immersion field,,ucum-common,UCUM Common units,ucum-common,Terminology
+/s,http://unitsofmeasure.org,per second,,ucum-common,UCUM Common units,ucum-common,Terminology
+/m2,http://unitsofmeasure.org,per square meter,,ucum-common,UCUM Common units,ucum-common,Terminology
+/10*3,http://unitsofmeasure.org,per thousand,,ucum-common,UCUM Common units,ucum-common,Terminology
+/10*3{RBCs},http://unitsofmeasure.org,per thousand red blood cells,,ucum-common,UCUM Common units,ucum-common,Terminology
+/10*12,http://unitsofmeasure.org,per trillion ,,ucum-common,UCUM Common units,ucum-common,Terminology
+/10*12{RBCs},http://unitsofmeasure.org,per trillion red blood cells,,ucum-common,UCUM Common units,ucum-common,Terminology
+/(12.h),http://unitsofmeasure.org,per twelve hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+/wk,http://unitsofmeasure.org,per week,,ucum-common,UCUM Common units,ucum-common,Terminology
+/a,http://unitsofmeasure.org,per year,,ucum-common,UCUM Common units,ucum-common,Terminology
+%,http://unitsofmeasure.org,percent,,ucum-common,UCUM Common units,ucum-common,Terminology
+%{loss_AChR},http://unitsofmeasure.org,percent  loss of acetylcholine receptor,,ucum-common,UCUM Common units,ucum-common,Terminology
+%{penetration},http://unitsofmeasure.org,percent  penetration,,ucum-common,UCUM Common units,ucum-common,Terminology
+%{abnormal},http://unitsofmeasure.org,percent abnormal,,ucum-common,UCUM Common units,ucum-common,Terminology
+%{activity},http://unitsofmeasure.org,percent activity,,ucum-common,UCUM Common units,ucum-common,Terminology
+%{aggregation},http://unitsofmeasure.org,percent aggregation,,ucum-common,UCUM Common units,ucum-common,Terminology
+%{at_60_min},http://unitsofmeasure.org,percent at 60 minute,,ucum-common,UCUM Common units,ucum-common,Terminology
+%{basal_activity},http://unitsofmeasure.org,percent basal activity,,ucum-common,UCUM Common units,ucum-common,Terminology
+%{binding},http://unitsofmeasure.org,percent binding,,ucum-common,UCUM Common units,ucum-common,Terminology
+%{blockade},http://unitsofmeasure.org,percent blockade,,ucum-common,UCUM Common units,ucum-common,Terminology
+%{blocked},http://unitsofmeasure.org,percent blocked,,ucum-common,UCUM Common units,ucum-common,Terminology
+%{bound},http://unitsofmeasure.org,percent bound,,ucum-common,UCUM Common units,ucum-common,Terminology
+%{breakdown},http://unitsofmeasure.org,percent breakdown,,ucum-common,UCUM Common units,ucum-common,Terminology
+%{vol},http://unitsofmeasure.org,percent by volume,,ucum-common,UCUM Common units,ucum-common,Terminology
+%{deficient},http://unitsofmeasure.org,percent deficient,,ucum-common,UCUM Common units,ucum-common,Terminology
+%{dose},http://unitsofmeasure.org,percent dose,,ucum-common,UCUM Common units,ucum-common,Terminology
+%{excretion},http://unitsofmeasure.org,percent excretion,,ucum-common,UCUM Common units,ucum-common,Terminology
+%{Hb},http://unitsofmeasure.org,percent hemoglobin,,ucum-common,UCUM Common units,ucum-common,Terminology
+%{hemolysis},http://unitsofmeasure.org,percent hemolysis,,ucum-common,UCUM Common units,ucum-common,Terminology
+%{index},http://unitsofmeasure.org,percent index,,ucum-common,UCUM Common units,ucum-common,Terminology
+%{inhibition},http://unitsofmeasure.org,percent inhibition,,ucum-common,UCUM Common units,ucum-common,Terminology
+%{loss},http://unitsofmeasure.org,percent loss,,ucum-common,UCUM Common units,ucum-common,Terminology
+%{lysis},http://unitsofmeasure.org,percent lysis,,ucum-common,UCUM Common units,ucum-common,Terminology
+%{normal},http://unitsofmeasure.org,percent normal,,ucum-common,UCUM Common units,ucum-common,Terminology
+%{pooled_plasma},http://unitsofmeasure.org,percent normal pooled plasma,,ucum-common,UCUM Common units,ucum-common,Terminology
+%{bacteria},http://unitsofmeasure.org,percent of bacteria,,ucum-common,UCUM Common units,ucum-common,Terminology
+%{baseline},http://unitsofmeasure.org,percent of baseline,,ucum-common,UCUM Common units,ucum-common,Terminology
+%{cells},http://unitsofmeasure.org,percent of cells,,ucum-common,UCUM Common units,ucum-common,Terminology
+%{RBCs},http://unitsofmeasure.org,percent of red blood cells,,ucum-common,UCUM Common units,ucum-common,Terminology
+%{WBCs},http://unitsofmeasure.org,percent of white blood cells,,ucum-common,UCUM Common units,ucum-common,Terminology
+%{positive},http://unitsofmeasure.org,percent positive,,ucum-common,UCUM Common units,ucum-common,Terminology
+%{reactive},http://unitsofmeasure.org,percent reactive,,ucum-common,UCUM Common units,ucum-common,Terminology
+%{recovery},http://unitsofmeasure.org,percent recovery,,ucum-common,UCUM Common units,ucum-common,Terminology
+%{reference},http://unitsofmeasure.org,percent reference,,ucum-common,UCUM Common units,ucum-common,Terminology
+%{residual},http://unitsofmeasure.org,percent residual,,ucum-common,UCUM Common units,ucum-common,Terminology
+%{response},http://unitsofmeasure.org,percent response,,ucum-common,UCUM Common units,ucum-common,Terminology
+%{saturation},http://unitsofmeasure.org,percent saturation,,ucum-common,UCUM Common units,ucum-common,Terminology
+%{total},http://unitsofmeasure.org,percent total,,ucum-common,UCUM Common units,ucum-common,Terminology
+%{uptake},http://unitsofmeasure.org,percent uptake,,ucum-common,UCUM Common units,ucum-common,Terminology
+%{viable},http://unitsofmeasure.org,percent viable,,ucum-common,UCUM Common units,ucum-common,Terminology
+{percentile},http://unitsofmeasure.org,percentile,,ucum-common,UCUM Common units,ucum-common,Terminology
+[pH],http://unitsofmeasure.org,pH,,ucum-common,UCUM Common units,ucum-common,Terminology
+{phenotype},http://unitsofmeasure.org,phenotype,,ucum-common,UCUM Common units,ucum-common,Terminology
+pA,http://unitsofmeasure.org,picoampere,,ucum-common,UCUM Common units,ucum-common,Terminology
+pg,http://unitsofmeasure.org,picogram,,ucum-common,UCUM Common units,ucum-common,Terminology
+pg/{cell},http://unitsofmeasure.org,picogram per cell,,ucum-common,UCUM Common units,ucum-common,Terminology
+pg/dL,http://unitsofmeasure.org,picogram per deciliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+pg/L,http://unitsofmeasure.org,picogram per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+pg/mg,http://unitsofmeasure.org,picogram per milligram,,ucum-common,UCUM Common units,ucum-common,Terminology
+pg/mg{creat},http://unitsofmeasure.org,picogram per milligram of creatinine,,ucum-common,UCUM Common units,ucum-common,Terminology
+pg/mL,http://unitsofmeasure.org,picogram per milliliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+pg/mL{sLT},http://unitsofmeasure.org,picogram per milliliter sulfidoleukotrienes,,ucum-common,UCUM Common units,ucum-common,Terminology
+pg/mm,http://unitsofmeasure.org,picogram per millimeter,,ucum-common,UCUM Common units,ucum-common,Terminology
+pg/{RBC},http://unitsofmeasure.org,picogram per red blood cell,,ucum-common,UCUM Common units,ucum-common,Terminology
+pkat,http://unitsofmeasure.org,picokatal,,ucum-common,UCUM Common units,ucum-common,Terminology
+pL,http://unitsofmeasure.org,picoliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+pm,http://unitsofmeasure.org,picometer,,ucum-common,UCUM Common units,ucum-common,Terminology
+pmol,http://unitsofmeasure.org,picomole,,ucum-common,UCUM Common units,ucum-common,Terminology
+pmol/(24.h),http://unitsofmeasure.org,picomole per 24 hour,,ucum-common,UCUM Common units,ucum-common,Terminology
+pmol/d,http://unitsofmeasure.org,picomole per day,,ucum-common,UCUM Common units,ucum-common,Terminology
+pmol/dL,http://unitsofmeasure.org,picomole per deciliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+pmol/g,http://unitsofmeasure.org,picomole per gram,,ucum-common,UCUM Common units,ucum-common,Terminology
+pmol/h/mg{prot},http://unitsofmeasure.org,picomole per hour per milligram of protein,,ucum-common,UCUM Common units,ucum-common,Terminology
+pmol/H/mg{protein},http://unitsofmeasure.org,picomole per hour per milligram protein,,ucum-common,UCUM Common units,ucum-common,Terminology
+pmol/h/mL,http://unitsofmeasure.org,picomole per hour per milliliter ,,ucum-common,UCUM Common units,ucum-common,Terminology
+pmol/L,http://unitsofmeasure.org,picomole per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+pmol/umol,http://unitsofmeasure.org,picomole per micromole,,ucum-common,UCUM Common units,ucum-common,Terminology
+pmol/umol{creat},http://unitsofmeasure.org,picomole per micromole of creatinine,,ucum-common,UCUM Common units,ucum-common,Terminology
+pmol/mg{prot},http://unitsofmeasure.org,picomole per milligram of protein,,ucum-common,UCUM Common units,ucum-common,Terminology
+pmol/mL,http://unitsofmeasure.org,picomole per milliliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+pmol/mmol{creat},http://unitsofmeasure.org,picomole per millimole of creatinine,,ucum-common,UCUM Common units,ucum-common,Terminology
+pmol/min,http://unitsofmeasure.org,picomole per minute,,ucum-common,UCUM Common units,ucum-common,Terminology
+pmol/min/mg{prot},http://unitsofmeasure.org,picomole per minute per milligram of protein,,ucum-common,UCUM Common units,ucum-common,Terminology
+pmol/{RBC},http://unitsofmeasure.org,picomole per red blood cell,,ucum-common,UCUM Common units,ucum-common,Terminology
+ps,http://unitsofmeasure.org,picosecond,,ucum-common,UCUM Common units,ucum-common,Terminology
+pT,http://unitsofmeasure.org,picotesla,,ucum-common,UCUM Common units,ucum-common,Terminology
+[pt_us],http://unitsofmeasure.org,pint (US),,ucum-common,UCUM Common units,ucum-common,Terminology
+[lb_av],http://unitsofmeasure.org,pound (US and British),,ucum-common,UCUM Common units,ucum-common,Terminology
+[psi],http://unitsofmeasure.org,pound per square inch,,ucum-common,UCUM Common units,ucum-common,Terminology
+[qt_us],http://unitsofmeasure.org,quart (US),,ucum-common,UCUM Common units,ucum-common,Terminology
+{ratio},http://unitsofmeasure.org,ratio,,ucum-common,UCUM Common units,ucum-common,Terminology
+{RBC}/uL,http://unitsofmeasure.org,red blood cell per microliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+%{relative},http://unitsofmeasure.org,relative percent,,ucum-common,UCUM Common units,ucum-common,Terminology
+{rel_saturation},http://unitsofmeasure.org,relative saturation,,ucum-common,UCUM Common units,ucum-common,Terminology
+{risk},http://unitsofmeasure.org,risk,,ucum-common,UCUM Common units,ucum-common,Terminology
+{Rubella_virus},http://unitsofmeasure.org,rubella virus,,ucum-common,UCUM Common units,ucum-common,Terminology
+{saturation},http://unitsofmeasure.org,saturation,,ucum-common,UCUM Common units,ucum-common,Terminology
+{score},http://unitsofmeasure.org,score,,ucum-common,UCUM Common units,ucum-common,Terminology
+s,http://unitsofmeasure.org,second,,ucum-common,UCUM Common units,ucum-common,Terminology
+s/{control},http://unitsofmeasure.org,second per control,,ucum-common,UCUM Common units,ucum-common,Terminology
+{shift},http://unitsofmeasure.org,shift,,ucum-common,UCUM Common units,ucum-common,Terminology
+S,http://unitsofmeasure.org,Siemens,,ucum-common,UCUM Common units,ucum-common,Terminology
+Sv,http://unitsofmeasure.org,Sievert,,ucum-common,UCUM Common units,ucum-common,Terminology
+{s_co_ratio},http://unitsofmeasure.org,signal to cutoff ratio,,ucum-common,UCUM Common units,ucum-common,Terminology
+{spermatozoa}/mL,http://unitsofmeasure.org,spermatozoa per milliliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+cm2,http://unitsofmeasure.org,square centimeter,,ucum-common,UCUM Common units,ucum-common,Terminology
+cm2/s,http://unitsofmeasure.org,square centimeter per second,,ucum-common,UCUM Common units,ucum-common,Terminology
+dm2/s2,http://unitsofmeasure.org,square decimeter per square second,,ucum-common,UCUM Common units,ucum-common,Terminology
+[sft_i],http://unitsofmeasure.org,square foot (international),,ucum-common,UCUM Common units,ucum-common,Terminology
+[sin_i],http://unitsofmeasure.org,square inch (international),,ucum-common,UCUM Common units,ucum-common,Terminology
+m2,http://unitsofmeasure.org,square meter,,ucum-common,UCUM Common units,ucum-common,Terminology
+m2/s,http://unitsofmeasure.org,square meter per second,,ucum-common,UCUM Common units,ucum-common,Terminology
+mm2,http://unitsofmeasure.org,square millimeter,,ucum-common,UCUM Common units,ucum-common,Terminology
+[syd_i],http://unitsofmeasure.org,square yard (international),,ucum-common,UCUM Common units,ucum-common,Terminology
+{STDV},http://unitsofmeasure.org,standard deviation,,ucum-common,UCUM Common units,ucum-common,Terminology
+{Tscore},http://unitsofmeasure.org,t score,,ucum-common,UCUM Common units,ucum-common,Terminology
+[tbs_us],http://unitsofmeasure.org,tablespoon (US),,ucum-common,UCUM Common units,ucum-common,Terminology
+[tsp_us],http://unitsofmeasure.org,teaspoon (US),,ucum-common,UCUM Common units,ucum-common,Terminology
+T,http://unitsofmeasure.org,Tesla,,ucum-common,UCUM Common units,ucum-common,Terminology
+10*3,http://unitsofmeasure.org,thousand,,ucum-common,UCUM Common units,ucum-common,Terminology
+10*3{copies}/mL,http://unitsofmeasure.org,thousand copies per milliliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+10*3/L,http://unitsofmeasure.org,thousand per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+10*3/uL,http://unitsofmeasure.org,thousand per microliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+10*3/mL,http://unitsofmeasure.org,thousand per milliliter,,ucum-common,UCUM Common units,ucum-common,Terminology
+10*3{RBCs},http://unitsofmeasure.org,thousand red blood cells,,ucum-common,UCUM Common units,ucum-common,Terminology
+{TSI_index},http://unitsofmeasure.org,thyroid-stimulating immunoglobulin index,,ucum-common,UCUM Common units,ucum-common,Terminology
+{TmStp},http://unitsofmeasure.org,time stamp,,ucum-common,UCUM Common units,ucum-common,Terminology
+{titer},http://unitsofmeasure.org,titer,,ucum-common,UCUM Common units,ucum-common,Terminology
+[todd'U],http://unitsofmeasure.org,Todd unit,,ucum-common,UCUM Common units,ucum-common,Terminology
+Torr,http://unitsofmeasure.org,"Torr 
+",,ucum-common,UCUM Common units,ucum-common,Terminology
+10*12/L,http://unitsofmeasure.org,trillion per liter,,ucum-common,UCUM Common units,ucum-common,Terminology
+[oz_tr],http://unitsofmeasure.org,Troy ounce,,ucum-common,UCUM Common units,ucum-common,Terminology
+[tb'U],http://unitsofmeasure.org,tuberculin unit,,ucum-common,UCUM Common units,ucum-common,Terminology
+V,http://unitsofmeasure.org,volt,,ucum-common,UCUM Common units,ucum-common,Terminology
+Wb,http://unitsofmeasure.org,Weber,,ucum-common,UCUM Common units,ucum-common,Terminology
+wk,http://unitsofmeasure.org,week,,ucum-common,UCUM Common units,ucum-common,Terminology
+{WBCs},http://unitsofmeasure.org,white blood cells,,ucum-common,UCUM Common units,ucum-common,Terminology
+[yd_i],http://unitsofmeasure.org,yard (international),,ucum-common,UCUM Common units,ucum-common,Terminology
+a,http://unitsofmeasure.org,year,,ucum-common,UCUM Common units,ucum-common,Terminology
+{yyyy},http://unitsofmeasure.org,year,,ucum-common,UCUM Common units,ucum-common,Terminology
+{Zscore},http://unitsofmeasure.org,z score,,ucum-common,UCUM Common units,ucum-common,Terminology
