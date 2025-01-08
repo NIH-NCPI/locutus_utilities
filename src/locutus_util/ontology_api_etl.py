@@ -173,7 +173,7 @@ def reorg_for_firestore(filtered_ontologies):
         if ontology_id not in api_data[api_id]['ontologies'] and entry['curie']:
             api_data[api_id]['ontologies'][ontology_id] = {
                 'ontology_title': entry['ontology_title'],
-                'ontology_code': entry['ontology_code'].upper(),
+                'ontology_code': entry['ontology_code'].lower(),
                 'curie': entry['curie'].upper(),
                 'system': entry['system'],
                 'version': entry['version'],
