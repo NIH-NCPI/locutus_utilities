@@ -27,6 +27,8 @@ def set_logging_config(log_file):
     logger.addHandler(file_handler)
     logger.addHandler(console_handler)
 
+    logger.info('logger is setup')
+
 # Initialize Firestore client
 db = firestore.Client()
 
