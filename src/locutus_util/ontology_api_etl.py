@@ -51,6 +51,7 @@ extracted_data = []  # Collects the manual ontology data
 
 def fetch_data(url):
     response = requests.get(url)
+    logger.info(f'{url}')
     if response.status_code == 200:
         return response.json()
     else:
@@ -278,23 +279,12 @@ def filter_firestore_ontologies(data, which_ontologies):
         keepers = included_ontologies[included_ontologies["Default to Include"] == "t"][
             "Id"
         ].to_list()
-        # Include only ols rows that were flagged to be included by the file.
-        filtered_data = filtered_data[
-            (filtered_data["api_id"] != "ols") | (filtered_data["curie"].isin(keepers))
-        ]
+        filtered_data = filtered_data[(filtered_data["curie"].isin(keepers))]
         logger.info(
-            f"Only the curated list of ontologies will be sent to the firestore."
+            f"Only the curated list of ontologies will be sent to the firestore. \
+              This list only includes the reviewed ols ontologies.\
+              Any preferred UMLS ontologies may need to be added."
         )
-    elif which_ontologies == "all_ontologies":
-        included_ontologies = pd.read_csv(INCLUDED_ONTOLOGIES_PATH)
-        keepers = included_ontologies["Id"].to_list()
-        # Include only ols rows that were flagged to be included by the file.
-        filtered_data = filtered_data[
-            (filtered_data["api_id"] != "ols") | (filtered_data["curie"].isin(keepers))
-        ]
-        logger.info(f"All ontologies will be sent to the firestore")
-    else:
-        logger.info(f"which_ontologies value is not recognized: {which_ontologies}")
 
     filtered_ontologies = filtered_data.copy()
 
@@ -302,8 +292,6 @@ def filter_firestore_ontologies(data, which_ontologies):
 
 
 def ontology_api_etl(project_id, action, which_ontologies):
-
-
 
     # Collect data from sources
     if action in {FETCH_AND_UPLOAD, UPDATE_CSV}:
