@@ -24,6 +24,7 @@ LOGS_PATH = 'data/logs/'
 ONTOLOGY_API_PATH = 'data/ontology_api.csv'
 SEED_DATA_PATH = 'data/seed_data.csv'
 INCLUDED_ONTOLOGIES_PATH = 'data/included_ontologies.csv'
+ONTOLOGY_DATA_PATH = 'data/manual_ontology_transformations.tsv'
 
 # Values
 BATCH_SIZE = 10

@@ -1,0 +1,12 @@
+Ontology Name	other	monarch	ols	umls	Full Name	Prefix	Namespace URI	FHIR System	Example Code (CURIE)	Example Label
+HPO		HP	HP	HPO	The Human Phenotype Ontology	HP		http://purl.obolibrary.org/obo/hp.owl	HP:0001631	Atrial septal defect
+Mondo		MONDO	MONDO		The Mondo Disease Ontology	MONDO		http://purl.obolibrary.org/obo/mondo.owl	MONDO:0008608	Down syndrome
+MAxO		MAXO	MAXO		The Medical Action Onotlogy	MAXO		http://purl.obolibrary.org/obo/maxo.owl	MAXO:0025001	surgical procedure on cardiovascular system
+NCIt			NCIT		The National Cancer Institute Thesaurus	NCIT		http://purl.obolibrary.org/obo/ncit.owl	NCIT:C25648	Relationship
+SNOMED CT		SNOMED	SNOMED CT	SNMI	Systematized Nomenclature of Medicine Clinical Terminology	SNOMED		http://snomed.info/sct	SNOMED:363787002	Observable entity
+SYMP			SYMP		The Symptom Ontology	SYMP		https://purl.obolibrary.org/obo/symp.owl	SYMP:0000463	lack of normal physiological development
+LOINC	LOINC			LNC	Logical Observation Identifiers Names and Codes	LOINC		https://loinc.org/	LOINC:39156-5	BMI
+MedDRA				MDR	The Medical Dictionary for Regulatory Activities	MEDDRA		https://www.meddra.org	MEDDRA:10040760	Situational anxiety
+MeSH				MSH	The Medical Subject Headings Thesaurus	MESH		urn:oid:2.16.840.1.113883.6.177	MESH:D001932	Brain Neoplasms
+UCUM					Units of Measure	UCUM		http://unitsofmeasure.org	UCUM:kg/m2	kg/m2
+OMIT			OMIT		Ontology for MIRNA Target	OMIT		http://purl.obolibrary.org/obo/omit.owl	OMIT:0015269	Myringotomy

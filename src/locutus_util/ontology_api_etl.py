@@ -14,7 +14,9 @@ Currently filtering out 'loinc' and 'monarch' API ontologies. FD-1703
 import argparse
 import requests
 import pandas as pd
+import numpy as np
 import logging
+from typing import List
 from google.cloud import firestore
 from locutus_util.helpers import update_gcloud_project, set_logging_config
 from locutus_util.common import (
@@ -28,6 +30,7 @@ from locutus_util.common import (
     LOINC_API_BASE_URL,
     ONTOLOGY_API_PATH,
     INCLUDED_ONTOLOGIES_PATH,
+    ONTOLOGY_DATA_PATH,
     get_api_key,
 )
 
@@ -36,6 +39,9 @@ csv_path = ONTOLOGY_API_PATH  # Location to store fetched data
 included_ontologies = pd.read_csv(
     INCLUDED_ONTOLOGIES_PATH
 )  # Read in the curated list of ontologies
+hc_ontology_data = pd.read_csv(
+    ONTOLOGY_DATA_PATH, delimiter="\t"
+)  # Read in the file with the hardcoded ontology data
 ols_ontologies_url = f"{OLS_API_BASE_URL}ontologies"
 UMLS_API_KEY = get_api_key("umls")
 umls_ontologies_url = (
@@ -113,7 +119,7 @@ def collect_umls_data():
                 {
                     "api_url": UMLS_API_BASE_URL,
                     "api_id": "umls",
-                    "api_name": "UMLS Terminology Services",
+                    "api_name": "UMLS - Unified Medical Language System",
                     "ontology_code": item.get("abbreviation", ""),
                     "curie": item.get("abbreviation", ""),
                     "ontology_title": item.get("expandedForm", ""),
@@ -131,7 +137,6 @@ def collect_umls_data():
             break
 
     return extracted_data
-
 
 
 def add_manual_ontologies():
@@ -193,8 +198,41 @@ def add_monarch_ontologies():
                 'version': ontology['version'],
             }
             monarch_ols.append(new_entry)
-    
+
     return monarch_ols
+
+
+def supplement_data(combined_data):
+    """
+    Will do any cleaning that is requried after combineing the API data.
+
+    Certain umls ontologies will have thier data hardcoded via tsv.
+    """
+    supplemented_data = backfill_data_from_tsv(combined_data)
+
+    return supplemented_data
+
+
+def backfill_data_from_tsv(combined_data: List):
+    """
+    Insert hardcoded UMLS systems.
+    Example: Replace with hard coded system where one is specified, no update if not specified.
+    """
+
+    combined_data = pd.DataFrame(combined_data)
+
+    umls_systems = hc_ontology_data.set_index("umls")["FHIR System"].to_dict()
+
+    # Update the 'system' column where 'umls' data and the system has been specified
+    combined_data["system"] = np.where(
+        (combined_data["curie"].isin(set(umls_systems.keys()))) &
+        (combined_data["api_id"] == "umls"),
+        combined_data["curie"].map(umls_systems),
+        combined_data["system"],
+    )
+
+    return combined_data
+
 
 def add_ontology_api(db, api_id, api_url, api_name, ontologies):
     collection_title = 'OntologyAPI'
@@ -269,10 +307,13 @@ def update_seed_data_csv(data):
 def filter_firestore_ontologies(data, which_ontologies):
     """
     Filter out 'monarch' and 'loinc'
+    Filter out those without a 'system'
     Filter for the included ontologies(Optional - which_ontologies)
     """
     # Exclude monarch and loinc
     filtered_data = data[~data['api_id'].str.lower().isin(['monarch','loinc'])]
+    # Exclude ontologies without a system
+    filtered_data = filtered_data[~filtered_data["system"].isna()]
 
     if which_ontologies == "curated_ontologies_only":
 
@@ -313,7 +354,9 @@ def ontology_api_etl(project_id, action, which_ontologies):
         logger.info(f'count ols data: {len(ols_data)}')
         logger.info(f'count umls data: {len(umls_data)}')
 
-        update_seed_data_csv(combined_data)
+        supplemented_data = supplement_data(combined_data)
+
+        update_seed_data_csv(supplemented_data)
 
     if action in {FETCH_AND_UPLOAD, UPLOAD_FROM_CSV}:
         # Read in data and handle nulls
