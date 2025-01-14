@@ -14,30 +14,59 @@ Currently filtering out 'loinc' and 'monarch' API ontologies. FD-1703
 import argparse
 import requests
 import pandas as pd
+import numpy as np
+import logging
+from typing import List
 from google.cloud import firestore
-from locutus_util.helpers import update_gcloud_project
-from locutus_util.common import (FETCH_AND_UPLOAD, UPLOAD_FROM_CSV, UPDATE_CSV,
-                                 OLS_API_BASE_URL,MONARCH_API_BASE_URL,LOINC_API_BASE_URL,
-                                 ONTOLOGY_API_PATH, INCLUDED_ONTOLOGIES_PATH)
+from locutus_util.helpers import update_gcloud_project, set_logging_config
+from locutus_util.common import (
+    FETCH_AND_UPLOAD,
+    UPLOAD_FROM_CSV,
+    UPDATE_CSV,
+    LOGS_PATH,
+    OLS_API_BASE_URL,
+    UMLS_API_BASE_URL,
+    MONARCH_API_BASE_URL,
+    LOINC_API_BASE_URL,
+    ONTOLOGY_API_PATH,
+    INCLUDED_ONTOLOGIES_PATH,
+    ONTOLOGY_DATA_PATH,
+    get_api_key,
+)
 
-csv_path = ONTOLOGY_API_PATH
+# Define URLS, filepaths and other required resources
+csv_path = ONTOLOGY_API_PATH  # Location to store fetched data
+included_ontologies = pd.read_csv(
+    INCLUDED_ONTOLOGIES_PATH
+)  # Read in the curated list of ontologies
+hc_ontology_data = pd.read_csv(
+    ONTOLOGY_DATA_PATH, delimiter="\t"
+)  # Read in the file with the hardcoded ontology data
 ols_ontologies_url = f"{OLS_API_BASE_URL}ontologies"
+UMLS_API_KEY = get_api_key("umls")
+umls_ontologies_url = (
+    f"{UMLS_API_BASE_URL}metadata/current/sources?apiKey={UMLS_API_KEY}"
+)
+# Initialize logger
+logger = logging.getLogger(__name__)
+log_file = f"{LOGS_PATH}_ontology_api_etl.log"
+set_logging_config(log_file)
 
 
-extracted_data = []
+extracted_data = []  # Collects the manual ontology data
 
 def fetch_data(url):
     response = requests.get(url)
+    logger.info(f'{url}')
     if response.status_code == 200:
         return response.json()
     else:
-        print(f"Failed to fetch data: {response.status_code}")
         return None
 
 def collect_ols_data():
-    print("Fetching data")
+    logger.info("Fetching ols data")
     data = fetch_data(ols_ontologies_url)
-    print("Transforming data")
+    logger.info("Transforming ols data")
 
     while data:
         ontologies = data['_embedded']['ontologies']
@@ -54,7 +83,7 @@ def collect_ols_data():
                 'system': config.get('fileLocation', ''),
                 'version': config.get('versionIri', '')
             })
-        
+
         # Check if there is a next page
         if '_links' in data and 'next' in data['_links']:
             next_url = data['_links']['next']['href']
@@ -63,6 +92,52 @@ def collect_ols_data():
             break
 
     return extracted_data
+
+
+def collect_umls_data():
+    """
+    Collects ontology data from the UMLS API.
+
+    Returns:
+        list: Transformed data from UMLS API.
+    """
+    logger.info(f"Fetching umls data")
+
+    data = fetch_data(umls_ontologies_url)
+    logger.info("Transforming umls data")
+
+    extracted_data = []  # Initialize a list to store the extracted data
+
+    while data:
+        results = data.get("result", [])
+        if not isinstance(results, list):
+            raise TypeError("Expected 'result' to be a list.")
+
+        for item in results:
+            # Transform the data into a consistent structure
+            extracted_data.append(
+                {
+                    "api_url": UMLS_API_BASE_URL,
+                    "api_id": "umls",
+                    "api_name": "UMLS - Unified Medical Language System",
+                    "ontology_code": item.get("abbreviation", ""),
+                    "curie": item.get("abbreviation", ""),
+                    "ontology_title": item.get("expandedForm", ""),
+                    "system": None,  # Not available at this time.
+                    "version": None,  # Not available at this time.
+                    "ontology_family": item.get("family", ""),
+                }
+            )
+
+        # Fetch the next page if available
+        next_url = data.get("_links", {}).get("next", {}).get("href")
+        if next_url:
+            data = fetch_data(next_url)
+        else:
+            break
+
+    return extracted_data
+
 
 def add_manual_ontologies():
     return [
@@ -123,8 +198,41 @@ def add_monarch_ontologies():
                 'version': ontology['version'],
             }
             monarch_ols.append(new_entry)
-    
+
     return monarch_ols
+
+
+def supplement_data(combined_data):
+    """
+    Will do any cleaning that is requried after combineing the API data.
+
+    Certain umls ontologies will have thier data hardcoded via tsv.
+    """
+    supplemented_data = backfill_data_from_tsv(combined_data)
+
+    return supplemented_data
+
+
+def backfill_data_from_tsv(combined_data: List):
+    """
+    Insert hardcoded UMLS systems.
+    Example: Replace with hard coded system where one is specified, no update if not specified.
+    """
+
+    combined_data = pd.DataFrame(combined_data)
+
+    umls_systems = hc_ontology_data.set_index("umls")["FHIR System"].to_dict()
+
+    # Update the 'system' column where 'umls' data and the system has been specified
+    combined_data["system"] = np.where(
+        (combined_data["curie"].isin(set(umls_systems.keys()))) &
+        (combined_data["api_id"] == "umls"),
+        combined_data["curie"].map(umls_systems),
+        combined_data["system"],
+    )
+
+    return combined_data
+
 
 def add_ontology_api(db, api_id, api_url, api_name, ontologies):
     collection_title = 'OntologyAPI'
@@ -140,7 +248,7 @@ def add_ontology_api(db, api_id, api_url, api_name, ontologies):
     }
 
     ontology_api_ref.document(document_id).set(data)
-    print(f"Created {document_id} document in the {collection_title} collection")
+    logger.info(f"Created {document_id} document in the {collection_title} collection")
 
 def reorg_for_firestore(filtered_ontologies):
     """
@@ -156,11 +264,17 @@ def reorg_for_firestore(filtered_ontologies):
 
     # Easier format
     csv_data = filtered_ontologies.to_dict(orient='records')
+    included_ontologies = pd.read_csv(INCLUDED_ONTOLOGIES_PATH)
+
+    # Get a list of the curated ontology curies.
+    curated_list = included_ontologies[
+        included_ontologies["Default to Include"] == "t"
+    ]["Id"].str.upper().tolist()
 
     for entry in csv_data:
         api_id = entry['api_id']
-        ontology_id = entry['ontology_code']
-        
+        ontology_id = entry['ontology_code'].upper()
+
         # Initialize the API entry if it doesn't exist
         if api_id not in api_data:
             api_data[api_id] = {
@@ -168,60 +282,81 @@ def reorg_for_firestore(filtered_ontologies):
                 'api_name': entry['api_name'],
                 'ontologies': {}
             }
-        
+
         # Only add the ontology if it doesn't already exist and has a curie
-        if ontology_id not in api_data[api_id]['ontologies'] and entry['curie']:
-            api_data[api_id]['ontologies'][ontology_id] = {
-                'ontology_title': entry['ontology_title'],
-                'ontology_code': entry['ontology_code'].lower(),
-                'curie': entry['curie'].upper(),
-                'system': entry['system'],
-                'version': entry['version'],
+        api_data_ontologies = {key.upper(): value for key, value in api_data[api_id]['ontologies'].items()}
+        if ontology_id not in api_data_ontologies and entry['curie']:
+            api_data[api_id]["ontologies"][ontology_id] = {
+                "ontology_title": entry["ontology_title"],
+                "ontology_code": entry["ontology_code"].lower(),
+                "curie": entry["curie"].upper(),
+                "system": entry["system"],
+                "version": entry["version"],
+                "short_list": ontology_id in curated_list,
             }
     return api_data
 
 def update_seed_data_csv(data):
     # For data lineage
     data = pd.DataFrame(data)
-    combined_df_sorted = data.sort_values(by=['api_id', 'curie'])
+    combined_df_sorted = data.sort_values(by=['curie', 'api_id'])
     combined_df_sorted.to_csv(csv_path, index=False)
-    print(f"The ontology_api csv is updated.")
+    logger.info(f"The ontology_api csv is updated.")
 
-def filter_firestore_ontologies(data, use_inclusion_list=None):
-    '''
+
+def filter_firestore_ontologies(data, which_ontologies):
+    """
     Filter out 'monarch' and 'loinc'
-    Filter for the included ontologies(Optional - use_inclusion_list)
-    '''
+    Filter out those without a 'system'
+    Filter for the included ontologies(Optional - which_ontologies)
+    """
     # Exclude monarch and loinc
     filtered_data = data[~data['api_id'].str.lower().isin(['monarch','loinc'])]
+    # Exclude ontologies without a system
+    filtered_data = filtered_data[~filtered_data["system"].isna()]
 
-    if use_inclusion_list=='True':
-        included_ontologies = pd.read_csv(INCLUDED_ONTOLOGIES_PATH)
-        keepers = included_ontologies[included_ontologies['Default to Include'] == 't']['Id'].to_list()
-        # Include only ols rows that were flagged to be included by the file.
-        filtered_data = filtered_data[(filtered_data['api_id'] != 'ols') | (filtered_data['curie'].isin(keepers))]
+    if which_ontologies == "curated_ontologies_only":
+
+        keepers = included_ontologies[included_ontologies["Default to Include"] == "t"][
+            "Id"
+        ].to_list()
+        filtered_data = filtered_data[(filtered_data["curie"].isin(keepers))]
+        logger.info(
+            f"Only the curated list of ontologies will be sent to the firestore. \
+              This list only includes the reviewed ols ontologies.\
+              Any preferred UMLS ontologies may need to be added."
+        )
 
     filtered_ontologies = filtered_data.copy()
 
     return filtered_ontologies
 
-def ontology_api_etl(project_id, action, use_inclusion_list):
+
+def ontology_api_etl(project_id, action, which_ontologies):
 
     # Collect data from sources
     if action in {FETCH_AND_UPLOAD, UPDATE_CSV}:
         # Collect OLS data
         ols_data = collect_ols_data()
-    
-        # # Generate Monarch data
+
+        # Collect UMLS data
+        umls_data = collect_umls_data()
+
+        # Generate Monarch data
         monarch_data = add_monarch_ontologies()
-        
+
         # Add manual ontologies
         manual_ontologies = add_manual_ontologies()
 
         # Combine OLS and manual data
-        combined_data = ols_data + monarch_data + manual_ontologies
-        print(combined_data)
-        update_seed_data_csv(combined_data)
+        combined_data = ols_data + umls_data + monarch_data + manual_ontologies
+
+        logger.info(f'count ols data: {len(ols_data)}')
+        logger.info(f'count umls data: {len(umls_data)}')
+
+        supplemented_data = supplement_data(combined_data)
+
+        update_seed_data_csv(supplemented_data)
 
     if action in {FETCH_AND_UPLOAD, UPLOAD_FROM_CSV}:
         # Read in data and handle nulls
@@ -229,7 +364,7 @@ def ontology_api_etl(project_id, action, use_inclusion_list):
         csv_data = csv_data.where(pd.notnull(csv_data), None)
 
         # Only include the cho-simba ones
-        filtered_ontologies = filter_firestore_ontologies(csv_data, use_inclusion_list)
+        filtered_ontologies = filter_firestore_ontologies(csv_data, which_ontologies)
 
         # Reformat. Group ontologies by api.
         fs_data = reorg_for_firestore(filtered_ontologies)
@@ -244,7 +379,9 @@ def ontology_api_etl(project_id, action, use_inclusion_list):
         for api_id, data in fs_data.items():
             add_ontology_api(db, api_id, data['api_url'], data['api_name'], data['ontologies'])
 
+
 if __name__ == "__main__":
+
     parser = argparse.ArgumentParser(description="OntologyAPI data into Firestore.")
     parser.add_argument('-p', '--project', required=True, help="GCP Project to edit")
     parser.add_argument(
@@ -258,17 +395,21 @@ if __name__ == "__main__":
         )
     )
     parser.add_argument(
-        '-u', '--use_inclusion_list',
-        choices=['True', 'False'],
+        "-w",
+        "--which_ontologies",
+        choices=["curated_ontologies_only", "all_ontologies"],
         required=False,
-        default='False',
+        default="all_ontologies",
         help=(
-            f"True: Use the selected default ontologies.\n"
-            f"False: Use all ontologies.\n")
-        )
+            f"curated_ontologies_only: Use the curated list of ontologies.\n"
+            f"all_ontologies: Use all ontologies.\n"
+        ),
+    )
 
     args = parser.parse_args()
 
-    ontology_api_etl(project_id=args.project_id,
-                        action=args.action,
-                        use_inclusion_list=args.use_inclusion_list)
+    ontology_api_etl(
+        project_id=args.project_id,
+        action=args.action,
+        which_ontologies=args.which_ontologies,
+    )

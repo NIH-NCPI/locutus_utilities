@@ -8,6 +8,7 @@ from locutus_util.common import (
 )
 
 def main():
+    
     parser = argparse.ArgumentParser(
         description="Manage data ETL of data into Firestore."
     )
@@ -38,21 +39,23 @@ def main():
         )
     )
     parser.add_argument(
-        '-u', '--use_inclusion_list',
-        choices=['True', 'False'],
+        "-w",
+        "--which_ontologies",
+        choices=["curated_ontologies_only", "all_ontologies"],
         required=False,
-        default='False',
+        default="all_ontologies",
         help=(
-            f"True: Use the selected default ontologies.\n"
-            f"False: Use all ontologies.\n")
-        )
+            f"curated_ontologies_only: Use the curated list of ontologies.\n"
+            f"all_ontologies: Use all ontologies.\n"
+        ),
+    )
     args = parser.parse_args()
 
     # Call the appropriate function with the provided arguments
     if args.option == UPDATE_ONTOLOGY_API:
         ontology_api_etl(project_id=args.project_id,
                          action=args.action,
-                         use_inclusion_list=args.use_inclusion_list)
+                         which_ontologies=args.which_ontologies)
 
     elif args.option == UPDATE_SEED_DATA:
         seed_data_etl(project_id=args.project_id)
@@ -65,7 +68,7 @@ def main():
         seed_data_etl(project_id=args.project_id)
         ontology_api_etl(project_id=args.project_id,
                          action=args.action,
-                         use_inclusion_list=args.use_inclusion_list)
+                         which_ontologies=args.which_ontologies)
         
     else:
         print("No actions were taken.")
