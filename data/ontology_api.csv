@@ -386,10 +386,10 @@ https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,sio,SIO,Semanticscie
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,slm,SLM,SwissLipids,file:///nfs/production/parkinso/spot/ols4/prod/local_ontologies/swisslipids.ttl,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,slso,SLSO,Space Life Sciences Ontology,http://purl.obolibrary.org/obo/slso.owl,http://purl.obolibrary.org/obo/slso/releases/2024-10-31/slso.owl,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,SNM,SNM,"SNOMED-2, 2",,,SNM
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,SNMI,SNMI,"SNOMED International, 1998",http://snomed.info/sct,,SNMI
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,SNMI,SNMI,"SNOMED International, 1998",,,SNMI
 https://api-v3.monarchinitiative.org/v3/api/search?q=,monarch,Monarch API,snomed,SNOMED,SNOMED CT (International Edition),file:///nfs/production/parkinso/spot/ols4/prod/local_ontologies/snomed-inferred.owl,http://snomed.info/sct/900000000000207008/version/20200131,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,snomed,SNOMED,SNOMED CT (International Edition),file:///nfs/production/parkinso/spot/ols4/prod/local_ontologies/snomed-inferred.owl,http://snomed.info/sct/900000000000207008/version/20200131,
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,SNOMEDCT_US,SNOMEDCT_US,"US Edition of SNOMED CT, 2024_09_01",,,SNOMEDCT
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,SNOMEDCT_US,SNOMEDCT_US,"US Edition of SNOMED CT, 2024_09_01",http://snomed.info/sct,,SNOMEDCT
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,SNOMEDCT_VET,SNOMEDCT_VET,"Veterinary Extension to SNOMED CT, 2024_04_01",,,SNOMEDCT
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,so,SO,Sequence types and features ontology,http://purl.obolibrary.org/obo/so.owl,http://purl.obolibrary.org/obo/so/2024-11-18/so.owl,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,SOP,SOP,"Source of Payment Typology, 9.2",,,SOP

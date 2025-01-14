@@ -1,261 +1,266 @@
-Ontology,Id,Default to Include,Potentially interesting
-Alzheimer's Disease Ontology,ADO,f,
-African Population Ontology,AFPO,f,
-Agronomy Ontology,AGRO,f,
-Ontology for the Anatomy of the Insect SkeletoMuscular System,AISM,f,
-Amphioxus Development and Anatomy Ontology,AMPHX,f,
-Ascomycete Phenotype Ontology,APO,f,
-Apollo Structured Vocabulary,APOLLO_SV,f,
-Antibiotic Resistance Ontology,ARO,f,
-The Biological Collections Ontology,BCO,f,
-Basic Formal Ontology,BFO,f,
-Biological Spatial Ontology,BSPO,f,
-The BRENDA Tissue Ontology,BTO,f,
-Common Anatomy Reference Ontology,CARO,f,
-Comparative Data Analysis Ontology,CDAO,f,
-Compositional Dietary Nutrition Ontology,CDNO,f,
-Chemical Entitis of Biological Interest,CHEBI,f,
-Chemical Information Ontology,CHEMINF,f,
-CHEBI Integrated Role Ontology,CHIRO,f,
-Chemical Methods Ontology,CHMO,f,
-Ontology of Coronavirus Infections Disease,CIDO,f,
-Confidence Information Ontology,CIO,f,
-Cell Ontology,CL,t,
-Collembola Anatomy Ontology,CLAO,f,
-Cell Line Ontology,CLO,f,
-Clytia hemisphaerica Development and Anatomy Ontology,CLYH,f,
-Clinical Measurement Ontology,CMO,f,
-Core Ontology for Biollogy and Biomedicine,COB,f,
-Coleoptera Anatomy Ontology,COLAO,f,
-Contributor Role Ontology,CRO,f,
-Ctenophore Ontology,CTENO,f,
-Cardio Vascular Disease Ontology,CVDO,f,
-Dicty Anatomy Ontology,DDANAT,f,
-Dicty Phenotye Ontology,DDPHENO,f,
-DIDEO,DIDEO,f,
-Disease Drivers,DISDRIV,f,
-Human Disease Ontology,DOID,f,
-Drosophila Phenotype Ontology,DPO,f,
-The Drug Ontology,DRON,f,
-Data Use Ontology,DUO,t,
-Echinoderm Anatomy and Development Ontology,ECAO,f,
-Evidence & Conclusion Ontology,ECO,f,
-An Ontology of Core Ecological Entities,ECOCORE,f,
-Environment Exposure Ontology,ECTO,f,
-Mouse Developmental Anatomy Ontology,EMAPA,f,
-The Environment Ontology,ENVO,f,
-Epilepsy Ontology,EPIO,f,
-Exposure Ontology,EXO,f,
-Fungal Gross Anatomy,FAO,f,
-Drosophila Anatomy Ontology,FBBT,f,
-FlyBase Controlled Vocabulary,FBCV,f,
-Drosophila Developmental Ontology,FBDV,f,
-Food Interactions with Drugs Evidence Ontology,FIDEO,f,
-Flora Phenotype Ontology,FLOPO,f,
-Food-Biomarker Ontology,FOBI,f,
-Food Ontology,FOODON,f,
-FuTRES Ontology of Vertebrate Traits,FOVT,f,
-Fission Yeast Phenotype Ontology,FYPO,f,
-Plant Gall Ontology,GALLONT,f,
-Genomics Cohorts Knowledge Ontology,GECKO,f,
-Genopic Epidemiology Ontology,GENEPIO,f,
-GENO Ontology,GENO,f,
-Geographical Entity Ontology,GEO,f,
-Glycan Naming Ontology,GNO,f,
-Gene Ontology,GO,f,-
-Human Ancestry Ontology,HANCESTRO,f,-
-Hymenoptera Anatomy Ontology,HAO,f,
-Homology Ontology,HOM,f,
-Human Developmental Stages,HSAPDV,f,-
-Health Surveillance Ontology,HSO,f,
-Hypertension Ontology For Clinical Data,HTN,f,
-Information Artifact Ontology,IAO,f,-
-Ontology of Integrative and Conjugative Elements,ICEO,f,
-Informed Consent Ontology,ICO,f,
-Infectious Disease Ontology,IDO,f,
-Interaction Network Ontology,INO,f,
-Clinical Laboratory Test Ontology,LABO,f,-
-Lepidoptera Anatomy Ontology,LEPAO,f,
-Mouse Adult Gross Anatomy,MA,f,
-Medical Action Ontology,MAXO,t,
-Microbial Conditions Ontology,MCO,f,
-Model Card Ontology,MCRO,f,
-Mental Functioning Ontology,MF,f,
-Emotion Ontology,MFOEM,f,
-Mental Disease Ontology,MFOMD,f,-
-Molecular Interactions Controlled Vocabulary,MI,f,
-Minimum Information for a Phylogenetic Analysis Ontology,MIAPA,f,
-Measurement Method Ontology,MMO,f,-
-Mouse Developmental Stages,MMUSDV,f,
-Protein Modification,MOD,f,
-Mondo Disease Ontology,MONDO,t,
-MOP,MOP,f,
-The Mammalian Phenotype Ontology,MP,f,
-Mouse Pathology Ontology,MPATH,f,
-Minimum PDDI (Potential Drug-Drug Interaction) Information Ontology,MPIO,f,
-MHC Restriction Ontology,MRO,f,
-MS,MS,f,
-Neuro Behaviour Ontology,NBO,f,-
-NCBI Organismal Classification,NCBITAXON,f,-
-NCI Thesaurus OBO Edition,NCIT,t,
-Non-Coding RNA Ontology,NCRO,f,
-Next Generation Biobanking Ontology,NGBO,f,-
-NOMEN,NOMEN,f,
-OAE: Ontology of Adverse Events,OAE,f,
-Ontology of Arthropod Cirulatory Systems,OARCS,f,
-Ontology of Biological Attributes,OBA,f,
-Ontology of Biological and Clinical Statistics,OBCS,f,
-Ontology for Biomedical Investigations,OBI,t,
-Ontology for BIoBanking,OBIB,f,-
-Occupation Ontology,OCCO,f,
-Ontology of Genes and Genomes,OGG,f,
-Ontology for General Medical Science,OGMS,f,
-Oral Health and Disease Ontology,OHD,f,-
-Ontology of Host-Microbiome Interactions,OHMI,f,
-Ontology of Host-Pathogen Interactions,OHPI,f,
-Ontology for MIRNA Target,OMIT,f,
-OBO Metadata Ontology,OMO,f,
-Ontology of Microbial Phenotypes,OMP,f,
-Ontology for Modeling and Representation of Social Entities,OMRSE,f,
-Ontology for Nutritional Epidemiology,ONE,f,
-ONS,ONS,f,
-Ontology for Avida Digital Evolution Platform,ONTOAVIDA,f,
-The Ontology of Obstetric and Neonatal domain,ONTONEO,f,
-Ontology of Organizational Structures of Trauma Centers and Trauma Systems,OOSTT,f,
-Ontology for Paraise Lifecycle,OPL,f,
-Ontology of Precision Medicine and Investigation,OPMI,f,
-Ontology for RNA Sequencing,ORNASEQ,f,-
-Ontology of Vaccine Adverse Events,OVAE,f,
-The Phenotype and Trait Ontology,PATO,f,
-Provisional Cell Ontology,PCL,f,
-Population and Community Ontology,PCO,f,
-Prescription DRugs Ontology,PDRO,f,
-Plant Experimental Conditions Ontology,PECO,f,
-Pathogen Host Interactions Phenotype Ontology,PHIPO,f,
-Planarian Anatomy Ontology,PLANA,f,
-Planarian Phenotype Ontology,PLANP,f,
-Plant Ontology,PO,f,
-Porifera (sponge) Ontology,PORO,f,
-Plant Phenology Ontology,PPO,f,
-PRotein Ontology,PR,f,
-PROcess Chemistry Ontology,PROCO,f,
-Peformance Summary Display Ontology,PSDO,f,
-Plant Stress Ontology,PSO,f,
-Pathway Ontology,PW,f,
-Radiation Biology Ontology,RBO,f,
-OBO Relations Ontology,RO,f,-
-Rat Strain Ontology,RS,f,
-RXNO,RXNO,f,
-Ontology for Scientific Evidence and Provenance Information,SEPIO,f,
-Space Life Sciences Ontology,SLSO,f,
-Sequence Types and Features Ontology,SO,f,
-Spider Ontology,SPD,f,
-The Statistical Methods Ontology,STATO,f,
-Software Ontology,SWO,f,
-Symptom Ontology,SYMP,f,
-terms4FAIRskills,T4FS,f,
-Taxonomic Rank Vocabulary,TAXRANK,f,
-Plant Trait Ontology,TO,f,
-Pahogen Transmission Ontology,TRANS,f,
-Teleost Taxonomy Ontology,TTO,f,
-TOXic Process Ontology,TXPO,f,
-Uber-anatomy Ontology,UBERON,t,
-Units of Measurement Ontology,UO,f,
-Vertebrate Breed Ontology,VBO,f,
-Vaccine Ontology,VO,f,
-The Vertebrate Trait Ontology,VT,f,
-Vertebrate Taxonomy Ontology,VTO,f,
-C.elegans Gross Anatomy Ontology,WBBT,f,
-C. elegans Developmental Ontology,WBLS,f,
-C. elegans Phenotype Ontology,WBPHENOTYPE,f,
-Xenopus Anatomy Ontology,XAO,f,
-Experimental Condition Ontology,XCO,f,
-xlmod,XLMOD,f,
-Xenopus Phenotype Ontology,XPO,f,
-Zebrafish Experimental Conditions Ontology,ZECO,f,
-Zebrafish Anatomy Ontology,ZFA,f,
-Zebrafish Developmental Stages Ontology,ZFS,f,
-Zebrafish Phenotype Ontology,ZP,f,
-"The Gender, Sex, and Sexual Orientation Ontology",GSSO,f,-
-Human Phenotype Ontology,HP,t,
-Kinetic-Simulation Algorithm Ontology,KISAO,f,
-Systems Biology Ontology (Generated: 03:11:2021 07:00),SBO,f,
-Sickle Cell Disease Ontology,SCDO,f,
-Physico-chemical Methods and Properties,FIX,f,
-Mathematical Modeling Ontology,MAMO,f,
-Physico-chemical Process,REX,f,
-Social Insect Behavior Ontology,SIBO,f,
-VEuPathDB Ontology,EUPATH,f,
-Biological Imaging Methods Ontology,FBBI,f,-
-Mammalian Feeding Muscle Ontology,MFMO,f,
-Ontology of Prokaryotic Phenotypic and Metabolic Characters,MICRO,f,
-Ontology of Genetic Susceptibility Factor,OGSF,f,
-Medaka Developmental Stages,OLATDV,f,
-Platynereis Developmental Stages,PDUMDV,f,
-Anatomical Entity Ontology,AEO,f,
-Cephalopod Ontology,CEPH,f,
-"Human Developmental Anatomy, Abstracg",EDHAA2,f,
-Foundational Model of Anatomy Ontology (Subset),FMA,f,
-Gazetteer,GAZ,f,
-Malaria Ontology,IDOMAL,f,
-Mosquito Insecticide Resistance,MIRO,f,
-Tick Anatomy Ontology,TADS,f,
-Mosquito Gross Anatomy Ontology,TGMA,f,
-Unipathway,UPA,f,
-Adverse Event Reporting Ontology,AERO,f,
-Beta Cell Genomics Ontology,BCGO,f,
-Bilateria Anatomy,BILA,f,
-"Mouse Gross Anatomy and Development, Times",EMAP,f,
-Fly Taxonomy,FBSP,f,
-Ontologized MIABIS,OMIABIS,f,
-Teleost Anatomy Ontology,TAO,f,
-Vertebrate Skeletal Anatomy Ontology,VSAO,f,
-The Data Catalog Vocabulary,DCAT,f,
-Biolink-Model,BIOLINK,f,
-Semantic Mapping Vocabulary,SEMAPV,f,
-SwissLipids,SLM,f,
-LIPID MAPS,LIPIDMAPS,f,
-oio,OIO,f,
-Chemical Analysis Metadata Platform (ChAMP) Ontology,CAO,f,
-The RDF Schema Vocabulary,RDFS,f,
-The OWL 2 Shema Vocabulary,OWL,f,
-SKOS Vocabulary,SKOS,f,-
-DCMI Metada Terms,DCTERMS,f,
-Dublic Core Metadata Element Set,DC,f,
-schemaorg_http,SCHEMAORG_HTTP,f,
-schemaorg_https,SCHEMAORG_HTTPS,f,
-PHI-base Ontology,PHI,f,
-Metabolomics Standards Initiative Ontology,MSIO,f,
-DCM,DICOM,f,
-Ensembl Glossary,ENSEMBLGLOSSARY,f,
-Experimental Factor Ontology,EFO,f,
-Orphanet Rare Disease Ontology,ORDO,t,
-TErminology for the Description of DYnamics,TEDDY,f,
-"Bioinformatics Operations, Data Types, Formats, Identifiers, and Topics",EDAM,t,
-Cell Cycle Ontology,CCO,f,
-Regulations of Gene Expression Ontology,REXO,f,
-Regulation of Transcription Ontology,RETO,f,
-Gene Expression Ontology,GEXO,f,
-Cellular Microscopy Phenotype Ontology,CMPO,f,
-eNanoMapper Ontology,ENM,f,
-Probability Distribution Ontology,PROBONTO,f,
-PRIDE Controlled Vocabulary,PRIDE,f,
-BioAssay Ontology,BAO,f,
-Semanticscience Inegrated Ontology,SIO,f,
-Unimod Protein Modification Database for Mass Spectrometry,UNIMOD,f,
-Nuclear Magnetic Resonance CV,NMRCV,f,
-Allotrope Foundation Ontology Merged Without QUDT and Inferred,AFO,f,
-FAIRsharing Subject Ontology,SRAO,f,
-Human Cell Atlas Ontology,HCAO,f,
-The COVID-19 Infecious Disease Ontology,IDOCOVID19,f,
-Behavior Change Intervention Ontology,BCIO,f,
-CoVoc Coronavirus Vocabulary,COVOD,f,
-Ontology of Units of Measure,OM,f,
-The REPRODUCE-ME Ontology,REPRODUCEME,f,
-Provenance Ontology,PROV,f,
-Orthology Ontology,ORTH,f,
-Cryo Electron Miscroscopy Ontology,CRYOEM,f,
-SNOMED CT (International Edition),SNOMED,t,
-ShareLoc,SHARELOC,f,
-Human Reference Atlas Common Coordinate Framework Ontology,CCF,f,
-Critical Path Ontology,CPONT,f,
+Ontology,Id,Default to Include,Potentially interesting,api
+Alzheimer's Disease Ontology,ADO,f,,ols
+African Population Ontology,AFPO,f,,ols
+Agronomy Ontology,AGRO,f,,ols
+Ontology for the Anatomy of the Insect SkeletoMuscular System,AISM,f,,ols
+Amphioxus Development and Anatomy Ontology,AMPHX,f,,ols
+Ascomycete Phenotype Ontology,APO,f,,ols
+Apollo Structured Vocabulary,APOLLO_SV,f,,ols
+Antibiotic Resistance Ontology,ARO,f,,ols
+The Biological Collections Ontology,BCO,f,,ols
+Basic Formal Ontology,BFO,f,,ols
+Biological Spatial Ontology,BSPO,f,,ols
+The BRENDA Tissue Ontology,BTO,f,,ols
+Common Anatomy Reference Ontology,CARO,f,,ols
+Comparative Data Analysis Ontology,CDAO,f,,ols
+Compositional Dietary Nutrition Ontology,CDNO,f,,ols
+Chemical Entitis of Biological Interest,CHEBI,f,,ols
+Chemical Information Ontology,CHEMINF,f,,ols
+CHEBI Integrated Role Ontology,CHIRO,f,,ols
+Chemical Methods Ontology,CHMO,f,,ols
+Ontology of Coronavirus Infections Disease,CIDO,f,,ols
+Confidence Information Ontology,CIO,f,,ols
+Cell Ontology,CL,t,,ols
+Collembola Anatomy Ontology,CLAO,f,,ols
+Cell Line Ontology,CLO,f,,ols
+Clytia hemisphaerica Development and Anatomy Ontology,CLYH,f,,ols
+Clinical Measurement Ontology,CMO,f,,ols
+Core Ontology for Biollogy and Biomedicine,COB,f,,ols
+Coleoptera Anatomy Ontology,COLAO,f,,ols
+Contributor Role Ontology,CRO,f,,ols
+Ctenophore Ontology,CTENO,f,,ols
+Cardio Vascular Disease Ontology,CVDO,f,,ols
+Dicty Anatomy Ontology,DDANAT,f,,ols
+Dicty Phenotye Ontology,DDPHENO,f,,ols
+DIDEO,DIDEO,f,,ols
+Disease Drivers,DISDRIV,f,,ols
+Human Disease Ontology,DOID,f,,ols
+Drosophila Phenotype Ontology,DPO,f,,ols
+The Drug Ontology,DRON,f,,ols
+Data Use Ontology,DUO,t,,ols
+Echinoderm Anatomy and Development Ontology,ECAO,f,,ols
+Evidence & Conclusion Ontology,ECO,f,,ols
+An Ontology of Core Ecological Entities,ECOCORE,f,,ols
+Environment Exposure Ontology,ECTO,f,,ols
+Mouse Developmental Anatomy Ontology,EMAPA,f,,ols
+The Environment Ontology,ENVO,f,,ols
+Epilepsy Ontology,EPIO,f,,ols
+Exposure Ontology,EXO,f,,ols
+Fungal Gross Anatomy,FAO,f,,ols
+Drosophila Anatomy Ontology,FBBT,f,,ols
+FlyBase Controlled Vocabulary,FBCV,f,,ols
+Drosophila Developmental Ontology,FBDV,f,,ols
+Food Interactions with Drugs Evidence Ontology,FIDEO,f,,ols
+Flora Phenotype Ontology,FLOPO,f,,ols
+Food-Biomarker Ontology,FOBI,f,,ols
+Food Ontology,FOODON,f,,ols
+FuTRES Ontology of Vertebrate Traits,FOVT,f,,ols
+Fission Yeast Phenotype Ontology,FYPO,f,,ols
+Plant Gall Ontology,GALLONT,f,,ols
+Genomics Cohorts Knowledge Ontology,GECKO,f,,ols
+Genopic Epidemiology Ontology,GENEPIO,f,,ols
+GENO Ontology,GENO,f,,ols
+Geographical Entity Ontology,GEO,f,,ols
+Glycan Naming Ontology,GNO,f,,ols
+Gene Ontology,GO,f,-,ols
+Human Ancestry Ontology,HANCESTRO,f,-,ols
+Hymenoptera Anatomy Ontology,HAO,f,,ols
+Homology Ontology,HOM,f,,ols
+Human Developmental Stages,HSAPDV,f,-,ols
+Health Surveillance Ontology,HSO,f,,ols
+Hypertension Ontology For Clinical Data,HTN,f,,ols
+Information Artifact Ontology,IAO,f,-,ols
+Ontology of Integrative and Conjugative Elements,ICEO,f,,ols
+Informed Consent Ontology,ICO,f,,ols
+Infectious Disease Ontology,IDO,f,,ols
+Interaction Network Ontology,INO,f,,ols
+Clinical Laboratory Test Ontology,LABO,f,-,ols
+Lepidoptera Anatomy Ontology,LEPAO,f,,ols
+Mouse Adult Gross Anatomy,MA,f,,ols
+Medical Action Ontology,MAXO,t,,ols
+Microbial Conditions Ontology,MCO,f,,ols
+Model Card Ontology,MCRO,f,,ols
+Mental Functioning Ontology,MF,f,,ols
+Emotion Ontology,MFOEM,f,,ols
+Mental Disease Ontology,MFOMD,f,-,ols
+Molecular Interactions Controlled Vocabulary,MI,f,,ols
+Minimum Information for a Phylogenetic Analysis Ontology,MIAPA,f,,ols
+Measurement Method Ontology,MMO,f,-,ols
+Mouse Developmental Stages,MMUSDV,f,,ols
+Protein Modification,MOD,f,,ols
+Mondo Disease Ontology,MONDO,t,,ols
+MOP,MOP,f,,ols
+The Mammalian Phenotype Ontology,MP,f,,ols
+Mouse Pathology Ontology,MPATH,f,,ols
+Minimum PDDI (Potential Drug-Drug Interaction) Information Ontology,MPIO,f,,ols
+MHC Restriction Ontology,MRO,f,,ols
+MS,MS,f,,ols
+Neuro Behaviour Ontology,NBO,f,-,ols
+NCBI Organismal Classification,NCBITAXON,f,-,ols
+NCI Thesaurus OBO Edition,NCIT,t,,ols
+Non-Coding RNA Ontology,NCRO,f,,ols
+Next Generation Biobanking Ontology,NGBO,f,-,ols
+NOMEN,NOMEN,f,,ols
+OAE: Ontology of Adverse Events,OAE,f,,ols
+Ontology of Arthropod Cirulatory Systems,OARCS,f,,ols
+Ontology of Biological Attributes,OBA,f,,ols
+Ontology of Biological and Clinical Statistics,OBCS,f,,ols
+Ontology for Biomedical Investigations,OBI,t,,ols
+Ontology for BIoBanking,OBIB,f,-,ols
+Occupation Ontology,OCCO,f,,ols
+Ontology of Genes and Genomes,OGG,f,,ols
+Ontology for General Medical Science,OGMS,f,,ols
+Oral Health and Disease Ontology,OHD,f,-,ols
+Ontology of Host-Microbiome Interactions,OHMI,f,,ols
+Ontology of Host-Pathogen Interactions,OHPI,f,,ols
+Ontology for MIRNA Target,OMIT,f,,ols
+OBO Metadata Ontology,OMO,f,,ols
+Ontology of Microbial Phenotypes,OMP,f,,ols
+Ontology for Modeling and Representation of Social Entities,OMRSE,f,,ols
+Ontology for Nutritional Epidemiology,ONE,f,,ols
+ONS,ONS,f,,ols
+Ontology for Avida Digital Evolution Platform,ONTOAVIDA,f,,ols
+The Ontology of Obstetric and Neonatal domain,ONTONEO,f,,ols
+Ontology of Organizational Structures of Trauma Centers and Trauma Systems,OOSTT,f,,ols
+Ontology for Paraise Lifecycle,OPL,f,,ols
+Ontology of Precision Medicine and Investigation,OPMI,f,,ols
+Ontology for RNA Sequencing,ORNASEQ,f,-,ols
+Ontology of Vaccine Adverse Events,OVAE,f,,ols
+The Phenotype and Trait Ontology,PATO,f,,ols
+Provisional Cell Ontology,PCL,f,,ols
+Population and Community Ontology,PCO,f,,ols
+Prescription DRugs Ontology,PDRO,f,,ols
+Plant Experimental Conditions Ontology,PECO,f,,ols
+Pathogen Host Interactions Phenotype Ontology,PHIPO,f,,ols
+Planarian Anatomy Ontology,PLANA,f,,ols
+Planarian Phenotype Ontology,PLANP,f,,ols
+Plant Ontology,PO,f,,ols
+Porifera (sponge) Ontology,PORO,f,,ols
+Plant Phenology Ontology,PPO,f,,ols
+PRotein Ontology,PR,f,,ols
+PROcess Chemistry Ontology,PROCO,f,,ols
+Peformance Summary Display Ontology,PSDO,f,,ols
+Plant Stress Ontology,PSO,f,,ols
+Pathway Ontology,PW,f,,ols
+Radiation Biology Ontology,RBO,f,,ols
+OBO Relations Ontology,RO,f,-,ols
+Rat Strain Ontology,RS,f,,ols
+RXNO,RXNO,f,,ols
+Ontology for Scientific Evidence and Provenance Information,SEPIO,f,,ols
+Space Life Sciences Ontology,SLSO,f,,ols
+Sequence Types and Features Ontology,SO,f,,ols
+Spider Ontology,SPD,f,,ols
+The Statistical Methods Ontology,STATO,f,,ols
+Software Ontology,SWO,f,,ols
+Symptom Ontology,SYMP,f,,ols
+terms4FAIRskills,T4FS,f,,ols
+Taxonomic Rank Vocabulary,TAXRANK,f,,ols
+Plant Trait Ontology,TO,f,,ols
+Pahogen Transmission Ontology,TRANS,f,,ols
+Teleost Taxonomy Ontology,TTO,f,,ols
+TOXic Process Ontology,TXPO,f,,ols
+Uber-anatomy Ontology,UBERON,t,,ols
+Units of Measurement Ontology,UO,f,,ols
+Vertebrate Breed Ontology,VBO,f,,ols
+Vaccine Ontology,VO,f,,ols
+The Vertebrate Trait Ontology,VT,f,,ols
+Vertebrate Taxonomy Ontology,VTO,f,,ols
+C.elegans Gross Anatomy Ontology,WBBT,f,,ols
+C. elegans Developmental Ontology,WBLS,f,,ols
+C. elegans Phenotype Ontology,WBPHENOTYPE,f,,ols
+Xenopus Anatomy Ontology,XAO,f,,ols
+Experimental Condition Ontology,XCO,f,,ols
+xlmod,XLMOD,f,,ols
+Xenopus Phenotype Ontology,XPO,f,,ols
+Zebrafish Experimental Conditions Ontology,ZECO,f,,ols
+Zebrafish Anatomy Ontology,ZFA,f,,ols
+Zebrafish Developmental Stages Ontology,ZFS,f,,ols
+Zebrafish Phenotype Ontology,ZP,f,,ols
+"The Gender, Sex, and Sexual Orientation Ontology",GSSO,f,-,ols
+Human Phenotype Ontology,HP,t,,ols
+Kinetic-Simulation Algorithm Ontology,KISAO,f,,ols
+Systems Biology Ontology (Generated: 03:11:2021 07:00),SBO,f,,ols
+Sickle Cell Disease Ontology,SCDO,f,,ols
+Physico-chemical Methods and Properties,FIX,f,,ols
+Mathematical Modeling Ontology,MAMO,f,,ols
+Physico-chemical Process,REX,f,,ols
+Social Insect Behavior Ontology,SIBO,f,,ols
+VEuPathDB Ontology,EUPATH,f,,ols
+Biological Imaging Methods Ontology,FBBI,f,-,ols
+Mammalian Feeding Muscle Ontology,MFMO,f,,ols
+Ontology of Prokaryotic Phenotypic and Metabolic Characters,MICRO,f,,ols
+Ontology of Genetic Susceptibility Factor,OGSF,f,,ols
+Medaka Developmental Stages,OLATDV,f,,ols
+Platynereis Developmental Stages,PDUMDV,f,,ols
+Anatomical Entity Ontology,AEO,f,,ols
+Cephalopod Ontology,CEPH,f,,ols
+"Human Developmental Anatomy, Abstracg",EDHAA2,f,,ols
+Foundational Model of Anatomy Ontology (Subset),FMA,f,,ols
+Gazetteer,GAZ,f,,ols
+Malaria Ontology,IDOMAL,f,,ols
+Mosquito Insecticide Resistance,MIRO,f,,ols
+Tick Anatomy Ontology,TADS,f,,ols
+Mosquito Gross Anatomy Ontology,TGMA,f,,ols
+Unipathway,UPA,f,,ols
+Adverse Event Reporting Ontology,AERO,f,,ols
+Beta Cell Genomics Ontology,BCGO,f,,ols
+Bilateria Anatomy,BILA,f,,ols
+"Mouse Gross Anatomy and Development, Times",EMAP,f,,ols
+Fly Taxonomy,FBSP,f,,ols
+Ontologized MIABIS,OMIABIS,f,,ols
+Teleost Anatomy Ontology,TAO,f,,ols
+Vertebrate Skeletal Anatomy Ontology,VSAO,f,,ols
+The Data Catalog Vocabulary,DCAT,f,,ols
+Biolink-Model,BIOLINK,f,,ols
+Semantic Mapping Vocabulary,SEMAPV,f,,ols
+SwissLipids,SLM,f,,ols
+LIPID MAPS,LIPIDMAPS,f,,ols
+oio,OIO,f,,ols
+Chemical Analysis Metadata Platform (ChAMP) Ontology,CAO,f,,ols
+The RDF Schema Vocabulary,RDFS,f,,ols
+The OWL 2 Shema Vocabulary,OWL,f,,ols
+SKOS Vocabulary,SKOS,f,-,ols
+DCMI Metada Terms,DCTERMS,f,,ols
+Dublic Core Metadata Element Set,DC,f,,ols
+schemaorg_http,SCHEMAORG_HTTP,f,,ols
+schemaorg_https,SCHEMAORG_HTTPS,f,,ols
+PHI-base Ontology,PHI,f,,ols
+Metabolomics Standards Initiative Ontology,MSIO,f,,ols
+DCM,DICOM,f,,ols
+Ensembl Glossary,ENSEMBLGLOSSARY,f,,ols
+Experimental Factor Ontology,EFO,f,,ols
+Orphanet Rare Disease Ontology,ORDO,t,,ols
+TErminology for the Description of DYnamics,TEDDY,f,,ols
+"Bioinformatics Operations, Data Types, Formats, Identifiers, and Topics",EDAM,t,,ols
+Cell Cycle Ontology,CCO,f,,ols
+Regulations of Gene Expression Ontology,REXO,f,,ols
+Regulation of Transcription Ontology,RETO,f,,ols
+Gene Expression Ontology,GEXO,f,,ols
+Cellular Microscopy Phenotype Ontology,CMPO,f,,ols
+eNanoMapper Ontology,ENM,f,,ols
+Probability Distribution Ontology,PROBONTO,f,,ols
+PRIDE Controlled Vocabulary,PRIDE,f,,ols
+BioAssay Ontology,BAO,f,,ols
+Semanticscience Inegrated Ontology,SIO,f,,ols
+Unimod Protein Modification Database for Mass Spectrometry,UNIMOD,f,,ols
+Nuclear Magnetic Resonance CV,NMRCV,f,,ols
+Allotrope Foundation Ontology Merged Without QUDT and Inferred,AFO,f,,ols
+FAIRsharing Subject Ontology,SRAO,f,,ols
+Human Cell Atlas Ontology,HCAO,f,,ols
+The COVID-19 Infecious Disease Ontology,IDOCOVID19,f,,ols
+Behavior Change Intervention Ontology,BCIO,f,,ols
+CoVoc Coronavirus Vocabulary,COVOD,f,,ols
+Ontology of Units of Measure,OM,f,,ols
+The REPRODUCE-ME Ontology,REPRODUCEME,f,,ols
+Provenance Ontology,PROV,f,,ols
+Orthology Ontology,ORTH,f,,ols
+Cryo Electron Miscroscopy Ontology,CRYOEM,f,,ols
+SNOMED CT (International Edition),SNOMED,t,,ols
+ShareLoc,SHARELOC,f,,ols
+Human Reference Atlas Common Coordinate Framework Ontology,CCF,f,,ols
+Critical Path Ontology,CPONT,f,,ols
+The Human Phenotype Ontology,HPO,t,,umls
+"US Edition of SNOMED CT, 2024_09_01",SNOMEDCT_US,t,,umls
+Logical Observation Identifiers Names and Codes,LNC,t,,umls
+The Medical Dictionary for Regulatory Activities,MDR,t,,umls
+The Medical Subject Headings Thesaurus,MSH,t,,umls

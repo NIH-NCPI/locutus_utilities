@@ -3,7 +3,8 @@ HPO		HP	HP	HPO	The Human Phenotype Ontology	HP		http://purl.obolibrary.org/obo/h
 Mondo		MONDO	MONDO		The Mondo Disease Ontology	MONDO		http://purl.obolibrary.org/obo/mondo.owl	MONDO:0008608	Down syndrome
 MAxO		MAXO	MAXO		The Medical Action Onotlogy	MAXO		http://purl.obolibrary.org/obo/maxo.owl	MAXO:0025001	surgical procedure on cardiovascular system
 NCIt			NCIT		The National Cancer Institute Thesaurus	NCIT		http://purl.obolibrary.org/obo/ncit.owl	NCIT:C25648	Relationship
-SNOMED CT		SNOMED	SNOMED CT	SNMI	Systematized Nomenclature of Medicine Clinical Terminology	SNOMED		http://snomed.info/sct	SNOMED:363787002	Observable entity
+SNOMED CT		SNOMED	SNOMED CT		Systematized Nomenclature of Medicine Clinical Terminology	SNOMED		http://snomed.info/sct	SNOMED:363787002	Observable entity
+SNOMEDCT_US		unknown	unknown	SNOMEDCT_US	US Edition of SNOMED CT, 2024_09_01			http://snomed.info/sct		
 SYMP			SYMP		The Symptom Ontology	SYMP		https://purl.obolibrary.org/obo/symp.owl	SYMP:0000463	lack of normal physiological development
 LOINC	LOINC			LNC	Logical Observation Identifiers Names and Codes	LOINC		https://loinc.org/	LOINC:39156-5	BMI
 MedDRA				MDR	The Medical Dictionary for Regulatory Activities	MEDDRA		https://www.meddra.org	MEDDRA:10040760	Situational anxiety
