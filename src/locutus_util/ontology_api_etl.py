@@ -15,7 +15,7 @@ import argparse
 import requests
 import pandas as pd
 import numpy as np
-import date
+from datetime import date
 import logging
 from typing import List
 from google.cloud import firestore

@@ -11,7 +11,8 @@ from datetime import date
 from locutus.model.table import Table
 from locutus.model.user_input import MappingConversations
 from locutus.model.terminology import Terminology as Term, CodingMapping
-from locutus_util import set_logging_config, update_gcloud_project
+from locutus_util.helpers import update_gcloud_project, set_logging_config
+
 from locutus_util.common import LOGS_PATH
 
 import pdb
