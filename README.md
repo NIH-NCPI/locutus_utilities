@@ -36,9 +36,11 @@ export UMLS_API_KEY=your_actual_umls_api_key
     deactivate
     ```
 
-2. **Install the package and dependencies**:
+2. **Install the package and dependencies from the root directory.**:
     ```bash
     pip install git+https://github.com/NIH-NCPI/locutus_utilities.git
+
+    pip install -r requirements.txt
     ```
 3. **Run a command/action**
 
@@ -84,19 +86,29 @@ utils_run -p <project_id> -o <option> -a <action>
 ### sideload_run 
 ### mapping_loader_table.py
 Map existing `Table.variables` to the `mappings` specified in a csv. <br>
-Expected csv formatting seen below.<br>
+Expected csv formatting seen below. This file should be placed in the data/input/sideload_data directory.<br>
 ```csv
 source_variable,source_enumeration,code,display,system,provenance,comment
 case_control_aaa,C99269,233985008,Abdominal aortic aneurysm,SNOMED,RJC,
 ```
-Run an edited version of this script from the root directory.<br>
-* -e choices=["DEV", "UAT", "ALPHA", "PROD"]
+
 ```bash
 # run command
-python -m scripts.mapping_loader_table -e {environment} -p {project_id} -f data/input/{filename}.csv -t {db table id}
+sideload_run -e {environment} -p {project_id} -f data/input/sideload_data/{filename}.csv -t {db table id}
 
-# For argument descriptions use the help command
-python -m scripts.mapping_loader_table -h
+* -e, --env
+    * Description: Choose the environment that the table is within.
+    * choices=["DEV", "UAT", "ALPHA", "PROD"]
+    * Required: False
+* -p, --project_id
+    * Description: Choose the environment that the table is within.
+    * Required: True
+* -f, --file
+    * Description: Choose the operation to perform.    
+    * Required: True
+* -t, --table
+    * Description: The table_id that the mappings belong to. 'tb*' format
+    * Required: True     
 ```
 
 

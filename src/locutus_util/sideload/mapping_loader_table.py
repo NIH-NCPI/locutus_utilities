@@ -11,7 +11,8 @@ from datetime import date
 from locutus.model.table import Table
 from locutus.model.user_input import MappingConversations
 from locutus.model.terminology import Terminology as Term, CodingMapping
-from scripts import set_logging_config, update_gcloud_project
+from locutus_util import set_logging_config, update_gcloud_project
+from locutus_util.common import LOGS_PATH
 
 import pdb
 
@@ -130,7 +131,7 @@ def process_csv(file, table):
 
 
 def load_data(project_id, table_id, file):
-    _log_file = f"{date.today()}_{project_id}_data_load.log"
+    _log_file = f"{LOGS_PATH}/{date.today()}_{project_id}_data_load.log"
 
     # Set logging configs
     set_logging_config(log_file=_log_file)
@@ -148,7 +149,7 @@ def load_data(project_id, table_id, file):
     logging.info("CSV processing completed.")
 
 
-if __name__ == "__main__":
+def main():
     parser = argparse.ArgumentParser(description="Load CSV data into Firestore.")
     parser.add_argument(
         "-e",

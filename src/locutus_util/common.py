@@ -19,12 +19,17 @@ def get_api_key(api_id):
         return API_KEY
 
 
-# Filepaths
-LOGS_PATH = 'data/logs/'
-ONTOLOGY_API_PATH = 'data/ontology_api.csv'
-SEED_DATA_PATH = 'data/seed_data.csv'
-INCLUDED_ONTOLOGIES_PATH = 'data/included_ontologies.csv'
-ONTOLOGY_DATA_PATH = 'data/manual_ontology_transformations.tsv'
+# Dir file paths
+LOGS_PATH = f'data/logs'
+INPUT_PATH = f'data/input'
+ONTOLOGY_DATA_PATH = f'{INPUT_PATH}/ontology_data'
+SIDELOAD_PATH =  f'{INPUT_PATH}/sideload_data'
+
+# Data file paths
+ONTOLOGY_API_PATH = f'{ONTOLOGY_DATA_PATH}/ontology_api.csv'
+SEED_DATA_PATH = f'{ONTOLOGY_DATA_PATH}/seed_data.csv'
+INCLUDED_ONTOLOGIES_PATH = f'{ONTOLOGY_DATA_PATH}/included_ontologies.csv'
+ONTOLOGY_DATA_PATH = f'{ONTOLOGY_DATA_PATH}/manual_ontology_transformations.tsv'
 
 # Values
 BATCH_SIZE = 10
