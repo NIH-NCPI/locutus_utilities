@@ -44,6 +44,7 @@ export UMLS_API_KEY=your_actual_umls_api_key
 
    ## Available actions:
    * [utils_run](#utils_run) <br>
+   * [sideload_run](#sideload_run) <br>
 
 ## Commands
 ### utils_run 
@@ -79,6 +80,25 @@ utils_run -p <project_id> -o <option> -a <action>
         * `curated_ontologies_only`: Use the selected default ontologies.
         * `all_ontologies`: Use all ontologies.
     * Default: `all_ontologies`
+
+### sideload_run 
+### mapping_loader_table.py
+Map existing `Table.variables` to the `mappings` specified in a csv. <br>
+Expected csv formatting seen below.<br>
+```csv
+source_variable,source_enumeration,code,display,system,provenance,comment
+case_control_aaa,C99269,233985008,Abdominal aortic aneurysm,SNOMED,RJC,
+```
+Run an edited version of this script from the root directory.<br>
+* -e choices=["DEV", "UAT", "ALPHA", "PROD"]
+```bash
+# run command
+python -m scripts.mapping_loader_table -e {environment} -p {project_id} -f data/input/{filename}.csv -t {db table id}
+
+# For argument descriptions use the help command
+python -m scripts.mapping_loader_table -h
+```
+
 
 ## Working on a branch?
     If working on a new feature it is possible to install a package version within
