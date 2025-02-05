@@ -1,0 +1,1 @@
+git+https://github.com/NIH-NCPI/locutus.git#egg=locutus

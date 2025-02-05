@@ -36,14 +36,18 @@ export UMLS_API_KEY=your_actual_umls_api_key
     deactivate
     ```
 
-2. **Install the package and dependencies**:
+2. **Install the package and dependencies from the root directory.**:
     ```bash
     pip install git+https://github.com/NIH-NCPI/locutus_utilities.git
+
+    # Using '--upgrade' will install the most recent versions. 
+    pip install --upgrade -r requirements.txt
     ```
 3. **Run a command/action**
 
    ## Available actions:
    * [utils_run](#utils_run) <br>
+   * [sideload_run](#sideload_run) <br>
 
 ## Commands
 ### utils_run 
@@ -79,6 +83,36 @@ utils_run -p <project_id> -o <option> -a <action>
         * `curated_ontologies_only`: Use the selected default ontologies.
         * `all_ontologies`: Use all ontologies.
     * Default: `all_ontologies`
+
+### sideload_run 
+### mapping_loader_table.py
+Map existing `Table.variables` to the `mappings` specified in a csv. <br>
+Prior to running this script, the user should check with the 'locutus' dev team, for any recent updates to the mapping process. <br>
+Expected csv formatting seen below. This file should be placed in the data/input/sideload_data directory.<br>
+```csv
+source_variable,source_enumeration,code,display,system,provenance,comment
+case_control_aaa,C99269,233985008,Abdominal aortic aneurysm,SNOMED,RJC,
+```
+
+```bash
+# run command
+sideload_run -e {environment} -p {project_id} -f data/input/sideload_data/{filename}.csv -t {db table id}
+
+* -e, --env
+    * Description: Choose the environment that the table is within.
+    * choices=["DEV", "UAT", "ALPHA", "PROD"]
+    * Required: False
+* -p, --project_id
+    * Description: Choose the environment that the table is within.
+    * Required: True
+* -f, --file
+    * Description: The FILEPATH of the file containing the mappings. Recommended to store within the sideload_data dir, for ease of use.
+    * Required: True
+* -t, --table
+    * Description: The table_id that the mappings belong to. 'tb*' format
+    * Required: True     
+```
+
 
 ## Working on a branch?
     If working on a new feature it is possible to install a package version within
