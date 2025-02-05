@@ -54,10 +54,10 @@ export UMLS_API_KEY=your_actual_umls_api_key
 
 2. **Install the package and dependencies from the root directory.**:
     ```bash
-    pip install git+https://github.com/NIH-NCPI/locutus_utilities.git
+    pip install --force-reinstall --no-cache-dir git+https://github.com/NIH-NCPI/locutus_utilities.git
 
-    # Using '--upgrade' will install the most recent versions. 
-    pip install --upgrade -r requirements.txt
+    # Using '--force-reinstall --no-cache-dir' will install the most recent versions. 
+    pip install --force-reinstall --no-cache-dir -r requirements.txt
     ```
 3. **Run a command/action**
 
