@@ -40,7 +40,8 @@ export UMLS_API_KEY=your_actual_umls_api_key
     ```bash
     pip install git+https://github.com/NIH-NCPI/locutus_utilities.git
 
-    pip install -r requirements.txt
+    # Using '--upgrade' will install the most recent versions. 
+    pip install --upgrade -r requirements.txt
     ```
 3. **Run a command/action**
 
@@ -86,6 +87,7 @@ utils_run -p <project_id> -o <option> -a <action>
 ### sideload_run 
 ### mapping_loader_table.py
 Map existing `Table.variables` to the `mappings` specified in a csv. <br>
+Prior to running this script, the user should check with the 'locutus' dev team, for any recent updates to the mapping process. <br>
 Expected csv formatting seen below. This file should be placed in the data/input/sideload_data directory.<br>
 ```csv
 source_variable,source_enumeration,code,display,system,provenance,comment
@@ -104,7 +106,7 @@ sideload_run -e {environment} -p {project_id} -f data/input/sideload_data/{filen
     * Description: Choose the environment that the table is within.
     * Required: True
 * -f, --file
-    * Description: Choose the operation to perform.    
+    * Description: The FILEPATH of the file containing the mappings. Recommended to store within the sideload_data dir, for ease of use.
     * Required: True
 * -t, --table
     * Description: The table_id that the mappings belong to. 'tb*' format

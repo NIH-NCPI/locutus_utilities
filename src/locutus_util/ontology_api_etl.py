@@ -15,6 +15,7 @@ import argparse
 import requests
 import pandas as pd
 import numpy as np
+import date
 import logging
 from typing import List
 from google.cloud import firestore
@@ -49,7 +50,7 @@ umls_ontologies_url = (
 )
 # Initialize logger
 logger = logging.getLogger(__name__)
-log_file = f"{LOGS_PATH}_ontology_api_etl.log"
+log_file = f"{LOGS_PATH}/{date.today()}_ontology_api_etl.log"
 set_logging_config(log_file)
 
 

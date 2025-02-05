@@ -54,7 +54,7 @@ def delete_project_data(project_id):
     Firestore project.
     Collections and docuements specified will have all sub-files dropped.
     """
-    _log_file = f"{LOGS_PATH}{datetime.now().strftime('%Y%m%d_%H%M%S')}_{project_id}_delete_project_data.log"
+    _log_file = f"{LOGS_PATH}/{datetime.now().strftime('%Y%m%d_%H%M%S')}_{project_id}_delete_project_data.log"
 
     # Set logging configs -log file created in data/logs
     set_logging_config(log_file = _log_file)
