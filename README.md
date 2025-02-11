@@ -8,6 +8,22 @@ The `locutus_utilities` repository includes scripts and tools that facilitate th
 ## Prerequisites
 
 1. **Google Cloud SDK**: Installed and authenticated to use Google Cloud services.
+  * [[Click here]](https://cloud.google.com/sdk/docs/install-sdk) for installation
+  * [[Click here]](https://cloud.google.com/sdk/gcloud/reference/auth/application-default/login) for authentication
+
+```bash 
+# Handy commands when working with gcloud
+
+# Take a look at your current configuration
+gcloud config list
+
+# Set the project in the config. This package will set this for you when you run commands. There is no need to do so before running commands.
+gcloud config set project {project-id}
+
+# login
+gcloud auth application-default login
+
+```
 2. **Firestore** enabled in your Google Cloud project.
 3. Install **setuptools**
 4. If running the 'update_ontology_api' option, You'll need a UMLS api key. If you don't already have one, log in and request an API key from [UMLS](https://uts.nlm.nih.gov/uts/). When you have this you can create a environment variable with the code below. 
@@ -20,7 +36,7 @@ export UMLS_API_KEY=your_actual_umls_api_key
 ## Installation
 
 1. **Create and activate a virtual environment** (recommended):<br>
-[[Click here]]("https://realpython.com/python-virtual-environments-a-primer/") for more on virtual environments.
+[[Click here]](https://realpython.com/python-virtual-environments-a-primer/) for more on virtual environments.
 
     ```bash
     # Step 1: cd into the directory to store the venv
@@ -38,10 +54,10 @@ export UMLS_API_KEY=your_actual_umls_api_key
 
 2. **Install the package and dependencies from the root directory.**:
     ```bash
-    pip install git+https://github.com/NIH-NCPI/locutus_utilities.git
+    pip install --force-reinstall --no-cache-dir git+https://github.com/NIH-NCPI/locutus_utilities.git
 
-    # Using '--upgrade' will install the most recent versions. 
-    pip install --upgrade -r requirements.txt
+    # Using '--force-reinstall --no-cache-dir' will install the most recent versions. 
+    pip install --force-reinstall --no-cache-dir -r requirements.txt
     ```
 3. **Run a command/action**
 
