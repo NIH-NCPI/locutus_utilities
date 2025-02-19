@@ -11,3 +11,5 @@ MedDRA				MDR	The Medical Dictionary for Regulatory Activities	MEDDRA		https://w
 MeSH				MSH	The Medical Subject Headings Thesaurus	MESH		urn:oid:2.16.840.1.113883.6.177	MESH:D001932	Brain Neoplasms
 UCUM					Units of Measure	UCUM		http://unitsofmeasure.org	UCUM:kg/m2	kg/m2
 OMIT			OMIT		Ontology for MIRNA Target	OMIT		http://purl.obolibrary.org/obo/omit.owl	OMIT:0015269	Myringotomy
+OMIM				OMIM	Online Mendelian Inheritance in Man	MIM		https://omim.org/	MIM:603903	SICKLE CELL DISEASE
+CDCREC				CDCREC	The Centers for Disease Control and Prevention Race and Ethnicity Code System	CDCREC		http://terminology.hl7.org/NamingSystem/CDCREC	CDCREC:2106-3	White
