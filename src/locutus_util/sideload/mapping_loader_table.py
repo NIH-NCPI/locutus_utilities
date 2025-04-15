@@ -15,13 +15,12 @@ from locutus_util.helpers import update_gcloud_project, set_logging_config
 
 from locutus_util.common import LOGS_PATH
 
-import pdb
-
 locutus_project = {
     "DEV": "locutus-dev",
     "UAT": "locutus-uat",
     "PROD": "locutus-407820",
     "ALPHA": "locutus-alpha",
+    "UNI": "mapdragon-unified",
 }
 
 def process_csv(file, table):
@@ -32,23 +31,15 @@ def process_csv(file, table):
     for variable in table.variables:
         # Map to the Enumerations if available
         if hasattr(variable, "enumerations"):
-            if "/" in variable.code:
-                print(f"Whoops! {variable.code}")
-                pdb.set_trace()
             enumerations[variable.code] = variable.enumerations
-            print(f"Setting enumerations for {variable.enumerations}")
+            logging.info(f"Setting enumerations for {variable.enumerations}")
         elif not hasattr(variable, "enumerations"):
-            if "/" in variable.code:
-                print(f"Whoops! {variable.code}")
-                pdb.set_trace()
             enumerations[variable.code] = variable.code
-            print(f"Setting enumerations for {variable.code}")
+            logging.info(f"Setting enumerations for {variable.code}")
         else:
-            print(
+            logging.info(
                 f"SKIPPING:{variable.code}, DTYPE:{variable.data_type}, No enumerations to set. ")
-
-    print(enumerations)
-    # pdb.set_trace()
+    logging.info(enumerations)
 
     illegal_enums = ['NA',""]
 
@@ -61,7 +52,7 @@ def process_csv(file, table):
         source_enumeration = row.get("source_enumeration")
         if source_enumeration is None or source_enumeration.strip() in illegal_enums:
             source_enumeration = source_variable
-            print(f"MAPPING {source_variable} to 'source_variable' because no source_enumeration is supplied.")
+            logging.info(f"MAPPING {source_variable} to 'source_variable' because no source_enumeration is supplied.")
         else:
             source_enumeration = source_enumeration.strip()  
 
@@ -90,45 +81,41 @@ def process_csv(file, table):
 
             index += 1
             if source_variable in enumerations:
-                if "/" in source_enumeration:
-                    print(f"Skipping {source_variable} due to slash problem")
-                else:
-                    if code != "NA":
-                        print(
-                            f"{source_variable}.{source_enumeration} + {code}({display})"
-                        )
+                if code != "NA":
+                    logging.info(
+                        f"{source_variable}.{source_enumeration} + {code}({display})"
+                    )
 
-                        # Use the Table's shadow Terminology to map Variables
-                        if source_variable == source_enumeration:
-                            t = table.terminology.dereference()
-                        # Use the Enumeration's Terminology to map Enumerations
-                        else:
-                            t = enumerations[source_variable].dereference()
-
-                        codings = [
-                            x
-                            for x in t.mappings(source_enumeration)[source_enumeration]
-                            if x.code != code
-                        ]
-                        codings.append(
-                            CodingMapping(code=code, display=display, system=system)
-                        )
-                        # pdb.set_trace()
-                        t.set_mapping(
-                            source_enumeration, codings=codings, editor=editor
-                        )
-                        if comment is not None and comment != "NA":
-                            user_input.create_or_replace_user_input(
-                                resource_type="Terminology",
-                                collection_type="user_input",
-                                id=t.id,
-                                code=code,
-                                mapped_code=code,
-                                type="mapping_conversations",
-                                body=comment,
-                            )
+                    # Use the Table's shadow Terminology to map Variables
+                    if source_variable == source_enumeration:
+                        t = table.terminology.dereference()
+                    # Use the Enumeration's Terminology to map Enumerations
                     else:
-                        print(f"skipping {source_variable}")
+                        t = enumerations[source_variable].dereference()
+
+                    codings = [
+                        x
+                        for x in t.mappings(source_enumeration)[source_enumeration]
+                        if x.code != code
+                    ]
+                    codings.append(
+                        CodingMapping(code=code, display=display, system=system)
+                    )
+                    t.set_mapping(
+                        source_enumeration, codings=codings, editor=editor
+                    )
+                    if comment is not None and comment != "NA":
+                        user_input.create_or_replace_user_input(
+                            resource_type="Terminology",
+                            collection_type="user_input",
+                            id=t.id,
+                            code=code,
+                            mapped_code=code,
+                            type="mapping_conversations",
+                            body=comment,
+                        )
+                    else:
+                        logging.info(f"skipping {source_variable}")
 
 
 def load_data(project_id, table_id, file):
@@ -143,7 +130,6 @@ def load_data(project_id, table_id, file):
     update_gcloud_project(project_id)
 
     # Grab the Table from the database via the usual model backend stuff
-    # pdb.set_trace()
     logging.info(f"Starting CSV processing for file: {file.name}")
     table = Table.get(table_id)
     process_csv(file, table)
@@ -155,7 +141,7 @@ def main():
     parser.add_argument(
         "-e",
         "--env",
-        choices=["DEV", "UAT", "ALPHA", "PROD"],
+        choices=["DEV", "UAT", "ALPHA", "PROD", "UNI"],
         help="Locutus environment to use",
     )
     parser.add_argument(
