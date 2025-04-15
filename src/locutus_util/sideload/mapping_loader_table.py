@@ -32,12 +32,14 @@ def process_csv(file, table):
         # Map to the Enumerations if available
         if hasattr(variable, "enumerations"):
             enumerations[variable.code] = variable.enumerations
-            print(f"Setting enumerations for {variable.enumerations}")
+            logging.info(f"Setting enumerations for {variable.enumerations}")
+        elif not hasattr(variable, "enumerations"):
+            enumerations[variable.code] = variable.code
+            logging.info(f"Setting enumerations for {variable.code}")
         else:
-            print(
+            logging.info(
                 f"SKIPPING:{variable.code}, DTYPE:{variable.data_type}, No enumerations to set. ")
-
-    print(enumerations)
+    logging.info(enumerations)
 
     illegal_enums = ['NA',""]
 
@@ -50,7 +52,7 @@ def process_csv(file, table):
         source_enumeration = row.get("source_enumeration")
         if source_enumeration is None or source_enumeration.strip() in illegal_enums:
             source_enumeration = source_variable
-            print(f"MAPPING {source_variable} to 'source_variable' because no source_enumeration is supplied.")
+            logging.info(f"MAPPING {source_variable} to 'source_variable' because no source_enumeration is supplied.")
         else:
             source_enumeration = source_enumeration.strip()  
 
@@ -80,7 +82,7 @@ def process_csv(file, table):
             index += 1
             if source_variable in enumerations:
                 if code != "NA":
-                    print(
+                    logging.info(
                         f"{source_variable}.{source_enumeration} + {code}({display})"
                     )
 
@@ -113,7 +115,7 @@ def process_csv(file, table):
                             body=comment,
                         )
                     else:
-                        print(f"skipping {source_variable}")
+                        logging.info(f"skipping {source_variable}")
 
 
 def load_data(project_id, table_id, file):
