@@ -1,33 +1,31 @@
 import subprocess
 import logging
+import sys
 import time
+import pandas as pd
+from pathlib import Path
 from google.cloud import firestore
 from locutus_util.common import (COL_TIME_LIMIT,SUB_TIME_LIMIT,BATCH_SIZE)
 
 
 def set_logging_config(log_file):
-
-    LOGGING_FORMAT='%(asctime)s - %(levelname)s - %(message)s'
-
-    # Create a logger
     logger = logging.getLogger()
     logger.setLevel(logging.INFO)
-    
-    # Create a file handler for logging to a file
-    file_handler = logging.FileHandler(log_file)
-    file_handler.setLevel(logging.INFO)
-    file_handler.setFormatter(logging.Formatter(LOGGING_FORMAT))
-    
-    # Create a console handler for logging to the console
+
+    # Prevent duplicate handlers
+    if logger.hasHandlers():
+        logger.handlers.clear()
+
+    # Console handler
     console_handler = logging.StreamHandler()
-    console_handler.setLevel(logging.INFO)
-    console_handler.setFormatter(logging.Formatter(LOGGING_FORMAT))
-    
-    # Add handlers to the logger
-    logger.addHandler(file_handler)
+    console_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
     logger.addHandler(console_handler)
 
-    logger.info('logger is setup')
+    # File handler
+    file_handler = logging.FileHandler(log_file)
+    file_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+    logger.addHandler(file_handler)
+
 
 # Initialize Firestore client
 db = firestore.Client()
@@ -42,6 +40,44 @@ def update_gcloud_project(project_id):
         logging.info(f"Project updated successfully: {project_id}")
     except subprocess.CalledProcessError as e:
         logging.error(f"Error updating project: {e}")
+
+
+def drop_collection_data(db):
+    """Loop through all collections in Firestore and delete them."""
+    # Get all top-level collections
+    collections = db.collections()
+    has_collections = False
+
+    for collection in collections:
+        has_collections = True
+        logging.info(f"Deleting collection '{collection.id}'...")
+        delete_collection(collection)
+        
+        # After attempting to delete, verify if the collection is empty
+        if is_collection_empty(db, collection):
+            logging.info(f"Collection '{collection.id}' successfully deleted.")
+        else:
+            logging.warning(f"Collection '{collection.id}' and its subcollections are not completely deleted.")
+            sys.exit(1)
+
+    if not has_collections:
+        logging.info("No collections found. Firestore database is already empty.")
+
+def is_collection_empty(db, coll_ref):
+    """Check if a collection and its subcollections are empty."""
+    # Check for any remaining documents in the collection
+    docs = list(coll_ref.limit(1).stream())
+    if len(docs) > 0:
+        return False
+
+    # Check for any subcollections within the documents of this collection
+    for doc in coll_ref.list_documents():
+        for subcollection in doc.collections():
+            subcoll_ref = db.collection(f"{coll_ref.id}/{doc.id}/{subcollection.id}")
+            if not is_collection_empty(subcoll_ref):
+                return False
+
+    return True
 
 def delete_collection(coll_ref, batch_size=BATCH_SIZE, time_limit=COL_TIME_LIMIT):
     """
@@ -102,3 +138,23 @@ def delete_subcollections(doc_ref, batch_size=BATCH_SIZE, time_limit=SUB_TIME_LI
 
         logging.info(f"Deleting subcollection '{subcollection.id}' for document '{doc_ref.id}'.")
         delete_collection(subcollection, batch_size=batch_size, time_limit=time_limit)
+
+def write_file(filepath, data, sort_by_list):
+    """Creates a directory for the table and writes a YAML, SQL, BASH, or Markdown file based on the extension."""
+    filepath = Path(filepath)
+    file_extension = filepath.suffix
+
+    data = pd.DataFrame(data)
+    data = data.sort_values(by=sort_by_list)
+
+    file_handlers = {
+        ".csv": lambda: data.to_csv(filepath, index=False),
+    }
+
+    if file_extension not in file_handlers:
+        raise ValueError(f"Unsupported file type: {file_extension}")
+    
+    logging.debug(f"Writing {file_extension} to file: {filepath}")
+    file_handlers[file_extension]()
+
+    logging.info(f"Generated: {Path(filepath).name}")
