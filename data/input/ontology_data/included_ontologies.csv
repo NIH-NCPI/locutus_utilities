@@ -259,6 +259,7 @@ SNOMED CT (International Edition),SNOMED,t,,ols
 ShareLoc,SHARELOC,f,,ols
 Human Reference Atlas Common Coordinate Framework Ontology,CCF,f,,ols
 Critical Path Ontology,CPONT,f,,ols
+"Race & Ethnicity - CDC, 1.2",CDCREC,t,,umls
 The Human Phenotype Ontology,HPO,t,,umls
 "US Edition of SNOMED CT, 2024_09_01",SNOMEDCT_US,t,,umls
 Logical Observation Identifiers Names and Codes,LNC,t,,umls

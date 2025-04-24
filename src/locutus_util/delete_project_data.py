@@ -1,53 +1,11 @@
-"""Remove seed data from a specified gcp project. Move to new branch/PR
-
-Jira Issue: FD-1618
-"""
 
 import argparse
-import logging
-import sys
 from datetime import datetime
 from google.cloud import firestore
 from locutus_util.common import LOGS_PATH
-from locutus_util.helpers import (update_gcloud_project, delete_collection,
+from locutus_util.helpers import (update_gcloud_project, drop_collection_data,
                                   set_logging_config)
 
-def drop_collection_data(db):
-    """Loop through all collections in Firestore and delete them."""
-    # Get all top-level collections
-    collections = db.collections()
-    has_collections = False
-
-    for collection in collections:
-        has_collections = True
-        logging.info(f"Deleting collection '{collection.id}'...")
-        delete_collection(collection)
-        
-        # After attempting to delete, verify if the collection is empty
-        if is_collection_empty(db, collection):
-            logging.info(f"Collection '{collection.id}' successfully deleted.")
-        else:
-            logging.warning(f"Collection '{collection.id}' and its subcollections are not completely deleted.")
-            sys.exit(1)
-
-    if not has_collections:
-        logging.info("No collections found. Firestore database is already empty.")
-
-def is_collection_empty(db, coll_ref):
-    """Check if a collection and its subcollections are empty."""
-    # Check for any remaining documents in the collection
-    docs = list(coll_ref.limit(1).stream())
-    if len(docs) > 0:
-        return False
-
-    # Check for any subcollections within the documents of this collection
-    for doc in coll_ref.list_documents():
-        for subcollection in doc.collections():
-            subcoll_ref = db.collection(f"{coll_ref.id}/{doc.id}/{subcollection.id}")
-            if not is_collection_empty(subcoll_ref):
-                return False
-
-    return True
 
 def delete_project_data(project_id):
     """Delete specified collections and documents(seed data) from the specified
