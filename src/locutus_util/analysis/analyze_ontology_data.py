@@ -71,7 +71,7 @@ df = pd.concat([ols_df, umls_df, additional_df], ignore_index=True)
 df = df.sort_values(by=["curie", "api_id"], ascending=True, ignore_index=True)
 
 # Save the DataFrame to a CSV file
-df.to_csv(f"{LOGS_PATH}/ontology_definition_{export_date}.csv", index=False)
+df.to_csv(f"{LOGS_PATH}/../output/ontology_definition_{export_date}.csv", index=False)
 
 print(f"{len(df)} ontologies saved to ontology_definition_{export_date}.csv")
 
@@ -131,7 +131,7 @@ formatted_df = format_ontology_data(ols_df, umls_df, additional_df)
 
 # Save to CSV if needed
 formatted_df.to_csv(
-    f"{LOGS_PATH}/formatted_ontology_data_{export_date}.csv", index=False
+    f"{LOGS_PATH}/../output/formatted_ontology_data_{export_date}.csv", index=False
 )
 
 print(f"Formatted data saved to formatted_ontology_data_{export_date}.csv")
