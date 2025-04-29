@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 '''
-Suggestion: Uncomment lines 38-39 while doing initial troubleshooting/setup.
+Suggestion: Uncomment lines ~41-42 while doing initial troubleshooting/setup. Also,
+any runs of get_distinct_mapping_systems. This function will also crawl through
+the db. Try not to run when it is not needed, to keep down hits to the db.
 
 Updates the system of a mapping if the attribute is missing, or an empty string.
 Searches the Terminology Collections mappings, collecting doc references to update.
@@ -21,6 +23,7 @@ from datetime import datetime
 from locutus_util.common import LOGS_PATH
 from locutus_util.helpers import (set_logging_config, write_file)
 from locutus.model.ontologies_search import OntologyAPISearchModel
+from locutus_util.analysis.get_distinct_mapping_systems import main as get_distinct_mapping_systems
 
 def scan(db, issue_log_path):
     """
@@ -42,7 +45,7 @@ def scan(db, issue_log_path):
             codes = data.get("codes", [])
             for code_entry in codes:
                 system = code_entry.get("system")
-                if system is None or system == "":
+                if system is None or system == "" or system == "UK Biobank":
                     proposed_system = propose_system_for_code(code_entry.get("code"))
                     mapping_dict = {
                         "terminology_id": term_id,
@@ -230,6 +233,8 @@ def main(project_id,database):
 
     if confirm == "y":
         update_mapping_systems(db, empty_systems)
+        get_distinct_mapping_systems(project_id, database)
+
     else:
         logging.info("Update declined.")
 

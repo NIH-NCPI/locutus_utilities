@@ -29,7 +29,7 @@ SIDELOAD_PATH =  f'{INPUT_PATH}/sideload_data'
 ONTOLOGY_API_PATH = f'{ONTOLOGY_DATA_PATH}/ontology_api.csv'
 SEED_DATA_PATH = f'{ONTOLOGY_DATA_PATH}/seed_data.csv'
 INCLUDED_ONTOLOGIES_PATH = f'{ONTOLOGY_DATA_PATH}/included_ontologies.csv'
-ONTOLOGY_DATA_PATH = f'{ONTOLOGY_DATA_PATH}/manual_ontology_transformations.tsv'
+MANUAL_ONTOLOGY_TRANSFORMS_PATH = f'{ONTOLOGY_DATA_PATH}/manual_ontology_transformations.tsv'
 
 # Values
 BATCH_SIZE = 10
