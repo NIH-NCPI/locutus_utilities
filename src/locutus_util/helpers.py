@@ -7,7 +7,7 @@ import pandas as pd
 from pathlib import Path
 from google.cloud import firestore
 from googleapiclient.discovery import build
-from locutus_util.common import (COL_TIME_LIMIT,SUB_TIME_LIMIT,BATCH_SIZE)
+from locutus_util.common import (COL_TIME_LIMIT,SUB_TIME_LIMIT,BATCH_SIZE,LOGS_PATH)
 
 logger = logging.getLogger(__name__)
 

@@ -31,6 +31,7 @@ from locutus_util.common import (
     ONTOLOGY_API_PATH,
     INCLUDED_ONTOLOGIES_PATH,
     MANUAL_ONTOLOGY_TRANSFORMS_PATH,
+    LOCUTUS_SYSTEM_MAP_PATH,
     get_api_key,
 )
 
@@ -148,7 +149,7 @@ def add_manual_ontologies():
             'api_name': "LOINC API",
             'ontology_title': "Logical Observation Identifiers, Names and Codes (LOINC)",
             'ontology_code': "loinc",
-            'curie': "",
+            'curie': "LNC",
             'system': "http://loinc.org",
             'version': ""
         }
@@ -284,6 +285,12 @@ def update_seed_data_csv(data, csv_path):
     combined_df_sorted.to_csv(csv_path, index=False)
     logger.info(f"The ontology_api csv is updated.")
 
+    # Create locutus_system_map - ftd ontology metadata lookup
+    df = combined_df_sorted[["curie","system"]]
+    df.loc[:, "curie"] = df["curie"].str.upper()
+    sys_mapping = df[~(df['curie'].isnull() | df['system'].isnull())].drop_duplicates(keep='first').reset_index(drop = True)
+    sys_mapping.to_csv(LOCUTUS_SYSTEM_MAP_PATH, index=False)
+    logger.info(f"The locutus_system_map.csv is updated.")
 
 def filter_firestore_ontologies(data, which_ontologies, included_ontologies):
     """

@@ -30,6 +30,7 @@ ONTOLOGY_API_PATH = f'{ONTOLOGY_DATA_PATH}/ontology_api.csv'
 SEED_DATA_PATH = f'{ONTOLOGY_DATA_PATH}/seed_data.csv'
 INCLUDED_ONTOLOGIES_PATH = f'{ONTOLOGY_DATA_PATH}/included_ontologies.csv'
 MANUAL_ONTOLOGY_TRANSFORMS_PATH = f'{ONTOLOGY_DATA_PATH}/manual_ontology_transformations.tsv'
+LOCUTUS_SYSTEM_MAP_PATH = f'{ONTOLOGY_DATA_PATH}/locutus_system_map.csv'
 
 # Values
 BATCH_SIZE = 10
