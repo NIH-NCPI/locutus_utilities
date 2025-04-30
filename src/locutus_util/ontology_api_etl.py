@@ -278,6 +278,42 @@ def reorg_for_firestore(filtered_ontologies):
             }
     return api_data
 
+def add_manual_additions_to_ontology_lookup(df):
+    '''
+    This will cover adding systems to the ontology lookup that are known to ftd
+    as possible input, but should be updated to an acceptable, expected system.
+
+    To reduce hardcoding, the known, incorrect system values(Ex LOINC) are mapped
+    to an ~equivalant key(LNC) in the lookup table. The value of that key(ex LNC) 
+    in the lookup table will be inserted into the lookup table.
+
+    Example: 
+    input system >  ontology lookup  > input system, linked to the current system 
+    LOINC > LNC,http://loinc.org > LOINC,http://loinc.org
+    '''
+    manual_map = {
+        "LOINC": "LNC",
+        "MIM": "OMIM",
+        "MESH": "MSH",
+        "ORPHANET": "ORDO",
+    }
+
+    new_rows = []
+
+    for input_sys, current_sys in manual_map.items():
+        # Find the row(s) in df with the current system code
+        matching_rows = df[df["curie"] == current_sys]
+
+        for _, row in matching_rows.iterrows():
+            # Create a copy of the row with the input system as the key
+            new_row = row.copy()
+            new_row["curie"] = input_sys
+            new_rows.append(new_row)
+
+    # Add the new rows to the original DataFrame and drop duplicates if any
+    df_augmented = pd.concat([df, pd.DataFrame(new_rows)], ignore_index=True)
+    return df_augmented
+
 def update_seed_data_csv(data, csv_path):
     # For data lineage
     data = pd.DataFrame(data)
