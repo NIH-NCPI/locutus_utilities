@@ -143,16 +143,7 @@ def add_manual_ontologies():
             'system': "http://purl.obolibrary.org/obo/nbo.owl",
             'version': ""
         },
-        {
-            'api_url': LOINC_API_BASE_URL,
-            'api_id': "loinc",
-            'api_name': "LOINC API",
-            'ontology_title': "Logical Observation Identifiers, Names and Codes (LOINC)",
-            'ontology_code': "loinc",
-            'curie': "LNC",
-            'system': "http://loinc.org",
-            'version': ""
-        }
+
     ]
 
 def add_monarch_ontologies():
@@ -323,6 +314,7 @@ def update_seed_data_csv(data, csv_path):
 
     # Create locutus_system_map - ftd ontology metadata lookup
     df = combined_df_sorted[["curie","system"]]
+    df = add_manual_additions_to_ontology_lookup(df)
     df.loc[:, "curie"] = df["curie"].str.upper()
     sys_mapping = df[~(df['curie'].isnull() | df['system'].isnull())].drop_duplicates(keep='first').reset_index(drop = True)
     sys_mapping.to_csv(LOCUTUS_SYSTEM_MAP_PATH, index=False)
