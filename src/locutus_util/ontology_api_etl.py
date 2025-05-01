@@ -16,10 +16,9 @@ import requests
 import pandas as pd
 import numpy as np
 from datetime import date
-import logging
 from typing import List
 from google.cloud import firestore
-from locutus_util.helpers import update_gcloud_project, set_logging_config
+from locutus_util.helpers import logger, set_logging_config, import_google_sheet, login_with_scopes
 from locutus_util.common import (
     FETCH_AND_UPLOAD,
     UPLOAD_FROM_CSV,
@@ -31,28 +30,10 @@ from locutus_util.common import (
     LOINC_API_BASE_URL,
     ONTOLOGY_API_PATH,
     INCLUDED_ONTOLOGIES_PATH,
-    ONTOLOGY_DATA_PATH,
+    MANUAL_ONTOLOGY_TRANSFORMS_PATH,
+    LOCUTUS_SYSTEM_MAP_PATH,
     get_api_key,
 )
-
-# Define URLS, filepaths and other required resources
-csv_path = ONTOLOGY_API_PATH  # Location to store fetched data
-included_ontologies = pd.read_csv(
-    INCLUDED_ONTOLOGIES_PATH
-)  # Read in the curated list of ontologies
-hc_ontology_data = pd.read_csv(
-    ONTOLOGY_DATA_PATH, delimiter="\t"
-)  # Read in the file with the hardcoded ontology data
-ols_ontologies_url = f"{OLS_API_BASE_URL}ontologies"
-UMLS_API_KEY = get_api_key("umls")
-umls_ontologies_url = (
-    f"{UMLS_API_BASE_URL}metadata/current/sources?apiKey={UMLS_API_KEY}"
-)
-# Initialize logger
-logger = logging.getLogger(__name__)
-log_file = f"{LOGS_PATH}/{date.today()}_ontology_api_etl.log"
-set_logging_config(log_file)
-
 
 extracted_data = []  # Collects the manual ontology data
 
@@ -64,7 +45,7 @@ def fetch_data(url):
     else:
         return None
 
-def collect_ols_data():
+def collect_ols_data(ols_ontologies_url):
     logger.info("Fetching ols data")
     data = fetch_data(ols_ontologies_url)
     logger.info("Transforming ols data")
@@ -95,7 +76,7 @@ def collect_ols_data():
     return extracted_data
 
 
-def collect_umls_data():
+def collect_umls_data(umls_ontologies_url):
     """
     Collects ontology data from the UMLS API.
 
@@ -162,16 +143,7 @@ def add_manual_ontologies():
             'system': "http://purl.obolibrary.org/obo/nbo.owl",
             'version': ""
         },
-        {
-            'api_url': LOINC_API_BASE_URL,
-            'api_id': "loinc",
-            'api_name': "LOINC API",
-            'ontology_title': "Logical Observation Identifiers, Names and Codes (LOINC)",
-            'ontology_code': "loinc",
-            'curie': "",
-            'system': "http://loinc.org",
-            'version': ""
-        }
+
     ]
 
 def add_monarch_ontologies():
@@ -203,18 +175,18 @@ def add_monarch_ontologies():
     return monarch_ols
 
 
-def supplement_data(combined_data):
+def supplement_data(combined_data, hc_ontology_data):
     """
     Will do any cleaning that is requried after combineing the API data.
 
     Certain umls ontologies will have thier data hardcoded via tsv.
     """
-    supplemented_data = backfill_data_from_tsv(combined_data)
+    supplemented_data = backfill_data_from_tsv(combined_data, hc_ontology_data)
 
     return supplemented_data
 
 
-def backfill_data_from_tsv(combined_data: List):
+def backfill_data_from_tsv(combined_data: List, hc_ontology_data):
     """
     Insert hardcoded UMLS systems.
     Example: Replace with hard coded system where one is specified, no update if not specified.
@@ -297,15 +269,58 @@ def reorg_for_firestore(filtered_ontologies):
             }
     return api_data
 
-def update_seed_data_csv(data):
+def add_manual_additions_to_ontology_lookup(df):
+    '''
+    This will cover adding systems to the ontology lookup that are known to ftd
+    as possible input, but should be updated to an acceptable, expected system.
+
+    To reduce hardcoding, the known, incorrect system values(Ex LOINC) are mapped
+    to an ~equivalant key(LNC) in the lookup table. The value of that key(ex LNC) 
+    in the lookup table will be inserted into the lookup table.
+
+    Example: 
+    input system >  ontology lookup  > input system, linked to the current system 
+    LOINC > LNC,http://loinc.org > LOINC,http://loinc.org
+    '''
+    manual_map = {
+        "LOINC": "LNC",
+        "MIM": "OMIM",
+        "MESH": "MSH",
+        "ORPHANET": "ORDO",
+    }
+
+    new_rows = []
+
+    for input_sys, current_sys in manual_map.items():
+        # Find the row(s) in df with the current system code
+        matching_rows = df[df["curie"] == current_sys]
+
+        for _, row in matching_rows.iterrows():
+            # Create a copy of the row with the input system as the key
+            new_row = row.copy()
+            new_row["curie"] = input_sys
+            new_rows.append(new_row)
+
+    # Add the new rows to the original DataFrame and drop duplicates if any
+    df_augmented = pd.concat([df, pd.DataFrame(new_rows)], ignore_index=True)
+    return df_augmented
+
+def update_seed_data_csv(data, csv_path):
     # For data lineage
     data = pd.DataFrame(data)
     combined_df_sorted = data.sort_values(by=['curie', 'api_id'])
     combined_df_sorted.to_csv(csv_path, index=False)
     logger.info(f"The ontology_api csv is updated.")
 
+    # Create locutus_system_map - ftd ontology metadata lookup
+    df = combined_df_sorted[["curie","system"]]
+    df = add_manual_additions_to_ontology_lookup(df)
+    df.loc[:, "curie"] = df["curie"].str.upper()
+    sys_mapping = df[~(df['curie'].isnull() | df['system'].isnull())].drop_duplicates(keep='first').reset_index(drop = True)
+    sys_mapping.to_csv(LOCUTUS_SYSTEM_MAP_PATH, index=False)
+    logger.info(f"The locutus_system_map.csv is updated.")
 
-def filter_firestore_ontologies(data, which_ontologies):
+def filter_firestore_ontologies(data, which_ontologies, included_ontologies):
     """
     Filter out 'monarch' and 'loinc'
     Filter out those without a 'system'
@@ -335,13 +350,39 @@ def filter_firestore_ontologies(data, which_ontologies):
 
 def ontology_api_etl(project_id, action, which_ontologies):
 
+    # Initiate Firestore client and setting the project_id
+    login_with_scopes()
+    db = firestore.Client(project_id)
+
+    # Initialize logger
+    log_file = f"{LOGS_PATH}/{date.today()}_ontology_api_etl.log"
+    set_logging_config(log_file)
+
+    # Import manual ontology transformations from google sheets
+    if project_id.endswith("dev"): # Syncs the repo lookup when dev is run
+        import_google_sheet("1Fq94B47ZR1Gz6p48SI9T_WGizOmyi5lYEDRZ1KpY42s", "locutus_utils_version", MANUAL_ONTOLOGY_TRANSFORMS_PATH)
+
+    # Define URLS, filepaths and other required resources
+    csv_path = ONTOLOGY_API_PATH  # Location to store fetched data
+    included_ontologies = pd.read_csv(
+        INCLUDED_ONTOLOGIES_PATH
+    )  # Read in the curated list of ontologies
+    hc_ontology_data = pd.read_csv(
+        MANUAL_ONTOLOGY_TRANSFORMS_PATH, delimiter="\t"
+    )  # Read in the file with the hardcoded ontology data
+    ols_ontologies_url = f"{OLS_API_BASE_URL}ontologies"
+    UMLS_API_KEY = get_api_key("umls")
+    umls_ontologies_url = (
+        f"{UMLS_API_BASE_URL}metadata/current/sources?apiKey={UMLS_API_KEY}"
+    )
+
     # Collect data from sources
     if action in {FETCH_AND_UPLOAD, UPDATE_CSV}:
         # Collect OLS data
-        ols_data = collect_ols_data()
+        ols_data = collect_ols_data(ols_ontologies_url)
 
         # Collect UMLS data
-        umls_data = collect_umls_data()
+        umls_data = collect_umls_data(umls_ontologies_url)
 
         # Generate Monarch data
         monarch_data = add_monarch_ontologies()
@@ -355,9 +396,9 @@ def ontology_api_etl(project_id, action, which_ontologies):
         logger.info(f'count ols data: {len(ols_data)}')
         logger.info(f'count umls data: {len(umls_data)}')
 
-        supplemented_data = supplement_data(combined_data)
+        supplemented_data = supplement_data(combined_data, hc_ontology_data)
 
-        update_seed_data_csv(supplemented_data)
+        update_seed_data_csv(supplemented_data, csv_path)
 
     if action in {FETCH_AND_UPLOAD, UPLOAD_FROM_CSV}:
         # Read in data and handle nulls
@@ -365,16 +406,10 @@ def ontology_api_etl(project_id, action, which_ontologies):
         csv_data = csv_data.where(pd.notnull(csv_data), None)
 
         # Only include the cho-simba ones
-        filtered_ontologies = filter_firestore_ontologies(csv_data, which_ontologies)
+        filtered_ontologies = filter_firestore_ontologies(csv_data, which_ontologies, included_ontologies)
 
         # Reformat. Group ontologies by api.
         fs_data = reorg_for_firestore(filtered_ontologies)
-
-        # Update the gcloud project
-        update_gcloud_project(project_id)
-
-        # Firestore client after setting the project_id
-        db = firestore.Client()
 
         # Insert data into Firestore
         for api_id, data in fs_data.items():
@@ -408,6 +443,13 @@ if __name__ == "__main__":
     )
 
     args = parser.parse_args()
+
+    # Initiate Firestore client and setting the project_id
+    db = firestore.Client(project=args.project_id, database=args.database)
+
+    # Import manual ontology transformations from google sheets
+    if args.project_id.endswith("dev"):
+        import_google_sheet("1Fq94B47ZR1Gz6p48SI9T_WGizOmyi5lYEDRZ1KpY42s", "locutus_utils_version", MANUAL_ONTOLOGY_TRANSFORMS_PATH)
 
     ontology_api_etl(
         project_id=args.project_id,

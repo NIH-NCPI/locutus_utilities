@@ -10,6 +10,7 @@ The `locutus_utilities` repository includes scripts and tools that facilitate th
 1. **Google Cloud SDK**: Installed and authenticated to use Google Cloud services.
   * [[Click here]](https://cloud.google.com/sdk/docs/install-sdk) for installation
   * [[Click here]](https://cloud.google.com/sdk/gcloud/reference/auth/application-default/login) for authentication
+  * [[Click here]](https://stackoverflow.com/questions/61412481/google-sheet-api-access-with-application-default-credentials) for more on gsheets authentication
 
 ```bash 
 # Handy commands when working with gcloud
@@ -20,8 +21,9 @@ gcloud config list
 # Set the project in the config. This package will set this for you when you run commands. There is no need to do so before running commands.
 gcloud config set project {project-id}
 
-# login
-gcloud auth application-default login
+# Recommended login if any scripts require reading from google sheets.
+# If not reading from sheets, don't include the --scopes part of the command. See link above for more info. 
+gcloud auth application-default login --scopes=https://www.googleapis.com/auth/spreadsheets.readonly,https://www.googleapis.com/auth/drive.readonly
 
 ```
 2. **Firestore** enabled in your Google Cloud project.

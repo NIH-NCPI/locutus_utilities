@@ -1,5 +1,4 @@
 api_url,api_id,api_name,ontology_code,curie,ontology_title,system,version,ontology_family
-https://loinc.regenstrief.org/searchapi/,loinc,LOINC API,loinc,,"Logical Observation Identifiers, Names and Codes (LOINC)",http://loinc.org,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,addicto,ADDICTO,Addiction Ontology,http://addictovocab.org/addicto.owl,http://addictovocab.org/addicto.owl/2025-03-17,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ado,ADO,Alzheimer's Disease Ontology (ADO),http://purl.obolibrary.org/obo/ado.owl,http://purl.obolibrary.org/obo/ado/releases/2023-09-20/ado.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,aeo,AEO,Anatomical Entity Ontology,http://purl.obolibrary.org/obo/aeo.owl,http://purl.obolibrary.org/obo/aeo/releases/2014-12-05/aeo.owl,
@@ -206,8 +205,8 @@ https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC-ZH-CN,LNC-ZH-CN,"LOINC, Chinese, China Edition, 278",,,LNC
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ma,MA,Mouse adult gross anatomy,http://purl.obolibrary.org/obo/ma.owl,http://purl.obolibrary.org/obo/ma/releases/2017-02-07/ma.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mamo,MAMO,Mathematical Modelling Ontology,https://raw.githubusercontent.com/EBISPOT/mamo/main/mamo.rdf,,
-https://api-v3.monarchinitiative.org/v3/api/search?q=,monarch,Monarch API,maxo,MAXO,Medical Action Ontology,http://purl.obolibrary.org/obo/maxo.owl,http://purl.obolibrary.org/obo/maxo/releases/2024-07-29/maxo.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,maxo,MAXO,Medical Action Ontology,http://purl.obolibrary.org/obo/maxo.owl,http://purl.obolibrary.org/obo/maxo/releases/2024-07-29/maxo.owl,
+https://api-v3.monarchinitiative.org/v3/api/search?q=,monarch,Monarch API,maxo,MAXO,Medical Action Ontology,http://purl.obolibrary.org/obo/maxo.owl,http://purl.obolibrary.org/obo/maxo/releases/2025-04-24/maxo.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,maxo,MAXO,Medical Action Ontology,http://purl.obolibrary.org/obo/maxo.owl,http://purl.obolibrary.org/obo/maxo/releases/2025-04-24/maxo.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mba,MBA,Mouse Brain Atlas Ontology,https://purl.brain-bican.org/ontology/mbao/mbao.owl,https://purl.brain-bican.org/ontology/mbao/releases/2025-04-17/mbao.owl,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MCM,MCM,"McMaster University Epidemiology Terms, 1992",,,MCM
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mco,MCO,Microbial Conditions Ontology,http://purl.obolibrary.org/obo/mco.owl,http://purl.obolibrary.org/obo/mco/releases/2019-05-15/mco.owl,
@@ -245,7 +244,7 @@ https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mfomd,MFOMD,Mental D
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mi,MI,Molecular Interactions Controlled Vocabulary,http://purl.obolibrary.org/obo/mi.owl,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,miapa,MIAPA,Minimum Information for A Phylogenetic Analysis (MIAPA) Ontology,http://purl.obolibrary.org/obo/miapa.owl,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,micro,MICRO,Ontology of Prokaryotic Phenotypic and Metabolic Characters,http://purl.obolibrary.org/obo/micro.owl,,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mmo,MMO,Measurement method ontology,http://purl.obolibrary.org/obo/mmo.owl,http://purl.obolibrary.org/obo/mmo/2.148/mmo.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mmo,MMO,Measurement method ontology,http://purl.obolibrary.org/obo/mmo.owl,http://purl.obolibrary.org/obo/mmo/2.149/mmo.owl,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MMSL,MMSL,"Multum MediSource Lexicon, 2024_08_01",,,MMSL
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MMX,MMX,"Micromedex RED BOOK, 2024_08_05",,,MMX
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mod,MOD,Protein modification,http://purl.obolibrary.org/obo/mod.owl,http://purl.obolibrary.org/obo/mod/1.031.6/mod.owl,
@@ -319,7 +318,7 @@ https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ohd,OHD,Oral Health 
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ohmi,OHMI,OHMI: Ontology of Host-Microbiome Interactions,http://purl.obolibrary.org/obo/ohmi.owl,http://purl.obolibrary.org/obo/ohmi/2019-09-17/ohmi.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ohpi,OHPI,OHPI: Ontology of Host-Pathogen Interactions,http://purl.obolibrary.org/obo/ohpi.owl,http://purl.obolibrary.org/obo/ohpi/releases/2019-09-30,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,om,OM,Ontology of units of Measure (OM),https://raw.githubusercontent.com/HajoRijgersberg/OM/master/om-2.0.rdf,,
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,OMIM,OMIM,"Online Mendelian Inheritance in Man, 2024_08_09",,,OMIM
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,OMIM,OMIM,"Online Mendelian Inheritance in Man, 2024_08_09",https://omim.org/,,OMIM
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,omit,OMIT,Ontology for MIRNA Target,http://purl.obolibrary.org/obo/omit.owl,http://purl.obolibrary.org/obo/omit/dev/omit.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,omo,OMO,OBO Metadata Ontology,http://purl.obolibrary.org/obo/omo.owl,http://purl.obolibrary.org/obo/omo/releases/2024-11-13/omo.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,omp,OMP,Ontology of Microbial Phenotypes,http://purl.obolibrary.org/obo/omp.owl,http://purl.obolibrary.org/obo/omp/releases/2024-03-25/omp.owl,
@@ -425,7 +424,7 @@ https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,UWD
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,VANDF,VANDF,"Veterans Health Administration National Drug File, 2024_07_31",,,VANDF
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,vbo,VBO,Vertebrate Breed Ontology,http://purl.obolibrary.org/obo/vbo.owl,http://purl.obolibrary.org/obo/vbo/releases/2025-02-12/vbo.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,vo,VO,Vaccine Ontology,http://purl.obolibrary.org/obo/vo.owl,http://purl.obolibrary.org/obo/vo/releases/2025-02-26/vo.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,vt,VT,The Vertebrate Trait Ontology,http://purl.obolibrary.org/obo/vt.owl,http://purl.obolibrary.org/obo/vt/releases/2025-04-22/vt.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,vt,VT,The Vertebrate Trait Ontology,http://purl.obolibrary.org/obo/vt.owl,http://purl.obolibrary.org/obo/vt/releases/2025-04-28/vt.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,vto,VTO,Vertebrate Taxonomy Ontology,http://purl.obolibrary.org/obo/vto.owl,http://purl.obolibrary.org/obo/vto/2020-11-13/vto.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,wbphenotype,WBPhenotype,C elegans Phenotype Ontology,http://purl.obolibrary.org/obo/wbphenotype.owl,http://purl.obolibrary.org/obo/wbphenotype/releases/2025-04-01/wbphenotype.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,wbbt,WBbt,C. elegans Gross Anatomy Ontology,http://purl.obolibrary.org/obo/wbbt.owl,http://purl.obolibrary.org/obo/wbbt/releases/2025-03-26/wbbt.owl,
@@ -460,10 +459,6 @@ https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,bila,,Bilateria anat
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,emap,,"Mouse gross anatomy and development, timed",,http://purl.obolibrary.org/obo/emap/releases/2020-04-13/emap.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,fbsp,,Fly taxonomy,,http://purl.obolibrary.org/obo/fbsp/releases/2017-11-19/fbsp.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,omiabis,,Ontologized MIABIS,,,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,tao,,Teleost Anatomy Ontology,,http://purl.obolibrary.org/obo/tao/2012-08-10/tao.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,vsao,,Vertebrate Skeletal Anatomy Ontology-,,http://purl.obolibrary.org/obo/vsao/2012-11-06/vsao.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,evorao,,,https://raw.githubusercontent.com/EVORA-project/evora-ontology/refs/heads/main/models/owl/evora_ontology.owl.ttl,,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ictv,,,https://github.com/EVORA-project/ictv-ontology/raw/refs/heads/main/out/MSL40.owl.ttl,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,uniprotrdfs,,,https://ftp.uniprot.org/pub/databases/uniprot/current_release/rdf/core.owl,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,hra,,Human Reference Atlas (HRA),https://cdn.humanatlas.io/digital-objects/collection/hra-ols/latest/graph.ttl,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,dcat,,,https://www.w3.org/ns/dcat.ttl,http://www.w3.org/ns/dcat3,
@@ -476,3 +471,7 @@ https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,dcterms,,,https://ww
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,dc,,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_elements.rdf,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,schemaorg_http,,,https://schema.org/version/latest/schemaorg-all-http.rdf,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,schemaorg_https,,,https://schema.org/version/latest/schemaorg-all-https.rdf,,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,tao,,Teleost Anatomy Ontology,,http://purl.obolibrary.org/obo/tao/2012-08-10/tao.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,vsao,,Vertebrate Skeletal Anatomy Ontology-,,http://purl.obolibrary.org/obo/vsao/2012-11-06/vsao.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,evorao,,,https://raw.githubusercontent.com/EVORA-project/evora-ontology/refs/heads/main/models/owl/evora_ontology.owl.ttl,,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ictv,,,https://github.com/EVORA-project/ictv-ontology/raw/refs/heads/main/out/MSL40.owl.ttl,,
