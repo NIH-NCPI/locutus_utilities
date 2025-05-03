@@ -11,9 +11,9 @@ from datetime import date
 from locutus.model.table import Table
 from locutus.model.user_input import MappingConversations
 from locutus.model.terminology import Terminology as Term, CodingMapping
-from locutus_util.helpers import update_gcloud_project, set_logging_config
+from locutus_util.helpers import update_gcloud_project, set_logging_config, load_ontology_lookup
 
-from locutus_util.common import LOGS_PATH
+from locutus_util.common import LOGS_PATH, LOCUTUS_SYSTEM_MAP_PATH
 
 locutus_project = {
     "DEV": "locutus-dev",
@@ -24,6 +24,8 @@ locutus_project = {
 }
 
 def process_csv(file, table):
+
+    system_lookup = load_ontology_lookup()
     # Build a lookup that we can use to map the variable names to
     # their respective terminologies
     enumerations = {}
@@ -57,6 +59,15 @@ def process_csv(file, table):
             source_enumeration = source_enumeration.strip()  
 
         system = row.get("system")
+        # Get and clean system
+        if system in system_lookup:
+            original_system = system
+            system = system_lookup[system]
+            logging.info(f"Enum {source_enumeration}. Remapped system {original_system} to: {system}")
+        elif system not in system_lookup.values():
+            logging.warning(f'Invalid system for enum {source_enumeration}. {system} not found in the lookup file {LOCUTUS_SYSTEM_MAP_PATH}')
+            continue
+
         codes = [x.strip() for x in row["code"].split(",")]
         displays = row.get("display").split(",")
         editor = row["provenance"]
@@ -163,3 +174,6 @@ def main():
         project_id = args.project_id
 
     load_data(project_id=project_id, table_id=args.table_id, file=args.file)
+
+if __name__ == "__main__":
+    main()
