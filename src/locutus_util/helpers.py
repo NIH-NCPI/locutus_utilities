@@ -7,7 +7,7 @@ import pandas as pd
 from pathlib import Path
 from google.cloud import firestore
 from googleapiclient.discovery import build
-from locutus_util.common import (COL_TIME_LIMIT,SUB_TIME_LIMIT,BATCH_SIZE,LOGS_PATH)
+from locutus_util.common import (COL_TIME_LIMIT,SUB_TIME_LIMIT,BATCH_SIZE,LOCUTUS_SYSTEM_MAP_PATH)
 
 logger = logging.getLogger(__name__)
 
@@ -161,6 +161,10 @@ def write_file(filepath, data, sort_by_list=[]):
     file_handlers[file_extension]()
 
     logging.info(f"Generated: {Path(filepath).name}")
+
+def load_ontology_lookup():
+    df = pd.read_csv(LOCUTUS_SYSTEM_MAP_PATH)
+    return dict(zip(df["curie"], df["system"]))
 
 def import_google_sheet(sheet_id, tab_id, output_filepath=None, sort_by_list=None):
     """
