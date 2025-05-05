@@ -64,9 +64,8 @@ def process_csv(file, table):
             original_system = system
             system = system_lookup[system]
             logging.info(f"Enum {source_enumeration}. Remapped system {original_system} to: {system}")
-        elif system not in system_lookup.values():
-            logging.warning(f'Invalid system for enum {source_enumeration}. {system} not found in the lookup file {LOCUTUS_SYSTEM_MAP_PATH}')
-            continue
+        if system not in system_lookup.values():
+            logging.warning(f'Invalid system for enum {source_enumeration}. "{system}" not found in the lookup file {LOCUTUS_SYSTEM_MAP_PATH}')
 
         codes = [x.strip() for x in row["code"].split(",")]
         displays = row.get("display").split(",")
