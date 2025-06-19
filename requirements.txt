@@ -1,1 +1,5 @@
 git+https://github.com/NIH-NCPI/locutus.git#egg=locutus
+firebase-admin>=6.4.0
+pymongo
+google-cloud-firestore>=2.15.0
+google-auth>=2.30.0
