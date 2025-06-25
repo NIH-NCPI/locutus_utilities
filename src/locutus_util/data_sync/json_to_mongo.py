@@ -153,7 +153,7 @@ def main():
         description="Import Firestore JSON backup into MongoDB"
     )
     parser.add_argument(
-        '--json_file',
+        '--json-file',
         help="Path to the Firestore backup JSON file"
     )
     parser.add_argument(
