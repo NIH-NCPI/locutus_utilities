@@ -14,7 +14,7 @@ classifiers = [
 dependencies = ["requests",
                 "pandas",
                 "google-cloud-firestore",
-                pymongo
+                "pymongo"
                 ]
 
 dynamic = ["version"]
