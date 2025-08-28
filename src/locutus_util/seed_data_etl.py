@@ -1,8 +1,9 @@
 import argparse
 import csv
-from google.cloud import firestore
+from locutus_util import init_database
 from locutus_util.helpers import update_gcloud_project
 from locutus_util.common import SEED_DATA_PATH
+
 
 
 def read_csv_and_organize(file_path):
@@ -50,27 +51,20 @@ def insert_into_firestore(db, data):
         print(f"Inserted document for terminology_id: {terminology_id}")
 
 
-def seed_data_etl(project_id):
+def seed_data_etl(db_client):
     try:
-        # Set the environment
-        update_gcloud_project(project_id)
-
-        # Firestore client after setting the project_id
-        db = firestore.Client()
-
         # Read and organize the CSV data
         terminology_data = read_csv_and_organize(SEED_DATA_PATH)
 
         # Insert the organized data into Firestore
-        insert_into_firestore(db, terminology_data)
+        insert_into_firestore(db_client, terminology_data)
 
         print("CSV data has been successfully inserted into Firestore.")
     except Exception as e:
         print(f"Error: {e}")
 
 
-if __name__ == "__main__":
-
+def exec(args=None):
     locutus_project = {
         "DEV": "locutus-dev",
         "UAT": "locutus-uat",
@@ -85,12 +79,24 @@ if __name__ == "__main__":
         "-e", "--env", choices=locutus_project.keys(), help="Locutus environment to use"
     )
     parser.add_argument("-p", "--project", type=str, help="GCP Project to edit")
+    parser.add_argument("--mongo-uri", type=str, help="Mongo DB URI with db included")
 
-    args = parser.parse_args()
+    args = parser.parse_args(args)
 
-    if args.env is not None:
-        project_id = locutus_project[args.env]
+    client = None
+    if args.mongo_uri:
+        client = init_database(mongo_uri=args.mongo_uri, missing_db_ok=True)
+
     else:
-        project_id = args.project
+        if args.env is not None:
+            project_id = locutus_project[args.env]
+        else:
+            project_id = args.project
 
-    seed_data_etl(project_id=project_id)
+        if project_id is not None:
+            client = init_database(project_id=project_id)
+
+    seed_data_etl(client)
+
+if __name__ == "__main__":
+    exec()
