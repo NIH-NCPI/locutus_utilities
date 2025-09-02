@@ -50,9 +50,6 @@ class FirestoreDataPuller:
             subcollection_names = set()
             for doc in docs:
                 realized_doc = doc.to_dict()
-                if doc.id == "C99269|233985008":
-                    print(realized_doc)
-                    pdb.set_trace()
 
                 subcollection_data = {}
 
@@ -78,15 +75,12 @@ class FirestoreDataPuller:
 
     def split_terminology_data(self, term_data):
         TerminologyComponents = namedtuple("TerminologyComponents", ['terminologies', 'codes', 'mappings', 'deadcodes', 'deadmappings'])
-        def code_id(termid, code):
-            return f"{termid}->{get_code_index(code)}"
 
         def get_subcontainer(terminiology, name):
             if "subcollections" in terminiology:
                 return terminiology["subcollections"].get(name)
 
         terminologies = {}
-        codes = {}
         mappings = {}
         deadcodes = {}
         deadmappings = {}
@@ -95,13 +89,6 @@ class FirestoreDataPuller:
         for termid, term in term_data.items():
             # Build out the new Codes collection for each terminology
             code_refs = []
-            for code in term['codes']:
-                codeid = code_id(termid, code['code'])
-                codes[codeid] = code 
-
-                code_refs.append({"reference": f"Code/{codeid}"})
-            # Blow away the direct link to the codings with the list of references
-            term['codes'] = code_refs 
 
             onto_prefs = get_subcontainer(term, "onto_api_preferences")
             if onto_prefs is not None:
@@ -158,8 +145,8 @@ class FirestoreDataPuller:
                             "user_input": uinput
                         }
 
-            if "subcollections" in term:
-                term.pop("subcollections")
+            # if "subcollections" in term:
+            #     term.pop("subcollections")
             terminologies[termid] = term
 
         # pdb.set_trace()
@@ -182,8 +169,9 @@ class FirestoreDataPuller:
             logger.info(f"Pulling data from collection: {collection_name}")
             subcolls, collection_data = self.get_collection_data(collection_name)
 
+            """
             if collection_name == "Terminology":
-                termdata = self.split_terminology_data(collection_data)
+                # termdata = self.split_terminology_data(collection_data)
                 subcollection_names.update(subcolls)
 
                 all_data["collections"]["Terminology"] = termdata.terminologies
@@ -193,7 +181,8 @@ class FirestoreDataPuller:
                     "codes": termdata.deadcodes,
                     "mappings": termdata.deadmappings
                 }
-            else:
+            else:"""
+            if True:
                 all_data["collections"][collection_name] = collection_data
 
             logger.info(f"Retrieved {len(collection_data)} documents from {collection_name}")
