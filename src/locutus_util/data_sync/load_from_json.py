@@ -34,6 +34,11 @@ def LoadTerminologies(terms):
                 if "self" in term['subcollections']['onto_api_preference']:
                     api_prefs = term['subcollections']['onto_api_preference']['self']
         """
+
+        preferred_terminologies = []
+        if "subcollections" in term:
+            if "preferred_terminology" in term['subcollections']:
+                preferred_terminologies = term['subcollections']['preferred_terminology']['self']['references']
         url = term.get('url')
         if url is None:
             url=term['codes'][0]['system']
@@ -54,7 +59,8 @@ def LoadTerminologies(terms):
                 name=term.get('name'),
                 description=term['description'],
                 url=url,
-                codes = codes
+                codes = codes,
+                preferred_terminologies=preferred_terminologies
             )
         except ValueError as e:
             print(term)
@@ -121,6 +127,7 @@ def LoadTerminologies(terms):
                             new_value=prov.get("new_value"),
                             old_value=prov.get("old_value")
                         )
+
         t.save()
 
 def LoadTable(tables):
