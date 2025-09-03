@@ -14,6 +14,7 @@ from locutus_util.ontology_api_etl import (
     collect_umls_data,
 )
 from locutus_util.common import LOGS_PATH
+from pathlib import Path 
 
 JIRA_ISSUES = ["fd1381", "fd1653"]
 export_date = date.today()
@@ -71,6 +72,8 @@ df = pd.concat([ols_df, umls_df, additional_df], ignore_index=True)
 df = df.sort_values(by=["curie", "api_id"], ascending=True, ignore_index=True)
 
 # Save the DataFrame to a CSV file
+Path(f"{LOGS_PATH}/../output").mkdir(exist_ok=True)
+
 df.to_csv(f"{LOGS_PATH}/../output/ontology_definition_{export_date}.csv", index=False)
 
 print(f"{len(df)} ontologies saved to ontology_definition_{export_date}.csv")

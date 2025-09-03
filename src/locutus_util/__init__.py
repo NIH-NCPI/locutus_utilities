@@ -15,7 +15,6 @@ def update_gcloud_project(project_id):
     except subprocess.CalledProcessError as e:
         logging.error(f"Error updating project: {e}")
 
-
 def init_database(mongo_uri=None, project_id=None, missing_db_ok=False):
     """Initialize the database, leave mongo_uri as None to use a traditional firestore connection"""
 
