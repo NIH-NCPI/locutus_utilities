@@ -142,6 +142,7 @@ def LoadTable(tables):
             url=table_content.get('url'),
             description=table_content.get('description'),
             filename=table_content.get('filename'),
+            variables=table_content.get('variables'),
             terminology=table_content.get('terminology')
         )       
         t.save()
@@ -188,7 +189,7 @@ def main(args=None):
     )
     parser.add_argument(
         "-db", "--database-uri", 
-        default="mongodb://localhost:27017/experiment",
+        default="mongodb://localhost:27017/alpha",
         # default="mongodb://localhost:27017/locutus",
         help="Specify DB URI (default: mongodb://localhost:27017/locutus)"
     )
