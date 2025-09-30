@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=61.0", "setuptools-scm"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -14,10 +14,14 @@ classifiers = [
 dependencies = ["requests",
                 "pandas",
                 "google-cloud-firestore",
-                "pymongo==4.13.*"
+                "pymongo==4.13.*",
+                "locutus @ git+https://github.com/NIH-NCPI/locutus",  
                 ]
 
 dynamic = ["version"]
+
+[tool.setuptools_scm]
+version_file = "src/locutus_util/_version.py"
 
 [tool.setuptools.packages.find]
 where = ["src"]  # list of folders that contain the packages (["."] by default)

@@ -8,6 +8,7 @@ from pathlib import Path
 from google.cloud import firestore
 from googleapiclient.discovery import build
 from locutus_util.common import (COL_TIME_LIMIT,SUB_TIME_LIMIT,BATCH_SIZE,LOCUTUS_SYSTEM_MAP_PATH)
+from locutus_util import update_gcloud_project
 
 logger = logging.getLogger(__name__)
 
@@ -32,16 +33,6 @@ def set_logging_config(log_file):
 # Initialize Firestore client
 db = firestore.Client()
 
-def update_gcloud_project(project_id):
-    """Update the active Google Cloud project."""
-    command = ["gcloud", "config", "set", "project", project_id]
-    
-    try:
-        logging.info(f"Updating Google Cloud project to: {project_id}")
-        subprocess.run(command, check=True)
-        logging.info(f"Project updated successfully: {project_id}")
-    except subprocess.CalledProcessError as e:
-        logging.error(f"Error updating project: {e}")
 
 
 def drop_collection_data(db):

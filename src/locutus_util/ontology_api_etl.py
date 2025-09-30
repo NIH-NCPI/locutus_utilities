@@ -35,6 +35,8 @@ from locutus_util.common import (
     get_api_key,
 )
 
+UMLS_API_KEY = get_api_key("umls")
+
 extracted_data = []  # Collects the manual ontology data
 
 def fetch_data(url):
@@ -45,7 +47,7 @@ def fetch_data(url):
     else:
         return None
 
-def collect_ols_data(ols_ontologies_url):
+def collect_ols_data(ols_ontologies_url=f"{OLS_API_BASE_URL}ontologies"):
     logger.info("Fetching ols data")
     data = fetch_data(ols_ontologies_url)
     logger.info("Transforming ols data")
@@ -76,7 +78,7 @@ def collect_ols_data(ols_ontologies_url):
     return extracted_data
 
 
-def collect_umls_data(umls_ontologies_url):
+def collect_umls_data(umls_ontologies_url=f"{UMLS_API_BASE_URL}metadata/current/sources?apiKey={UMLS_API_KEY}"):
     """
     Collects ontology data from the UMLS API.
 

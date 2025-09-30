@@ -14,6 +14,7 @@ import argparse
 from typing import Dict, Any
 import sys
 from pathlib import Path
+from collections import defaultdict
 
 # Set up logging
 logging.basicConfig(
@@ -80,12 +81,17 @@ class MongoImporter:
             with open(json_file_path, 'r', encoding='utf-8') as f:
                 firestore_data = json.load(f)
             
-            logger.info(f"Loaded data with {len(firestore_data)} collections")
+            subcollection_ids = set(firestore_data['subcollection_names'])
+            md_data = firestore_data['collections']
+
+            logger.info(f"Loaded data with {len(md_data)} collections")
             
             # Import each Firestore collection as a MongoDB collection
             total_documents = 0
-            for collection_name, documents in firestore_data.items():
+            for collection_name, documents in md_data.items():
                 logger.info(f"Importing collection: {collection_name}")
+
+                subcollections = defaultdict(dict)
                 
                 # Get or create MongoDB collection
                 mongo_collection = self.db[collection_name]
@@ -93,6 +99,12 @@ class MongoImporter:
                 # Prepare documents for insertion
                 docs_to_insert = []
                 for doc_id, doc_data in documents.items():
+                    for id in subcollection_ids:
+                        if id in doc_data:
+                            data_chunk = doc_data.pop(id, None)
+                            # if data_chunk:
+                            #     subcollections[id][doc_id] = data_chunk
+                            
                     # Add the original Firestore document ID
                     if isinstance(doc_data, dict):
                         doc_data['_firestore_id'] = doc_id
@@ -115,6 +127,9 @@ class MongoImporter:
                     logger.info(f"Created index on _firestore_id for collection {collection_name}")
                 else:
                     logger.info(f"No documents to insert for collection {collection_name}")
+
+                # for sid, sdata in subcollections.items():
+                    
             
             logger.info(f"Data import completed successfully. Total documents imported: {total_documents}")
             
