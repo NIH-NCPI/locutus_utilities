@@ -189,8 +189,7 @@ def main(args=None):
     )
     parser.add_argument(
         "-db", "--database-uri", 
-        default="mongodb://localhost:27017/alpha",
-        # default="mongodb://localhost:27017/locutus",
+        default="mongodb://localhost:27017/locutus",
         help="Specify DB URI (default: mongodb://localhost:27017/locutus)"
     )
     parser.add_argument(
@@ -212,7 +211,6 @@ def main(args=None):
             print(f"[red]Unable to continue due to incorrect input[/red]")
             sys.exit(1)
 
-    # pdb.set_trace()
     dbcontent = json.load(args.json_file)
     LoadData(dbcontent)
 

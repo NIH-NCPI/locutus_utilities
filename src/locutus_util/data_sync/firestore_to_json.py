@@ -54,7 +54,6 @@ class FirestoreDataPuller:
                 subcollection_data = {}
 
                 for subcoll in doc.reference.collections():
-                    # pdb.set_trace()
                     subcollection_names.add(subcoll.id)
                     subcollection_data[subcoll.id] = {}
                     for doc1 in subcoll.stream():
@@ -117,7 +116,6 @@ class FirestoreDataPuller:
                                 "provenance": prov
                             }
             
-            # pdb.set_trace()
             term_mappings = get_subcontainer(term, "mappings")
             if term_mappings is not None:
                 for code, mpp in term_mappings.items():
@@ -145,11 +143,8 @@ class FirestoreDataPuller:
                             "user_input": uinput
                         }
 
-            # if "subcollections" in term:
-            #     term.pop("subcollections")
             terminologies[termid] = term
 
-        # pdb.set_trace()
         return TerminologyComponents(terminologies, codes, mappings, deadcodes, deadmappings)
     
     def pull_all_data(self) -> Dict[str, Any]:
