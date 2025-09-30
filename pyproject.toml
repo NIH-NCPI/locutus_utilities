@@ -15,7 +15,7 @@ dependencies = ["requests",
                 "pandas",
                 "google-cloud-firestore",
                 "pymongo==4.13.*",
-                "locutus @ git+https://github.com/NIH-NCPI/locutus@mhf/FD-2023",  # This should be changed to v2.1.1 once we merge everything into main
+                "locutus @ git+https://github.com/NIH-NCPI/locutus",  
                 ]
 
 dynamic = ["version"]
