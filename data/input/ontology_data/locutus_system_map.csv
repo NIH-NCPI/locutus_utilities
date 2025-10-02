@@ -14,6 +14,7 @@ BAO,http://www.bioassayontology.org/bao/
 BCIO,http://humanbehaviourchange.org/ontology/bcio.owl
 BCO,http://purl.obolibrary.org/obo/bco.owl
 BFO,http://purl.obolibrary.org/obo/bfo.owl
+BMONT,http://purl.obolibrary.org/obo/bmont.owl
 BSPO,http://purl.obolibrary.org/obo/bspo.owl
 BTO,http://purl.obolibrary.org/obo/bto.owl
 CAO,https://champ.stuchalk.domains.unf.edu/images/ontology/cao.owl
@@ -59,7 +60,7 @@ ECTO,http://purl.obolibrary.org/obo/ecto.owl
 EDAM,https://raw.githubusercontent.com/edamontology/edamontology/master/releases/EDAM.owl
 EFO,http://www.ebi.ac.uk/efo/efo.owl
 EMAPA,http://purl.obolibrary.org/obo/emapa.owl
-EMI,https://raw.githubusercontent.com/digital-botanical-gardens-initiative/earth_metabolome_ontology/refs/heads/main/emi-ols.ttl
+EMI,https://w3id.org/emi/ols.ttl
 ENM,http://enanomapper.github.io/ontologies/enanomapper.owl
 ENSGLOSS,https://raw.githubusercontent.com/Ensembl/ensembl-glossary/master/ensembl-glossary.owl
 ENVO,http://purl.obolibrary.org/obo/envo.owl
@@ -99,6 +100,8 @@ HSO,http://purl.obolibrary.org/obo/hso.owl
 HTN,http://purl.obolibrary.org/obo/htn.owl
 HSAPDV,http://purl.obolibrary.org/obo/hsapdv.owl
 IAO,http://purl.obolibrary.org/obo/iao.owl
+ICD10CM,http://hl7.org/fhir/sid/icd-10-cm
+ICD9CM,https://www.icd9data.com
 ICEO,http://purl.obolibrary.org/obo/iceo.owl
 ICO,http://purl.obolibrary.org/obo/ico.owl
 IDO,http://purl.obolibrary.org/obo/ido.owl
@@ -201,6 +204,7 @@ REPR,https://sheeba-samuel.github.io/REPRODUCE-ME/doc/reproduce-me.xml
 RO,http://purl.obolibrary.org/obo/ro.owl
 RS,http://purl.obolibrary.org/obo/rs.owl
 RXNO,http://purl.obolibrary.org/obo/rxno.owl
+RXNORM,https://terminology.hl7.org/6.5.0/NamingSystem-v3-rxNorm.html
 RETO,http://www.bio.ntnu.no/ontology/ReTO/reto.rdf
 REXO,http://www.bio.ntnu.no/ontology/ReXO/rexo.rdf
 SBO,http://purl.obolibrary.org/obo/sbo.owl
@@ -211,7 +215,7 @@ SIBO,http://purl.obolibrary.org/obo/sibo.owl
 SIO,https://raw.githubusercontent.com/micheldumontier/semanticscience/master/ontology/sio/release/sio-release.owl
 SLM,file:///nfs/production/parkinso/spot/ols4/prod/local_ontologies/swisslipids.ttl
 SLSO,http://purl.obolibrary.org/obo/slso.owl
-SNOMED,file:///nfs/production/parkinso/spot/ols4/prod/local_ontologies/snomed-inferred.owl
+SNOMED,file:///mnt/nfs/local_ontologies/snomed-inferred.owl
 SNOMEDCT_US,http://snomed.info/sct
 SO,http://purl.obolibrary.org/obo/so.owl
 SPD,http://purl.obolibrary.org/obo/spd.owl
@@ -245,7 +249,11 @@ ZECO,http://purl.obolibrary.org/obo/zeco.owl
 ZFA,http://purl.obolibrary.org/obo/zfa.owl
 ZFS,http://purl.obolibrary.org/obo/zfs.owl
 ZP,http://purl.obolibrary.org/obo/zp.owl
+CREDIT,https://w3id.org/biopragmatics/resources/credit/credit.owl
+HGNC,https://w3id.org/biopragmatics/resources/hgnc/hgnc.owl.gz
+ROR,https://w3id.org/biopragmatics/resources/ror/ror.owl.gz
 SEMAPV,https://raw.githubusercontent.com/mapping-commons/semantic-mapping-vocabulary/main/semapv.owl
+WIKIPATHWAYS,https://w3id.org/biopragmatics/resources/wikipathways/wikipathways.owl
 LOINC,https://loinc.org/
 MIM,https://omim.org/
 MESH,https://www.nlm.nih.gov/mesh

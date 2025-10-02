@@ -10,7 +10,6 @@ The `locutus_utilities` repository includes scripts and tools that facilitate th
 1. **Google Cloud SDK**: Installed and authenticated to use Google Cloud services.
   * [[Click here]](https://cloud.google.com/sdk/docs/install-sdk) for installation
   * [[Click here]](https://cloud.google.com/sdk/gcloud/reference/auth/application-default/login) for authentication
-  * [[Click here]](https://stackoverflow.com/questions/61412481/google-sheet-api-access-with-application-default-credentials) for more on gsheets authentication
 
 ```bash 
 # Handy commands when working with gcloud
@@ -71,7 +70,7 @@ export UMLS_API_KEY=your_actual_umls_api_key
 ### utils_run 
 ## usage 
 ```bash
-utils_run -p <project_id> -o <option> -a <action>
+utils_run -p <project_id> -o <option> -a <action> -w <which_ontologies>
 ```
 * -p, --project
     * Description: GCP Project to edit.
@@ -80,8 +79,8 @@ utils_run -p <project_id> -o <option> -a <action>
 * -o, --option
     * Description: Choose the operation to perform.
     * Choices:
-        * `update_ontology_api`: Updates the ontology API in Firestore.
-        * `update_seed_data`: Updates seed data in Firestore.
+        * `update_ontology_api`: Updates the ontologyAPI Collection in Firestore.
+        * `update_seed_data`: Updates seed data(Manually added Terminologies) in Firestore.
         * `delete_project_data`: Deletes all data from the Firestore database.
         * `reset_database`: Deletes all data, then reseeds the Firestore database.
     * Required: Yes
@@ -89,17 +88,17 @@ utils_run -p <project_id> -o <option> -a <action>
 * -a, --action
     * Description: Specify the action to take. Only used when running `update_ontology_api`, or `reset_database`
     * Choices:
-        * `upload_from_csv`: Upload data from an existing CSV file to Firestore.
-        * `update_csv`: Fetch data from APIs and update the CSV file only.
-        * `fetch_and_upload`: Fetch data from APIs and upload it to Firestore.
+        * `upload_from_csv`: Upload data ontology_api.csv to Firestore. No update of the csv prior to upload.
+        * `update_csv`: Fetch data from Ontology APIs(OLS,UMLS) and update the ontology_api.csv. No upload to Firestore.
+        * `fetch_and_upload`: Fetch data from Ontology APIs(OLS,UMLS) and update the ontology_api.csv. Upload this into the Firestore.
     * Default: `upload_from_csv`
     * Required: No 
 
-* -u, --which_ontologies
-    * Description: Choose to include all ontologies or only a selection. Only used when running `update_ontology_api`, or `reset_database`
+* -w, --which_ontologies
+    * Description: Choose to include all ontologies or only a selection. Only used when running `update_ontology_api`, or `reset_database`. The curated list of ontologies are in data/input/ontology_data/included_ontologies.csv.
     * Choices:
-        * `curated_ontologies_only`: Use the selected default ontologies.
-        * `all_ontologies`: Use all ontologies.
+        * `curated_ontologies_only`: Use the curated list of ontologies to populate the OntologyAPI Collection
+        * `all_ontologies`: Use all available ontologies to populate the OntologyAPI Collection.
     * Default: `all_ontologies`
 
 ### sideload_run 
