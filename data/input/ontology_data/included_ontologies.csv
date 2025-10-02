@@ -1,4 +1,4 @@
-Ontology,Id,Default to Include,Potentially interesting,api
+ftd_onto_id,Id,Default to Include,Potentially interesting,api
 Alzheimer's Disease Ontology,ADO,f,,ols
 African Population Ontology,AFPO,f,,ols
 Agronomy Ontology,AGRO,f,,ols
@@ -263,6 +263,10 @@ Critical Path Ontology,CPONT,f,,ols
 The Human Phenotype Ontology,HPO,t,,umls
 "US Edition of SNOMED CT, 2024_09_01",SNOMEDCT_US,t,,umls
 Online Mendelian Inheritance in Man,MIM,t,,umls
+Online Mendelian Inheritance in Man,OMIM,t,,umls
 Logical Observation Identifiers Names and Codes,LNC,t,,umls
 The Medical Dictionary for Regulatory Activities,MDR,t,,umls
 The Medical Subject Headings Thesaurus,MSH,t,,umls
+RxNorm is a standardized clinical drug vocabulary,RXNORM,t,,umls
+"The ICD-9-CM ontology (International Classification of Diseases, Ninth Revision, Clinical Modification) is a comprehensive coding system used in the United States for classifying and coding diagnoses, procedures, and medical services",ICD9CM,t,,umls
+"The ICD-10-CM ontology (International Classification of Diseases, Tenth Revision, Clinical Modification) is a detailed coding system used in the United States for the classification of diagnoses and health-related conditions",ICD10CM,t,,umls

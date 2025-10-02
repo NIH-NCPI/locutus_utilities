@@ -18,7 +18,7 @@ import numpy as np
 from datetime import date
 from typing import List
 from google.cloud import firestore
-from locutus_util.helpers import logger, set_logging_config, import_google_sheet, login_with_scopes
+from locutus_util.helpers import logger, set_logging_config
 from locutus_util.common import (
     FETCH_AND_UPLOAD,
     UPLOAD_FROM_CSV,
@@ -183,12 +183,12 @@ def supplement_data(combined_data, hc_ontology_data):
 
     Certain umls ontologies will have thier data hardcoded via tsv.
     """
-    supplemented_data = backfill_data_from_tsv(combined_data, hc_ontology_data)
+    supplemented_data = backfill_data_from_csv(combined_data, hc_ontology_data)
 
     return supplemented_data
 
 
-def backfill_data_from_tsv(combined_data: List, hc_ontology_data):
+def backfill_data_from_csv(combined_data: List, hc_ontology_data):
     """
     Insert hardcoded UMLS systems.
     Example: Replace with hard coded system where one is specified, no update if not specified.
@@ -353,16 +353,11 @@ def filter_firestore_ontologies(data, which_ontologies, included_ontologies):
 def ontology_api_etl(project_id, action, which_ontologies):
 
     # Initiate Firestore client and setting the project_id
-    login_with_scopes()
     db = firestore.Client(project_id)
 
     # Initialize logger
     log_file = f"{LOGS_PATH}/{date.today()}_ontology_api_etl.log"
     set_logging_config(log_file)
-
-    # Import manual ontology transformations from google sheets
-    if project_id.endswith("dev"): # Syncs the repo lookup when dev is run
-        import_google_sheet("1Fq94B47ZR1Gz6p48SI9T_WGizOmyi5lYEDRZ1KpY42s", "locutus_utils_version", MANUAL_ONTOLOGY_TRANSFORMS_PATH)
 
     # Define URLS, filepaths and other required resources
     csv_path = ONTOLOGY_API_PATH  # Location to store fetched data
@@ -370,7 +365,7 @@ def ontology_api_etl(project_id, action, which_ontologies):
         INCLUDED_ONTOLOGIES_PATH
     )  # Read in the curated list of ontologies
     hc_ontology_data = pd.read_csv(
-        MANUAL_ONTOLOGY_TRANSFORMS_PATH, delimiter="\t"
+        MANUAL_ONTOLOGY_TRANSFORMS_PATH, delimiter=","
     )  # Read in the file with the hardcoded ontology data
     ols_ontologies_url = f"{OLS_API_BASE_URL}ontologies"
     UMLS_API_KEY = get_api_key("umls")
@@ -448,10 +443,6 @@ if __name__ == "__main__":
 
     # Initiate Firestore client and setting the project_id
     db = firestore.Client(project=args.project_id, database=args.database)
-
-    # Import manual ontology transformations from google sheets
-    if args.project_id.endswith("dev"):
-        import_google_sheet("1Fq94B47ZR1Gz6p48SI9T_WGizOmyi5lYEDRZ1KpY42s", "locutus_utils_version", MANUAL_ONTOLOGY_TRANSFORMS_PATH)
 
     ontology_api_etl(
         project_id=args.project_id,

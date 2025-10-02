@@ -1,8 +1,8 @@
 api_url,api_id,api_name,ontology_code,curie,ontology_title,system,version,ontology_family
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,addicto,ADDICTO,Addiction Ontology,http://addictovocab.org/addicto.owl,http://addictovocab.org/addicto.owl/2025-03-17,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,addicto,ADDICTO,Addiction Ontology,http://addictovocab.org/addicto.owl,http://addictovocab.org/addicto.owl/2025-09-24,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ado,ADO,Alzheimer's Disease Ontology (ADO),http://purl.obolibrary.org/obo/ado.owl,http://purl.obolibrary.org/obo/ado/releases/2023-09-20/ado.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,aeo,AEO,Anatomical Entity Ontology,http://purl.obolibrary.org/obo/aeo.owl,http://purl.obolibrary.org/obo/aeo/releases/2014-12-05/aeo.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,afo,AFO,Allotrope Merged Ontology Suite,http://purl.allotrope.org/voc/afo/latest.xml,http://purl.allotrope.org/voc/afo/merged/REC/2025/03/merged-without-qudt-and-inferred,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,afo,AFO,Allotrope Merged Ontology Suite,http://purl.allotrope.org/voc/afo/latest.xml,http://purl.allotrope.org/voc/afo/merged/REC/2025/06/merged-without-qudt-and-inferred,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,agro,AGRO,Agronomy Ontology,http://purl.obolibrary.org/obo/agro.owl,http://purl.obolibrary.org/obo/agro/releases/2022-11-02/agro.owl,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,AIR,AIR,"AI/RHEUM, 1993",,,AIR
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,aism,AISM,Ontology for the Anatomy of the Insect SkeletoMuscular system,http://purl.obolibrary.org/obo/aism.owl,http://purl.obolibrary.org/obo/aism/releases/2025-03-18/aism.owl,
@@ -10,114 +10,113 @@ https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,ALT
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,amphx,AMPHX,Amphioxus Development and Anatomy Ontology (AMPHX),http://purl.obolibrary.org/obo/amphx.owl,http://purl.obolibrary.org/obo/amphx/releases/2020-12-18/amphx.owl,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,AOD,AOD,"Alcohol and Other Drug Thesaurus, 2000",,,AOD
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,AOT,AOT,"Authorized Osteopathic Thesaurus, 2003",,,AOT
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,apo,APO,Ascomycete Phenotype Ontology (APO),http://purl.obolibrary.org/obo/apo.owl,http://purl.obolibrary.org/obo/apo/releases/2025-03-25/apo.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,apo,APO,Ascomycete Phenotype Ontology (APO),http://purl.obolibrary.org/obo/apo.owl,http://purl.obolibrary.org/obo/apo/releases/2025-08-01/apo.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,apollo_sv,APOLLO_SV,Apollo Structured Vocabulary,http://purl.obolibrary.org/obo/apollo_sv.owl,http://purl.obolibrary.org/obo/apollo_sv/releases/2024-12-24/apollo_sv.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,aro,ARO,Antibiotic Resistance Ontology,http://purl.obolibrary.org/obo/aro.owl,,
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,ATC,ATC,"Anatomical Therapeutic Chemical Classification System, 2024_01_19",,,ATC
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,aro,ARO,Antibiotic Resistance Ontology,file:///mnt/nfs/local_ontologies/aro.owl,,
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,ATC,ATC,"Anatomical Therapeutic Chemical Classification System, 2025_02_10",,,ATC
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,afpo,AfPO,African Population Ontology,http://purl.obolibrary.org/obo/afpo.owl,http://purl.obolibrary.org/obo/afpo/releases/2024-03-21/afpo.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,bao,BAO,BioAssay Ontology,http://www.bioassayontology.org/bao/,http://www.bioassayontology.org/bao/bao_complete.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,bcio,BCIO,The Behaviour Change Intervention Ontology,http://humanbehaviourchange.org/ontology/bcio.owl,http://humanbehaviourchange.org/ontology/bcio.owl/2025-03-28,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,bcio,BCIO,The Behaviour Change Intervention Ontology,http://humanbehaviourchange.org/ontology/bcio.owl,http://humanbehaviourchange.org/ontology/bcio.owl/2025-09-25,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,bco,BCO,Biological Collections Ontology,http://purl.obolibrary.org/obo/bco.owl,http://purl.obolibrary.org/obo/bco/releases/2021-11-14/bco.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,bfo,BFO,Basic Formal Ontology,http://purl.obolibrary.org/obo/bfo.owl,http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,BI,BI,"Beth Israel Vocabulary, 1.0",,,BI
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,bmont,BMONT,Biomarker Ontology (BMONT),http://purl.obolibrary.org/obo/bmont.owl,http://purl.obolibrary.org/obo/bmont/releases/2025-06-20/bmont.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,bspo,BSPO,Biological Spatial Ontology,http://purl.obolibrary.org/obo/bspo.owl,http://purl.obolibrary.org/obo/bspo/releases/2023-05-27/bspo.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,bto,BTO,The BRENDA Tissue Ontology (BTO),http://purl.obolibrary.org/obo/bto.owl,http://purl.obolibrary.org/obo/bto/releases/2021-10-26/bto.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,cao,CAO,Chemical Analysis Metadata Platform (ChAMP) Ontology version 0.2,https://champ.stuchalk.domains.unf.edu/images/ontology/cao.owl,,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,caro,CARO,Common Anatomy Reference Ontology,http://purl.obolibrary.org/obo/caro.owl,http://purl.obolibrary.org/obo/caro/releases/2023-03-15/caro.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,caro,CARO,Common Anatomy Reference Ontology,,http://purl.obolibrary.org/obo/caro/releases/2023-03-15/caro.owl,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,CCC,CCC,"Clinical Care Classification, 2_5_2018",,,CCC
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ccf,CCF,Human Reference Atlas Common Coordinate Framework Ontology,https://cdn.humanatlas.io/digital-objects/vocab/ccf/latest/graph.xml,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,cco,CCO,Cell Cycle Ontology,http://www.bio.ntnu.no/ontology/CCO/cco.owl,,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,CCPSS,CCPSS,"Canonical Clinical Problem Statement System, 1999",,,CCPSS
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,CCS,CCS,"Clinical Classifications Software, 2005",,,CCS
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,CCSR_ICD10CM,CCSR_ICD10CM,"Clinical Classifications Software Refined for ICD-10-CM, 2024",,,CCS
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,CCSR_ICD10PCS,CCSR_ICD10PCS,"Clinical Classifications Software Refined for ICD-10-PCS, 2024",,,CCS
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,CCSR_ICD10CM,CCSR_ICD10CM,"Clinical Classifications Software Refined for ICD-10-CM, 2025",,,CCS
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,CCSR_ICD10PCS,CCSR_ICD10PCS,"Clinical Classifications Software Refined for ICD-10-PCS, 2025",,,CCS
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,cdao,CDAO,Comparative Data Analysis Ontology,http://purl.obolibrary.org/obo/cdao.owl,http://purl.obolibrary.org/obo/cdao/2024-01-25/cdao.owl,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,CDCREC,CDCREC,"Race & Ethnicity - CDC, 1.2",http://terminology.hl7.org/NamingSystem/CDCREC,,CDCREC
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,cdno,CDNO,Compositional Dietary Nutrition Ontology,http://purl.obolibrary.org/obo/cdno.owl,http://purl.obolibrary.org/obo/cdno/releases/2024-11-12/cdno.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,cdno,CDNO,Compositional Dietary Nutrition Ontology,http://purl.obolibrary.org/obo/cdno.owl,http://purl.obolibrary.org/obo/cdno/releases/2025-06-09/cdno.owl,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,CDT,CDT,"Code on Dental Procedures and Nomenclature, 2023",,,CDT
-https://api-v3.monarchinitiative.org/v3/api/search?q=,monarch,Monarch API,chebi,CHEBI,Chemical Entities of Biological Interest,http://purl.obolibrary.org/obo/chebi.owl,http://purl.obolibrary.org/obo/chebi/241/chebi.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,chebi,CHEBI,Chemical Entities of Biological Interest,http://purl.obolibrary.org/obo/chebi.owl,http://purl.obolibrary.org/obo/chebi/241/chebi.owl,
+https://api-v3.monarchinitiative.org/v3/api/search?q=,monarch,Monarch API,chebi,CHEBI,Chemical Entities of Biological Interest,http://purl.obolibrary.org/obo/chebi.owl,http://purl.obolibrary.org/obo/chebi/244/chebi.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,chebi,CHEBI,Chemical Entities of Biological Interest,http://purl.obolibrary.org/obo/chebi.owl,http://purl.obolibrary.org/obo/chebi/244/chebi.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,cheminf,CHEMINF,chemical information ontology (cheminf) - information entities about chemical entities,http://purl.obolibrary.org/obo/cheminf.owl,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,chiro,CHIRO,CHEBI Integrated Role Ontology,http://purl.obolibrary.org/obo/chiro.owl,http://purl.obolibrary.org/obo/chiro/releases/2015-11-23/chiro.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,chmo,CHMO,Chemical Methods Ontology,http://purl.obolibrary.org/obo/chmo.owl,http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,chmo,CHMO,Chemical Methods Ontology,http://purl.obolibrary.org/obo/chmo.owl,http://purl.obolibrary.org/obo/chmo/releases/2025-01-22/chmo.owl,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,CHV,CHV,"Consumer Health Vocabulary, 2011_02",,,CHV
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,cido,CIDO,CIDO: Ontology of Coronavirus Infectious Disease,http://purl.obolibrary.org/obo/cido.owl,http://purl.obolibrary.org/obo/cido/releases/2024-02-16/cido.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,cio,CIO,Confidence Information Ontology,http://purl.obolibrary.org/obo/cio.owl,http://purl.obolibrary.org/obo/cio/releases/2015-03-10/cio.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,cl,CL,Cell Ontology,http://purl.obolibrary.org/obo/cl.owl,http://purl.obolibrary.org/obo/cl/releases/2025-04-10/cl.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,cl,CL,Cell Ontology,http://purl.obolibrary.org/obo/cl.owl,http://purl.obolibrary.org/obo/cl/releases/2025-07-30/cl.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,clao,CLAO,Collembola Anatomy Ontology,http://purl.obolibrary.org/obo/clao.owl,http://purl.obolibrary.org/obo/clao/releases/2021-09-27/clao.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,clo,CLO,CLO: Cell Line Ontology,http://purl.obolibrary.org/obo/clo.owl,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,clyh,CLYH,Clytia hemisphaerica Development and Anatomy Ontology (CLYH),http://purl.obolibrary.org/obo/clyh.owl,http://purl.obolibrary.org/obo/clyh/releases/2020-05-29/clyh.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,cmo,CMO,Clinical measurement ontology,http://purl.obolibrary.org/obo/cmo.owl,http://purl.obolibrary.org/obo/cmo/2.243/cmo.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,cmo,CMO,Clinical measurement ontology,http://purl.obolibrary.org/obo/cmo.owl,http://purl.obolibrary.org/obo/cmo/2.252/cmo.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,cmpo,CMPO,Cellular Microscopy Phenotype Ontology,http://www.ebi.ac.uk/cmpo/cmpo.owl,http://www.ebi.ac.uk/cmpo/releases/2017-12-19/cmpo.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,cob,COB,Core Ontology for Biology and Biomedicine,http://purl.obolibrary.org/obo/cob.owl,http://purl.obolibrary.org/obo/cob/releases/2025-02-20/cob.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,cob,COB,Core Ontology for Biology and Biomedicine,http://purl.obolibrary.org/obo/cob.owl,http://purl.obolibrary.org/obo/cob/releases/2025-06-30/cob.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,colao,COLAO,Coleoptera Anatomy Ontology,http://purl.obolibrary.org/obo/colao.owl,http://purl.obolibrary.org/obo/colao/releases/2024-06-21/colao.owl,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,COSTAR,COSTAR,"COSTAR, 1989-1995",,,COSTAR
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,covoc,COVOC,CoVoc Coronavirus Vocabulary,https://github.com/EBISPOT/covoc/releases/download/current/covoc.owl,http://purl.obolibrary.org/obo/covoc/releases/2022-10-26/covoc.owl,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,CPM,CPM,"Medical Entities Dictionary, 2003",,,CPM
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,cpont,CPONT,Critical Path Ontology,https://w3id.org/cpont/cpont.owl,https://w3id.org/cpont/ontology/releases/2024-05-21/cpont.owl,
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,CPT,CPT,"Current Procedural Terminology, 2024",,,CPT
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,CPT,CPT,"Current Procedural Terminology, 2025",,,CPT
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,CPTSP,CPTSP,"Physicians' Current Procedural Terminology, Spanish Translation, 2001",,,CPT
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,cro,CRO,Contributor Role Ontology,http://purl.obolibrary.org/obo/cro.owl,http://purl.obolibrary.org/obo/cro/releases/2019-12-11/cro.owl,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,CSP,CSP,"CRISP Thesaurus, 2006",,,CSP
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,CST,CST,"COSTART, 1995",,,CST
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,cteno,CTENO,Ctenophore Ontology,http://purl.obolibrary.org/obo/cteno.owl,http://purl.obolibrary.org/obo/cteno/releases/2016-10-19/cteno.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,cvdo,CVDO,Cardiovascular Disease Ontology,http://purl.obolibrary.org/obo/cvdo.owl,http://purl.obolibrary.org/obo/cvdo/2024-05-17/cvdo.owl,
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,CVX,CVX,"Vaccines Administered, 2024_08_14",,,CVX
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,CVX,CVX,"Vaccines Administered, 2024_12_18",,,CVX
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ddanat,DDANAT,Dicty Anatomy Ontology (DDANAT),http://purl.obolibrary.org/obo/ddanat.owl,,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,DDB,DDB,"Diseases Database, 2000",,,DDB
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ddpheno,DDPHENO,Dicty Phenotype Ontology (DDPHENO),http://purl.obolibrary.org/obo/ddpheno.owl,http://purl.obolibrary.org/obo/ddpheno/releases/2023-08-26/ddpheno.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,dhba,DHBA,Developing Human Brain Atlas Ontology,https://purl.brain-bican.org/ontology/dhbao/dhbao.owl,https://purl.brain-bican.org/ontology/dhbao/releases/2025-02-10/dhbao.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,dicom,DICOM,DICOM Controlled Terminology,ftp://medical.nema.org/MEDICAL/Dicom/Resources/Ontology/DCM/dcm.owl,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,dideo,DIDEO,Drug-drug Interaction and Drug-drug Interaction Evidence Ontology,http://purl.obolibrary.org/obo/dideo.owl,http://purl.obolibrary.org/obo/dideo/release/2023-10-16/dideo.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,disdriv,DISDRIV,Disease Drivers,http://purl.obolibrary.org/obo/disdriv.owl,http://purl.obolibrary.org/obo/disdriv/releases/2025-03-20/disdriv.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,dmba,DMBA,Developing Mouse Brain Atlas Ontology,https://purl.brain-bican.org/ontology/dmbao/dmbao.owl,https://purl.brain-bican.org/ontology/dmbao/releases/2025-02-10/dmbao.owl,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,DMDICD10,DMDICD10,"German translation of ICD10, 1995",,,ICD10
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,DMDUMD,DMDUMD,"German translation of UMDNS, 1996",,,UMD
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,doid,DOID,Human Disease Ontology,http://purl.obolibrary.org/obo/doid.owl,http://purl.obolibrary.org/obo/doid/releases/2025-03-31/doid.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,dron,DRON,The Drug Ontology,http://purl.obolibrary.org/obo/dron.owl,http://purl.obolibrary.org/obo/dron/releases/2025-04-18/dron.owl,
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,DRUGBANK,DRUGBANK,"DrugBank, 5.0_2024_08_09",,,DRUGBANK
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,doid,DOID,Human Disease Ontology,http://purl.obolibrary.org/obo/doid.owl,http://purl.obolibrary.org/obo/doid/releases/2025-08-29/doid.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,dron,DRON,The Drug Ontology,http://purl.obolibrary.org/obo/dron.owl,http://purl.obolibrary.org/obo/dron/releases/2025-07-19/dron.owl,
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,DRUGBANK,DRUGBANK,"DrugBank, 5.0_2025_02_06",,,DRUGBANK
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,DSM-5,DSM-5,"Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition (DSM-5), 2015",,,DSM-5
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,duo,DUO,Data Use Ontology,http://purl.obolibrary.org/obo/duo.owl,http://purl.obolibrary.org/obo/duo/releases/2021-02-23/duo.owl,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,DXP,DXP,"DXplain, 1994",,,DXP
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ecao,ECAO,Echinoderm Anatomy and Development Ontology,http://purl.obolibrary.org/obo/ecao.owl,http://purl.obolibrary.org/obo/ecao/releases/2024-08-22/ecao.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,eco,ECO,Evidence & Conclusion Ontology (ECO),http://purl.obolibrary.org/obo/eco.owl,http://purl.obolibrary.org/obo/eco/releases/2024-07-19/eco.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ecao,ECAO,Echinoderm Anatomy and Development Ontology,http://purl.obolibrary.org/obo/ecao.owl,http://purl.obolibrary.org/obo/ecao/releases/2025-05-15/ecao.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,eco,ECO,Evidence & Conclusion Ontology (ECO),http://purl.obolibrary.org/obo/eco.owl,http://purl.obolibrary.org/obo/eco/releases/2025-06-23/eco.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ecocore,ECOCORE,An ontology of core ecological entities,http://purl.obolibrary.org/obo/ecocore.owl,http://purl.obolibrary.org/obo/ecocore/releases/2022-03-09/ecocore.owl,
 https://api-v3.monarchinitiative.org/v3/api/search?q=,monarch,Monarch API,ecto,ECTO,Environment Exposure Ontology,http://purl.obolibrary.org/obo/ecto.owl,http://purl.obolibrary.org/obo/ecto/releases/2023-02-14/ecto.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ecto,ECTO,Environment Exposure Ontology,http://purl.obolibrary.org/obo/ecto.owl,http://purl.obolibrary.org/obo/ecto/releases/2023-02-14/ecto.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,edam,EDAM,EDAM - The ontology of data analysis and management,https://raw.githubusercontent.com/edamontology/edamontology/master/releases/EDAM.owl,http://edamontology.org/1.25-20240924T0027Z-unstable(1.26),
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,efo,EFO,Experimental Factor Ontology,http://www.ebi.ac.uk/efo/efo.owl,http://www.ebi.ac.uk/efo/releases/v3.77.0/efo.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,efo,EFO,Experimental Factor Ontology,http://www.ebi.ac.uk/efo/efo.owl,http://www.ebi.ac.uk/efo/releases/v3.82.0/efo.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,emapa,EMAPA,Mouse Developmental Anatomy Ontology,http://purl.obolibrary.org/obo/emapa.owl,http://purl.obolibrary.org/obo/emapa/releases/2023-11-14/emapa.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,emi,EMI,The Earth Metabolome Initiative (EMI) ontology,https://raw.githubusercontent.com/digital-botanical-gardens-initiative/earth_metabolome_ontology/refs/heads/main/emi-ols.ttl,https://purl.org/emi/version/0.3,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,emi,EMI,The Earth Metabolome Initiative (EMI) ontology,https://w3id.org/emi/ols.ttl,https://w3id.org/emi/version/1.0,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,enm,ENM,eNanoMapper ontology,http://enanomapper.github.io/ontologies/enanomapper.owl,http://enanomapper.github.io/ontologies/releases/10.0/enanomapper.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ensemblglossary,ENSGLOSS,Ensembl Glossary,https://raw.githubusercontent.com/Ensembl/ensembl-glossary/master/ensembl-glossary.owl,http://ensembl.org/glossary/ensembl-glossary/releases/2023-01-04/ensembl-glossary.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,envo,ENVO,The Environment Ontology,http://purl.obolibrary.org/obo/envo.owl,http://purl.obolibrary.org/obo/envo/releases/2025-02-05/envo.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,envo,ENVO,The Environment Ontology,http://purl.obolibrary.org/obo/envo.owl,http://purl.obolibrary.org/obo/envo/releases/2025-08-19/envo.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,epio,EPIO,Epilepsy Ontology (EPIO),http://purl.obolibrary.org/obo/epio.owl,https://bio.scai.fraunhofer.de/ontology/epilepsy/2021-05-28/EPIO.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,eupath,EUPATH,VEuPathDB Ontology,http://purl.obolibrary.org/obo/eupath.owl,http://purl.obolibrary.org/obo/eupath/2023-05-30/eupath.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,exo,ExO,Exposure ontology (ExO),http://purl.obolibrary.org/obo/exo.owl,http://purl.obolibrary.org/obo/exo/releases/2022-06-29/exo.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,fao,FAO,Fungal gross anatomy,http://purl.obolibrary.org/obo/fao.owl,http://purl.obolibrary.org/obo/fao/releases/2020-05-07/fao.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,exo,ExO,Exposure ontology (ExO),http://purl.obolibrary.org/obo/exo.owl,http://purl.obolibrary.org/obo/exo/releases/2025-08-29/exo.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,fao,FAO,Fungal gross anatomy,http://purl.obolibrary.org/obo/fao.owl,http://purl.obolibrary.org/obo/fao/releases/2025-07-15/fao.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,fbbi,FBbi,Biological Imaging Methods Ontology,http://purl.obolibrary.org/obo/fbbi.owl,http://purl.obolibrary.org/obo/fbbi/releases/2020-11-06/fbbi.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,fbbt,FBbt,Drosophila gross anatomy,http://purl.obolibrary.org/obo/fbbt.owl,http://purl.obolibrary.org/obo/fbbt/releases/2025-03-27/fbbt.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,dpo,FBcv,Drosophila Phenotype Ontology,http://purl.obolibrary.org/obo/dpo.owl,http://purl.obolibrary.org/obo/dpo/releases/2025-03-27/dpo.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,fbcv,FBcv,FlyBase Controlled Vocabulary,http://purl.obolibrary.org/obo/fbcv.owl,http://purl.obolibrary.org/obo/fbcv/releases/2025-03-27/fbcv.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,fbdv,FBdv,Drosophila development,http://purl.obolibrary.org/obo/fbdv.owl,http://purl.obolibrary.org/obo/fbdv/releases/2025-03-26/fbdv.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,fideo,FIDEO,Food Interactions with Drugs Evidence Ontology,http://purl.obolibrary.org/obo/fideo.owl,http://purl.obolibrary.org/obo/fideo/releases/2023-12-18/fideo.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,fbbt,FBbt,Drosophila gross anatomy,http://purl.obolibrary.org/obo/fbbt.owl,http://purl.obolibrary.org/obo/fbbt/releases/2025-08-07/fbbt.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,dpo,FBcv,Drosophila Phenotype Ontology,http://purl.obolibrary.org/obo/dpo.owl,http://purl.obolibrary.org/obo/dpo/releases/2025-08-07/dpo.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,fbcv,FBcv,FlyBase Controlled Vocabulary,http://purl.obolibrary.org/obo/fbcv.owl,http://purl.obolibrary.org/obo/fbcv/releases/2025-08-07/fbcv.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,fbdv,FBdv,Drosophila development,http://purl.obolibrary.org/obo/fbdv.owl,http://purl.obolibrary.org/obo/fbdv/releases/2025-05-29/fbdv.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,flopo,FLOPO,Flora Phenotype Ontology,http://purl.obolibrary.org/obo/flopo.owl,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,fma,FMA,Foundational Model of Anatomy Ontology (subset),http://purl.obolibrary.org/obo/fma.owl,http://purl.obolibrary.org/obo/fma/releases/2020-04-13/fma.owl,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,FMA,FMA,"Foundational Model of Anatomy Ontology, 4_15",,,FMA
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,fobi,FOBI,Food-Biomarker Ontology,http://purl.obolibrary.org/obo/fobi.owl,http://purl.obolibrary.org/obo/fobi/fobi.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,foodon,FOODON,Food Ontology,http://purl.obolibrary.org/obo/foodon.owl,http://purl.obolibrary.org/obo/foodon/releases/2025-02-01/foodon.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,foodon,FOODON,Food Ontology,http://purl.obolibrary.org/obo/foodon.owl,http://purl.obolibrary.org/obo/foodon/releases/2025-08-01/foodon.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,fovt,FOVT,FuTRES Ontology of Vertebrate Traits,http://purl.obolibrary.org/obo/fovt.owl,http://purl.obolibrary.org/obo/fovt/releases/2023-05-31/fovt.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,fypo,FYPO,Fission Yeast Phenotype Ontology (FYPO),http://purl.obolibrary.org/obo/fypo.owl,http://purl.obolibrary.org/obo/fypo/releases/2025-04-17/fypo.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,fypo,FYPO,Fission Yeast Phenotype Ontology (FYPO),http://purl.obolibrary.org/obo/fypo.owl,http://purl.obolibrary.org/obo/fypo/releases/2025-09-27/fypo.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,gallont,GALLONT,Plant Gall Ontology,http://purl.obolibrary.org/obo/gallont.owl,http://purl.obolibrary.org/obo/gallont/releases/2024-04-19/gallont.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,gecko,GECKO,Genomics Cohorts Knowledge Ontology,http://purl.obolibrary.org/obo/gecko.owl,http://purl.obolibrary.org/obo/gecko/releases/2021-01-18/gecko.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,genepio,GENEPIO,Genomic Epidemiology Ontology,http://purl.obolibrary.org/obo/genepio.owl,http://purl.obolibrary.org/obo/genepio/releases/2024-12-18/genepio.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,geno,GENO,GENO ontology,http://purl.obolibrary.org/obo/geno.owl,http://purl.obolibrary.org/obo/geno/releases/2023-10-08/geno.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,geno,GENO,GENO ontology,http://purl.obolibrary.org/obo/geno.owl,http://purl.obolibrary.org/obo/geno/releases/2025-07-25/geno.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,geo,GEO,Geographical Entity Ontology,http://purl.obolibrary.org/obo/geo.owl,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,gno,GNO,Glycan Naming Ontology,http://purl.obolibrary.org/obo/gno.owl,http://purl.obolibrary.org/obo/gno/2025-01-28/gno.owl,
-https://api-v3.monarchinitiative.org/v3/api/search?q=,monarch,Monarch API,go,GO,Gene Ontology,http://purl.obolibrary.org/obo/go/extensions/go-plus.owl,http://purl.obolibrary.org/obo/go/releases/2024-11-03/extensions/go-plus.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,go,GO,Gene Ontology,http://purl.obolibrary.org/obo/go/extensions/go-plus.owl,http://purl.obolibrary.org/obo/go/releases/2024-11-03/extensions/go-plus.owl,
+https://api-v3.monarchinitiative.org/v3/api/search?q=,monarch,Monarch API,go,GO,Gene Ontology,http://purl.obolibrary.org/obo/go/extensions/go-plus.owl,http://purl.obolibrary.org/obo/go/releases/2025-07-22/extensions/go-plus.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,go,GO,Gene Ontology,http://purl.obolibrary.org/obo/go/extensions/go-plus.owl,http://purl.obolibrary.org/obo/go/releases/2025-07-22/extensions/go-plus.owl,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,GO,GO,"Gene Ontology, 2024_03_28",,,GO
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,GS,GS,"Gold Standard Drug Database, 2024_08_12",,,GS
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,GS,GS,"Gold Standard Drug Database, 2025_02_07",,,GS
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,gsso,GSSO,"GSSO - the Gender, Sex, and Sexual Orientation ontology",http://purl.obolibrary.org/obo/gsso.owl,http://purl.obolibrary.org/obo/gsso/releases/2.0.5/gsso.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,gexo,GeXO,Gene Expression Ontology,http://www.bio.ntnu.no/ontology/GeXO/gexo.rdf,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,hancestro,HANCESTRO,Human Ancestry Ontology,http://purl.obolibrary.org/obo/hancestro.owl,http://purl.obolibrary.org/obo/hancestro/releases/2025-04-01/hancestro.owl,
@@ -125,16 +124,16 @@ https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,hao,HAO,Hymenoptera 
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,hba,HBA,Human Brain Atlas Ontology,https://purl.brain-bican.org/ontology/hbao/hbao.owl,https://purl.brain-bican.org/ontology/hbao/releases/2025-02-10/hbao.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,hcao,HCAO,Human Cell Atlas Ontology,https://raw.githubusercontent.com/ebi-ait/ontology/master/hcao.owl,http://ontology.data.humancellatlas.org/ontologies/hcao/releases/2023-05-16/hcao.owl,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,HCDT,HCDT,"HCPCS Version of Current Dental Terminology (CDT), 2023",,,HCPCS
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,HCPCS,HCPCS,"Healthcare Common Procedure Coding System, 2024",,,HCPCS
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,HCPT,HCPT,"HCPCS Version of Current Procedural Terminology (CPT), 2024",,,CPT
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,HCPCS,HCPCS,"Healthcare Common Procedure Coding System, 2025_04",,,HCPCS
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,HCPT,HCPT,"HCPCS Version of Current Procedural Terminology (CPT), 2025_04",,,CPT
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,HGNC,HGNC,"HUGO Gene Nomenclature Committee, 2024_04",,,HGNC
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,HL7V2.5,HL7V2.5,"HL7 Vocabulary Version 2.5, 2003_08_30",,,HL7V2.5
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,HL7V3.0,HL7V3.0,"HL7 Vocabulary Version 3.0, 2024_07",,,HL7V3.0
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,HL7V3.0,HL7V3.0,"HL7 Vocabulary Version 3.0, 2024_11",,,HL7V3.0
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,HLREL,HLREL,"ICPC2E-ICD10 relationships from Dr. Henk Lamberts, 1998",,,HLREL
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,hom,HOM,Homology Ontology,http://purl.obolibrary.org/obo/hom.owl,http://purl.obolibrary.org/obo/hom/releases/2015-01-07/hom.owl,
-https://api-v3.monarchinitiative.org/v3/api/search?q=,monarch,Monarch API,hp,HP,Human Phenotype Ontology,http://purl.obolibrary.org/obo/hp/hp-international.owl,http://purl.obolibrary.org/obo/hp/releases/2025-01-16/hp-international.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,hp,HP,Human Phenotype Ontology,http://purl.obolibrary.org/obo/hp/hp-international.owl,http://purl.obolibrary.org/obo/hp/releases/2025-01-16/hp-international.owl,
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,HPO,HPO,"Human Phenotype Ontology, 2024_07_01",http://purl.obolibrary.org/obo/hp.owl,,HPO
+https://api-v3.monarchinitiative.org/v3/api/search?q=,monarch,Monarch API,hp,HP,Human Phenotype Ontology,http://purl.obolibrary.org/obo/hp/hp-international.owl,http://purl.obolibrary.org/obo/hp/releases/2025-09-01/hp-international.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,hp,HP,Human Phenotype Ontology,http://purl.obolibrary.org/obo/hp/hp-international.owl,http://purl.obolibrary.org/obo/hp/releases/2025-09-01/hp-international.owl,
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,HPO,HPO,"Human Phenotype Ontology, 2024_12_12",http://purl.obolibrary.org/obo/hp.owl,,HPO
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,hso,HSO,Health Surveillance Ontology,http://purl.obolibrary.org/obo/hso.owl,http://purl.obolibrary.org/obo/hso/2021-12-13/hso.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,htn,HTN,Hypertension Ontology For Clinical Data,http://purl.obolibrary.org/obo/htn.owl,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,hsapdv,HsapDv,Human Developmental Stages,http://purl.obolibrary.org/obo/hsapdv.owl,http://purl.obolibrary.org/obo/life-stages/releases/2025-01-23/components/hsapdv.owl,
@@ -143,10 +142,10 @@ https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,ICD
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,ICD10AE,ICD10AE,"ICD10, American English Equivalents, 1998",,,ICD10
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,ICD10AM,ICD10AM,"International Statistical Classification of Diseases and Related Health Problems, 10th Revision, Australian Modification, January 2000 Release",,,ICD10AM
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,ICD10AMAE,ICD10AMAE,"International Statistical Classification of Diseases and Related Health Problems, Australian Modification, Americanized English Equivalents, 2000",,,ICD10AM
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,ICD10CM,ICD10CM,"International Classification of Diseases, 10th Edition, Clinical Modification, 2025",,,ICD10CM
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,ICD10CM,ICD10CM,"International Classification of Diseases, 10th Edition, Clinical Modification, 2025",http://hl7.org/fhir/sid/icd-10-cm,,ICD10CM
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,ICD10DUT,ICD10DUT,"ICD10, Dutch Translation, 200403",,,ICD10
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,ICD10PCS,ICD10PCS,"ICD-10-PCS, 2025",,,ICD10PCS
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,ICD9CM,ICD9CM,"International Classification of Diseases, Ninth Revision, Clinical Modification, 2014",,,ICD9CM
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,ICD9CM,ICD9CM,"International Classification of Diseases, Ninth Revision, Clinical Modification, 2014",https://www.icd9data.com,,ICD9CM
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,iceo,ICEO,ICEO: Ontology of Integrative and Conjugative Elements,http://purl.obolibrary.org/obo/iceo.owl,,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,ICF,ICF,"International Classification of Functioning, Disability and Health, 2008_12_19",,,ICF
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,ICF-CY,ICF-CY,"International Classification of Functioning, Disability and Health for Children and Youth, 2008",,,ICF
@@ -183,96 +182,97 @@ https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LCH
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,lepao,LEPAO,Lepidoptera Anatomy Ontology,http://purl.obolibrary.org/obo/lepao.owl,http://purl.obolibrary.org/obo/lepao/releases/2023-02-18/lepao.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,lifestylefactors,LIFESTYLEFACTORS,Lifestyle Factors Ontology,https://raw.githubusercontent.com/EsmaeilNourani/Lifestyle-factors-ontology/main/LSFO/owl/LSFO.owl,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,lipidmaps,LIPIDMAPS,LIPID MAPS,https://lipidmaps.org/files/?file=sparql_lipids&ext=ttl,,
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC,LNC,"LOINC, 278",https://loinc.org/,,LNC
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC-DE-AT,LNC-DE-AT,"LOINC, German, Austria Edition, 278",,,LNC
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC-DE-DE,LNC-DE-DE,"LOINC, German, Germany Edition, 278",,,LNC
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC-EL-GR,LNC-EL-GR,"LOINC, Greek, Greece Edition, 278",,,LNC
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC-ES-AR,LNC-ES-AR,"LOINC, Spanish, Argentina Edition, 278",,,LNC
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC-ES-ES,LNC-ES-ES,"LOINC, Spanish, Spain Edition, 278",,,LNC
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC-ES-MX,LNC-ES-MX,"LOINC, Spanish, Mexico Edition, 278",,,LNC
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC-ET-EE,LNC-ET-EE,"LOINC, Estonian, Estonia Edition, 278",,,LNC
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC-FR-BE,LNC-FR-BE,"LOINC, French, Belgium Edition, 278",,,LNC
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC-FR-CA,LNC-FR-CA,"LOINC, French, Canada Edition, 278",,,LNC
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC-FR-FR,LNC-FR-FR,"LOINC, French, France Edition, 278",,,LNC
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC-IT-IT,LNC-IT-IT,"LOINC, Italian, Italy Edition, 278",,,LNC
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC-KO-KR,LNC-KO-KR,"LOINC, Korean, Korea Edition, 278",,,LNC
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC-NL-NL,LNC-NL-NL,"LOINC, Dutch, Netherlands Edition, 278",,,LNC
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC-PL-PL,LNC-PL-PL,"LOINC, Polish, Poland Edition, 278",,,LNC
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC-PT-BR,LNC-PT-BR,"LOINC, Portuguese, Brazil Edition, 278",,,LNC
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC-RU-RU,LNC-RU-RU,"LOINC, Russian, Russia Edition, 278",,,LNC
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC-TR-TR,LNC-TR-TR,"LOINC, Turkish, Turkey Edition, 278",,,LNC
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC-UK-UA,LNC-UK-UA,"LOINC, Ukrainian, Ukraine Edition, 278",,,LNC
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC-ZH-CN,LNC-ZH-CN,"LOINC, Chinese, China Edition, 278",,,LNC
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC,LNC,"LOINC, 280",https://loinc.org/,,LNC
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC-DE-AT,LNC-DE-AT,"LOINC, German, Austria Edition, 279",,,LNC
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC-DE-DE,LNC-DE-DE,"LOINC, German, Germany Edition, 279",,,LNC
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC-EL-GR,LNC-EL-GR,"LOINC, Greek, Greece Edition, 279",,,LNC
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC-ES-AR,LNC-ES-AR,"LOINC, Spanish, Argentina Edition, 279",,,LNC
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC-ES-ES,LNC-ES-ES,"LOINC, Spanish, Spain Edition, 279",,,LNC
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC-ES-MX,LNC-ES-MX,"LOINC, Spanish, Mexico Edition, 279",,,LNC
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC-ET-EE,LNC-ET-EE,"LOINC, Estonian, Estonia Edition, 279",,,LNC
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC-FR-BE,LNC-FR-BE,"LOINC, French, Belgium Edition, 279",,,LNC
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC-FR-CA,LNC-FR-CA,"LOINC, French, Canada Edition, 279",,,LNC
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC-FR-FR,LNC-FR-FR,"LOINC, French, France Edition, 279",,,LNC
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC-IT-IT,LNC-IT-IT,"LOINC, Italian, Italy Edition, 279",,,LNC
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC-KO-KR,LNC-KO-KR,"LOINC, Korean, Korea Edition, 279",,,LNC
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC-NL-NL,LNC-NL-NL,"LOINC, Dutch, Netherlands Edition, 279",,,LNC
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC-PL-PL,LNC-PL-PL,"LOINC, Polish, Poland Edition, 279",,,LNC
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC-PT-BR,LNC-PT-BR,"LOINC, Portuguese, Brazil Edition, 279",,,LNC
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC-RU-RU,LNC-RU-RU,"LOINC, Russian, Russia Edition, 279",,,LNC
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC-TR-TR,LNC-TR-TR,"LOINC, Turkish, Turkey Edition, 279",,,LNC
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC-UK-UA,LNC-UK-UA,"LOINC, Ukrainian, Ukraine Edition, 279",,,LNC
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,LNC-ZH-CN,LNC-ZH-CN,"LOINC, Chinese, China Edition, 279",,,LNC
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ma,MA,Mouse adult gross anatomy,http://purl.obolibrary.org/obo/ma.owl,http://purl.obolibrary.org/obo/ma/releases/2017-02-07/ma.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mamo,MAMO,Mathematical Modelling Ontology,https://raw.githubusercontent.com/EBISPOT/mamo/main/mamo.rdf,,
 https://api-v3.monarchinitiative.org/v3/api/search?q=,monarch,Monarch API,maxo,MAXO,Medical Action Ontology,http://purl.obolibrary.org/obo/maxo.owl,http://purl.obolibrary.org/obo/maxo/releases/2025-04-24/maxo.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,maxo,MAXO,Medical Action Ontology,http://purl.obolibrary.org/obo/maxo.owl,http://purl.obolibrary.org/obo/maxo/releases/2025-04-24/maxo.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mba,MBA,Mouse Brain Atlas Ontology,https://purl.brain-bican.org/ontology/mbao/mbao.owl,https://purl.brain-bican.org/ontology/mbao/releases/2025-04-17/mbao.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mba,MBA,Mouse Brain Atlas Ontology,https://purl.brain-bican.org/ontology/mbao/mbao.owl,https://purl.brain-bican.org/ontology/mbao/releases/2025-07-28/mbao.owl,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MCM,MCM,"McMaster University Epidemiology Terms, 1992",,,MCM
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mco,MCO,Microbial Conditions Ontology,http://purl.obolibrary.org/obo/mco.owl,http://purl.obolibrary.org/obo/mco/releases/2019-05-15/mco.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mcro,MCRO,Model Card Report Ontology,http://purl.obolibrary.org/obo/mcro.owl,http://purl.obolibrary.org/obo/2023-03-07/mcro.owl,
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDR,MDR,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), 27.0",https://www.meddra.org,,MDR
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDRARA,MDRARA,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), Arabic Edition, 27.0",,,MDR
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDRBPO,MDRBPO,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), Brazilian Portuguese Edition, 27.0",,,MDR
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDRCZE,MDRCZE,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), Czech Edition, 27.0",,,MDR
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDRDUT,MDRDUT,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), Dutch Edition, 27.0",,,MDR
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDREST,MDREST,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), Estonian Edition, 27.0",,,MDR
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDRFIN,MDRFIN,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), Finnish Edition, 27.0",,,MDR
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDRFRE,MDRFRE,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), French Edition, 27.0",,,MDR
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDRGER,MDRGER,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), German Edition, 27.0",,,MDR
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDRGRE,MDRGRE,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), Greek Edition, 27.0",,,MDR
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDRHRV,MDRHRV,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), Croatian Edition, 27.0",,,MDR
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDRHUN,MDRHUN,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), Hungarian Edition, 27.0",,,MDR
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDRITA,MDRITA,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), Italian Edition, 27.0",,,MDR
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDRJPN,MDRJPN,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), Japanese Edition, 27.0",,,MDR
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDRKOR,MDRKOR,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), Korean Edition, 27.0",,,MDR
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDRLAV,MDRLAV,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), Latvian Edition, 27.0",,,MDR
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDRLIT,MDRLIT,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), Lithuanian Edition, 27.0",,,MDR
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDRPOL,MDRPOL,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), Polish Edition, 27.0",,,MDR
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDRPOR,MDRPOR,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), Portuguese Edition, 27.0",,,MDR
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDRRUS,MDRRUS,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), Russian Edition, 27.0",,,MDR
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDRSPA,MDRSPA,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), Spanish Edition, 27.0",,,MDR
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDRSWE,MDRSWE,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), Swedish Edition, 27.0",,,MDR
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MED-RT,MED-RT,"Medication Reference Terminology, 2024_09_03",,,MED-RT
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MEDCIN,MEDCIN,"MEDCIN, 3_2024_07_16",,,MEDCIN
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MEDLINEPLUS,MEDLINEPLUS,"MedlinePlus Health Topics, 20231101",,,MEDLINEPLUS
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MEDLINEPLUS_SPA,MEDLINEPLUS_SPA,"MedlinePlus Spanish Health Topics, 20231101",,,MEDLINEPLUS
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mf,MF,Mental Functioning Ontology,http://purl.obolibrary.org/obo/mf.owl,http://purl.obolibrary.org/obo/MF/2022-07-19/MF.owl,
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDR,MDR,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), 27.1",https://www.meddra.org,,MDR
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDRARA,MDRARA,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), Arabic Edition, 27.1",,,MDR
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDRBPO,MDRBPO,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), Brazilian Portuguese Edition, 27.1",,,MDR
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDRCZE,MDRCZE,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), Czech Edition, 27.1",,,MDR
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDRDUT,MDRDUT,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), Dutch Edition, 27.1",,,MDR
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDREST,MDREST,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), Estonian Edition, 27.1",,,MDR
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDRFIN,MDRFIN,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), Finnish Edition, 27.1",,,MDR
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDRFRE,MDRFRE,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), French Edition, 27.1",,,MDR
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDRGER,MDRGER,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), German Edition, 27.1",,,MDR
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDRGRE,MDRGRE,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), Greek Edition, 27.1",,,MDR
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDRHRV,MDRHRV,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), Croatian Edition, 27.1",,,MDR
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDRHUN,MDRHUN,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), Hungarian Edition, 27.1",,,MDR
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDRISL,MDRISL,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), Icelandic Edition, 27.1",,,MDR
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDRITA,MDRITA,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), Italian Edition, 27.1",,,MDR
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDRJPN,MDRJPN,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), Japanese Edition, 27.1",,,MDR
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDRKOR,MDRKOR,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), Korean Edition, 27.1",,,MDR
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDRLAV,MDRLAV,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), Latvian Edition, 27.1",,,MDR
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDRLIT,MDRLIT,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), Lithuanian Edition, 27.1",,,MDR
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDRPOL,MDRPOL,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), Polish Edition, 27.1",,,MDR
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDRPOR,MDRPOR,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), Portuguese Edition, 27.1",,,MDR
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDRRUS,MDRRUS,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), Russian Edition, 27.1",,,MDR
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDRSPA,MDRSPA,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), Spanish Edition, 27.1",,,MDR
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MDRSWE,MDRSWE,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), Swedish Edition, 27.1",,,MDR
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MED-RT,MED-RT,"Medication Reference Terminology, 2025_03_03",,,MED-RT
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MEDCIN,MEDCIN,"MEDCIN, 3_2024_12_20",,,MEDCIN
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MEDLINEPLUS,MEDLINEPLUS,"MedlinePlus Health Topics, 20241107",,,MEDLINEPLUS
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MEDLINEPLUS_SPA,MEDLINEPLUS_SPA,"MedlinePlus Spanish Health Topics, 20241107",,,MEDLINEPLUS
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mf,MF,Mental Functioning Ontology,http://purl.obolibrary.org/obo/mf.owl,http://purl.obolibrary.org/obo/MF/2025-07-08/MF.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mfmo,MFMO,Mammalian Feeding Muscle Ontology,http://purl.obolibrary.org/obo/mfmo.owl,http://purl.obolibrary.org/obo/mfmo/2013-11-16/mfmo.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mfoem,MFOEM,Emotion Ontology,http://purl.obolibrary.org/obo/mfoem.owl,http://purl.obolibrary.org/obo/MFOEM/2025-01-06/MFOEM.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mfoem,MFOEM,Emotion Ontology,http://purl.obolibrary.org/obo/mfoem.owl,http://purl.obolibrary.org/obo/MFOEM/2025-07-31/MFOEM.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mfomd,MFOMD,Mental Disease Ontology,http://purl.obolibrary.org/obo/mfomd.owl,http://purl.obolibrary.org/obo/MFOMD/2020-04-26/MFOMD.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mi,MI,Molecular Interactions Controlled Vocabulary,http://purl.obolibrary.org/obo/mi.owl,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,miapa,MIAPA,Minimum Information for A Phylogenetic Analysis (MIAPA) Ontology,http://purl.obolibrary.org/obo/miapa.owl,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,micro,MICRO,Ontology of Prokaryotic Phenotypic and Metabolic Characters,http://purl.obolibrary.org/obo/micro.owl,,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mmo,MMO,Measurement method ontology,http://purl.obolibrary.org/obo/mmo.owl,http://purl.obolibrary.org/obo/mmo/2.149/mmo.owl,
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MMSL,MMSL,"Multum MediSource Lexicon, 2024_08_01",,,MMSL
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MMX,MMX,"Micromedex RED BOOK, 2024_08_05",,,MMX
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mmo,MMO,Measurement method ontology,http://purl.obolibrary.org/obo/mmo.owl,http://purl.obolibrary.org/obo/mmo/2.161/mmo.owl,
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MMSL,MMSL,"Multum MediSource Lexicon, 2025_02_01",,,MMSL
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MMX,MMX,"Micromedex RED BOOK, 2025_02_07",,,MMX
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mod,MOD,Protein modification,http://purl.obolibrary.org/obo/mod.owl,http://purl.obolibrary.org/obo/mod/1.031.6/mod.owl,
-https://api-v3.monarchinitiative.org/v3/api/search?q=,monarch,Monarch API,mondo,MONDO,Mondo Disease Ontology,https://purl.obolibrary.org/obo/mondo/mondo-international.owl,http://purl.obolibrary.org/obo/mondo/releases/2025-04-01/mondo-international.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mondo,MONDO,Mondo Disease Ontology,https://purl.obolibrary.org/obo/mondo/mondo-international.owl,http://purl.obolibrary.org/obo/mondo/releases/2025-04-01/mondo-international.owl,
+https://api-v3.monarchinitiative.org/v3/api/search?q=,monarch,Monarch API,mondo,MONDO,Mondo Disease Ontology,https://purl.obolibrary.org/obo/mondo/mondo-international.owl,http://purl.obolibrary.org/obo/mondo/releases/2025-09-02/mondo-international.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mondo,MONDO,Mondo Disease Ontology,https://purl.obolibrary.org/obo/mondo/mondo-international.owl,http://purl.obolibrary.org/obo/mondo/releases/2025-09-02/mondo-international.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mop,MOP,MOP,http://purl.obolibrary.org/obo/mop.owl,http://purl.obolibrary.org/obo/mop/releases/2022-05-11/mop.owl,
-https://api-v3.monarchinitiative.org/v3/api/search?q=,monarch,Monarch API,mp,MP,The Mammalian Phenotype Ontology,http://purl.obolibrary.org/obo/mp/mp-international.owl,http://purl.obolibrary.org/obo/mp/releases/2025-01-30/mp-international.owl,
+https://api-v3.monarchinitiative.org/v3/api/search?q=,monarch,Monarch API,mp,MP,The Mammalian Phenotype Ontology,http://purl.obolibrary.org/obo/mp/mp-international.owl,http://purl.obolibrary.org/obo/mp/releases/2025-08-27/mp-international.owl,
 https://api-v3.monarchinitiative.org/v3/api/search?q=,monarch,Monarch API,mp,MP,Mammalian Phenotype Ontology,http://purl.obolibrary.org/obo/mp.owl,,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mp,MP,The Mammalian Phenotype Ontology,http://purl.obolibrary.org/obo/mp/mp-international.owl,http://purl.obolibrary.org/obo/mp/releases/2025-01-30/mp-international.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mp,MP,The Mammalian Phenotype Ontology,http://purl.obolibrary.org/obo/mp/mp-international.owl,http://purl.obolibrary.org/obo/mp/releases/2025-08-27/mp-international.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mpath,MPATH,Mouse pathology ontology,http://purl.obolibrary.org/obo/mpath.owl,http://purl.obolibrary.org/obo/mpath/2020-05-19/mpath.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mpio,MPIO,Minimum PDDI Information Ontology,http://purl.obolibrary.org/obo/mpio.owl,http://purl.obolibrary.org/obo/mpio/release/2023-10-17/mpio.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mro,MRO,MHC Restriction Ontology,http://purl.obolibrary.org/obo/mro.owl,http://purl.obolibrary.org/obo/mro/2025-04-22/mro.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ms,MS,Mass spectrometry ontology,http://purl.obolibrary.org/obo/ms.owl,http://purl.obolibrary.org/obo/ms/4.1.191/ms.owl,
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MSH,MSH,"Medical Subject Headings, 2025_2024_08_19",https://www.nlm.nih.gov/mesh,,MSH
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MSHCZE,MSHCZE,"Czech translation of the Medical Subject Headings, 2024",,,MSH
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mro,MRO,MHC Restriction Ontology,http://purl.obolibrary.org/obo/mro.owl,http://purl.obolibrary.org/obo/mro/2025-09-25/mro.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ms,MS,Mass spectrometry ontology,http://purl.obolibrary.org/obo/ms.owl,http://purl.obolibrary.org/obo/ms/4.1.203/ms.owl,
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MSH,MSH,"Medical Subject Headings, 2025_2025_02_03",https://www.nlm.nih.gov/mesh,,MSH
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MSHCZE,MSHCZE,"Czech translation of the Medical Subject Headings, 2025",,,MSH
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MSHDUT,MSHDUT,"Nederlandse vertaling van Mesh (Dutch translation of the Medical Subject Headings), 2005",,,MSH
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MSHFIN,MSHFIN,"Finnish translation of the Medical Subject Headings, 2008",,,MSH
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MSHFRE,MSHFRE,"Thesaurus Biomedical Francais/Anglais (French translation of the Medical Subject Headings), 2024",,,MSH
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MSHFRE,MSHFRE,"Thesaurus Biomedical Francais/Anglais (French translation of the Medical Subject Headings), 2025",,,MSH
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MSHGER,MSHGER,"German translation of the Medical Subject Headings, 2024",,,MSH
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MSHITA,MSHITA,"Italian translation of the Medical Subject Headings, 2019",,,MSH
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MSHJPN,MSHJPN,"Japanese translation of the Medical Subject Headings, 2014",,,MSH
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MSHLAV,MSHLAV,"Latvian translation of the Medical Subject Headings, 2012",,,MSH
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MSHNOR,MSHNOR,"Medical Subject Headings Norwegian, 2019",,,MSH
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MSHPOL,MSHPOL,"Polish translation of the Medical Subject Headings, 2024",,,MSH
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MSHPOR,MSHPOR,"Descritores em Ciencias da Saude (Portuguese translation of the Medical Subject Headings), 2024",,,MSH
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MSHRUS,MSHRUS,"Russian translation of the Medical Subject Headings, 2024",,,MSH
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MSHPOL,MSHPOL,"Polish translation of the Medical Subject Headings, 2025",,,MSH
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MSHPOR,MSHPOR,"Descritores em Ciencias da Saude (Portuguese translation of the Medical Subject Headings), 2025",,,MSH
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MSHRUS,MSHRUS,"Russian translation of the Medical Subject Headings, 2025",,,MSH
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MSHSCR,MSHSCR,"Croatian translation of the Medical Subject Headings, 2019",,,MSH
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MSHSPA,MSHSPA,"Descritores en Ciencias de la Salud (Spanish translation of the Medical Subject Headings), 2024",,,MSH
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MSHSPA,MSHSPA,"Descritores en Ciencias de la Salud (Spanish translation of the Medical Subject Headings), 2025",,,MSH
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MSHSWE,MSHSWE,"Swedish translation of the Medical Subject Headings, 2021",,,MSH
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,msio,MSIO,Metabolomics Standards Initiative Ontology (MSIO),https://raw.githubusercontent.com/MSI-Metabolomics-Standards-Initiative/MSIO/master/releases/latest_release/MSIO-merged-reasoned.owl,,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MTH,MTH,UMLS Metathesaurus,,,MTH
@@ -283,166 +283,170 @@ https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MTH
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MTHMST,MTHMST,"Metathesaurus Version of Minimal Standard Terminology Digestive Endoscopy, 2001",,,MTHMST
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MTHMSTFRE,MTHMSTFRE,"Metathesaurus Version of Minimal Standard Terminology Digestive Endoscopy, French Translation, 2001",,,MTHMST
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MTHMSTITA,MTHMSTITA,"Metathesaurus Version of Minimal Standard Terminology Digestive Endoscopy, Italian Translation, 2001",,,MTHMST
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MTHSPL,MTHSPL,"Metathesaurus FDA Structured Product Labels, 2024_08_24",,,MTHSPL
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MVX,MVX,"Manufacturers of Vaccines, 2024_09_03",,,MVX
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MTHSPL,MTHSPL,"Metathesaurus FDA Structured Product Labels, 2025_02_22",,,MTHSPL
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,MVX,MVX,"Manufacturers of Vaccines, 2025_02_11",,,MVX
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mmusdv,MmusDv,Mouse Developmental Stages,http://purl.obolibrary.org/obo/mmusdv.owl,http://purl.obolibrary.org/obo/life-stages/releases/2025-01-23/components/mmusdv.owl,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,NANDA-I,NANDA-I,"NANDA-I Taxonomy II, 2018-2020",,,NANDA-I
 https://api-v3.monarchinitiative.org/v3/api/search?q=,monarch,Monarch API,nbo,NBO,Neuro Behavior Ontology,http://purl.obolibrary.org/obo/nbo.owl,http://purl.obolibrary.org/obo/nbo/releases/2023-07-04/nbo.owl,
 https://api-v3.monarchinitiative.org/v3/api/search?q=,monarch,Monarch API,nbo,NBO,Neurobehavior Ontology,http://purl.obolibrary.org/obo/nbo.owl,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,nbo,NBO,Neuro Behavior Ontology,http://purl.obolibrary.org/obo/nbo.owl,http://purl.obolibrary.org/obo/nbo/releases/2023-07-04/nbo.owl,
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,NCBI,NCBI,"NCBI Taxonomy, 2024_04_02",,,NCBI
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ncbitaxon,NCBITaxon,NCBI organismal classification,http://purl.obolibrary.org/obo/ncbitaxon.owl,http://purl.obolibrary.org/obo/ncbitaxon/2025-03-13/ncbitaxon.owl,
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,NCI,NCI,"NCI Thesaurus, 2024_03D",,,NCI
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,NCBI,NCBI,"NCBI Taxonomy, 2024_10_23",,,NCBI
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ncbitaxon,NCBITaxon,NCBI organismal classification,http://purl.obolibrary.org/obo/ncbitaxon.owl,http://purl.obolibrary.org/obo/ncbitaxon/2025-09-11/ncbitaxon.owl,
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,NCI,NCI,"NCI Thesaurus, 2024_10D",,,NCI
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,NCISEER,NCISEER,"NCI SEER ICD Neoplasm Code Mappings, 1999",,,NCISEER
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ncit,NCIT,NCI Thesaurus OBO Edition,http://purl.obolibrary.org/obo/ncit.owl,http://purl.obolibrary.org/obo/ncit/releases/2024-05-07/ncit.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ncit,NCIT,NCI Thesaurus OBO Edition,http://purl.obolibrary.org/obo/ncit.owl,http://purl.obolibrary.org/obo/ncit/releases/2025-08-06/ncit.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ncro,NCRO,Non-Coding RNA Ontology,http://purl.obolibrary.org/obo/ncro.owl,http://purl.obolibrary.org/obo/ncro/2015-12-10/ncro-combined.owl,
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,NDDF,NDDF,"FDB MedKnowledge (formerly NDDF Plus), 2024_08_14",,,NDDF
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,NDDF,NDDF,"FDB MedKnowledge (formerly NDDF Plus), 2025_02_05",,,NDDF
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,NEU,NEU,"Neuronames Brain Hierarchy, 2023_06_02",,,NEU
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ngbo,NGBO, Next generation biobanking ontology(NGBO).,http://purl.obolibrary.org/obo/ngbo.owl,http://purl.obolibrary.org/obo/ngbo/2024-08-27/ngbo.owl,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,NIC,NIC,"Nursing Interventions Classification, 8",,,NIC
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,nmrcv,NMR,nuclear magnetic resonance CV,http://nmrml.org/cv/stable/nmrCV.owl,http://nmrml.org/cv/v1.1.0/nmrCV.owl,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,NOC,NOC,"Nursing Outcomes Classification, 7",,,NOC
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,nomen,NOMEN,NOMEN - A nomenclatural ontology for biological names,http://purl.obolibrary.org/obo/nomen.owl,,
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,NUCCHCPT,NUCCHCPT,"National Uniform Claim Committee - Health Care Provider Taxonomy, 24.1",,,NUCCHCPT
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,NUCCHCPT,NUCCHCPT,"National Uniform Claim Committee - Health Care Provider Taxonomy, 25.0",,,NUCCHCPT
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,oae,OAE,OAE: Ontology of Adverse Events,http://purl.obolibrary.org/obo/oae.owl,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,oarcs,OARCS,Ontology of Arthropod Circulatory Systems,http://purl.obolibrary.org/obo/oarcs.owl,http://purl.obolibrary.org/obo/hao/2019-04-18/hao.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,oba,OBA,Ontology of Biological Attributes (OBA),http://purl.obolibrary.org/obo/oba.owl,http://purl.obolibrary.org/obo/oba/releases/2025-03-28/oba.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,oba,OBA,Ontology of Biological Attributes (OBA),http://purl.obolibrary.org/obo/oba.owl,http://purl.obolibrary.org/obo/oba/releases/2025-08-20/oba.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,obcs,OBCS,OBCS: Ontology of Biological and Clinical Statistics,http://purl.obolibrary.org/obo/obcs.owl,http://purl.obolibrary.org/obo/obcs/2023-12-08/obcs.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,obi,OBI,Ontology for Biomedical Investigations,http://purl.obolibrary.org/obo/obi.owl,http://purl.obolibrary.org/obo/obi/2025-03-06/obi.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,obi,OBI,Ontology for Biomedical Investigations,http://purl.obolibrary.org/obo/obi.owl,http://purl.obolibrary.org/obo/obi/2025-07-28/obi.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,obib,OBIB,Ontology for BIoBanking (OBIB),http://purl.obolibrary.org/obo/obib.owl,http://purl.obolibrary.org/obo/obib/2023-04-05/obib.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,occo,OCCO,Occupation Ontology (OccO),http://purl.obolibrary.org/obo/occo.owl,http://purl.obolibrary.org/obo/occo/releases/2024-04-28/occo.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ogg,OGG,OGG: Ontology of Genes and Genomes,http://purl.obolibrary.org/obo/ogg.owl,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ogms,OGMS,Ontology for General Medical Science,http://purl.obolibrary.org/obo/ogms.owl,http://purl.obolibrary.org/obo/ogms/2021-08-19/ogms.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ogsf,OGSF,Ontology of Genetic Susceptibility Factor,http://purl.obolibrary.org/obo/ogsf.owl,,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ohd,OHD,Oral Health and Disease Ontology,http://purl.obolibrary.org/obo/ohd.owl,http://purl.obolibrary.org/obo/ohd/releases/2024-06-21/ohd.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ohd,OHD,Oral Health and Disease Ontology,http://purl.obolibrary.org/obo/ohd.owl,http://purl.obolibrary.org/obo/ohd/releases/2025-06-28/ohd.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ohmi,OHMI,OHMI: Ontology of Host-Microbiome Interactions,http://purl.obolibrary.org/obo/ohmi.owl,http://purl.obolibrary.org/obo/ohmi/2019-09-17/ohmi.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ohpi,OHPI,OHPI: Ontology of Host-Pathogen Interactions,http://purl.obolibrary.org/obo/ohpi.owl,http://purl.obolibrary.org/obo/ohpi/releases/2019-09-30,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,om,OM,Ontology of units of Measure (OM),https://raw.githubusercontent.com/HajoRijgersberg/OM/master/om-2.0.rdf,,
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,OMIM,OMIM,"Online Mendelian Inheritance in Man, 2024_08_09",https://omim.org/,,OMIM
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,OMIM,OMIM,"Online Mendelian Inheritance in Man, 2025_02_05",https://omim.org/,,OMIM
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,omit,OMIT,Ontology for MIRNA Target,http://purl.obolibrary.org/obo/omit.owl,http://purl.obolibrary.org/obo/omit/dev/omit.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,omo,OMO,OBO Metadata Ontology,http://purl.obolibrary.org/obo/omo.owl,http://purl.obolibrary.org/obo/omo/releases/2024-11-13/omo.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,omo,OMO,OBO Metadata Ontology,http://purl.obolibrary.org/obo/omo.owl,http://purl.obolibrary.org/obo/omo/releases/2025-06-18/omo.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,omp,OMP,Ontology of Microbial Phenotypes,http://purl.obolibrary.org/obo/omp.owl,http://purl.obolibrary.org/obo/omp/releases/2024-03-25/omp.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,omrse,OMRSE,Ontology for Modeling and Representation of Social Entities,http://purl.obolibrary.org/obo/omrse.owl,http://purl.obolibrary.org/obo/omrse/releases/2025-03-26/omrse.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,omrse,OMRSE,Ontology for Modeling and Representation of Social Entities,http://purl.obolibrary.org/obo/omrse.owl,http://purl.obolibrary.org/obo/omrse/releases/2025-06-30/omrse.owl,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,OMS,OMS,"Omaha System, 2005",,,OMS
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,one,ONE,Ontology for Nutritional Epidemiology,http://purl.obolibrary.org/obo/one.owl,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ons,ONS,Ontology for Nutritional Studies,http://purl.obolibrary.org/obo/ons.owl,https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/releases/download/v2024-07-03/ons.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ontoavida,ONTOAVIDA,OntoAvida: ontology for Avida digital evolution platform.,http://purl.obolibrary.org/obo/ontoavida.owl,http://purl.obolibrary.org/obo/ontoavida/releases/2022-03-15/ontoavida.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ontoneo,ONTONEO,Obstetric and Neonatal Ontology,http://purl.obolibrary.org/obo/ontoneo.owl,http://purl.obolibrary.org/obo/ontoneo/releases/2025-03-14/ontoneo.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,oostt,OOSTT,Ontology of Organizational Structures of Trauma centers and Trauma Systems,http://purl.obolibrary.org/obo/oostt.owl,http://purl.obolibrary.org/obo/oostt/release/2025-01-24/oostt.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,oostt,OOSTT,Ontology of Organizational Structures of Trauma centers and Trauma Systems,http://purl.obolibrary.org/obo/oostt.owl,http://purl.obolibrary.org/obo/oostt/release/2025-08-28/oostt.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,opl,OPL,Ontology for Parasite Lifecycle,http://purl.obolibrary.org/obo/opl.owl,http://purl.obolibrary.org/obo/opl/2023-08-28/opl.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,opmi,OPMI,OPMI: Ontology of Precision Medicine and Investigation,http://purl.obolibrary.org/obo/opmi.owl,,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ordo,ORDO,Orphanet Rare Disease Ontology,http://www.orphadata.org/data/ORDO/ordo_orphanet.owl,https://www.orphadata.com/data/ontologies/ordo/last_version/ORDO_en_4.6.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ordo,ORDO,Orphanet Rare Disease Ontology,http://www.orphadata.org/data/ORDO/ordo_orphanet.owl,https://www.orphadata.com/data/ontologies/ordo/last_version/ORDO_en_4.7.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ornaseq,ORNASEQ,Ontology for RNA sequencing (ORNASEQ),http://purl.obolibrary.org/obo/ornaseq.owl,http://purl.obolibrary.org/obo/ornaseq/2019-07-08/ornaseq.owl,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,ORPHANET,ORPHANET,"Orphanet Nomenclature, 2024_07",,,ORPHANET
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,orth,ORTH,Orthology Ontology,http://purl.org/net/orth,http://purl.org/net/orth/2.0,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ovae,OVAE,OVAE: Ontology of Vaccine Adverse Events,http://purl.obolibrary.org/obo/ovae.owl,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,olatdv,OlatDv,Medaka Developmental Stages,http://purl.obolibrary.org/obo/olatdv.owl,,
-https://api-v3.monarchinitiative.org/v3/api/search?q=,monarch,Monarch API,pato,PATO,PATO - the Phenotype And Trait Ontology,http://purl.obolibrary.org/obo/pato.owl,http://purl.obolibrary.org/obo/pato/releases/2025-02-01/pato.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,pato,PATO,PATO - the Phenotype And Trait Ontology,http://purl.obolibrary.org/obo/pato.owl,http://purl.obolibrary.org/obo/pato/releases/2025-02-01/pato.owl,
+https://api-v3.monarchinitiative.org/v3/api/search?q=,monarch,Monarch API,pato,PATO,PATO - the Phenotype And Trait Ontology,http://purl.obolibrary.org/obo/pato.owl,http://purl.obolibrary.org/obo/pato/releases/2025-05-14/pato.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,pato,PATO,PATO - the Phenotype And Trait Ontology,http://purl.obolibrary.org/obo/pato.owl,http://purl.obolibrary.org/obo/pato/releases/2025-05-14/pato.owl,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,PCDS,PCDS,"Patient Care Data Set, 1997",,,PCDS
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,pcl,PCL,Provisional Cell Ontology,http://purl.obolibrary.org/obo/pcl.owl,http://purl.obolibrary.org/obo/pcl/releases/2025-01-08/pcl.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,pcl,PCL,Provisional Cell Ontology,http://purl.obolibrary.org/obo/pcl.owl,http://purl.obolibrary.org/obo/pcl/releases/2025-07-07/pcl.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,pco,PCO,Population and Community Ontology,http://purl.obolibrary.org/obo/pco.owl,http://purl.obolibrary.org/obo/pco/releases/2021-05-03/pco.owl,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,PDQ,PDQ,"Physician Data Query, 2018_10_27",,,PDQ
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,pdro,PDRO,The Prescription of Drugs Ontology,http://purl.obolibrary.org/obo/pdro.owl,http://purl.obolibrary.org/obo/pdro/2021-06-08/pdro.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,peco,PECO,Plant Experimental Conditions Ontology,http://purl.obolibrary.org/obo/peco.owl,http://purl.obolibrary.org/obo/peco/releases/2023-11-10/peco.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,phi,PHI,PHI-base Ontology,file:///nfs/production/parkinso/spot/ols4/prod/local_ontologies/phi.owl,http://purl.obolibrary.org/obo/PHI/releases/2017-11-06/PHI.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,phipo,PHIPO,Pathogen Host Interactions Phenotype Ontology,http://purl.obolibrary.org/obo/phipo.owl,http://purl.obolibrary.org/obo/phipo/releases/2024-08-29/phipo.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,phi,PHI,PHI-base Ontology,file:///mnt/nfs/local_ontologies/phi.owl,http://purl.obolibrary.org/obo/PHI/releases/2017-11-06/PHI.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,phipo,PHIPO,Pathogen Host Interactions Phenotype Ontology,http://purl.obolibrary.org/obo/phipo.owl,http://purl.obolibrary.org/obo/phipo/releases/2025-07-29/phipo.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,plana,PLANA,Planarian Anatomy Ontology (PLANA),http://purl.obolibrary.org/obo/plana.owl,http://purl.obolibrary.org/obo/plana/releases/2023-03-13,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,planp,PLANP,Planarian Phenotype Ontology (PLANP),http://purl.obolibrary.org/obo/planp.owl,http://purl.obolibrary.org/obo/planp/releases/2020-03-28/planp.owl,
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,PNDS,PNDS,"Perioperative Nursing Data Set, 2024",,,PNDS
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,PNDS,PNDS,"Perioperative Nursing Data Set, 2nd edition, 2025",,,PNDS
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,po,PO,Plant Ontology,http://purl.obolibrary.org/obo/po.owl,http://purl.obolibrary.org/obo/po/releases/2024-04-17/po.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,poro,PORO,Porifera (sponge) ontology,http://purl.obolibrary.org/obo/poro.owl,http://purl.obolibrary.org/obo/poro/releases/2016-10-06/poro.owl,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,PPAC,PPAC,"Pharmacy Practice Activity Classification, 1998",,,PPAC
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ppo,PPO,Plant Phenology Ontology,http://purl.obolibrary.org/obo/ppo.owl,http://purl.obolibrary.org/obo/ppo/releases/2025-03-13/ppo.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ppo,PPO,Plant Phenology Ontology,http://purl.obolibrary.org/obo/ppo.owl,http://purl.obolibrary.org/obo/ppo/releases/2025-06-16/ppo.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,pr,PR,PRotein Ontology (PRO),http://purl.obolibrary.org/obo/pr.owl,http://purl.obolibrary.org/obo/pr/71.0/pr.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,pride,PRIDE,Proteomics Identification Database Ontology,https://raw.githubusercontent.com/PRIDE-Utilities/pride-ontology/master/pride_cv.owl,http://purl.obolibrary.org/obo/pride/releases/2025-02-17/pride.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,probonto,PROBONTO,Probability Distribution Ontology,file:///nfs/production/parkinso/spot/ols4/prod/local_ontologies/probonto.ttl,,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,probonto,PROBONTO,Probability Distribution Ontology,file:///mnt/nfs/local_ontologies/probonto.ttl,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,proco,PROCO,PROCO: PROcess Chemistry Ontology,http://purl.obolibrary.org/obo/proco.owl,http://purl.obolibrary.org/obo/proco/releases/2022-04-11/proco.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,prov,PROV,Provenance Ontology (PROV-O),https://www.w3.org/ns/prov-o,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,psdo,PSDO,Performance Summary Display Ontology,http://purl.obolibrary.org/obo/psdo.owl,http://purl.obolibrary.org/obo/2022-02-23/psdo.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,pso,PSO,Plant Stress Ontology,http://purl.obolibrary.org/obo/pso.owl,http://purl.obolibrary.org/obo/pso/releases/2023-11-14/pso.owl,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,PSY,PSY,"Thesaurus of Psychological Index Terms, 2004",,,PSY
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,pw,PW,Pathway ontology,http://purl.obolibrary.org/obo/pw.owl,http://purl.obolibrary.org/obo/pw/7.91/pw.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,pw,PW,Pathway ontology,http://purl.obolibrary.org/obo/pw.owl,http://purl.obolibrary.org/obo/pw/7.94/pw.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,pdumdv,PdumDv,Platynereis Developmental Stages,http://purl.obolibrary.org/obo/pdumdv.owl,,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,QMR,QMR,"Quick Medical Reference (QMR), 1996",,,QMR
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,RAM,RAM,"QMR clinically related terms from Randolph A. Miller, 1999",,,RAM
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,rbo,RBO,Radiation Biology Ontology,http://purl.obolibrary.org/obo/rbo.owl,http://purl.obolibrary.org/obo/rbo/releases/2025-03-20/rbo.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,rbo,RBO,Radiation Biology Ontology,http://purl.obolibrary.org/obo/rbo.owl,http://purl.obolibrary.org/obo/rbo/releases/2025-09-17/rbo.owl,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,RCD,RCD,"Clinical Terms Version 3 (CTV3) (Read Codes), 1999",,,RCD
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,RCDAE,RCDAE,"Read thesaurus, American English Equivalents, 1999",,,RCD
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,RCDSA,RCDSA,"Read thesaurus Americanized Synthesized Terms, 1999",,,RCD
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,RCDSY,RCDSY,"Read thesaurus, Synthesized Terms, 1999",,,RCD
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,reproduceme,REPR,REPRODUCE-ME Ontology,https://sheeba-samuel.github.io/REPRODUCE-ME/doc/reproduce-me.xml,,
-https://api-v3.monarchinitiative.org/v3/api/search?q=,monarch,Monarch API,ro,RO,Relation Ontology,http://purl.obolibrary.org/obo/ro.owl,http://purl.obolibrary.org/obo/ro/releases/2025-03-05/ro.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ro,RO,Relation Ontology,http://purl.obolibrary.org/obo/ro.owl,http://purl.obolibrary.org/obo/ro/releases/2025-03-05/ro.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,rs,RS,Rat Strain Ontology,http://purl.obolibrary.org/obo/rs.owl,http://purl.obolibrary.org/obo/rs/6.247/rs.owl,
+https://api-v3.monarchinitiative.org/v3/api/search?q=,monarch,Monarch API,ro,RO,Relation Ontology,http://purl.obolibrary.org/obo/ro.owl,http://purl.obolibrary.org/obo/ro/releases/2025-06-24/ro.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ro,RO,Relation Ontology,http://purl.obolibrary.org/obo/ro.owl,http://purl.obolibrary.org/obo/ro/releases/2025-06-24/ro.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,rs,RS,Rat Strain Ontology,http://purl.obolibrary.org/obo/rs.owl,http://purl.obolibrary.org/obo/rs/6.259/rs.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,rxno,RXNO,RXNO,http://purl.obolibrary.org/obo/rxno.owl,http://purl.obolibrary.org/obo/rxno/releases/2021-12-16/rxno.owl,
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,RXNORM,RXNORM,"RxNorm Vocabulary, 20AA_240903F",,,RXNORM
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,RXNORM,RXNORM,"RxNorm Vocabulary, 20AA_250303F",https://terminology.hl7.org/6.5.0/NamingSystem-v3-rxNorm.html,,RXNORM
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,reto,ReTO,Regulation of Transcription Ontology,http://www.bio.ntnu.no/ontology/ReTO/reto.rdf,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,rexo,ReXO,Regulation of Gene Expression Ontology,http://www.bio.ntnu.no/ontology/ReXO/rexo.rdf,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,sbo,SBO,Systems Biology Ontology,http://purl.obolibrary.org/obo/sbo.owl,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,scdo,SCDO,Sickle Cell Disease Ontology,http://purl.obolibrary.org/obo/scdo.owl,http://purl.obolibrary.org/obo/scdo/releases/2021-04-15/scdo.owl,
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,SCTSPA,SCTSPA,"SNOMED Clinical Terms, Spanish Language Edition, 2024_03_31",,,SNOMEDCT
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,SCTSPA,SCTSPA,"SNOMED Clinical Terms, Spanish Language Edition, 2024_09_30",,,SNOMEDCT
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,sepio,SEPIO,Ontology for Scientific Evidence and Provenance Information,http://purl.obolibrary.org/obo/sepio.owl,http://purl.obolibrary.org/obo/sepio/releases/2023-06-13/sepio.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,shareloc,SHARELOC,ShareLoc,https://raw.githubusercontent.com/imodpasteur/ShareLoc.XYZ/ontology/shareloc.owl,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,sibo,SIBO,Social Insect Behavior Ontology,http://purl.obolibrary.org/obo/sibo.owl,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,sio,SIO,Semanticscience Integrated Ontology,https://raw.githubusercontent.com/micheldumontier/semanticscience/master/ontology/sio/release/sio-release.owl,http://semanticscience.org/ontology/sio/v1.59/sio-release.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,slm,SLM,SwissLipids,file:///nfs/production/parkinso/spot/ols4/prod/local_ontologies/swisslipids.ttl,,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,slso,SLSO,Space Life Sciences Ontology,http://purl.obolibrary.org/obo/slso.owl,http://purl.obolibrary.org/obo/slso/releases/2025-02-26/slso.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,slm,SLM,SwissLipids,file:///mnt/nfs/local_ontologies/swisslipids.ttl,,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,slso,SLSO,Space Life Sciences Ontology,http://purl.obolibrary.org/obo/slso.owl,http://purl.obolibrary.org/obo/slso/releases/2025-09-16/slso.owl,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,SNM,SNM,"SNOMED-2, 2",,,SNM
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,SNMI,SNMI,"SNOMED International, 1998",,,SNMI
-https://api-v3.monarchinitiative.org/v3/api/search?q=,monarch,Monarch API,snomed,SNOMED,SNOMED CT (International Edition),file:///nfs/production/parkinso/spot/ols4/prod/local_ontologies/snomed-inferred.owl,http://snomed.info/sct/900000000000207008/version/20200131,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,snomed,SNOMED,SNOMED CT (International Edition),file:///nfs/production/parkinso/spot/ols4/prod/local_ontologies/snomed-inferred.owl,http://snomed.info/sct/900000000000207008/version/20200131,
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,SNOMEDCT_US,SNOMEDCT_US,"US Edition of SNOMED CT, 2024_09_01",http://snomed.info/sct,,SNOMEDCT
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,SNOMEDCT_VET,SNOMEDCT_VET,"Veterinary Extension to SNOMED CT, 2024_04_01",,,SNOMEDCT
+https://api-v3.monarchinitiative.org/v3/api/search?q=,monarch,Monarch API,snomed,SNOMED,SNOMED CT (International Edition),file:///mnt/nfs/local_ontologies/snomed-inferred.owl,http://snomed.info/sct/900000000000207008/version/20250624,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,snomed,SNOMED,SNOMED CT (International Edition),file:///mnt/nfs/local_ontologies/snomed-inferred.owl,http://snomed.info/sct/900000000000207008/version/20250624,
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,SNOMEDCT_US,SNOMEDCT_US,"US Edition of SNOMED CT, 2025_03_01",http://snomed.info/sct,,SNOMEDCT
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,SNOMEDCT_VET,SNOMEDCT_VET,"Veterinary Extension to SNOMED CT, 2025_01_01",,,SNOMEDCT
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,so,SO,Sequence types and features ontology,http://purl.obolibrary.org/obo/so.owl,http://purl.obolibrary.org/obo/so/2024-11-18/so.owl,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,SOP,SOP,"Source of Payment Typology, 9.2",,,SOP
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,spd,SPD,Spider Ontology,http://purl.obolibrary.org/obo/spd.owl,,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,SPN,SPN,"Standard Product Nomenclature, 2003",,,SPN
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,srao,SRAO,FAIRsharing Subject Ontology (SRAO),https://github.com/FAIRsharing/subject-ontology/raw/master/SRAO.owl,http://www.fairsharing.org/ontology/subject/SRAO/releases/2025-02-23/SRAO.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,srao,SRAO,FAIRsharing Subject Ontology (SRAO),https://github.com/FAIRsharing/subject-ontology/raw/master/SRAO.owl,http://www.fairsharing.org/ontology/subject/SRAO/releases/2025-06-01/SRAO.owl,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,SRC,SRC,Metathesaurus Source Terminology Names,,,SRC
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,stato,STATO,STATO: the statistical methods ontology,http://purl.obolibrary.org/obo/stato.owl,http://purl.obolibrary.org/obo/stato/releases/2025-02-23/stato.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,swo,SWO,Software ontology,http://purl.obolibrary.org/obo/swo.owl,http://www.ebi.ac.uk/swo/swo/releases/2023-03-05/swo.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,symp,SYMP,Symptom Ontology,http://purl.obolibrary.org/obo/symp.owl,http://purl.obolibrary.org/obo/symp/releases/2024-05-17/symp.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,t4fs,T4FS,terms4FAIRskills,http://purl.obolibrary.org/obo/t4fs.owl,http://purl.obolibrary.org/obo/t4fs/releases/2025-02-09/t4fs.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,taxrank,TAXRANK,Taxonomic rank vocabulary,http://purl.obolibrary.org/obo/taxrank.owl,http://purl.obolibrary.org/obo/taxrank/releases/2024-11-28/taxrank.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,teddy,TEDDY,Terminology for Description of Dynamics,file:///nfs/production/parkinso/spot/ols4/prod/local_ontologies/teddy-inferred-fixed.owl,http://identifiers.org/combine.specifications/teddy.rel-2014-04-24,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,taxrank,TAXRANK,Taxonomic rank vocabulary,http://purl.obolibrary.org/obo/taxrank.owl,http://purl.obolibrary.org/obo/taxrank/releases/2025-09-24/taxrank.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,teddy,TEDDY,Terminology for Description of Dynamics,file:///mnt/nfs/local_ontologies/teddy-inferred-fixed.owl,http://identifiers.org/combine.specifications/teddy.rel-2014-04-24,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,TKMT,TKMT,"Traditional Korean Medical Terms, 2011",,,TKMT
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,to,TO,Plant Trait Ontology,http://purl.obolibrary.org/obo/to.owl,http://purl.obolibrary.org/obo/to/releases/2023-07-17/to.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,trans,TRANS,Pathogen Transmission Ontology,http://purl.obolibrary.org/obo/trans.owl,http://purl.obolibrary.org/obo/trans/releases/2022-10-10/trans.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,tto,TTO,Teleost taxonomy ontology,http://purl.obolibrary.org/obo/tto.owl,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,txpo,TXPO,TOXic Process Ontology (TXPO),http://purl.obolibrary.org/obo/txpo.owl,http://purl.obolibrary.org/obo/txpo/releases/2022-12-07/txpo.owl,
-https://api-v3.monarchinitiative.org/v3/api/search?q=,monarch,Monarch API,uberon,UBERON,Uber-anatomy ontology,http://purl.obolibrary.org/obo/uberon.owl,http://purl.obolibrary.org/obo/uberon/releases/2025-04-09/uberon.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,uberon,UBERON,Uber-anatomy ontology,http://purl.obolibrary.org/obo/uberon.owl,http://purl.obolibrary.org/obo/uberon/releases/2025-04-09/uberon.owl,
+https://api-v3.monarchinitiative.org/v3/api/search?q=,monarch,Monarch API,uberon,UBERON,Uber-anatomy ontology,http://purl.obolibrary.org/obo/uberon.owl,http://purl.obolibrary.org/obo/uberon/releases/2025-08-15/uberon.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,uberon,UBERON,Uber-anatomy ontology,http://purl.obolibrary.org/obo/uberon.owl,http://purl.obolibrary.org/obo/uberon/releases/2025-08-15/uberon.owl,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,ULT,ULT,"UltraSTAR, 1993",,,ULT
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,UMD,UMD,"UMDNS: product category thesaurus, 2023",,,UMD
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,unimod,UNIMOD,Unimod protein modification database for mass spectrometry,https://raw.githubusercontent.com/PRIDE-Utilities/pride-ontology/master/unimod.owl,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,uo,UO,Units of measurement ontology,http://purl.obolibrary.org/obo/uo.owl,http://purl.obolibrary.org/obo/uo/releases/2023-05-25/uo.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,upheno,UPHENO,Unified Phenotype Ontology (uPheno),http://purl.obolibrary.org/obo/upheno.owl,http://purl.obolibrary.org/obo/upheno/releases/2025-01-11/upheno.owl,
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,USP,USP,"USP Compendial Nomenclature, 2024_07_10",,,USP
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,upheno,UPHENO,Unified Phenotype Ontology (uPheno),http://purl.obolibrary.org/obo/upheno.owl,http://purl.obolibrary.org/obo/upheno/releases/2025-07-21/upheno.owl,
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,USP,USP,"USP Compendial Nomenclature, 2025_01_30",,,USP
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,USPMG,USPMG,"USP Medicare Model Guidelines, 2023",,,USPMG
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,UWDA,UWDA,"University of Washington Digital Anatomist, 1.7.3",,,UWDA
-https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,VANDF,VANDF,"Veterans Health Administration National Drug File, 2024_07_31",,,VANDF
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,vbo,VBO,Vertebrate Breed Ontology,http://purl.obolibrary.org/obo/vbo.owl,http://purl.obolibrary.org/obo/vbo/releases/2025-02-12/vbo.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,vo,VO,Vaccine Ontology,http://purl.obolibrary.org/obo/vo.owl,http://purl.obolibrary.org/obo/vo/releases/2025-02-26/vo.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,vt,VT,The Vertebrate Trait Ontology,http://purl.obolibrary.org/obo/vt.owl,http://purl.obolibrary.org/obo/vt/releases/2025-04-28/vt.owl,
+https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,VANDF,VANDF,"Veterans Health Administration National Drug File, 2025_01_31",,,VANDF
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,vbo,VBO,Vertebrate Breed Ontology,http://purl.obolibrary.org/obo/vbo.owl,http://purl.obolibrary.org/obo/vbo/releases/2025-08-12/vbo.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,vo,VO,Vaccine Ontology,http://purl.obolibrary.org/obo/vo.owl,http://purl.obolibrary.org/obo/vo/releases/2025-07-06/vo.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,vt,VT,The Vertebrate Trait Ontology,http://purl.obolibrary.org/obo/vt.owl,http://purl.obolibrary.org/obo/vt/releases/2025-09-09/vt.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,vto,VTO,Vertebrate Taxonomy Ontology,http://purl.obolibrary.org/obo/vto.owl,http://purl.obolibrary.org/obo/vto/2020-11-13/vto.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,wbphenotype,WBPhenotype,C elegans Phenotype Ontology,http://purl.obolibrary.org/obo/wbphenotype.owl,http://purl.obolibrary.org/obo/wbphenotype/releases/2025-04-01/wbphenotype.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,wbbt,WBbt,C. elegans Gross Anatomy Ontology,http://purl.obolibrary.org/obo/wbbt.owl,http://purl.obolibrary.org/obo/wbbt/releases/2025-03-26/wbbt.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,wbls,WBls,C. elegans Development Ontology,http://purl.obolibrary.org/obo/wbls.owl,http://purl.obolibrary.org/obo/wbls/releases/2025-04-01/wbls.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,wbphenotype,WBPhenotype,C elegans Phenotype Ontology,http://purl.obolibrary.org/obo/wbphenotype.owl,http://purl.obolibrary.org/obo/wbphenotype/releases/2025-08-12/wbphenotype.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,wbbt,WBbt,C. elegans Gross Anatomy Ontology,http://purl.obolibrary.org/obo/wbbt.owl,http://purl.obolibrary.org/obo/wbbt/releases/2025-08-19/wbbt.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,wbls,WBls,C. elegans Development Ontology,http://purl.obolibrary.org/obo/wbls.owl,http://purl.obolibrary.org/obo/wbls/releases/2025-08-12/wbls.owl,
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,WHO,WHO,"WHO Adverse Reaction Terminology, 1997",,,WHO
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,WHOFRE,WHOFRE,"WHOART, French Translation, 1997",,,WHO
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,WHOGER,WHOGER,"WHOART, German Translation, 1997",,,WHO
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,WHOPOR,WHOPOR,"WHOART, Portuguese Translation, 1997",,,WHO
 https://uts-ws.nlm.nih.gov/rest/,umls,UMLS - Unified Medical Language System,WHOSPA,WHOSPA,"WHOART, Spanish Translation, 1997",,,WHO
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,xao,XAO,Xenopus Anatomy Ontology,http://purl.obolibrary.org/obo/xao.owl,http://purl.obolibrary.org/obo/xao/releases/2024-09-03/xao.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,xco,XCO,Experimental condition ontology,http://purl.obolibrary.org/obo/xco.owl,http://purl.obolibrary.org/obo/xco/4.200/xco.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,xco,XCO,Experimental condition ontology,http://purl.obolibrary.org/obo/xco.owl,http://purl.obolibrary.org/obo/xco/4.213/xco.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,xlmod,XLMOD,HUPO-PSI cross-linking and derivatization reagents controlled vocabulary,http://purl.obolibrary.org/obo/xlmod.owl,http://purl.obolibrary.org/obo/xlmod/release/2019-10-28/xlmod.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,xpo,XPO,Xenopus Phenotype Ontology,http://purl.obolibrary.org/obo/xpo.owl,http://purl.obolibrary.org/obo/xpo/releases/2024-04-18/xpo.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,xpo,XPO,Xenopus Phenotype Ontology,http://purl.obolibrary.org/obo/xpo.owl,http://purl.obolibrary.org/obo/xpo/releases/2025-07-25/xpo.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,zeco,ZECO,Zebrafish Experimental Conditions Ontology,http://purl.obolibrary.org/obo/zeco.owl,http://purl.obolibrary.org/obo/zeco/releases/2022-02-14/zeco.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,zfa,ZFA,Zebrafish Anatomy Ontology (ZFA),http://purl.obolibrary.org/obo/zfa.owl,http://purl.obolibrary.org/obo/zfa/releases/2025-01-28/zfa.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,zfa,ZFA,Zebrafish Anatomy Ontology (ZFA),http://purl.obolibrary.org/obo/zfa.owl,http://purl.obolibrary.org/obo/zfa/releases/2025-09-05/zfa.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,zfs,ZFS,Zebrafish developmental stages ontology,http://purl.obolibrary.org/obo/zfs.owl,http://purl.obolibrary.org/obo/zfs/releases/2020-03-10/zfs.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,zp,ZP,Zebrafish Phenotype Ontology (ZP),http://purl.obolibrary.org/obo/zp.owl,http://purl.obolibrary.org/obo/zp/releases/2024-04-18/zp.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,credit,credit,Contributor Roles Taxonomy,https://w3id.org/biopragmatics/resources/credit/credit.owl,https://w3id.org/biopragmatics/resources/credit/2022/credit.ofn,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,hgnc,hgnc,HUGO Gene Nomenclature Committee,https://w3id.org/biopragmatics/resources/hgnc/hgnc.owl.gz,https://w3id.org/biopragmatics/resources/hgnc/2025-08-05/hgnc.ofn,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,mesh,mesh,Medical Subject Headings,https://w3id.org/biopragmatics/resources/mesh/mesh.owl.gz,https://w3id.org/biopragmatics/resources/mesh/2025/mesh.ofn,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ror,ror,Research Organization Registry,https://w3id.org/biopragmatics/resources/ror/ror.owl.gz,https://w3id.org/biopragmatics/resources/ror/1.36/ror.ofn,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,semapv,semapv,Semantic Mapping Vocabulary,https://raw.githubusercontent.com/mapping-commons/semantic-mapping-vocabulary/main/semapv.owl,http://w3id.org/semapv/vocab/releases/2025-01-06/semapv.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,wikipathways,wikipathways,WikiPathways,https://w3id.org/biopragmatics/resources/wikipathways/wikipathways.owl,https://w3id.org/biopragmatics/resources/wikipathways/20250810/wikipathways.ofn,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,fix,,Physico-chemical methods and properties,http://purl.obolibrary.org/obo/fix.owl,http://purl.obolibrary.org/obo/fix/releases/2020-04-13/fix.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,rex,,Physico-chemical process,http://purl.obolibrary.org/obo/rex.owl,http://purl.obolibrary.org/obo/rex/releases/2017-11-19/rex.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ceph,,Cephalopod Ontology,http://purl.obolibrary.org/obo/ceph.owl,http://purl.obolibrary.org/obo/ceph/releases/2016-01-12/ceph.owl,
@@ -453,12 +457,16 @@ https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,miro,,Mosquito insec
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,tads,,Tick Anatomy Ontology,http://purl.obolibrary.org/obo/tads.owl,http://purl.obolibrary.org/obo/tads/2015-08-20/tads.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,tgma,,Mosquito gross anatomy ontology,http://purl.obolibrary.org/obo/tgma.owl,http://purl.obolibrary.org/obo/tgma/releases/2013-06-03/tgma.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,upa,,Unipathway,http://purl.obolibrary.org/obo/upa.owl,http://purl.obolibrary.org/obo/upa/releases/2024-03-06/upa.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,aero,,Adverse Event Reporting Ontology,,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,bcgo,,Beta Cell Genomics Ontology,,http://purl.obolibrary.org/obo/bcgo/2015-07-08/bcgo.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,bila,,Bilateria anatomy,,http://purl.obolibrary.org/obo/bila/releases/2019-06-12/bila.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,emap,,"Mouse gross anatomy and development, timed",,http://purl.obolibrary.org/obo/emap/releases/2020-04-13/emap.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,fbsp,,Fly taxonomy,,http://purl.obolibrary.org/obo/fbsp/releases/2017-11-19/fbsp.owl,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,omiabis,,Ontologized MIABIS,,,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,tao,,Teleost Anatomy Ontology,,http://purl.obolibrary.org/obo/tao/2012-08-10/tao.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,vsao,,Vertebrate Skeletal Anatomy Ontology-,,http://purl.obolibrary.org/obo/vsao/2012-11-06/vsao.owl,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,gold,,,https://raw.githubusercontent.com/cmungall/gold-ontology/refs/heads/main/gold.owl,,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,evorao,,,https://raw.githubusercontent.com/EVORA-project/evora-ontology/refs/heads/main/models/owl/evora_ontology.owl.ttl,,
+https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ictv,,,https://github.com/EVORA-project/ictv-ontology/releases/latest/download/ictv_all_versions.owl.ttl.gz,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,uniprotrdfs,,,https://ftp.uniprot.org/pub/databases/uniprot/current_release/rdf/core.owl,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,hra,,Human Reference Atlas (HRA),https://cdn.humanatlas.io/digital-objects/collection/hra-ols/latest/graph.ttl,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,dcat,,,https://www.w3.org/ns/dcat.ttl,http://www.w3.org/ns/dcat3,
@@ -471,7 +479,3 @@ https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,dcterms,,,https://ww
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,dc,,,https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_elements.rdf,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,schemaorg_http,,,https://schema.org/version/latest/schemaorg-all-http.rdf,,
 https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,schemaorg_https,,,https://schema.org/version/latest/schemaorg-all-https.rdf,,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,tao,,Teleost Anatomy Ontology,,http://purl.obolibrary.org/obo/tao/2012-08-10/tao.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,vsao,,Vertebrate Skeletal Anatomy Ontology-,,http://purl.obolibrary.org/obo/vsao/2012-11-06/vsao.owl,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,evorao,,,https://raw.githubusercontent.com/EVORA-project/evora-ontology/refs/heads/main/models/owl/evora_ontology.owl.ttl,,
-https://www.ebi.ac.uk/ols4/api/,ols,Ontology Lookup Service,ictv,,,https://github.com/EVORA-project/ictv-ontology/raw/refs/heads/main/out/MSL40.owl.ttl,,

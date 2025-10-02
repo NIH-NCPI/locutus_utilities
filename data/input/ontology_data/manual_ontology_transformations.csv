@@ -1,0 +1,18 @@
+Ontology Name,other,monarch,ols,umls,Prefix,FHIR System
+HPO,,HP,HP,HPO,HP,http://purl.obolibrary.org/obo/hp.owl
+Mondo,,MONDO,MONDO,,MONDO,http://purl.obolibrary.org/obo/mondo.owl
+MAxO,,MAXO,MAXO,,MAXO,http://purl.obolibrary.org/obo/maxo.owl
+NCIt,,,NCIT,,NCIT,http://purl.obolibrary.org/obo/ncit.owl
+SNOMED CT,,SNOMED,SNOMED CT,,SNOMED,http://snomed.info/sct
+SNOMEDCT_US,,unknown,unknown,SNOMEDCT_US,,http://snomed.info/sct
+SYMP,,,SYMP,,SYMP,https://purl.obolibrary.org/obo/symp.owl
+LOINC,LOINC,,,LNC,LOINC,https://loinc.org/
+MedDRA,,,,MDR,MEDDRA,https://www.meddra.org
+MeSH,,,,MSH,MESH,https://www.nlm.nih.gov/mesh
+UCUM,,,,,UCUM,http://unitsofmeasure.org
+OMIT,,,OMIT,,OMIT,http://purl.obolibrary.org/obo/omit.owl
+OMIM,,,,OMIM,MIM,https://omim.org/
+CDCREC,,,,CDCREC,CDCREC,http://terminology.hl7.org/NamingSystem/CDCREC
+RxNorm,,,,RXNORM,RXNORM,https://terminology.hl7.org/6.5.0/NamingSystem-v3-rxNorm.html
+ICD9CM,,,,ICD9CM,ICD9CM,https://www.icd9data.com
+ICD10CM,,,,ICD10CM,ICD10CMM,http://hl7.org/fhir/sid/icd-10-cm
