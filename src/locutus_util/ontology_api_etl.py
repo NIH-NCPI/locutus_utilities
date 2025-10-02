@@ -19,21 +19,7 @@ from datetime import date
 from typing import List
 from google.cloud import firestore
 from locutus_util.helpers import logger, set_logging_config
-from locutus_util.common import (
-    FETCH_AND_UPLOAD,
-    UPLOAD_FROM_CSV,
-    UPDATE_CSV,
-    LOGS_PATH,
-    OLS_API_BASE_URL,
-    UMLS_API_BASE_URL,
-    MONARCH_API_BASE_URL,
-    LOINC_API_BASE_URL,
-    ONTOLOGY_API_PATH,
-    INCLUDED_ONTOLOGIES_PATH,
-    MANUAL_ONTOLOGY_TRANSFORMS_PATH,
-    LOCUTUS_SYSTEM_MAP_PATH,
-    get_api_key,
-)
+from locutus_util.common import *
 
 UMLS_API_KEY = get_api_key("umls")
 
@@ -271,6 +257,31 @@ def reorg_for_firestore(filtered_ontologies):
             }
     return api_data
 
+
+def reorg_for_docs(filtered_ontologies):
+    """
+    Generates a csv version of the data found in the database OntologyAPI collection
+
+    """
+    included_ontologies = pd.read_csv(INCLUDED_ONTOLOGIES_PATH)
+
+    curated_list = (
+        included_ontologies[included_ontologies["Default to Include"] == "t"]["Id"]
+        .str.upper()
+        .tolist()
+    )
+
+    filtered_ontologies["short_list"] = (
+        filtered_ontologies["ontology_code"].str.upper().isin(curated_list)
+    )
+
+    df = filtered_ontologies[
+        ["api_id", "curie", "ontology_title", "short_list", "system", "version"]
+    ].sort_values(by=["api_id", "curie"])
+
+    df.to_csv(OUTPUT_PATH / "database_ontology_metadata.csv", index=False)
+
+
 def add_manual_additions_to_ontology_lookup(df):
     '''
     This will cover adding systems to the ontology lookup that are known to ftd
@@ -330,8 +341,12 @@ def filter_firestore_ontologies(data, which_ontologies, included_ontologies):
     """
     # Exclude monarch and loinc
     filtered_data = data[~data['api_id'].str.lower().isin(['monarch','loinc'])]
-    # Exclude ontologies without a system
-    filtered_data = filtered_data[~filtered_data["system"].isna()]
+    # Exclude ontologies without a system, curie, or ontology_title
+    filtered_data = filtered_data[
+        ~(filtered_data["system"].isna())
+        & ~(filtered_data["curie"].isna())
+        & ~(filtered_data["ontology_title"].isna())
+    ]
 
     if which_ontologies == "curated_ontologies_only":
 
@@ -407,6 +422,9 @@ def ontology_api_etl(project_id, action, which_ontologies):
 
         # Reformat. Group ontologies by api.
         fs_data = reorg_for_firestore(filtered_ontologies)
+
+        # Generate a csv with the current ontology data in db
+        reorg_for_docs(filtered_ontologies)
 
         # Insert data into Firestore
         for api_id, data in fs_data.items():

@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 
 # URLs
 OLS_API_BASE_URL = "https://www.ebi.ac.uk/ols4/api/"
@@ -20,17 +21,22 @@ def get_api_key(api_id):
 
 
 # Dir file paths
-LOGS_PATH = f'data/logs'
-INPUT_PATH = f'data/input'
-ONTOLOGY_DATA_PATH = f'{INPUT_PATH}/ontology_data'
-SIDELOAD_PATH =  f'{INPUT_PATH}/sideload_data'
+HOME_DIR = Path.cwd().resolve()
+DATA_DIR = Path(f"{HOME_DIR}/data")
+LOGS_PATH = Path(f"{DATA_DIR}/logs")
+INPUT_PATH = Path(f"{DATA_DIR}/input")
+OUTPUT_PATH = Path(f"{DATA_DIR}/output")
+ONTOLOGY_DATA_PATH = Path(f"{INPUT_PATH}/ontology_data")
+SIDELOAD_PATH = Path(f"{INPUT_PATH}/sideload_data")
 
 # Data file paths
-ONTOLOGY_API_PATH = f'{ONTOLOGY_DATA_PATH}/ontology_api.csv'
-SEED_DATA_PATH = f'{ONTOLOGY_DATA_PATH}/seed_data.csv'
-INCLUDED_ONTOLOGIES_PATH = f'{ONTOLOGY_DATA_PATH}/included_ontologies.csv'
-MANUAL_ONTOLOGY_TRANSFORMS_PATH = f'{ONTOLOGY_DATA_PATH}/manual_ontology_transformations.csv'
-LOCUTUS_SYSTEM_MAP_PATH = f'{ONTOLOGY_DATA_PATH}/locutus_system_map.csv'
+ONTOLOGY_API_PATH = Path(f"{ONTOLOGY_DATA_PATH}/ontology_api.csv")
+SEED_DATA_PATH = Path(f"{ONTOLOGY_DATA_PATH}/seed_data.csv")
+INCLUDED_ONTOLOGIES_PATH = Path(f"{ONTOLOGY_DATA_PATH}/included_ontologies.csv")
+MANUAL_ONTOLOGY_TRANSFORMS_PATH = Path(
+    f"{ONTOLOGY_DATA_PATH}/manual_ontology_transformations.csv"
+)
+LOCUTUS_SYSTEM_MAP_PATH = Path(f"{ONTOLOGY_DATA_PATH}/locutus_system_map.csv")
 
 # Values
 BATCH_SIZE = 10
