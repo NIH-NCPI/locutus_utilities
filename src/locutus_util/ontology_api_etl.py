@@ -279,7 +279,7 @@ def generate_db_csv(filtered_ontologies):
         ["api_id", "curie", "ontology_title", "short_list", "system", "version"]
     ].sort_values(by=["api_id", "curie"])
 
-    df.to_csv(OUTPUT_PATH / "database_ontology_metadata.csv", index=False)
+    df.to_csv(OUTPUT_PATH / "ontology_api_metadata.csv", index=False)
 
 
 def add_manual_additions_to_ontology_lookup(df):
