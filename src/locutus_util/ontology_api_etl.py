@@ -258,7 +258,7 @@ def reorg_for_firestore(filtered_ontologies):
     return api_data
 
 
-def reorg_for_docs(filtered_ontologies):
+def generate_db_csv(filtered_ontologies):
     """
     Generates a csv version of the data found in the database OntologyAPI collection
 
@@ -424,7 +424,7 @@ def ontology_api_etl(project_id, action, which_ontologies):
         fs_data = reorg_for_firestore(filtered_ontologies)
 
         # Generate a csv with the current ontology data in db
-        reorg_for_docs(filtered_ontologies)
+        generate_db_csv(filtered_ontologies)
 
         # Insert data into Firestore
         for api_id, data in fs_data.items():
