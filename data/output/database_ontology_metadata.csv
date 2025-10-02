@@ -1,0 +1,252 @@
+api_id,curie,ontology_title,short_list,system,version
+ols,ADDICTO,Addiction Ontology,False,http://addictovocab.org/addicto.owl,http://addictovocab.org/addicto.owl/2025-09-24
+ols,ADO,Alzheimer's Disease Ontology (ADO),False,http://purl.obolibrary.org/obo/ado.owl,http://purl.obolibrary.org/obo/ado/releases/2023-09-20/ado.owl
+ols,AEO,Anatomical Entity Ontology,False,http://purl.obolibrary.org/obo/aeo.owl,http://purl.obolibrary.org/obo/aeo/releases/2014-12-05/aeo.owl
+ols,AFO,Allotrope Merged Ontology Suite,False,http://purl.allotrope.org/voc/afo/latest.xml,http://purl.allotrope.org/voc/afo/merged/REC/2025/06/merged-without-qudt-and-inferred
+ols,AGRO,Agronomy Ontology,False,http://purl.obolibrary.org/obo/agro.owl,http://purl.obolibrary.org/obo/agro/releases/2022-11-02/agro.owl
+ols,AISM,Ontology for the Anatomy of the Insect SkeletoMuscular system,False,http://purl.obolibrary.org/obo/aism.owl,http://purl.obolibrary.org/obo/aism/releases/2025-03-18/aism.owl
+ols,AMPHX,Amphioxus Development and Anatomy Ontology (AMPHX),False,http://purl.obolibrary.org/obo/amphx.owl,http://purl.obolibrary.org/obo/amphx/releases/2020-12-18/amphx.owl
+ols,APO,Ascomycete Phenotype Ontology (APO),False,http://purl.obolibrary.org/obo/apo.owl,http://purl.obolibrary.org/obo/apo/releases/2025-08-01/apo.owl
+ols,APOLLO_SV,Apollo Structured Vocabulary,False,http://purl.obolibrary.org/obo/apollo_sv.owl,http://purl.obolibrary.org/obo/apollo_sv/releases/2024-12-24/apollo_sv.owl
+ols,ARO,Antibiotic Resistance Ontology,False,file:///mnt/nfs/local_ontologies/aro.owl,
+ols,AfPO,African Population Ontology,False,http://purl.obolibrary.org/obo/afpo.owl,http://purl.obolibrary.org/obo/afpo/releases/2024-03-21/afpo.owl
+ols,BAO,BioAssay Ontology,False,http://www.bioassayontology.org/bao/,http://www.bioassayontology.org/bao/bao_complete.owl
+ols,BCIO,The Behaviour Change Intervention Ontology,False,http://humanbehaviourchange.org/ontology/bcio.owl,http://humanbehaviourchange.org/ontology/bcio.owl/2025-09-25
+ols,BCO,Biological Collections Ontology,False,http://purl.obolibrary.org/obo/bco.owl,http://purl.obolibrary.org/obo/bco/releases/2021-11-14/bco.owl
+ols,BFO,Basic Formal Ontology,False,http://purl.obolibrary.org/obo/bfo.owl,http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl
+ols,BMONT,Biomarker Ontology (BMONT),False,http://purl.obolibrary.org/obo/bmont.owl,http://purl.obolibrary.org/obo/bmont/releases/2025-06-20/bmont.owl
+ols,BSPO,Biological Spatial Ontology,False,http://purl.obolibrary.org/obo/bspo.owl,http://purl.obolibrary.org/obo/bspo/releases/2023-05-27/bspo.owl
+ols,BTO,The BRENDA Tissue Ontology (BTO),False,http://purl.obolibrary.org/obo/bto.owl,http://purl.obolibrary.org/obo/bto/releases/2021-10-26/bto.owl
+ols,CAO,Chemical Analysis Metadata Platform (ChAMP) Ontology version 0.2,False,https://champ.stuchalk.domains.unf.edu/images/ontology/cao.owl,
+ols,CCF,Human Reference Atlas Common Coordinate Framework Ontology,False,https://cdn.humanatlas.io/digital-objects/vocab/ccf/latest/graph.xml,
+ols,CCO,Cell Cycle Ontology,False,http://www.bio.ntnu.no/ontology/CCO/cco.owl,
+ols,CDAO,Comparative Data Analysis Ontology,False,http://purl.obolibrary.org/obo/cdao.owl,http://purl.obolibrary.org/obo/cdao/2024-01-25/cdao.owl
+ols,CDNO,Compositional Dietary Nutrition Ontology,False,http://purl.obolibrary.org/obo/cdno.owl,http://purl.obolibrary.org/obo/cdno/releases/2025-06-09/cdno.owl
+ols,CHEBI,Chemical Entities of Biological Interest,False,http://purl.obolibrary.org/obo/chebi.owl,http://purl.obolibrary.org/obo/chebi/244/chebi.owl
+ols,CHEMINF,chemical information ontology (cheminf) - information entities about chemical entities,False,http://purl.obolibrary.org/obo/cheminf.owl,
+ols,CHIRO,CHEBI Integrated Role Ontology,False,http://purl.obolibrary.org/obo/chiro.owl,http://purl.obolibrary.org/obo/chiro/releases/2015-11-23/chiro.owl
+ols,CHMO,Chemical Methods Ontology,False,http://purl.obolibrary.org/obo/chmo.owl,http://purl.obolibrary.org/obo/chmo/releases/2025-01-22/chmo.owl
+ols,CIDO,CIDO: Ontology of Coronavirus Infectious Disease,False,http://purl.obolibrary.org/obo/cido.owl,http://purl.obolibrary.org/obo/cido/releases/2024-02-16/cido.owl
+ols,CIO,Confidence Information Ontology,False,http://purl.obolibrary.org/obo/cio.owl,http://purl.obolibrary.org/obo/cio/releases/2015-03-10/cio.owl
+ols,CL,Cell Ontology,True,http://purl.obolibrary.org/obo/cl.owl,http://purl.obolibrary.org/obo/cl/releases/2025-07-30/cl.owl
+ols,CLAO,Collembola Anatomy Ontology,False,http://purl.obolibrary.org/obo/clao.owl,http://purl.obolibrary.org/obo/clao/releases/2021-09-27/clao.owl
+ols,CLO,CLO: Cell Line Ontology,False,http://purl.obolibrary.org/obo/clo.owl,
+ols,CLYH,Clytia hemisphaerica Development and Anatomy Ontology (CLYH),False,http://purl.obolibrary.org/obo/clyh.owl,http://purl.obolibrary.org/obo/clyh/releases/2020-05-29/clyh.owl
+ols,CMO,Clinical measurement ontology,False,http://purl.obolibrary.org/obo/cmo.owl,http://purl.obolibrary.org/obo/cmo/2.252/cmo.owl
+ols,CMPO,Cellular Microscopy Phenotype Ontology,False,http://www.ebi.ac.uk/cmpo/cmpo.owl,http://www.ebi.ac.uk/cmpo/releases/2017-12-19/cmpo.owl
+ols,COB,Core Ontology for Biology and Biomedicine,False,http://purl.obolibrary.org/obo/cob.owl,http://purl.obolibrary.org/obo/cob/releases/2025-06-30/cob.owl
+ols,COLAO,Coleoptera Anatomy Ontology,False,http://purl.obolibrary.org/obo/colao.owl,http://purl.obolibrary.org/obo/colao/releases/2024-06-21/colao.owl
+ols,COVOC,CoVoc Coronavirus Vocabulary,False,https://github.com/EBISPOT/covoc/releases/download/current/covoc.owl,http://purl.obolibrary.org/obo/covoc/releases/2022-10-26/covoc.owl
+ols,CPONT,Critical Path Ontology,False,https://w3id.org/cpont/cpont.owl,https://w3id.org/cpont/ontology/releases/2024-05-21/cpont.owl
+ols,CRO,Contributor Role Ontology,False,http://purl.obolibrary.org/obo/cro.owl,http://purl.obolibrary.org/obo/cro/releases/2019-12-11/cro.owl
+ols,CTENO,Ctenophore Ontology,False,http://purl.obolibrary.org/obo/cteno.owl,http://purl.obolibrary.org/obo/cteno/releases/2016-10-19/cteno.owl
+ols,CVDO,Cardiovascular Disease Ontology,False,http://purl.obolibrary.org/obo/cvdo.owl,http://purl.obolibrary.org/obo/cvdo/2024-05-17/cvdo.owl
+ols,DDANAT,Dicty Anatomy Ontology (DDANAT),False,http://purl.obolibrary.org/obo/ddanat.owl,
+ols,DDPHENO,Dicty Phenotype Ontology (DDPHENO),False,http://purl.obolibrary.org/obo/ddpheno.owl,http://purl.obolibrary.org/obo/ddpheno/releases/2023-08-26/ddpheno.owl
+ols,DHBA,Developing Human Brain Atlas Ontology,False,https://purl.brain-bican.org/ontology/dhbao/dhbao.owl,https://purl.brain-bican.org/ontology/dhbao/releases/2025-02-10/dhbao.owl
+ols,DIDEO,Drug-drug Interaction and Drug-drug Interaction Evidence Ontology,False,http://purl.obolibrary.org/obo/dideo.owl,http://purl.obolibrary.org/obo/dideo/release/2023-10-16/dideo.owl
+ols,DISDRIV,Disease Drivers,False,http://purl.obolibrary.org/obo/disdriv.owl,http://purl.obolibrary.org/obo/disdriv/releases/2025-03-20/disdriv.owl
+ols,DMBA,Developing Mouse Brain Atlas Ontology,False,https://purl.brain-bican.org/ontology/dmbao/dmbao.owl,https://purl.brain-bican.org/ontology/dmbao/releases/2025-02-10/dmbao.owl
+ols,DOID,Human Disease Ontology,False,http://purl.obolibrary.org/obo/doid.owl,http://purl.obolibrary.org/obo/doid/releases/2025-08-29/doid.owl
+ols,DRON,The Drug Ontology,False,http://purl.obolibrary.org/obo/dron.owl,http://purl.obolibrary.org/obo/dron/releases/2025-07-19/dron.owl
+ols,DUO,Data Use Ontology,True,http://purl.obolibrary.org/obo/duo.owl,http://purl.obolibrary.org/obo/duo/releases/2021-02-23/duo.owl
+ols,ECAO,Echinoderm Anatomy and Development Ontology,False,http://purl.obolibrary.org/obo/ecao.owl,http://purl.obolibrary.org/obo/ecao/releases/2025-05-15/ecao.owl
+ols,ECO,Evidence & Conclusion Ontology (ECO),False,http://purl.obolibrary.org/obo/eco.owl,http://purl.obolibrary.org/obo/eco/releases/2025-06-23/eco.owl
+ols,ECOCORE,An ontology of core ecological entities,False,http://purl.obolibrary.org/obo/ecocore.owl,http://purl.obolibrary.org/obo/ecocore/releases/2022-03-09/ecocore.owl
+ols,ECTO,Environment Exposure Ontology,False,http://purl.obolibrary.org/obo/ecto.owl,http://purl.obolibrary.org/obo/ecto/releases/2023-02-14/ecto.owl
+ols,EDAM,EDAM - The ontology of data analysis and management,True,https://raw.githubusercontent.com/edamontology/edamontology/master/releases/EDAM.owl,http://edamontology.org/1.25-20240924T0027Z-unstable(1.26)
+ols,EFO,Experimental Factor Ontology,False,http://www.ebi.ac.uk/efo/efo.owl,http://www.ebi.ac.uk/efo/releases/v3.82.0/efo.owl
+ols,EMAPA,Mouse Developmental Anatomy Ontology,False,http://purl.obolibrary.org/obo/emapa.owl,http://purl.obolibrary.org/obo/emapa/releases/2023-11-14/emapa.owl
+ols,EMI,The Earth Metabolome Initiative (EMI) ontology,False,https://w3id.org/emi/ols.ttl,https://w3id.org/emi/version/1.0
+ols,ENM,eNanoMapper ontology,False,http://enanomapper.github.io/ontologies/enanomapper.owl,http://enanomapper.github.io/ontologies/releases/10.0/enanomapper.owl
+ols,ENSGLOSS,Ensembl Glossary,False,https://raw.githubusercontent.com/Ensembl/ensembl-glossary/master/ensembl-glossary.owl,http://ensembl.org/glossary/ensembl-glossary/releases/2023-01-04/ensembl-glossary.owl
+ols,ENVO,The Environment Ontology,False,http://purl.obolibrary.org/obo/envo.owl,http://purl.obolibrary.org/obo/envo/releases/2025-08-19/envo.owl
+ols,EPIO,Epilepsy Ontology (EPIO),False,http://purl.obolibrary.org/obo/epio.owl,https://bio.scai.fraunhofer.de/ontology/epilepsy/2021-05-28/EPIO.owl
+ols,EUPATH,VEuPathDB Ontology,False,http://purl.obolibrary.org/obo/eupath.owl,http://purl.obolibrary.org/obo/eupath/2023-05-30/eupath.owl
+ols,ExO,Exposure ontology (ExO),False,http://purl.obolibrary.org/obo/exo.owl,http://purl.obolibrary.org/obo/exo/releases/2025-08-29/exo.owl
+ols,FAO,Fungal gross anatomy,False,http://purl.obolibrary.org/obo/fao.owl,http://purl.obolibrary.org/obo/fao/releases/2025-07-15/fao.owl
+ols,FBbi,Biological Imaging Methods Ontology,False,http://purl.obolibrary.org/obo/fbbi.owl,http://purl.obolibrary.org/obo/fbbi/releases/2020-11-06/fbbi.owl
+ols,FBbt,Drosophila gross anatomy,False,http://purl.obolibrary.org/obo/fbbt.owl,http://purl.obolibrary.org/obo/fbbt/releases/2025-08-07/fbbt.owl
+ols,FBcv,Drosophila Phenotype Ontology,False,http://purl.obolibrary.org/obo/dpo.owl,http://purl.obolibrary.org/obo/dpo/releases/2025-08-07/dpo.owl
+ols,FBcv,FlyBase Controlled Vocabulary,False,http://purl.obolibrary.org/obo/fbcv.owl,http://purl.obolibrary.org/obo/fbcv/releases/2025-08-07/fbcv.owl
+ols,FBdv,Drosophila development,False,http://purl.obolibrary.org/obo/fbdv.owl,http://purl.obolibrary.org/obo/fbdv/releases/2025-05-29/fbdv.owl
+ols,FLOPO,Flora Phenotype Ontology,False,http://purl.obolibrary.org/obo/flopo.owl,
+ols,FMA,Foundational Model of Anatomy Ontology (subset),False,http://purl.obolibrary.org/obo/fma.owl,http://purl.obolibrary.org/obo/fma/releases/2020-04-13/fma.owl
+ols,FOBI,Food-Biomarker Ontology,False,http://purl.obolibrary.org/obo/fobi.owl,http://purl.obolibrary.org/obo/fobi/fobi.owl
+ols,FOODON,Food Ontology,False,http://purl.obolibrary.org/obo/foodon.owl,http://purl.obolibrary.org/obo/foodon/releases/2025-08-01/foodon.owl
+ols,FOVT,FuTRES Ontology of Vertebrate Traits,False,http://purl.obolibrary.org/obo/fovt.owl,http://purl.obolibrary.org/obo/fovt/releases/2023-05-31/fovt.owl
+ols,FYPO,Fission Yeast Phenotype Ontology (FYPO),False,http://purl.obolibrary.org/obo/fypo.owl,http://purl.obolibrary.org/obo/fypo/releases/2025-09-27/fypo.owl
+ols,GALLONT,Plant Gall Ontology,False,http://purl.obolibrary.org/obo/gallont.owl,http://purl.obolibrary.org/obo/gallont/releases/2024-04-19/gallont.owl
+ols,GECKO,Genomics Cohorts Knowledge Ontology,False,http://purl.obolibrary.org/obo/gecko.owl,http://purl.obolibrary.org/obo/gecko/releases/2021-01-18/gecko.owl
+ols,GENEPIO,Genomic Epidemiology Ontology,False,http://purl.obolibrary.org/obo/genepio.owl,http://purl.obolibrary.org/obo/genepio/releases/2024-12-18/genepio.owl
+ols,GENO,GENO ontology,False,http://purl.obolibrary.org/obo/geno.owl,http://purl.obolibrary.org/obo/geno/releases/2025-07-25/geno.owl
+ols,GEO,Geographical Entity Ontology,False,http://purl.obolibrary.org/obo/geo.owl,
+ols,GNO,Glycan Naming Ontology,False,http://purl.obolibrary.org/obo/gno.owl,http://purl.obolibrary.org/obo/gno/2025-01-28/gno.owl
+ols,GO,Gene Ontology,False,http://purl.obolibrary.org/obo/go/extensions/go-plus.owl,http://purl.obolibrary.org/obo/go/releases/2025-07-22/extensions/go-plus.owl
+ols,GSSO,"GSSO - the Gender, Sex, and Sexual Orientation ontology",False,http://purl.obolibrary.org/obo/gsso.owl,http://purl.obolibrary.org/obo/gsso/releases/2.0.5/gsso.owl
+ols,GeXO,Gene Expression Ontology,False,http://www.bio.ntnu.no/ontology/GeXO/gexo.rdf,
+ols,HANCESTRO,Human Ancestry Ontology,False,http://purl.obolibrary.org/obo/hancestro.owl,http://purl.obolibrary.org/obo/hancestro/releases/2025-04-01/hancestro.owl
+ols,HAO,Hymenoptera Anatomy Ontology,False,http://purl.obolibrary.org/obo/hao.owl,http://purl.obolibrary.org/obo/hao/2023-06-01/hao.owl
+ols,HBA,Human Brain Atlas Ontology,False,https://purl.brain-bican.org/ontology/hbao/hbao.owl,https://purl.brain-bican.org/ontology/hbao/releases/2025-02-10/hbao.owl
+ols,HCAO,Human Cell Atlas Ontology,False,https://raw.githubusercontent.com/ebi-ait/ontology/master/hcao.owl,http://ontology.data.humancellatlas.org/ontologies/hcao/releases/2023-05-16/hcao.owl
+ols,HOM,Homology Ontology,False,http://purl.obolibrary.org/obo/hom.owl,http://purl.obolibrary.org/obo/hom/releases/2015-01-07/hom.owl
+ols,HP,Human Phenotype Ontology,True,http://purl.obolibrary.org/obo/hp/hp-international.owl,http://purl.obolibrary.org/obo/hp/releases/2025-09-01/hp-international.owl
+ols,HSO,Health Surveillance Ontology,False,http://purl.obolibrary.org/obo/hso.owl,http://purl.obolibrary.org/obo/hso/2021-12-13/hso.owl
+ols,HTN,Hypertension Ontology For Clinical Data,False,http://purl.obolibrary.org/obo/htn.owl,
+ols,HsapDv,Human Developmental Stages,False,http://purl.obolibrary.org/obo/hsapdv.owl,http://purl.obolibrary.org/obo/life-stages/releases/2025-01-23/components/hsapdv.owl
+ols,IAO,Information Artifact Ontology (IAO),False,http://purl.obolibrary.org/obo/iao.owl,http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl
+ols,ICEO,ICEO: Ontology of Integrative and Conjugative Elements,False,http://purl.obolibrary.org/obo/iceo.owl,
+ols,ICO,Informed Consent Ontology (ICO),False,http://purl.obolibrary.org/obo/ico.owl,http://purl.obolibrary.org/obo/ico/releases/2025-03-15/ico.owl
+ols,IDO,Infectious Disease Ontology,False,http://purl.obolibrary.org/obo/ido.owl,http://purl.obolibrary.org/obo/ido/2017-11-03/ido.owl
+ols,IDO-COVID-19,The COVID-19 Infectious Disease Ontology,False,https://raw.githubusercontent.com/infectious-disease-ontology-extensions/ido-covid-19/master/ontology/ido%20covid-19,http://purl.obolibrary.org/obo/2020-21-07/ido-covid-19.owl
+ols,INO,INO: Interaction Network Ontology,False,http://purl.obolibrary.org/obo/ino.owl,
+ols,KISAO,Kinetic Simulation Algorithm Ontology,False,http://purl.obolibrary.org/obo/kisao.owl,
+ols,LABO,clinical LABoratory Ontology,False,http://purl.obolibrary.org/obo/labo.owl,http://purl.obolibrary.org/obo/labo/2021-06-08/labo.owl
+ols,LEPAO,Lepidoptera Anatomy Ontology,False,http://purl.obolibrary.org/obo/lepao.owl,http://purl.obolibrary.org/obo/lepao/releases/2023-02-18/lepao.owl
+ols,LIFESTYLEFACTORS,Lifestyle Factors Ontology,False,https://raw.githubusercontent.com/EsmaeilNourani/Lifestyle-factors-ontology/main/LSFO/owl/LSFO.owl,
+ols,LIPIDMAPS,LIPID MAPS,False,https://lipidmaps.org/files/?file=sparql_lipids&ext=ttl,
+ols,MA,Mouse adult gross anatomy,False,http://purl.obolibrary.org/obo/ma.owl,http://purl.obolibrary.org/obo/ma/releases/2017-02-07/ma.owl
+ols,MAMO,Mathematical Modelling Ontology,False,https://raw.githubusercontent.com/EBISPOT/mamo/main/mamo.rdf,
+ols,MAXO,Medical Action Ontology,True,http://purl.obolibrary.org/obo/maxo.owl,http://purl.obolibrary.org/obo/maxo/releases/2025-04-24/maxo.owl
+ols,MBA,Mouse Brain Atlas Ontology,False,https://purl.brain-bican.org/ontology/mbao/mbao.owl,https://purl.brain-bican.org/ontology/mbao/releases/2025-07-28/mbao.owl
+ols,MCO,Microbial Conditions Ontology,False,http://purl.obolibrary.org/obo/mco.owl,http://purl.obolibrary.org/obo/mco/releases/2019-05-15/mco.owl
+ols,MCRO,Model Card Report Ontology,False,http://purl.obolibrary.org/obo/mcro.owl,http://purl.obolibrary.org/obo/2023-03-07/mcro.owl
+ols,MF,Mental Functioning Ontology,False,http://purl.obolibrary.org/obo/mf.owl,http://purl.obolibrary.org/obo/MF/2025-07-08/MF.owl
+ols,MFMO,Mammalian Feeding Muscle Ontology,False,http://purl.obolibrary.org/obo/mfmo.owl,http://purl.obolibrary.org/obo/mfmo/2013-11-16/mfmo.owl
+ols,MFOEM,Emotion Ontology,False,http://purl.obolibrary.org/obo/mfoem.owl,http://purl.obolibrary.org/obo/MFOEM/2025-07-31/MFOEM.owl
+ols,MFOMD,Mental Disease Ontology,False,http://purl.obolibrary.org/obo/mfomd.owl,http://purl.obolibrary.org/obo/MFOMD/2020-04-26/MFOMD.owl
+ols,MI,Molecular Interactions Controlled Vocabulary,False,http://purl.obolibrary.org/obo/mi.owl,
+ols,MIAPA,Minimum Information for A Phylogenetic Analysis (MIAPA) Ontology,False,http://purl.obolibrary.org/obo/miapa.owl,
+ols,MICRO,Ontology of Prokaryotic Phenotypic and Metabolic Characters,False,http://purl.obolibrary.org/obo/micro.owl,
+ols,MMO,Measurement method ontology,False,http://purl.obolibrary.org/obo/mmo.owl,http://purl.obolibrary.org/obo/mmo/2.161/mmo.owl
+ols,MOD,Protein modification,False,http://purl.obolibrary.org/obo/mod.owl,http://purl.obolibrary.org/obo/mod/1.031.6/mod.owl
+ols,MONDO,Mondo Disease Ontology,True,https://purl.obolibrary.org/obo/mondo/mondo-international.owl,http://purl.obolibrary.org/obo/mondo/releases/2025-09-02/mondo-international.owl
+ols,MOP,MOP,False,http://purl.obolibrary.org/obo/mop.owl,http://purl.obolibrary.org/obo/mop/releases/2022-05-11/mop.owl
+ols,MP,The Mammalian Phenotype Ontology,False,http://purl.obolibrary.org/obo/mp/mp-international.owl,http://purl.obolibrary.org/obo/mp/releases/2025-08-27/mp-international.owl
+ols,MPATH,Mouse pathology ontology,False,http://purl.obolibrary.org/obo/mpath.owl,http://purl.obolibrary.org/obo/mpath/2020-05-19/mpath.owl
+ols,MPIO,Minimum PDDI Information Ontology,False,http://purl.obolibrary.org/obo/mpio.owl,http://purl.obolibrary.org/obo/mpio/release/2023-10-17/mpio.owl
+ols,MRO,MHC Restriction Ontology,False,http://purl.obolibrary.org/obo/mro.owl,http://purl.obolibrary.org/obo/mro/2025-09-25/mro.owl
+ols,MS,Mass spectrometry ontology,False,http://purl.obolibrary.org/obo/ms.owl,http://purl.obolibrary.org/obo/ms/4.1.203/ms.owl
+ols,MSIO,Metabolomics Standards Initiative Ontology (MSIO),False,https://raw.githubusercontent.com/MSI-Metabolomics-Standards-Initiative/MSIO/master/releases/latest_release/MSIO-merged-reasoned.owl,
+ols,MmusDv,Mouse Developmental Stages,False,http://purl.obolibrary.org/obo/mmusdv.owl,http://purl.obolibrary.org/obo/life-stages/releases/2025-01-23/components/mmusdv.owl
+ols,NBO,Neuro Behavior Ontology,False,http://purl.obolibrary.org/obo/nbo.owl,http://purl.obolibrary.org/obo/nbo/releases/2023-07-04/nbo.owl
+ols,NCBITaxon,NCBI organismal classification,False,http://purl.obolibrary.org/obo/ncbitaxon.owl,http://purl.obolibrary.org/obo/ncbitaxon/2025-09-11/ncbitaxon.owl
+ols,NCIT,NCI Thesaurus OBO Edition,True,http://purl.obolibrary.org/obo/ncit.owl,http://purl.obolibrary.org/obo/ncit/releases/2025-08-06/ncit.owl
+ols,NCRO,Non-Coding RNA Ontology,False,http://purl.obolibrary.org/obo/ncro.owl,http://purl.obolibrary.org/obo/ncro/2015-12-10/ncro-combined.owl
+ols,NGBO, Next generation biobanking ontology(NGBO).,False,http://purl.obolibrary.org/obo/ngbo.owl,http://purl.obolibrary.org/obo/ngbo/2024-08-27/ngbo.owl
+ols,NMR,nuclear magnetic resonance CV,False,http://nmrml.org/cv/stable/nmrCV.owl,http://nmrml.org/cv/v1.1.0/nmrCV.owl
+ols,NOMEN,NOMEN - A nomenclatural ontology for biological names,False,http://purl.obolibrary.org/obo/nomen.owl,
+ols,OAE,OAE: Ontology of Adverse Events,False,http://purl.obolibrary.org/obo/oae.owl,
+ols,OARCS,Ontology of Arthropod Circulatory Systems,False,http://purl.obolibrary.org/obo/oarcs.owl,http://purl.obolibrary.org/obo/hao/2019-04-18/hao.owl
+ols,OBA,Ontology of Biological Attributes (OBA),False,http://purl.obolibrary.org/obo/oba.owl,http://purl.obolibrary.org/obo/oba/releases/2025-08-20/oba.owl
+ols,OBCS,OBCS: Ontology of Biological and Clinical Statistics,False,http://purl.obolibrary.org/obo/obcs.owl,http://purl.obolibrary.org/obo/obcs/2023-12-08/obcs.owl
+ols,OBI,Ontology for Biomedical Investigations,True,http://purl.obolibrary.org/obo/obi.owl,http://purl.obolibrary.org/obo/obi/2025-07-28/obi.owl
+ols,OBIB,Ontology for BIoBanking (OBIB),False,http://purl.obolibrary.org/obo/obib.owl,http://purl.obolibrary.org/obo/obib/2023-04-05/obib.owl
+ols,OCCO,Occupation Ontology (OccO),False,http://purl.obolibrary.org/obo/occo.owl,http://purl.obolibrary.org/obo/occo/releases/2024-04-28/occo.owl
+ols,OGG,OGG: Ontology of Genes and Genomes,False,http://purl.obolibrary.org/obo/ogg.owl,
+ols,OGMS,Ontology for General Medical Science,False,http://purl.obolibrary.org/obo/ogms.owl,http://purl.obolibrary.org/obo/ogms/2021-08-19/ogms.owl
+ols,OGSF,Ontology of Genetic Susceptibility Factor,False,http://purl.obolibrary.org/obo/ogsf.owl,
+ols,OHD,Oral Health and Disease Ontology,False,http://purl.obolibrary.org/obo/ohd.owl,http://purl.obolibrary.org/obo/ohd/releases/2025-06-28/ohd.owl
+ols,OHMI,OHMI: Ontology of Host-Microbiome Interactions,False,http://purl.obolibrary.org/obo/ohmi.owl,http://purl.obolibrary.org/obo/ohmi/2019-09-17/ohmi.owl
+ols,OHPI,OHPI: Ontology of Host-Pathogen Interactions,False,http://purl.obolibrary.org/obo/ohpi.owl,http://purl.obolibrary.org/obo/ohpi/releases/2019-09-30
+ols,OM,Ontology of units of Measure (OM),False,https://raw.githubusercontent.com/HajoRijgersberg/OM/master/om-2.0.rdf,
+ols,OMIT,Ontology for MIRNA Target,False,http://purl.obolibrary.org/obo/omit.owl,http://purl.obolibrary.org/obo/omit/dev/omit.owl
+ols,OMO,OBO Metadata Ontology,False,http://purl.obolibrary.org/obo/omo.owl,http://purl.obolibrary.org/obo/omo/releases/2025-06-18/omo.owl
+ols,OMP,Ontology of Microbial Phenotypes,False,http://purl.obolibrary.org/obo/omp.owl,http://purl.obolibrary.org/obo/omp/releases/2024-03-25/omp.owl
+ols,OMRSE,Ontology for Modeling and Representation of Social Entities,False,http://purl.obolibrary.org/obo/omrse.owl,http://purl.obolibrary.org/obo/omrse/releases/2025-06-30/omrse.owl
+ols,ONE,Ontology for Nutritional Epidemiology,False,http://purl.obolibrary.org/obo/one.owl,
+ols,ONS,Ontology for Nutritional Studies,False,http://purl.obolibrary.org/obo/ons.owl,https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/releases/download/v2024-07-03/ons.owl
+ols,ONTOAVIDA,OntoAvida: ontology for Avida digital evolution platform.,False,http://purl.obolibrary.org/obo/ontoavida.owl,http://purl.obolibrary.org/obo/ontoavida/releases/2022-03-15/ontoavida.owl
+ols,ONTONEO,Obstetric and Neonatal Ontology,False,http://purl.obolibrary.org/obo/ontoneo.owl,http://purl.obolibrary.org/obo/ontoneo/releases/2025-03-14/ontoneo.owl
+ols,OOSTT,Ontology of Organizational Structures of Trauma centers and Trauma Systems,False,http://purl.obolibrary.org/obo/oostt.owl,http://purl.obolibrary.org/obo/oostt/release/2025-08-28/oostt.owl
+ols,OPL,Ontology for Parasite Lifecycle,False,http://purl.obolibrary.org/obo/opl.owl,http://purl.obolibrary.org/obo/opl/2023-08-28/opl.owl
+ols,OPMI,OPMI: Ontology of Precision Medicine and Investigation,False,http://purl.obolibrary.org/obo/opmi.owl,
+ols,ORDO,Orphanet Rare Disease Ontology,True,http://www.orphadata.org/data/ORDO/ordo_orphanet.owl,https://www.orphadata.com/data/ontologies/ordo/last_version/ORDO_en_4.7.owl
+ols,ORNASEQ,Ontology for RNA sequencing (ORNASEQ),False,http://purl.obolibrary.org/obo/ornaseq.owl,http://purl.obolibrary.org/obo/ornaseq/2019-07-08/ornaseq.owl
+ols,ORTH,Orthology Ontology,False,http://purl.org/net/orth,http://purl.org/net/orth/2.0
+ols,OVAE,OVAE: Ontology of Vaccine Adverse Events,False,http://purl.obolibrary.org/obo/ovae.owl,
+ols,OlatDv,Medaka Developmental Stages,False,http://purl.obolibrary.org/obo/olatdv.owl,
+ols,PATO,PATO - the Phenotype And Trait Ontology,False,http://purl.obolibrary.org/obo/pato.owl,http://purl.obolibrary.org/obo/pato/releases/2025-05-14/pato.owl
+ols,PCL,Provisional Cell Ontology,False,http://purl.obolibrary.org/obo/pcl.owl,http://purl.obolibrary.org/obo/pcl/releases/2025-07-07/pcl.owl
+ols,PCO,Population and Community Ontology,False,http://purl.obolibrary.org/obo/pco.owl,http://purl.obolibrary.org/obo/pco/releases/2021-05-03/pco.owl
+ols,PDRO,The Prescription of Drugs Ontology,False,http://purl.obolibrary.org/obo/pdro.owl,http://purl.obolibrary.org/obo/pdro/2021-06-08/pdro.owl
+ols,PECO,Plant Experimental Conditions Ontology,False,http://purl.obolibrary.org/obo/peco.owl,http://purl.obolibrary.org/obo/peco/releases/2023-11-10/peco.owl
+ols,PHI,PHI-base Ontology,False,file:///mnt/nfs/local_ontologies/phi.owl,http://purl.obolibrary.org/obo/PHI/releases/2017-11-06/PHI.owl
+ols,PHIPO,Pathogen Host Interactions Phenotype Ontology,False,http://purl.obolibrary.org/obo/phipo.owl,http://purl.obolibrary.org/obo/phipo/releases/2025-07-29/phipo.owl
+ols,PLANA,Planarian Anatomy Ontology (PLANA),False,http://purl.obolibrary.org/obo/plana.owl,http://purl.obolibrary.org/obo/plana/releases/2023-03-13
+ols,PLANP,Planarian Phenotype Ontology (PLANP),False,http://purl.obolibrary.org/obo/planp.owl,http://purl.obolibrary.org/obo/planp/releases/2020-03-28/planp.owl
+ols,PO,Plant Ontology,False,http://purl.obolibrary.org/obo/po.owl,http://purl.obolibrary.org/obo/po/releases/2024-04-17/po.owl
+ols,PORO,Porifera (sponge) ontology,False,http://purl.obolibrary.org/obo/poro.owl,http://purl.obolibrary.org/obo/poro/releases/2016-10-06/poro.owl
+ols,PPO,Plant Phenology Ontology,False,http://purl.obolibrary.org/obo/ppo.owl,http://purl.obolibrary.org/obo/ppo/releases/2025-06-16/ppo.owl
+ols,PR,PRotein Ontology (PRO),False,http://purl.obolibrary.org/obo/pr.owl,http://purl.obolibrary.org/obo/pr/71.0/pr.owl
+ols,PRIDE,Proteomics Identification Database Ontology,False,https://raw.githubusercontent.com/PRIDE-Utilities/pride-ontology/master/pride_cv.owl,http://purl.obolibrary.org/obo/pride/releases/2025-02-17/pride.owl
+ols,PROBONTO,Probability Distribution Ontology,False,file:///mnt/nfs/local_ontologies/probonto.ttl,
+ols,PROCO,PROCO: PROcess Chemistry Ontology,False,http://purl.obolibrary.org/obo/proco.owl,http://purl.obolibrary.org/obo/proco/releases/2022-04-11/proco.owl
+ols,PROV,Provenance Ontology (PROV-O),False,https://www.w3.org/ns/prov-o,
+ols,PSDO,Performance Summary Display Ontology,False,http://purl.obolibrary.org/obo/psdo.owl,http://purl.obolibrary.org/obo/2022-02-23/psdo.owl
+ols,PSO,Plant Stress Ontology,False,http://purl.obolibrary.org/obo/pso.owl,http://purl.obolibrary.org/obo/pso/releases/2023-11-14/pso.owl
+ols,PW,Pathway ontology,False,http://purl.obolibrary.org/obo/pw.owl,http://purl.obolibrary.org/obo/pw/7.94/pw.owl
+ols,PdumDv,Platynereis Developmental Stages,False,http://purl.obolibrary.org/obo/pdumdv.owl,
+ols,RBO,Radiation Biology Ontology,False,http://purl.obolibrary.org/obo/rbo.owl,http://purl.obolibrary.org/obo/rbo/releases/2025-09-17/rbo.owl
+ols,REPR,REPRODUCE-ME Ontology,False,https://sheeba-samuel.github.io/REPRODUCE-ME/doc/reproduce-me.xml,
+ols,RO,Relation Ontology,False,http://purl.obolibrary.org/obo/ro.owl,http://purl.obolibrary.org/obo/ro/releases/2025-06-24/ro.owl
+ols,RS,Rat Strain Ontology,False,http://purl.obolibrary.org/obo/rs.owl,http://purl.obolibrary.org/obo/rs/6.259/rs.owl
+ols,RXNO,RXNO,False,http://purl.obolibrary.org/obo/rxno.owl,http://purl.obolibrary.org/obo/rxno/releases/2021-12-16/rxno.owl
+ols,ReTO,Regulation of Transcription Ontology,False,http://www.bio.ntnu.no/ontology/ReTO/reto.rdf,
+ols,ReXO,Regulation of Gene Expression Ontology,False,http://www.bio.ntnu.no/ontology/ReXO/rexo.rdf,
+ols,SBO,Systems Biology Ontology,False,http://purl.obolibrary.org/obo/sbo.owl,
+ols,SCDO,Sickle Cell Disease Ontology,False,http://purl.obolibrary.org/obo/scdo.owl,http://purl.obolibrary.org/obo/scdo/releases/2021-04-15/scdo.owl
+ols,SEPIO,Ontology for Scientific Evidence and Provenance Information,False,http://purl.obolibrary.org/obo/sepio.owl,http://purl.obolibrary.org/obo/sepio/releases/2023-06-13/sepio.owl
+ols,SHARELOC,ShareLoc,False,https://raw.githubusercontent.com/imodpasteur/ShareLoc.XYZ/ontology/shareloc.owl,
+ols,SIBO,Social Insect Behavior Ontology,False,http://purl.obolibrary.org/obo/sibo.owl,
+ols,SIO,Semanticscience Integrated Ontology,False,https://raw.githubusercontent.com/micheldumontier/semanticscience/master/ontology/sio/release/sio-release.owl,http://semanticscience.org/ontology/sio/v1.59/sio-release.owl
+ols,SLM,SwissLipids,False,file:///mnt/nfs/local_ontologies/swisslipids.ttl,
+ols,SLSO,Space Life Sciences Ontology,False,http://purl.obolibrary.org/obo/slso.owl,http://purl.obolibrary.org/obo/slso/releases/2025-09-16/slso.owl
+ols,SNOMED,SNOMED CT (International Edition),True,file:///mnt/nfs/local_ontologies/snomed-inferred.owl,http://snomed.info/sct/900000000000207008/version/20250624
+ols,SO,Sequence types and features ontology,False,http://purl.obolibrary.org/obo/so.owl,http://purl.obolibrary.org/obo/so/2024-11-18/so.owl
+ols,SPD,Spider Ontology,False,http://purl.obolibrary.org/obo/spd.owl,
+ols,SRAO,FAIRsharing Subject Ontology (SRAO),False,https://github.com/FAIRsharing/subject-ontology/raw/master/SRAO.owl,http://www.fairsharing.org/ontology/subject/SRAO/releases/2025-06-01/SRAO.owl
+ols,STATO,STATO: the statistical methods ontology,False,http://purl.obolibrary.org/obo/stato.owl,http://purl.obolibrary.org/obo/stato/releases/2025-02-23/stato.owl
+ols,SWO,Software ontology,False,http://purl.obolibrary.org/obo/swo.owl,http://www.ebi.ac.uk/swo/swo/releases/2023-03-05/swo.owl
+ols,SYMP,Symptom Ontology,False,http://purl.obolibrary.org/obo/symp.owl,http://purl.obolibrary.org/obo/symp/releases/2024-05-17/symp.owl
+ols,T4FS,terms4FAIRskills,False,http://purl.obolibrary.org/obo/t4fs.owl,http://purl.obolibrary.org/obo/t4fs/releases/2025-02-09/t4fs.owl
+ols,TAXRANK,Taxonomic rank vocabulary,False,http://purl.obolibrary.org/obo/taxrank.owl,http://purl.obolibrary.org/obo/taxrank/releases/2025-09-24/taxrank.owl
+ols,TEDDY,Terminology for Description of Dynamics,False,file:///mnt/nfs/local_ontologies/teddy-inferred-fixed.owl,http://identifiers.org/combine.specifications/teddy.rel-2014-04-24
+ols,TRANS,Pathogen Transmission Ontology,False,http://purl.obolibrary.org/obo/trans.owl,http://purl.obolibrary.org/obo/trans/releases/2022-10-10/trans.owl
+ols,TTO,Teleost taxonomy ontology,False,http://purl.obolibrary.org/obo/tto.owl,
+ols,TXPO,TOXic Process Ontology (TXPO),False,http://purl.obolibrary.org/obo/txpo.owl,http://purl.obolibrary.org/obo/txpo/releases/2022-12-07/txpo.owl
+ols,UBERON,Uber-anatomy ontology,True,http://purl.obolibrary.org/obo/uberon.owl,http://purl.obolibrary.org/obo/uberon/releases/2025-08-15/uberon.owl
+ols,UNIMOD,Unimod protein modification database for mass spectrometry,False,https://raw.githubusercontent.com/PRIDE-Utilities/pride-ontology/master/unimod.owl,
+ols,UO,Units of measurement ontology,False,http://purl.obolibrary.org/obo/uo.owl,http://purl.obolibrary.org/obo/uo/releases/2023-05-25/uo.owl
+ols,UPHENO,Unified Phenotype Ontology (uPheno),False,http://purl.obolibrary.org/obo/upheno.owl,http://purl.obolibrary.org/obo/upheno/releases/2025-07-21/upheno.owl
+ols,VBO,Vertebrate Breed Ontology,False,http://purl.obolibrary.org/obo/vbo.owl,http://purl.obolibrary.org/obo/vbo/releases/2025-08-12/vbo.owl
+ols,VO,Vaccine Ontology,False,http://purl.obolibrary.org/obo/vo.owl,http://purl.obolibrary.org/obo/vo/releases/2025-07-06/vo.owl
+ols,VT,The Vertebrate Trait Ontology,False,http://purl.obolibrary.org/obo/vt.owl,http://purl.obolibrary.org/obo/vt/releases/2025-09-09/vt.owl
+ols,VTO,Vertebrate Taxonomy Ontology,False,http://purl.obolibrary.org/obo/vto.owl,http://purl.obolibrary.org/obo/vto/2020-11-13/vto.owl
+ols,WBPhenotype,C elegans Phenotype Ontology,False,http://purl.obolibrary.org/obo/wbphenotype.owl,http://purl.obolibrary.org/obo/wbphenotype/releases/2025-08-12/wbphenotype.owl
+ols,WBbt,C. elegans Gross Anatomy Ontology,False,http://purl.obolibrary.org/obo/wbbt.owl,http://purl.obolibrary.org/obo/wbbt/releases/2025-08-19/wbbt.owl
+ols,WBls,C. elegans Development Ontology,False,http://purl.obolibrary.org/obo/wbls.owl,http://purl.obolibrary.org/obo/wbls/releases/2025-08-12/wbls.owl
+ols,XAO,Xenopus Anatomy Ontology,False,http://purl.obolibrary.org/obo/xao.owl,http://purl.obolibrary.org/obo/xao/releases/2024-09-03/xao.owl
+ols,XCO,Experimental condition ontology,False,http://purl.obolibrary.org/obo/xco.owl,http://purl.obolibrary.org/obo/xco/4.213/xco.owl
+ols,XLMOD,HUPO-PSI cross-linking and derivatization reagents controlled vocabulary,False,http://purl.obolibrary.org/obo/xlmod.owl,http://purl.obolibrary.org/obo/xlmod/release/2019-10-28/xlmod.owl
+ols,XPO,Xenopus Phenotype Ontology,False,http://purl.obolibrary.org/obo/xpo.owl,http://purl.obolibrary.org/obo/xpo/releases/2025-07-25/xpo.owl
+ols,ZECO,Zebrafish Experimental Conditions Ontology,False,http://purl.obolibrary.org/obo/zeco.owl,http://purl.obolibrary.org/obo/zeco/releases/2022-02-14/zeco.owl
+ols,ZFA,Zebrafish Anatomy Ontology (ZFA),False,http://purl.obolibrary.org/obo/zfa.owl,http://purl.obolibrary.org/obo/zfa/releases/2025-09-05/zfa.owl
+ols,ZFS,Zebrafish developmental stages ontology,False,http://purl.obolibrary.org/obo/zfs.owl,http://purl.obolibrary.org/obo/zfs/releases/2020-03-10/zfs.owl
+ols,ZP,Zebrafish Phenotype Ontology (ZP),False,http://purl.obolibrary.org/obo/zp.owl,http://purl.obolibrary.org/obo/zp/releases/2024-04-18/zp.owl
+ols,credit,Contributor Roles Taxonomy,False,https://w3id.org/biopragmatics/resources/credit/credit.owl,https://w3id.org/biopragmatics/resources/credit/2022/credit.ofn
+ols,hgnc,HUGO Gene Nomenclature Committee,False,https://w3id.org/biopragmatics/resources/hgnc/hgnc.owl.gz,https://w3id.org/biopragmatics/resources/hgnc/2025-08-05/hgnc.ofn
+ols,mesh,Medical Subject Headings,False,https://w3id.org/biopragmatics/resources/mesh/mesh.owl.gz,https://w3id.org/biopragmatics/resources/mesh/2025/mesh.ofn
+ols,ror,Research Organization Registry,False,https://w3id.org/biopragmatics/resources/ror/ror.owl.gz,https://w3id.org/biopragmatics/resources/ror/1.36/ror.ofn
+ols,semapv,Semantic Mapping Vocabulary,False,https://raw.githubusercontent.com/mapping-commons/semantic-mapping-vocabulary/main/semapv.owl,http://w3id.org/semapv/vocab/releases/2025-01-06/semapv.owl
+ols,wikipathways,WikiPathways,False,https://w3id.org/biopragmatics/resources/wikipathways/wikipathways.owl,https://w3id.org/biopragmatics/resources/wikipathways/20250810/wikipathways.ofn
+umls,CDCREC,"Race & Ethnicity - CDC, 1.2",True,http://terminology.hl7.org/NamingSystem/CDCREC,
+umls,HPO,"Human Phenotype Ontology, 2024_12_12",True,http://purl.obolibrary.org/obo/hp.owl,
+umls,ICD10CM,"International Classification of Diseases, 10th Edition, Clinical Modification, 2025",True,http://hl7.org/fhir/sid/icd-10-cm,
+umls,ICD9CM,"International Classification of Diseases, Ninth Revision, Clinical Modification, 2014",True,https://www.icd9data.com,
+umls,LNC,"LOINC, 280",True,https://loinc.org/,
+umls,MDR,"Medical Dictionary for Regulatory Activities Terminology (MedDRA), 27.1",True,https://www.meddra.org,
+umls,MSH,"Medical Subject Headings, 2025_2025_02_03",True,https://www.nlm.nih.gov/mesh,
+umls,OMIM,"Online Mendelian Inheritance in Man, 2025_02_05",True,https://omim.org/,
+umls,RXNORM,"RxNorm Vocabulary, 20AA_250303F",True,https://terminology.hl7.org/6.5.0/NamingSystem-v3-rxNorm.html,
+umls,SNOMEDCT_US,"US Edition of SNOMED CT, 2025_03_01",True,http://snomed.info/sct,
