@@ -21,7 +21,7 @@ def get_api_key(api_id):
 
 
 # Dir file paths
-HOME_DIR = Path.cwd().resolve()
+HOME_DIR = Path(__file__).parent.parent.parent.resolve()
 DATA_DIR = Path(f"{HOME_DIR}/data")
 LOGS_PATH = Path(f"{DATA_DIR}/logs")
 INPUT_PATH = Path(f"{DATA_DIR}/input")
@@ -50,6 +50,5 @@ UPDATE_SEED_DATA = 'update_seed_data'
 DELETE_PROJECT_DATA = 'delete_project_data'
 RESET_DATABASE = 'reset_database'
 # Ontology_api_etl options
-FETCH_AND_UPLOAD = 'fetch_and_upload'
 UPLOAD_FROM_CSV = 'upload_from_csv'
 UPDATE_CSV = 'update_csv'
