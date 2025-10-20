@@ -5,7 +5,7 @@ Review the data/input/ontology_data README.md for more about the files found in 
 1. Update data/input/ontology_data/included_ontologies with the new changes/ontologies.
 2. Run `utils_run -p locutus-dev -o update_ontology_api -a update_csv`
 3. Look at the changes that were made to `data/output/ontology_api_metadata.csv`
-- If the changes to the file seema acceptable, no other edits are necessary. Skip to step 5.
+- If the changes to the file seem acceptable, no other edits are necessary. Skip to step 5.
 - If the system was missing, or incorrect, continue with step 4.
 4. Update data/input/ontology_data/manual_ontology_transformations.csv with the new changes/ontologies. Make sure the google sheet is also up to date.
 - This file is used to overwrite systems, and prefixes
