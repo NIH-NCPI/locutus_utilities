@@ -45,6 +45,7 @@ SUB_TIME_LIMIT = 60
 
 # Options
 # Script options
+FETCH_AND_UPLOAD = "fetch_and_upload"
 UPDATE_ONTOLOGY_API = 'update_ontology_api'
 UPDATE_SEED_DATA = 'update_seed_data'
 DELETE_PROJECT_DATA = 'delete_project_data'
