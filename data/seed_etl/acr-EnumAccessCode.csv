@@ -1,0 +1,11 @@
+code,system,display,description,terminology_id,terminology_description,terminology_name,terminology_resource_type
+col,https://anvilproject.github.io/acr-harmonized-data-model/EnumAccessCode,Collaboration Required,Collaboration Required,ftd-acr-EnumAccessCode,,acr-EnumAccessCode,Terminology
+ds,https://anvilproject.github.io/acr-harmonized-data-model/EnumAccessCode,Disease-Specific (Disease/Trait/Exposure),Disease-Specific (Disease/Trait/Exposure),ftd-acr-EnumAccessCode,,acr-EnumAccessCode,Terminology
+gru,https://anvilproject.github.io/acr-harmonized-data-model/EnumAccessCode,General Research Use,General Research Use,ftd-acr-EnumAccessCode,,acr-EnumAccessCode,Terminology
+gso,https://anvilproject.github.io/acr-harmonized-data-model/EnumAccessCode,Genetic Studies only,Genetic Studies only,ftd-acr-EnumAccessCode,,acr-EnumAccessCode,Terminology
+gsr,https://anvilproject.github.io/acr-harmonized-data-model/EnumAccessCode,Genomic Summary Results,Genomic Summary Results,ftd-acr-EnumAccessCode,,acr-EnumAccessCode,Terminology
+hmb,https://anvilproject.github.io/acr-harmonized-data-model/EnumAccessCode,Health/Medical/Biomedical,Health/Medical/Biomedical,ftd-acr-EnumAccessCode,,acr-EnumAccessCode,Terminology
+irb,https://anvilproject.github.io/acr-harmonized-data-model/EnumAccessCode,IRB Approval Required,IRB Approval Required,ftd-acr-EnumAccessCode,,acr-EnumAccessCode,Terminology
+mds,https://anvilproject.github.io/acr-harmonized-data-model/EnumAccessCode,Methods,Methods,ftd-acr-EnumAccessCode,,acr-EnumAccessCode,Terminology
+npu,https://anvilproject.github.io/acr-harmonized-data-model/EnumAccessCode,Not-for-profit use only,Not-for-profit use only,ftd-acr-EnumAccessCode,,acr-EnumAccessCode,Terminology
+pub,https://anvilproject.github.io/acr-harmonized-data-model/EnumAccessCode,Publication Required,Publication Required,ftd-acr-EnumAccessCode,,acr-EnumAccessCode,Terminology

@@ -24,6 +24,7 @@ def get_api_key(api_id):
 HOME_DIR = Path(__file__).parent.parent.parent.resolve()
 DATA_DIR = Path(f"{HOME_DIR}/data")
 LOGS_PATH = Path(f"{DATA_DIR}/logs")
+SEED_ETL_DIR = Path(f"{DATA_DIR}/seed_etl")
 INPUT_PATH = Path(f"{DATA_DIR}/input")
 OUTPUT_PATH = Path(f"{DATA_DIR}/output")
 ONTOLOGY_DATA_PATH = Path(f"{INPUT_PATH}/ontology_data")

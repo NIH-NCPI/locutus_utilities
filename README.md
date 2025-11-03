@@ -131,6 +131,25 @@ sideload_run -e {environment} -p {project_id} -f data/input/sideload_data/{filen
 ```
 
 
+# Seed Terminologies
+```bash 
+# run command
+seed_data -e {env} -a {action}
+
+* -e --env
+    * Description: Will be used as the base url in an api request to locutus.
+    * Required: False
+    * Default: http://localhost:8080
+* -t, --table
+    * Description: Choose whether to seed the db with a Terminology, or delete codes from a db Terminology.
+    * Required: False
+    * Default: 'seed' 
+
+- Developers, to add new seed data, or refresh existing data from external sources, refer to `locutus_util/seed_etl/README.md`.
+```
+
+
+
 ## Working on a branch?
     If working on a new feature it is possible to install a package version within
     the remote or local branch

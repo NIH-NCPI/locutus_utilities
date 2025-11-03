@@ -1,0 +1,6 @@
+code,system,display,description,terminology_id,terminology_description,terminology_name,terminology_resource_type
+decade_only,https://anvilproject.github.io/acr-harmonized-data-model/EnumDateOfBirthType,Decade Only,Decade Only,ftd-acr-EnumDateOfBirthType,,acr-EnumDateOfBirthType,Terminology
+exact,https://anvilproject.github.io/acr-harmonized-data-model/EnumDateOfBirthType,Exact,Exact,ftd-acr-EnumDateOfBirthType,,acr-EnumDateOfBirthType,Terminology
+other,https://anvilproject.github.io/acr-harmonized-data-model/EnumDateOfBirthType,Other,Other,ftd-acr-EnumDateOfBirthType,,acr-EnumDateOfBirthType,Terminology
+shifted,https://anvilproject.github.io/acr-harmonized-data-model/EnumDateOfBirthType,Shifted,Shifted,ftd-acr-EnumDateOfBirthType,,acr-EnumDateOfBirthType,Terminology
+year_only,https://anvilproject.github.io/acr-harmonized-data-model/EnumDateOfBirthType,Year Only,Year Only,ftd-acr-EnumDateOfBirthType,,acr-EnumDateOfBirthType,Terminology
