@@ -9,7 +9,7 @@ Process:
 - Make any necessary edits to `locutus_util/data/seed_etl/seed_config.yaml`. See the documentation on this file below for more information.
 - From locutus_util run:  `python seed_etl/refresh_data.py`
 
-## Seed the database
+## seed_database_etl.py
 Overview:
 - Formats normalized data into json to be used as the body of a request to 'locutus' to:<br> 1. Add the Terminology to the db or <br> 2. Delete codes from that Terminology in the db.
 Process:
@@ -26,83 +26,110 @@ Naming convention: Name it what the Terminology id is to be, for example `ftd-ac
 2. The next few attributes control how the data is used.
 ```bash
 refresh_or_normalize: False
-# Flag used to determine if 'refresh_data.py' should run on this data. Answers the question. 'Does the data need to be refreshed from its source, or reformatted in some way?'. 
+"""
+Flag used to determine if 'refresh_data.py' should run on this data. 
+Answers the question. 'Does the data need to be refreshed from its source,
+or reformatted in some way?'. 
 
-# Options [True,False]
-
+Options [True,False]
+"""
 
 ---------------------------------
 seed_db: False
-
-# Flag used to determine if 'seed_db.py' should run its 'seed' action on this data. Answers the question. 'Does the data need to seed or re-seed the database?'. 
-
-# Options [True,False]
-
+"""
+Flag used to determine if 'seed_db.py' should run its 'seed' action on 
+this data. Answers the question. 'Does the data need to seed or re-seed
+the database?'. 
+ Options [True,False]
+"""
 
 ---------------------------------
 remove_codes: False
-
-# Flag used to determine if 'seed_db.py' should run its 'delete' action on this data. Answers the question. 'Is there something wrong with the data that was seeded previously for this Terminology?'. 
-
-# Options [True,False]
-
+"""
+Flag used to determine if 'seed_db.py' should run its 'delete' action on 
+this data. Answers the question. 'Is there something wrong with the data
+that was seeded previously for this Terminology?'. 
+Options [True,False]
+"""
 
 --------------------------------
 combined_data: True
-
-# Optional flag to mark src files that hold multiple Terminologies worth of data to be normalized or seeded.
-
-# Options [True,False]
+'''
+Optional flag to mark src files that hold multiple Terminologies worth of 
+data to be normalized or seeded.
+Options [True,False]
+'''
 ```
 
 3. The next attribute defines the source data, used for reading in the data prior to processing it. 
 ```bash
 source_data:
-# This attribute could be set to 'None' if the associated data is already in a format that can be seeded. For example, see concept_map_relationship in the yaml file.
-
+'''
+This attribute could be set to 'None' if the associated data is already
+in a format that can be seeded. For example, see concept_map_relationship
+in the yaml file.
+'''
     type: file
-    # Flags the data as being a static file found in the data directory, or if the data is read in using a URL.
-    #Options [file, url]
+    '''
+    Flags the data as being a static file found in the data directory, 
+    or if the data is read in using a URL.
+    Options [file, url]
+    '''
 
     name: "pedigree_family_history_terminology.owl"
-    # Name of the file in the data/seed_etl directory, or the url of the source file.
-    #Options [file, url]
-
+    '''
+    Name of the file in the data/seed_etl directory, or the url of the source file.
+    Options [file, url]
+   '''
 
     delimeter: None
-    # Delimeter used in the source file. \
-    # .owl files should be `None`
-    # Options [None, "," , "/t"]
-
+    '''
+    Delimeter used in the source file. 
+    .owl files should be `None`
+    Options [None, "," , "/t"]
+  '''
 ```
-4. The next attribute defines the normalized/clean data, ready for seeding. Used to create a clean file (refresh_data.py) and when seeding the db (seed_db.py).
+4. The next attribute defines the normalized/clean data, ready for seeding. 
+Used to create a clean file (refresh_data.py) and when seeding the db (seed_db.py).
 ```bash
 normalized_data:
 
     type: csv
-    # Flags the data as being a static file found in the data directory, or if the data is read in using a URL.
-    #Options [file, url]
+    ''' 
+    Flags the data as being a static file found in the data directory, or if
+    the data is read in using a URL.
+    Options [file, url]
+    '''
 
     name: 
       - "ftd-acr-enum-relationship-code.csv"
-    # Name of the file in the data/seed_etl directory, or the url of the source file.
-    #Options [file, url]
+    '''
+    Name of the file in the data/seed_etl directory, or the url of the source file.
+    Options [file, url]
+    '''
 
     delimeter: None
-    # Delimeter used in the source file. \
-    # .owl files should be `None`
-    # Options [None, "," , "/t"]
+    '''
+    Delimeter used in the source file. \
+    .owl files should be `None`
+    Options [None, "," , "/t"]
+    '''
 
 ```
 4. The next attribute will allow pulling data from the normalized files, as well as the ability to define data that isn't in the source data and can be hardcoded.
 ```bash
   mappings: 
-  # These map src data to normalize the src data into the format necessary for a Terminology to be imported into the db. 
-  # 'source_column' is used when the src data has a column that should be used to populate the field.
-  # 'value' is used when the column will be hardcoded across the Terminology.
-    
+  '''
+  These map src data to normalize the src data into the format necessary for a
+   Terminology to be imported into the db 'source_column' is used when
+   the src data has a column that should be used to populate the field.
+  'value' is used when the column will be hardcoded across the Terminology.
+  '''
     tgt_variable: enumeration_group 
-    # Optional: Used if the src data is 'combined_data'. This defines the column to split the src data by, to create separate files for seeding.
+    '''
+    Optional: Used if the src data is 'combined_data'. This defines the 
+    column to split the src data by, to create separate files for seeding.
+    '''
 
     code:
       source_column: code
@@ -118,8 +145,11 @@ normalized_data:
 
     terminology_id:
       value: "ftd-acr-enum-relationship-code"
-      # Prefixing the terminology_id with ftd will make them easier to find in the db.
-      # If they are specifically mentioned in the tgt/harmonized model include a model identifier(acr) to flag them.
+      '''
+      Prefixing the terminology_id with ftd will make them easier to find
+      in the db. If they are specifically mentioned in the tgt/harmonized
+      model include a model identifier(acr) to flag them.
+      '''
 
     terminology_description:
       value: "The Kinship Ontology (KIN) is a family relations ontology developed as part of the Global Alliance for Genomics and Health Pedigree Standard project."
