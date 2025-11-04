@@ -28,4 +28,4 @@ where = ["src"]  # list of folders that contain the packages (["."] by default)
 
 [project.scripts]
 sideload_run = "locutus_util.sideload.mapping_loader_table:main"
-seed_data = "locutus_util.seed_etl.seed_database:main"
+seed_data = "locutus_util.seed_etl.seed_data_etl:main"
