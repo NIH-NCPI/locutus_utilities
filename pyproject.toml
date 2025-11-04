@@ -27,6 +27,5 @@ version_file = "src/locutus_util/_version.py"
 where = ["src"]  # list of folders that contain the packages (["."] by default)
 
 [project.scripts]
-utils_run = "locutus_util.dispatcher:main"
 sideload_run = "locutus_util.sideload.mapping_loader_table:main"
 seed_data = "locutus_util.seed_etl.seed_database:main"
