@@ -164,25 +164,25 @@ normalized_data:
 ## Seeding a database with existing seed data.
 Data that has been previously used to seed a database will already have a properly formatted csv. 
 1. Edit `locutus_util/data/seed_etl/seed_config.yaml`. Ensure 'seed_db' is set to True for data to be imported into the db, and False for those that shouldn't be seeded. No other changes necessary.
-2. Run `locutus_util/seed_etl/seed_data.py -e {env}` as explained above to seed the database.
+2. Run `locutus_util/seed_etl/seed_database_etl.py -e {env}` as explained above to seed the database.
 
 ## Refreshing data from an external source, formatting, then seeding the db
 Some source files can be updated automatically by accessing an external source file. These will be configured to have the 'source_data: {type: url}', and a url as the 'source_data name'. The static 'source_data: {type: file}' files require manual updates prior to seeding.
 1. Edit `locutus_util/data/seed_etl/seed_config.yaml`. Ensure 'refresh_or_normalize' is set to True for data to be refreshed, and formatted. Ensure 'seed_db' is set to True for data to be imported into the db.
 2. Run `locutus_util/seed_etl/refresh_data.py` as explained above to format the data.
-3. Run `locutus_util/seed_etl/seed_data.py -e {env}` as explained above to seed the database.
+3. Run `locutus_util/seed_etl/seed_database_etl.py -e {env}` as explained above to seed the database.
 
 ## Deleting codes from seeded Terminologies
 1. Edit `locutus_util/data/seed_etl/seed_config.yaml`. Ensure 'remove_codes' is set to True for data requiring deletions.
-2. Run `locutus_util/seed_etl/seed_data.py -e {env} -a delete` as explained above to delete codes from the configured Terminology.
+2. Run `locutus_util/seed_etl/seed_database_etl.py -e {env} -a delete` as explained above to delete codes from the configured Terminology.
 
 ## Adding new source data to the process.
 
 ### For *unformatted* local flat files, or external files (.owl, single variable .csvs, and multiple variable .csvs(ftd-acr-tgt-enums)) 
 1. Add another object to `locutus_util/data/seed_etl/seed_config.yaml`. Define the metadata as explained above.
 2. Run `locutus_util/seed_etl/refresh_data.py` as explained above to format the data.
-3. Run `locutus_util/seed_etl/seed_data.py` as explained above to seed the database.
+3. Run `locutus_util/seed_etl/seed_database_etl.py` as explained above to seed the database.
 
 ### For *formatted* local flat files, or external files (.owl, single variable .csvs, and multiple variable .csvs(ftd-acr-tgt-enums)) 
 1. Add another object to `locutus_util/data/seed_etl/seed_config.yaml`. Define the metadata as explained above.
-2. Run `locutus_util/seed_etl/seed_data.py` as explained above to seed the database.
+2. Run `locutus_util/seed_etl/seed_database_etl.py` as explained above to seed the database.
