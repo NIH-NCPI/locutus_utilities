@@ -98,3 +98,6 @@ pip install git+https://github.com/NIH-NCPI/locutus_utilities.git@{branch_name}
 # Use this method for local development. In the root dir of the cloned repo run this command to enact local changes. 
 pip install -e .
 ```
+
+# Setup a config file `~/.mapdragon/config.json`
+See locutus_utilities/data/examples/mapdragon_config.json
