@@ -40,18 +40,7 @@ BATCH_SIZE = 10
 COL_TIME_LIMIT = 300
 SUB_TIME_LIMIT = 60
 
-# Options
-# Script options
-UPDATE_ONTOLOGY_API = "update_ontology_api"
-UPDATE_SEED_DATA = "update_seed_data"
-DELETE_PROJECT_DATA = "delete_project_data"
-RESET_DATABASE = "reset_database"
-# Ontology_api_etl options
-FETCH_AND_UPLOAD = "fetch_and_upload"
-UPLOAD_FROM_CSV = "upload_from_csv"
-UPDATE_CSV = "update_csv"
-
-
+# Setup Logger
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 log_file = LOGS_PATH / f"{date.today()}"
@@ -102,7 +91,7 @@ def get_api_key(api_id):
 CONFIGS = {}
 
 
-def load_configurations(print_option=None):
+def load_configurations():
     """Load configurations from the config file if it exists."""
     global CONFIGS
 
