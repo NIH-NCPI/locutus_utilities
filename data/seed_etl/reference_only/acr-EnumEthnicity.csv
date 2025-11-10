@@ -1,0 +1,5 @@
+code,system,display,description,terminology_id,terminology_description,terminology_name,terminology_resource_type
+asked_but_unknown,https://anvilproject.github.io/acr-harmonized-data-model/EnumEthnicity,asked but unknown,asked but unknown,ftd-acr-EnumEthnicity,,acr-EnumEthnicity,Terminology
+hispanic_or_latino,https://anvilproject.github.io/acr-harmonized-data-model/EnumEthnicity,Hispanic or Latino,Hispanic or Latino,ftd-acr-EnumEthnicity,,acr-EnumEthnicity,Terminology
+not_hispanic_or_latino,https://anvilproject.github.io/acr-harmonized-data-model/EnumEthnicity,Not Hispanic or Latino,Not Hispanic or Latino,ftd-acr-EnumEthnicity,,acr-EnumEthnicity,Terminology
+unknown,https://anvilproject.github.io/acr-harmonized-data-model/EnumEthnicity,unknown,unknown,ftd-acr-EnumEthnicity,,acr-EnumEthnicity,Terminology

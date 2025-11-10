@@ -1,0 +1,5 @@
+code,system,display,description,terminology_id,terminology_description,terminology_name,terminology_resource_type
+female,https://anvilproject.github.io/acr-harmonized-data-model/EnumSex,Female,Female,ftd-acr-EnumSex,,acr-EnumSex,Terminology
+intersex,https://anvilproject.github.io/acr-harmonized-data-model/EnumSex,Intersex,Intersex,ftd-acr-EnumSex,,acr-EnumSex,Terminology
+male,https://anvilproject.github.io/acr-harmonized-data-model/EnumSex,Male,Male,ftd-acr-EnumSex,,acr-EnumSex,Terminology
+unknown,https://anvilproject.github.io/acr-harmonized-data-model/EnumSex,Unknown,Unknown,ftd-acr-EnumSex,,acr-EnumSex,Terminology

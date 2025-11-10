@@ -1,0 +1,9 @@
+code,system,display,description,terminology_id,terminology_description,terminology_name,terminology_resource_type
+american_indian_or_alaskan_native,https://anvilproject.github.io/acr-harmonized-data-model/EnumRace,American Indian or Alaskan Native,American Indian or Alaskan Native,ftd-acr-EnumRace,,acr-EnumRace,Terminology
+asian,https://anvilproject.github.io/acr-harmonized-data-model/EnumRace,Asian,Asian,ftd-acr-EnumRace,,acr-EnumRace,Terminology
+asked_but_unknown,https://anvilproject.github.io/acr-harmonized-data-model/EnumRace,asked but unknown,asked but unknown,ftd-acr-EnumRace,,acr-EnumRace,Terminology
+black_or_african_american,https://anvilproject.github.io/acr-harmonized-data-model/EnumRace,Black or African American,Black or African American,ftd-acr-EnumRace,,acr-EnumRace,Terminology
+native_hawaiian_or_pacific_islander,https://anvilproject.github.io/acr-harmonized-data-model/EnumRace,Native Hawaiian or Other Pacific Islander,Native Hawaiian or Other Pacific Islander,ftd-acr-EnumRace,,acr-EnumRace,Terminology
+other_race,https://anvilproject.github.io/acr-harmonized-data-model/EnumRace,Other Race,Other Race,ftd-acr-EnumRace,,acr-EnumRace,Terminology
+unknown,https://anvilproject.github.io/acr-harmonized-data-model/EnumRace,unknown,unknown,ftd-acr-EnumRace,,acr-EnumRace,Terminology
+white,https://anvilproject.github.io/acr-harmonized-data-model/EnumRace,White,White,ftd-acr-EnumRace,,acr-EnumRace,Terminology

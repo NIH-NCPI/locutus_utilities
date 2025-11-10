@@ -1,0 +1,7 @@
+{
+   "no_comments_in_json_comment_for_example_only": "File should be in ~/.mapdragon/config.json",
+    "envs": {
+        "local": "http://localhost:8080",
+        "dev": "https://mapdragon-dev-442865118173.us-central1.run.app/"
+    }
+}

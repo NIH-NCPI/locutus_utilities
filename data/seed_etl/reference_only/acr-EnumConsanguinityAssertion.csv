@@ -1,0 +1,5 @@
+code,system,display,description,terminology_id,terminology_description,terminology_name,terminology_resource_type
+known_present,https://anvilproject.github.io/acr-harmonized-data-model/EnumConsanguinityAssertion,Known Present,Known Present,ftd-acr-EnumConsanguinityAssertion,,acr-EnumConsanguinityAssertion,Terminology
+not_suspected,https://anvilproject.github.io/acr-harmonized-data-model/EnumConsanguinityAssertion,Not suspected,Not suspected,ftd-acr-EnumConsanguinityAssertion,,acr-EnumConsanguinityAssertion,Terminology
+suspected,https://anvilproject.github.io/acr-harmonized-data-model/EnumConsanguinityAssertion,Suspected,Suspected,ftd-acr-EnumConsanguinityAssertion,,acr-EnumConsanguinityAssertion,Terminology
+unknown,https://anvilproject.github.io/acr-harmonized-data-model/EnumConsanguinityAssertion,Unknown,Unknown,ftd-acr-EnumConsanguinityAssertion,,acr-EnumConsanguinityAssertion,Terminology

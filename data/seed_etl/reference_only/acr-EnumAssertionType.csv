@@ -1,0 +1,8 @@
+code,system,display,description,terminology_id,terminology_description,terminology_name,terminology_resource_type
+clinical_finding,https://anvilproject.github.io/acr-harmonized-data-model/EnumAssertionType,Clinical Finding,Clinical Finding,ftd-acr-EnumAssertionType,,acr-EnumAssertionType,Terminology
+comorbidity,https://anvilproject.github.io/acr-harmonized-data-model/EnumAssertionType,Comorbidity,Comorbidity,ftd-acr-EnumAssertionType,,acr-EnumAssertionType,Terminology
+disease,https://anvilproject.github.io/acr-harmonized-data-model/EnumAssertionType,Disease,Disease,ftd-acr-EnumAssertionType,,acr-EnumAssertionType,Terminology
+ehr_billing_code,https://anvilproject.github.io/acr-harmonized-data-model/EnumAssertionType,"From an EHR billing record, which may indicate only investigation into a possible diagnosis.","From an EHR billing record, which may indicate only investigation into a possible diagnosis.",ftd-acr-EnumAssertionType,,acr-EnumAssertionType,Terminology
+histology,https://anvilproject.github.io/acr-harmonized-data-model/EnumAssertionType,Histology,Histology,ftd-acr-EnumAssertionType,,acr-EnumAssertionType,Terminology
+measurement,https://anvilproject.github.io/acr-harmonized-data-model/EnumAssertionType,"A measurement of some feature, eg, height or glucose.","A measurement of some feature, eg, height or glucose.",ftd-acr-EnumAssertionType,,acr-EnumAssertionType,Terminology
+phenotypic_feature,https://anvilproject.github.io/acr-harmonized-data-model/EnumAssertionType,This is a phenotypic feature,This is a phenotypic feature,ftd-acr-EnumAssertionType,,acr-EnumAssertionType,Terminology

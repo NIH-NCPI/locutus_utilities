@@ -1,0 +1,3 @@
+code,system,display,description,terminology_id,terminology_description,terminology_name,terminology_resource_type
+available,https://anvilproject.github.io/acr-harmonized-data-model/EnumAvailabilityStatus,Biospecimen is Available,Biospecimen is Available,ftd-acr-EnumAvailabilityStatus,,acr-EnumAvailabilityStatus,Terminology
+unavailable,https://anvilproject.github.io/acr-harmonized-data-model/EnumAvailabilityStatus,Biospecimen is Unavailable,Biospecimen is Unavailable,ftd-acr-EnumAvailabilityStatus,,acr-EnumAvailabilityStatus,Terminology

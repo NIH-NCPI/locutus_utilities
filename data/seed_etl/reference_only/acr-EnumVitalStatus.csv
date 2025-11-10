@@ -1,0 +1,6 @@
+code,system,display,description,terminology_id,terminology_description,terminology_name,terminology_resource_type
+alive,https://anvilproject.github.io/acr-harmonized-data-model/EnumVitalStatus,Alive,Alive,ftd-acr-EnumVitalStatus,,acr-EnumVitalStatus,Terminology
+dead,https://anvilproject.github.io/acr-harmonized-data-model/EnumVitalStatus,Dead,Dead,ftd-acr-EnumVitalStatus,,acr-EnumVitalStatus,Terminology
+not_reported,https://anvilproject.github.io/acr-harmonized-data-model/EnumVitalStatus,Not Reported,Not Reported,ftd-acr-EnumVitalStatus,,acr-EnumVitalStatus,Terminology
+unknown,https://anvilproject.github.io/acr-harmonized-data-model/EnumVitalStatus,Unknown,Unknown,ftd-acr-EnumVitalStatus,,acr-EnumVitalStatus,Terminology
+unspecified,https://anvilproject.github.io/acr-harmonized-data-model/EnumVitalStatus,Unspecified,Unspecified,ftd-acr-EnumVitalStatus,,acr-EnumVitalStatus,Terminology

@@ -1,0 +1,123 @@
+ftd-acr-enum-relationship-code:
+  refresh_or_normalize: True
+  seed_db: True
+  remove_codes: True
+  source_data:
+    type: file
+    name: "pedigree_family_history_terminology.owl"
+    delimeter: None
+  normalized_data:
+    type: csv
+    name: 
+      - "ftd-acr-enum-relationship-code.csv"
+    delimeter: ","
+  mappings:
+    code:
+      source_column: code
+    system:
+      value: "http://purl.org/ga4gh/kin.owl"
+    display:
+      source_column: "display"
+    description:
+      source_column: "description"
+    terminology_id:
+      value: "ftd-acr-enum-relationship-code"
+    terminology_description:
+      value: "The Kinship Ontology (KIN) is a family relations ontology developed as part of the Global Alliance for Genomics and Health Pedigree Standard project."
+    terminology_name:
+      value: "Kinship Ontology (KIN)"
+    terminology_resource_type:
+      value: "Terminology"
+concept_map_relationship:
+  refresh_or_normalize: False # FTD legacy manually created
+  seed_db: True
+  remove_codes: True
+  source_data: None # Not being normalized
+  normalized_data:
+    type: csv
+    name: 
+      - concept_map_relationship.csv
+    delimeter: ","
+ucum_common_units:
+  refresh_or_normalize: False # FTD legacy manually created
+  seed_db: True
+  remove_codes: True
+  source_data: None  # Not being normalized
+  normalized_data:
+    type: csv
+    name: 
+      - ucum_common_units.csv
+    delimeter: ","
+ftd-acr-enum-family-role:
+  refresh_or_normalize: True # Download JSON https://terminology.hl7.org/6.2.0/ValueSet-v3-FamilyMember.json.html
+  seed_db: True
+  remove_codes: True
+  source_data:
+    type: file
+    name: "ValueSet-v3-FamilyMember.csv"
+    delimeter: ","
+  normalized_data:
+    type: csv
+    name: 
+      - "ftd-acr-enum-family-role.csv"
+    delimeter: ","
+  mappings:
+    code:
+      source_column: "curie"
+    system:
+      value: "http://terminology.hl7.org/CodeSystem/v3-RoleCode"
+    display:
+      source_column: "display"
+    description:
+      source_column: "description"
+    terminology_id:
+      value: "ftd-acr-enum-family-role"
+    terminology_description:
+      value: "A relationship between two people characterizing their 'familial' relationship"
+    terminology_name:
+      value: "ACR HL7 FamilyRole"
+    terminology_resource_type:
+      value: "Terminology"
+ftd-acr-tgt-enums: # Not seeded. See data/seed_etl/README.md.
+  refresh_or_normalize: True
+  seed_db: False
+  remove_codes: True
+  combined_data: True
+  source_data:
+    type: file
+    name: "acr_tgt_enums.csv"
+    delimeter: ","
+  normalized_data:
+    type: csv
+    name:       
+      - "acr-EnumAccessCode.csv"
+      - "acr-EnumAccessType.csv"
+      - "acr-EnumAssertionType.csv"
+      - "acr-EnumAvailabilityStatus.csv"
+      - "acr-EnumConsanguinityAssertion.csv"
+      - "acr-EnumDateOfBirthType.csv"
+      - "acr-EnumEthnicity.csv"
+      - "acr-EnumFamilyType.csv"
+      - "acr-EnumRace.csv"
+      - "acr-EnumSex.csv"
+      - "acr-EnumSubjectType.csv"
+      - "acr-EnumVitalStatus.csv"
+    delimeter: ","
+  mappings:
+    tgt_variable: enumeration_group
+    code:
+      source_column: enumeration_code
+    system:
+      source_column: enumeration_system
+    display:
+      source_column: enumeration_display
+    description:
+      source_column: enumeration_display
+    terminology_id:
+      source_column: terminology_id
+    terminology_description:
+      value: ""
+    terminology_name:
+      source_column: terminology_name
+    terminology_resource_type:
+      value: "Terminology"

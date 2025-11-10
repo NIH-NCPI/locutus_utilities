@@ -1,0 +1,6 @@
+code,system,display,description,terminology_id,terminology_description,terminology_name,terminology_resource_type
+controlled,https://anvilproject.github.io/acr-harmonized-data-model/EnumAccessType,Controlled,Controlled,ftd-acr-EnumAccessType,,acr-EnumAccessType,Terminology
+gsr_allowed,https://anvilproject.github.io/acr-harmonized-data-model/EnumAccessType,GSR Allowed,GSR Allowed,ftd-acr-EnumAccessType,,acr-EnumAccessType,Terminology
+gsr_restricted,https://anvilproject.github.io/acr-harmonized-data-model/EnumAccessType,GSR Restricted,GSR Restricted,ftd-acr-EnumAccessType,,acr-EnumAccessType,Terminology
+open,https://anvilproject.github.io/acr-harmonized-data-model/EnumAccessType,Open Access,Open Access,ftd-acr-EnumAccessType,,acr-EnumAccessType,Terminology
+registered,https://anvilproject.github.io/acr-harmonized-data-model/EnumAccessType,Registered Access,Registered Access,ftd-acr-EnumAccessType,,acr-EnumAccessType,Terminology

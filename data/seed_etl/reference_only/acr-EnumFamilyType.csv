@@ -1,0 +1,7 @@
+code,system,display,description,terminology_id,terminology_description,terminology_name,terminology_resource_type
+control_only,https://anvilproject.github.io/acr-harmonized-data-model/EnumFamilyType,Control Only,Control Only,ftd-acr-EnumFamilyType,,acr-EnumFamilyType,Terminology
+duo,https://anvilproject.github.io/acr-harmonized-data-model/EnumFamilyType,Duo,Duo,ftd-acr-EnumFamilyType,,acr-EnumFamilyType,Terminology
+other,https://anvilproject.github.io/acr-harmonized-data-model/EnumFamilyType,Other,Other,ftd-acr-EnumFamilyType,,acr-EnumFamilyType,Terminology
+proband_only,https://anvilproject.github.io/acr-harmonized-data-model/EnumFamilyType,Proband Only,Proband Only,ftd-acr-EnumFamilyType,,acr-EnumFamilyType,Terminology
+trio,https://anvilproject.github.io/acr-harmonized-data-model/EnumFamilyType,Trio (2 parents and affected child),Trio (2 parents and affected child),ftd-acr-EnumFamilyType,,acr-EnumFamilyType,Terminology
+trio_plus,https://anvilproject.github.io/acr-harmonized-data-model/EnumFamilyType,2 Parents and 2 or more children,2 Parents and 2 or more children,ftd-acr-EnumFamilyType,,acr-EnumFamilyType,Terminology

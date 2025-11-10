@@ -18,8 +18,7 @@ import numpy as np
 from datetime import date
 from typing import List
 from google.cloud import firestore
-from locutus_util.helpers import logger, set_logging_config
-from locutus_util.common import *
+from locutus_util import *
 
 UMLS_API_KEY = get_api_key("umls")
 
