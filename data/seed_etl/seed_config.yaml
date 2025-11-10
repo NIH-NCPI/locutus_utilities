@@ -78,9 +78,9 @@ ftd-acr-enum-family-role:
       value: "ACR HL7 FamilyRole"
     terminology_resource_type:
       value: "Terminology"
-ftd-acr-tgt-enums:
+ftd-acr-tgt-enums: # Not seeded. See data/seed_etl/README.md.
   refresh_or_normalize: True
-  seed_db: True
+  seed_db: False
   remove_codes: True
   combined_data: True
   source_data:

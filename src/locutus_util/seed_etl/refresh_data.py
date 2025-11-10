@@ -7,14 +7,13 @@ Run examples
 """
 
 import pandas as pd
-import logging
-from locutus_util.helpers import logger, read_file, parse_owl2_data
-from locutus_util.common import SEED_ETL_DIR
+from locutus_util.helpers import read_file, parse_owl2_data
+from locutus_util import SEED_ETL_DIR, logger
 
-
-# Set up logging
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
+FINAL_SCHEMA = [
+    "code", "system", "display", "description",
+    "terminology_id", "terminology_description", "terminology_name", "terminology_resource_type"
+]
 
 def transform_csv(source_data, output_file, mapping_config):
     """
@@ -23,15 +22,10 @@ def transform_csv(source_data, output_file, mapping_config):
     """
     try:
 
-        final_schema = [
-            "code", "system", "display", "description",
-            "terminology_id", "terminology_description", "terminology_name", "terminology_resource_type"
-        ]
-        
         transformed_rows = []
         for _, row in source_data.iterrows():
             transformed_row = {}
-            for final_column in final_schema:
+            for final_column in FINAL_SCHEMA:
                 if final_column in mapping_config:
                     mapping_details = mapping_config.get(final_column)
                     if 'value' in mapping_details:
@@ -46,7 +40,7 @@ def transform_csv(source_data, output_file, mapping_config):
     except Exception as e:
         logger.error(f"Error processing file {output_file}: {e}")
 
-    transformed_data = pd.DataFrame(transformed_rows, columns=final_schema)
+    transformed_data = pd.DataFrame(transformed_rows, columns=FINAL_SCHEMA)
     formatted_data = transformed_data.sort_values(by=['code','display']).drop_duplicates(keep='first')
     formatted_data.to_csv(output_file, index=False)
     logger.debug(f"Transformed data saved to {output_file}")
@@ -57,16 +51,10 @@ def transform_owl(source_data, output_file, mapping_config):
     Saves the data in the data dir as csv.
     """
     try:
-
-        final_schema = [
-            "code", "system", "display", "description",
-            "terminology_id", "terminology_description", "terminology_name", "terminology_resource_type"
-        ]
-        
         transformed_rows = []
         for _, row in source_data.iterrows():
             transformed_row = {}
-            for final_column in final_schema:
+            for final_column in FINAL_SCHEMA:
                 if final_column in mapping_config:
                     mapping_details = mapping_config.get(final_column)
                     if 'value' in mapping_details:
@@ -81,7 +69,7 @@ def transform_owl(source_data, output_file, mapping_config):
     except Exception as e:
         logger.error(f"Error processing file {output_file}: {e}")
 
-    transformed_data = pd.DataFrame(transformed_rows, columns=final_schema)
+    transformed_data = pd.DataFrame(transformed_rows, columns=FINAL_SCHEMA)
     formatted_data = transformed_data.sort_values(by=['code','display']).drop_duplicates(keep='first')
     formatted_data.to_csv(output_file, index=False)
     logger.debug(f"Transformed data saved to {output_file}")
@@ -161,4 +149,3 @@ if __name__ == "__main__":
             process_combined_files(file_metadata, SEED_ETL_DIR / 'refresh_src_data' , SEED_ETL_DIR)  
             logger.debug(f'Processing active combined file: {filename}')
     logger.info('COMPLETED refreshing data.')
-

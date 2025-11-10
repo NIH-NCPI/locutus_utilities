@@ -13,13 +13,8 @@ Options:
 import argparse
 import csv
 import requests
-from locutus_util.helpers import read_file, delete_codes
-from locutus_util.common import SEED_ETL_DIR
-import logging
-
-# Set up logging
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
+from locutus_util.helpers import read_file, delete_codes, save_terminology
+from locutus_util import SEED_ETL_DIR, logger, CONFIGS, CONFIG_FILE_PATH, resolve_environment
 
 def format_for_loc(file_path):
     terminology_data = {}
@@ -47,32 +42,13 @@ def format_for_loc(file_path):
             )
     return terminology_data
 
-def save_terminology(base_url, terminology):
-    response = {}
-    for keys, values in terminology.items():
-        t_id = values.get('id')
-        endpoint = f"{base_url}/api/Terminology/{t_id}"
-        headers = {"Content-Type": "application/json"}
-        try:
-            logger.info(endpoint)
-            res = requests.put(endpoint, json=values, headers=headers)
-            response[keys] = {"status_code": res.status_code, "response": res.text}
-            if res.status_code != 200:
-                logger.error(f"Failed to save terminology {keys}: {res.status_code} - {res.text}")
-            else:
-                logger.info(f"Successfully saved terminology {keys}")
-        except Exception as e:
-            logger.error(f"Error while saving terminology {keys}: {e}")
-    return response
+def main():    
 
-
-def main():
     parser = argparse.ArgumentParser(description="Load CSV data into Firestore.")
     parser.add_argument(
-        '-e',
-        '--env',
-        default="http://localhost:8080",
-        help="Will be used as the base url in an api request to locutus."
+        "-db",
+        "--database_uri",
+        help="Will be used as the base uri in an api request to locutus. Use a uri or environment name from '{CONFIG_FILE_PATH}'.",
     )
     parser.add_argument(
         '-a',
@@ -83,31 +59,45 @@ def main():
     )
     args = parser.parse_args()
 
-    logger.info('STARTED seeding the database')
+    resolved_uri = resolve_environment(args.database_uri)
+
+    logger.info(f"STARTED {args.action}")
 
     # Path to the YAML configuration file
     config_file = SEED_ETL_DIR / "seed_config.yaml"
     config, file_ext = read_file(config_file)
 
     for file_name, file_config in config.items():
-        if file_config.get('seed_db', False): 
+        if file_config.get("remove_codes", False) != True and file_config.get("remove_codes", False)  != True:
+            logger.info(f"SKIPPING {file_name}. Not configured for action '{args.action}'.")
+            continue
+
+        if file_config.get('seed_db', False) == True: 
             fnames = file_config.get("normalized_data").get('name')
+
             for file in fnames:
-                logger.info(f"Reading config settings for file: {file_name}")
+                logger.debug(f"Reading config settings for file: {file_name}")
                 filepath = SEED_ETL_DIR / file
 
-                if args.action == 'delete' and file_config.get('remove_codes', False) == True:
-                    request_body = format_for_loc(filepath)
-                    logger.info(f'Deleting from Terminology {file_name}')
-                    response = delete_codes(args.env, request_body)
-                    logger.info(f'Deleted from Terminology {file_name}')
+            if args.action == 'seed':
+                request_body = format_for_loc(filepath)
+                logger.debug(f'Saving Terminology {file_name}')
+                save_terminology(resolved_uri, request_body)
 
-                if args.action == 'seed':
-                    request_body = format_for_loc(filepath)
-                    logger.info(f'Saving Terminology {file_name}')
-                    response = save_terminology(args.env, request_body)
-                    logger.info(f'Saved Terminology {file_name}')
+        if file_config.get("remove_codes", False) == True:
+            fnames = file_config.get("normalized_data").get('name')
 
-    logger.info(f'COMPLETED process: {args.action}')
+            for file in fnames:
+                logger.debug(f"Reading config settings for file: {file_name}")
+                filepath = SEED_ETL_DIR / file
+
+            if args.action == 'delete':
+                request_body = format_for_loc(filepath)
+                logger.debug(f'Deleting from Terminology {file_name}')
+                delete_codes(resolved_uri, request_body)
+
+
+
+    logger.info(f'COMPLETED {args.action}')
 if __name__ == "__main__":
     main()
