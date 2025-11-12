@@ -59,7 +59,7 @@ def main():
     )
     args = parser.parse_args()
 
-    resolved_uri = resolve_environment(args.database_uri)
+    resolved_uri = resolve_environment(args.locutus_url)
 
     logger.info(f"STARTED {args.action}")
 
