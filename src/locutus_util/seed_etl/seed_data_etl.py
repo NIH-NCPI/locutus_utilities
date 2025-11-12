@@ -46,9 +46,9 @@ def main():
 
     parser = argparse.ArgumentParser(description="Load CSV data into Firestore.")
     parser.add_argument(
-        "-db",
-        "--database_uri",
-        help="Will be used as the base uri in an api request to locutus. Use a uri or environment name from '{CONFIG_FILE_PATH}'.",
+        "-url",
+        "--locutus-url",
+        help="Will be used as the base URL in an API request to locutus. Use an API URL or environment name from '{CONFIG_FILE_PATH}'.",
     )
     parser.add_argument(
         '-a',
