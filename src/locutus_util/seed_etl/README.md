@@ -12,6 +12,17 @@ Process:
 ## seed_database_etl.py
 Overview:
 - Formats normalized data into json to be used as the body of a request to 'locutus' to:<br> 1. Add the Terminology to the db or <br> 2. Delete codes from that Terminology in the db.
+
+### Bare API URL
+For convenience, we have built in support for environment configuration to short cut some typing (and memory if the API URLs are long or ugly). For one off runs, you can just provide the base URL. For example, if I want my database that a local version of locutus is using, I might use the following url:
+
+```bash
+seed_data ---locutus-url http://localhost:5000 
+```
+
+This will load the seeds into locutus running on localhost listening on port 5000. 
+
+### To use the environments
 Process:
 - Make any necessary edits to `locutus_util/data/seed_etl/seed_config.yaml`. See the documentation on this file below for more information.
 - From locutus_util run:  `python seed_etl/seed_database.py -e {env} -a {action}`

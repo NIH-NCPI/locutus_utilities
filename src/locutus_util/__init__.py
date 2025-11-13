@@ -152,11 +152,11 @@ def resolve_environment(env_or_uri):
             f"Environment '{env_or_uri}' found in configuration file. Using value: {CONFIGS["envs"][env_or_uri]}"
         )
         return value
-    if env_or_uri in envs:
-        logger.info(
-            f"Environment '{env_or_uri}' not found in configuration file. Using provided URI: {env_or_uri}"
-        )
-        return env_or_uri
+        
+    logger.info(
+        f"Environment '{env_or_uri}' not found in configuration file. Using provided URI: {env_or_uri}"
+    )
+    return env_or_uri
 
 
 def init_database(mongo_uri=None, project_id=None, missing_db_ok=False):
