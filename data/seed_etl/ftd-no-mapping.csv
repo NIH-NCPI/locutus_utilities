@@ -1,0 +1,6 @@
+code,system,display,description,terminology_id,terminology_description,terminology_name,terminology_resource_type
+SSSOM:NoTermFound,https://freethedata.org/terms/ftd-no-mapping,No Term Found,Used for any cases where searches using the established ontologies returned no appropriate matches,ftd-no-mapping,Indicate Absence of Mapping,No Mappings,Terminology
+NoMappingRequired,https://freethedata.org/terms/ftd-no-mapping,No Mapping Required,Used to indicate that this term requires no mappings,ftd-no-mapping,Indicate Absence of Mapping,No Mappings,Terminology
+DeferMapping,https://freethedata.org/terms/ftd-no-mapping,Defer Mapping,Used to indicate that the term should not be mapped at this time,ftd-no-mapping,Indicate Absence of Mapping,No Mappings,Terminology
+IdField,https://freethedata.org/terms/ftd-no-mapping,ID Field,Used to indicate that this term requires no mapping since it is an ID field of some kind,ftd-no-mapping,Indicate Absence of Mapping,No Mappings,Terminology
+LocalTerm,https://freethedata.org/terms/ftd-no-mapping,Local Term,"Used to indicate that this term requires no mapping since it is specific to some local (or organizational) purpose",ftd-no-mapping,Indicate Absence of Mapping,No Mappings,Terminology

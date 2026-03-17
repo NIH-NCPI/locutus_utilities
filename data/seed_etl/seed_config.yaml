@@ -8,7 +8,7 @@ ftd-acr-enum-relationship-code:
     delimeter: None
   normalized_data:
     type: csv
-    name: 
+    name:
       - "ftd-acr-enum-relationship-code.csv"
     delimeter: ","
   mappings:
@@ -35,17 +35,27 @@ concept_map_relationship:
   source_data: None # Not being normalized
   normalized_data:
     type: csv
-    name: 
+    name:
       - concept_map_relationship.csv
+    delimeter: ","
+ftd_no_mappings:
+  refresh_or_normalize: False # FTD legacy manually created
+  seed_db: True
+  remove_codes: True
+  source_data: None # Not being normalized
+  normalized_data:
+    type: csv
+    name:
+      - ftd-no-mapping.csv
     delimeter: ","
 ucum_common_units:
   refresh_or_normalize: False # FTD legacy manually created
   seed_db: True
   remove_codes: True
-  source_data: None  # Not being normalized
+  source_data: None # Not being normalized
   normalized_data:
     type: csv
-    name: 
+    name:
       - ucum_common_units.csv
     delimeter: ","
 ftd-acr-enum-family-role:
@@ -58,7 +68,7 @@ ftd-acr-enum-family-role:
     delimeter: ","
   normalized_data:
     type: csv
-    name: 
+    name:
       - "ftd-acr-enum-family-role.csv"
     delimeter: ","
   mappings:
@@ -89,7 +99,7 @@ ftd-acr-tgt-enums: # Not seeded. See data/seed_etl/README.md.
     delimeter: ","
   normalized_data:
     type: csv
-    name:       
+    name:
       - "acr-EnumAccessCode.csv"
       - "acr-EnumAccessType.csv"
       - "acr-EnumAssertionType.csv"
